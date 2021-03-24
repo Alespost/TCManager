@@ -1,0 +1,51 @@
+.content {
+    font-size: 100%;
+    width: 1280px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+td {
+    width: 65px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#global_row td {
+    text-align: center;
+    font-weight: bold;
+}
+
+#global_header {
+}
+
+.row_header {
+    width: auto;
+    text-align: left !important;
+    padding: 5px 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.light-red {
+    background-color: lightcoral;
+}
+
+.light-green {
+    background-color: lightgreen;
+}

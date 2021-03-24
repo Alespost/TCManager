@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../node_modules/webextension-polyfill/dist/browser-polyfill.js"></script>
+    <script type="text/javascript" src="../common/common.js"></script>
+    <script type="text/javascript" src="content_display.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TC Manager</h1>
+        <div id="debug">
+            <p id="ping"></p>
+            <p id="hello"></p>
+            <p id="data" style="overflow-wrap: break-word"></p>
+        </div>
+        <button id="options_button">Options</button>
+        <p id="no_tcf_message"></p>
+        <h3 id="cmp_header"></h3>
+        <dl>
+            <dt>
+                <span id="cmp_name" style="font-weight: bold"></span>
+                <span id="cmp_id"></span>
+            </dt>
+        </dl>
+
+        <h3 id="consent_header"></h3>
+        <h4 id="purposes_header"></h4>
+        <dl id="purpose_list">
+        </dl>
+
+        <h4 id="special_features_header"></h4>
+        <dl id="special_feature_list">
+        </dl>
+    </div>
+</body>
+</html>

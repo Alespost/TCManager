@@ -1,0 +1,98 @@
+{
+  "extension_name": {
+    "message": "TCF Manager",
+    "description": "Název rozšíření."
+  },
+  "extension_description": {
+    "message": "Popis",
+    "description": "Popis rozšíření."
+  },
+
+
+
+  "options_title": {
+    "message": "Nastavení TCF Manager"
+  },
+  "options_header": {
+    "message": "Nastavení"
+  },
+  "options_global": {
+    "message": "Globální nastavení"
+  },
+
+
+
+
+  "no_tcf": {
+    "message": "Tato stránka nevyužívá TCF.",
+    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+  },
+  "unknown_cmp": {
+    "message": "Neznámé CMP",
+    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+  },
+  "cmp_header": {
+    "message": "CMP",
+    "description": ""
+  },
+  "consent_header": {
+    "message": "Souhlas se zpracováním osobních údajů",
+    "description": ""
+  },
+  "purposes_header": {
+    "message": "Účely",
+    "description": ""
+  },
+  "special_features_header": {
+  "message": "Speciální funkce",
+  "description": ""
+},
+  "purpose1": {
+    "message": "Ukládání a/nebo přístup k informacím v zařízení",
+    "description": ""
+  },
+  "purpose2": {
+    "message": "Základní nastavení reklamy",
+    "description": ""
+  },
+  "purpose3": {
+    "message": "Vytvoření profilu pro personalizovanou reklamu",
+    "description": ""
+  },
+  "purpose4": {
+    "message": "Výběr personalizované reklamy",
+    "description": ""
+  },
+  "purpose5": {
+    "message": "Vytvoření profilu pro personalizovaný obsah",
+    "description": ""
+  },
+  "purpose6": {
+    "message": "Výběr personalizovaného obsahu",
+    "description": ""
+  },
+  "purpose7": {
+    "message": "Měření výkonu reklamy",
+    "description": ""
+  },
+  "purpose8": {
+    "message": "Měření výkonu obsahu",
+    "description": ""
+  },
+  "purpose9": {
+    "message": "Používání výzkumu trhu pro získání poznatků o uživatelích",
+    "description": ""
+  },
+  "purpose10": {
+    "message": "Vývoj a zlepšování produktů",
+    "description": ""
+  },
+  "special_feature1": {
+    "message": "Používání přesných údajů o geografické poloze",
+    "description": ""
+  },
+  "special_feature2": {
+    "message": "Aktivní vyhledávání identifikačních údajů v rámci vlastností zařízení",
+    "description": ""
+  }
+}

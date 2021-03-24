@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "TCF Manager",
+    "description": "Název rozšíření."
+  },
+  "extensionDescription": {
+    "message": "Description",
+    "description": "Popis rozšíření."
+  },
+  "consentHeader": {
+    "message": "Consent",
+    "description": ""
+  },
+  "purposesHeader": {
+    "message": "Purposes",
+    "description": ""
+  }
+}
