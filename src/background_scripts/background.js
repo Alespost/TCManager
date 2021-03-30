@@ -5,24 +5,38 @@ browser.runtime.onInstalled.addListener(
         initOptions();
     });
 
-browser.webRequest.onBeforeRequest.addListener(
+/*browser.webRequest.onBeforeRequest.addListener(
     listener,
-    {urls: ["*://*.consensu.org/*", "https://login.seznam.cz/api/v1/euconsent"]},
-    ["blocking"]
+    {urls: ["*://!*.consensu.org/!*", "https://login.seznam.cz/api/v1/euconsent"]},
+    ['blocking']
     //([A-Za-z0-9_-]{4}){10,}(\.?[^\\ "]+)+
 );
 
 function listener(details)
 {
+    console.log(details.url);
+
     if (typeof browser.webRequest.filterResponseData !== 'function') {
         return;
     }
 
+    let domain = new URL(details.originUrl);
+    let filter = browser.webRequest.filterResponseData(details.requestId);
     let encoder = new TextEncoder();
     let decoder = new TextDecoder('utf-8');
 
-    console.log(details.url);
-}
+    filter.ondata = event => {
+        let str = decoder.decode(event.data, {stream: true});
+        // Just change any instance of Example in the HTTP response
+        // to WebExtension Example.
+          str = str.replace(/window\.cmp_config_data_cs="[^"]*"/g, 'window.cmp_config_data_cs=\"CPD3plpPD3plpAfYJBCSBQCgAAgAAAgAAAigAAgAAgAA\"');
+        filter.write(encoder.encode(str));
+        filter.disconnect();
+    }
+
+    return {};
+
+}*/
 
 
 function initOptions() {

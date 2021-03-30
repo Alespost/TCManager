@@ -171,7 +171,8 @@ function createBitField(TCModel) {
  * @param bitString
  * @returns {string}
  */
-function encode(bitString) {
+function encode(bitString)
+{
     const DICT = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
     const PADDING = 24;
     const BASIS = 6;
@@ -194,7 +195,8 @@ function encode(bitString) {
  * @param url
  * @param TCString
  */
-function storeConsent(url, TCString) {
+function storeConsent(url, TCString)
+{
     storeCookies(TCString, url);
 }
 
@@ -203,13 +205,13 @@ function storeConsent(url, TCString) {
  * @param TCString
  * @param url
  */
-function storeCookies(TCString, url) {
+function storeCookies(TCString, url)
+{
+    const cookieNames = ['euconsent-v2', 'eupubconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
+    const domain = url.hostname.replace(new RegExp('www'), '');
+
     const expiration = new Date();
     expiration.setFullYear(expiration.getFullYear() + 1);
-
-    const cookieNames = ['euconsent-v2', 'eupubconsent-v2'];
-
-    const domain = url.hostname.replace(new RegExp('www'), '');
 
     const cookie =
         {
@@ -221,16 +223,29 @@ function storeCookies(TCString, url) {
             value: TCString
         };
 
-    for (let name of cookieNames) {
+    for (const name of cookieNames) {
         cookie.name = name;
         browser.cookies.set(cookie);
     }
 
-    cookie.name = 'OptanonAlertBoxClosed';
-    cookie.value = (new Date()).toISOString();
-    browser.cookies.set(cookie);
+    storeCookiesClosingBanner(cookie);
 
     console.log('Cookies stored.');
+
+    function storeCookiesClosingBanner(cookie)
+    {
+        const cookies = [
+            {name: 'OptanonAlertBoxClosed', value: (new Date()).toISOString()},
+            {name: '__cmpcvcx11319', value: 'U'},
+            {name: '__cmpcvcu6648', value: 'U'},
+        ];
+
+        for (const c of cookies) {
+            cookie.name = c.name;
+            cookie.value = c.value;
+            browser.cookies.set(cookie);
+        }
+    }
 }
 
 /**
