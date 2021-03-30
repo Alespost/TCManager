@@ -1,5 +1,3 @@
-"use strict";
-
 const GLOBAL_ROW_ID = 'global_row';
 const GLOBAL_OPTION_CLASS = 'global_option';
 const OPTION_CLASS = 'option';

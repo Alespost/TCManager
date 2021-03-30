@@ -1,52 +1,53 @@
 createConsentRequest();
 
-function createConsentRequest() {
-    let cmpReady = false;
-    let interval = setInterval(ping, 500);
-    let timeout = setTimeout(
-        () => {
-            clearInterval(interval);
-            console.log('Interval cleared by timeout.');
-        },
-        15000
-    );
+function createConsentRequest () {
+  let cmpReady = false;
+  let interval = setInterval(ping, 500);
+  let timeout = setTimeout(
+    () => {
+      clearInterval(interval);
+      console.log('Interval cleared by timeout.');
+    },
+    15000,
+  );
 
-    function ping() {
-        __tcfapi('ping', 'tcfapiRequestEvent', handler);
+  function ping () {
+    __tcfapi('ping', 'tcfapiRequestEvent', handler);
 
-        function handler(data, success) {
-            if (data !== false && data.hasOwnProperty('cmpLoaded')) {
-                cmpReady = data.cmpLoaded;
-            }
+    function handler (data, success) {
+      if (data !== false && data.hasOwnProperty('cmpLoaded')) {
+        cmpReady = data.cmpLoaded;
+      }
 
-            console.log('event data: ', data, success);
+      console.log('event data: ', data, success);
 
-            if (cmpReady) {
-                getDataAndSendRequest();
-            }
-        }
+      if (cmpReady) {
+        getDataAndSendRequest();
+      }
     }
+  }
 
-    function getDataAndSendRequest() {
-        __tcfapi('getTCData', 'tcfapiRequestEvent', handler);
+  function getDataAndSendRequest () {
+    __tcfapi('getTCData', 'tcfapiRequestEvent', handler);
 
-        function handler(data, success) {
-            if (!success) {
-                return;
-            }
+    function handler (data, success) {
+      if (!success) {
+        return;
+      }
 
-            clearInterval(interval);
-            clearTimeout(timeout);
-            console.log('Timeout and interval cleared.');
+      clearInterval(interval);
+      clearTimeout(timeout);
 
-            const message = {
-                cmpId: data.cmpId,
-                cmpVersion: data.cmpVersion ?? 1,
-                publisherCC: data.publisherCC ?? 'EN',
-                url: location.href
-            };
+      console.log('Timeout and interval cleared.');
 
-            browser.runtime.sendMessage(message);
-        }
+      const message = {
+        cmpId: data.cmpId,
+        cmpVersion: data.cmpVersion ?? 1,
+        publisherCC: data.publisherCC ?? 'EN',
+        url: location.href,
+      };
+
+      browser.runtime.sendMessage(message);
     }
+  }
 }

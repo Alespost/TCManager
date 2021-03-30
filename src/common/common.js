@@ -1,5 +1,3 @@
-"use strict";
-
 const GLOBAL_OPTIONS = 'global';
 const PURPOSES_OPTIONS = 'purposes';
 const SPECIAL_FEATURES_OPTIONS = 'specialFeatures';

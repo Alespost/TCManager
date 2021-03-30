@@ -7,9 +7,6 @@
     "message": "Popis",
     "description": "Popis rozšíření."
   },
-
-
-
   "options_title": {
     "message": "Nastavení TCF Manager"
   },
@@ -19,10 +16,6 @@
   "options_global": {
     "message": "Globální nastavení"
   },
-
-
-
-
   "no_tcf": {
     "message": "Tato stránka nevyužívá TCF.",
     "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
@@ -44,9 +37,9 @@
     "description": ""
   },
   "special_features_header": {
-  "message": "Speciální funkce",
-  "description": ""
-},
+    "message": "Speciální funkce",
+    "description": ""
+  },
   "purpose1": {
     "message": "Ukládání a/nebo přístup k informacím v zařízení",
     "description": ""
