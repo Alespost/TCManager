@@ -35,8 +35,8 @@ function getOptions (domain) {
 
     const purposes = [];
     for (const [index, value] of domainOptions[PURPOSES_OPTIONS].entries()) {
-      if (value !== null) {
-        purposes.push(domainOptions[PURPOSES_OPTIONS][index]);
+      if (value !== GLOBAL_VALUE) {
+        purposes.push(value);
       } else {
         purposes.push(globalOptions[PURPOSES_OPTIONS][index]);
       }
@@ -44,7 +44,7 @@ function getOptions (domain) {
 
     const specialFeatures = [];
     for (const [index, value] of domainOptions[SPECIAL_FEATURES_OPTIONS].entries()) {
-      if (value !== null) {
+      if (value !== GLOBAL_VALUE) {
         specialFeatures.push(value);
       } else {
         specialFeatures.push(globalOptions[SPECIAL_FEATURES_OPTIONS][index]);
@@ -78,13 +78,13 @@ function createTCModel (data, options) {
   const vendorConsent = {
     maxVendorId: 1, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: [false], //TODO
+    bitField: [0], //TODO
   };
 
   const vendorLI = {
     maxVendorId: 1, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: [false], //TODO
+    bitField: [0], //TODO
   };
 
   const timestamp = Math.round((new Date()).getTime() / 100);
@@ -145,19 +145,19 @@ function createBitField (TCModel) {
   bitField += intToBitField(TCModel.tcfPolicyVersion, BIT_LEN_6);
   bitField += intToBitField(TCModel.isServiceSpecific, BIT_LEN_1);
   bitField += intToBitField(TCModel.nonStandardStacks, BIT_LEN_1);
-  bitField += booleanArrayToBitField(TCModel.specialFeatureOptIns, BIT_LEN_12);
-  bitField += booleanArrayToBitField(TCModel.purposesConsent, BIT_LEN_24);
-  bitField += booleanArrayToBitField(TCModel.purposesLITransparency, BIT_LEN_24);
+  bitField += arrayToBitField(TCModel.specialFeatureOptIns, BIT_LEN_12);
+  bitField += arrayToBitField(TCModel.purposesConsent, BIT_LEN_24);
+  bitField += arrayToBitField(TCModel.purposesLITransparency, BIT_LEN_24);
   bitField += intToBitField(TCModel.purposeOneTreatment, BIT_LEN_1);
   bitField += stringToBitField(TCModel.publisherCC, BIT_LEN_12);
 
   bitField += intToBitField(TCModel.vendorConsent.maxVendorId, BIT_LEN_16);
   bitField += intToBitField(TCModel.vendorConsent.isRangeEncoding, BIT_LEN_1);
-  bitField += booleanArrayToBitField(TCModel.vendorConsent.bitField, TCModel.vendorConsent.maxVendorId);
+  bitField += arrayToBitField(TCModel.vendorConsent.bitField, TCModel.vendorConsent.maxVendorId);
 
   bitField += intToBitField(TCModel.vendorLI.maxVendorId, BIT_LEN_16);
   bitField += intToBitField(TCModel.vendorLI.isRangeEncoding, BIT_LEN_1);
-  bitField += booleanArrayToBitField(TCModel.vendorLI.bitField, TCModel.vendorLI.maxVendorId);
+  bitField += arrayToBitField(TCModel.vendorLI.bitField, TCModel.vendorLI.maxVendorId);
 
   bitField += intToBitField(TCModel.numPubRestrictions, BIT_LEN_12);
 
@@ -252,11 +252,11 @@ function createDomainOptions (domain) {
   let specialFeatures = [];
 
   for (let i = 0; i < PURPOSES_COUNT; i++) {
-    purposes.push(undefined);
+    purposes.push(GLOBAL_VALUE);
   }
 
   for (let i = 0; i < SPECIAL_FEATURES_COUNT; i++) {
-    specialFeatures.push(undefined);
+    specialFeatures.push(GLOBAL_VALUE);
   }
 
   let options = {};
@@ -264,6 +264,7 @@ function createDomainOptions (domain) {
   options[domain][PURPOSES_OPTIONS] = purposes;
   options[domain][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
+  console.log(options);
   browser.storage.sync.set(options);
 
   return options;

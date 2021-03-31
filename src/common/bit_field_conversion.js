@@ -37,7 +37,7 @@ function stringToBitField (str, requiredLength) {
  * @param array
  * @param requiredLength
  */
-function booleanArrayToBitField (array, requiredLength) {
+function arrayToBitField (array, requiredLength) {
   let bits = '';
 
   for (let item of array) {

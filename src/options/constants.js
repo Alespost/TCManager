@@ -11,7 +11,3 @@ const LOCAL_OBJECTION_COLOR = 'red';
 const GLOBAL_OBJECTION_COLOR = 'light-red';
 
 const VALUE_ATTRIBUTE = 'data-value';
-
-const GLOBAL_VALUE = null;
-const CONSENT = true;
-const OBJECTION = false;

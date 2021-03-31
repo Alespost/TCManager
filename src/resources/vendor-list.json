@@ -1,8 +1,8 @@
 {
   "gvlSpecificationVersion": 2,
-  "vendorListVersion": 78,
+  "vendorListVersion": 83,
   "tcfPolicyVersion": 2,
-  "lastUpdated": "2021-02-18T16:05:30Z",
+  "lastUpdated": "2021-03-25T16:05:32Z",
   "purposes": {
     "1": {
       "id": 1,
@@ -665,6 +665,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.emerse.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "12": {
@@ -692,6 +693,7 @@
       ],
       "policyUrl": "https://www.beeswax.com/privacy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "28": {
@@ -725,6 +727,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://triplelift.com/.well-known/deviceStorage.json"
     },
@@ -746,6 +749,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adventori.com/with-us/legal-notice/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "25": {
@@ -786,6 +790,7 @@
       ],
       "policyUrl": "https://www.verizonmedia.com/policies/ie/en/verizonmedia/privacy/index.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "26": {
@@ -810,6 +815,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.venatusmedia.com/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "1": {
@@ -846,6 +852,7 @@
       "specialFeatures": [],
       "policyUrl": "https://vdx.tv/privacy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "6": {
@@ -882,6 +889,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://help.adspirit.de/deviceStorage.json"
     },
@@ -909,6 +917,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bidtheatre.com/privacy-policy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "24": {
@@ -939,6 +948,7 @@
       "specialFeatures": [],
       "policyUrl": "https://emea.epsilon.com/privacy-policy",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "39": {
@@ -976,6 +986,7 @@
       ],
       "policyUrl": "https://www.adition.com/datenschutz",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "11": {
@@ -1011,6 +1022,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.quantcast.com/privacy/",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "15": {
@@ -1040,7 +1052,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.adikteev.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "4": {
@@ -1066,6 +1079,7 @@
       ],
       "policyUrl": "https://www.roq.ad/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "7": {
@@ -1090,7 +1104,8 @@
         1
       ],
       "policyUrl": "https://www.vibrantmedia.com/en/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "2": {
@@ -1118,6 +1133,7 @@
       ],
       "policyUrl": "https://www.captify.co.uk/privacy-policy-opt/",
       "cookieMaxAgeSeconds": 2678400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "37": {
@@ -1145,6 +1161,7 @@
       ],
       "policyUrl": "https://web.neural.one/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "13": {
@@ -1174,6 +1191,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sovrn.com/sovrn-privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "34": {
@@ -1217,6 +1235,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "32": {
@@ -1249,6 +1268,7 @@
       ],
       "policyUrl": "https://www.xandr.com/privacy/platform-privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "10": {
@@ -1276,6 +1296,7 @@
       ],
       "policyUrl": "https://www.indexexchange.com/privacy",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "57": {
@@ -1305,6 +1326,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adara.com/privacy-promise/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "63": {
@@ -1338,6 +1360,7 @@
       ],
       "policyUrl": "https://avocet.io/privacy-portal",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "51": {
@@ -1368,7 +1391,8 @@
       ],
       "policyUrl": "https://www.groundtruth.com/privacy-policy/",
       "deletedDate": "2020-10-15T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "49": {
@@ -1407,6 +1431,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "45": {
@@ -1425,14 +1450,13 @@
         1,
         2
       ],
-      "features": [
-        3
-      ],
+      "features": [],
       "specialFeatures": [
         1
       ],
       "policyUrl": "https://smartadserver.com/end-user-privacy-policy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "52": {
@@ -1464,6 +1488,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "71": {
@@ -1501,6 +1526,7 @@
       ],
       "policyUrl": "https://docs.roku.com/published/userprivacypolicy/en/us",
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "79": {
@@ -1537,6 +1563,7 @@
       ],
       "policyUrl": "https://www.mediamath.com/privacy-policy/",
       "cookieMaxAgeSeconds": 33955200,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "91": {
@@ -1565,6 +1592,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.criteo.com/privacy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "85": {
@@ -1602,6 +1630,7 @@
       ],
       "policyUrl": "https://crimtan.com/privacy/",
       "cookieMaxAgeSeconds": 3153600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "16": {
@@ -1624,6 +1653,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.rtbhouse.com/privacy-center/services-privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "86": {
@@ -1653,6 +1683,7 @@
       "specialFeatures": [],
       "policyUrl": "https://scenestealer.tv/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "94": {
@@ -1686,6 +1717,7 @@
       ],
       "policyUrl": "https://www.blis.com/privacy/",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://privacy.blismedia.com/.well-known/deviceStorage.json"
     },
@@ -1711,6 +1743,7 @@
       ],
       "policyUrl": "https://simpli.fi/site-privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "33": {
@@ -1737,6 +1770,7 @@
       "specialFeatures": [],
       "policyUrl": "https://sharethis.com/privacy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "20": {
@@ -1778,7 +1812,8 @@
         1
       ],
       "policyUrl": "https://n.rich/privacy-notice",
-      "cookieMaxAgeSeconds": 777600,
+      "cookieMaxAgeSeconds": 46656000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "53": {
@@ -1814,6 +1849,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sirdata.com/en/Privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "69": {
@@ -1840,6 +1876,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.openx.com/legal/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "98": {
@@ -1876,6 +1913,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.groupm.com/privacy-notice",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "62": {
@@ -1904,6 +1942,7 @@
       "specialFeatures": [],
       "policyUrl": "https://justpremium.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "36": {
@@ -1935,6 +1974,7 @@
       ],
       "policyUrl": "https://www.rhythmone.com/privacy-policy",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "80": {
@@ -1961,6 +2001,7 @@
       "specialFeatures": [],
       "policyUrl": "https://platform-cdn.sharethrough.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "23": {
@@ -1990,6 +2031,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.amobee.com/trust/gdpr/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "67": {
@@ -2027,7 +2069,8 @@
         1
       ],
       "policyUrl": "https://lifestreet.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "459": {
@@ -2047,7 +2090,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://netzwerk.uppr.de/privacy-policy.do",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "68": {
@@ -2084,7 +2128,33 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sizmek.com/privacy-policy/",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
+    },
+    "75": {
+      "id": 75,
+      "name": "M32 Connect Inc",
+      "purposes": [],
+      "legIntPurposes": [
+        9
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://m32.media/privacy-cookie-policy/",
+      "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
     },
     "61": {
       "id": 61,
@@ -2113,6 +2183,7 @@
       "specialFeatures": [],
       "policyUrl": "https://gumgum.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "40": {
@@ -2150,6 +2221,7 @@
       ],
       "policyUrl": "https://www.active-agent.com/de/unternehmen/datenschutzerklaerung/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "76": {
@@ -2191,6 +2263,7 @@
       ],
       "policyUrl": "https://pubmatic.com/privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "89": {
@@ -2208,6 +2281,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.tapad.com/eu-privacy-policy",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "46": {
@@ -2233,6 +2307,7 @@
       "specialFeatures": [],
       "policyUrl": "https://skimlinks.com/pages/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "66": {
@@ -2272,7 +2347,8 @@
         1
       ],
       "policyUrl": "https://www.adsquare.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "41": {
@@ -2300,7 +2376,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "82": {
@@ -2334,7 +2411,8 @@
         1
       ],
       "policyUrl": "https://www.smaato.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "60": {
@@ -2371,6 +2449,7 @@
       "specialFeatures": [],
       "policyUrl": "https://rakutenadvertising.com/legal-notices/services-privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "70": {
@@ -2385,13 +2464,7 @@
         10
       ],
       "legIntPurposes": [],
-      "flexiblePurposes": [
-        2,
-        3,
-        4,
-        7,
-        10
-      ],
+      "flexiblePurposes": [],
       "specialPurposes": [
         1,
         2
@@ -2409,6 +2482,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "50": {
@@ -2443,6 +2517,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "48": {
@@ -2477,6 +2552,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.inres.sk/pp/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "100": {
@@ -2505,6 +2581,7 @@
       "specialFeatures": [],
       "policyUrl": "https://fifty.io/privacy-policy.php",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "21": {
@@ -2539,6 +2616,7 @@
       ],
       "policyUrl": "https://www.thetradedesk.com/general/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "110": {
@@ -2558,16 +2636,15 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.opinionoutpost.co.uk/en-gb/policies/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "42": {
       "id": 42,
       "name": "Taboola Europe Limited",
       "purposes": [
-        1
-      ],
-      "legIntPurposes": [
+        1,
         2,
         3,
         4,
@@ -2577,6 +2654,7 @@
         8,
         10
       ],
+      "legIntPurposes": [],
       "flexiblePurposes": [
         2,
         3,
@@ -2599,6 +2677,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.taboola.com/privacy-policy",
       "cookieMaxAgeSeconds": 31556926,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "77": {
@@ -2628,6 +2707,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.scorecardresearch.com/privacy.aspx?newlanguage=1",
       "cookieMaxAgeSeconds": 62208000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "109": {
@@ -2663,6 +2743,7 @@
       ],
       "policyUrl": "https://loopme.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "120": {
@@ -2693,16 +2774,21 @@
       "specialFeatures": [],
       "policyUrl": "https://www.eyeota.com/privacy-center",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "93": {
       "id": 93,
       "name": "Adloox SA",
-      "purposes": [],
+      "purposes": [
+        1
+      ],
       "legIntPurposes": [
         7
       ],
-      "flexiblePurposes": [],
+      "flexiblePurposes": [
+        7
+      ],
       "specialPurposes": [
         1
       ],
@@ -2712,7 +2798,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "132": {
@@ -2745,6 +2832,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.teads.com/privacy-policy/",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "22": {
@@ -2762,6 +2850,7 @@
       "specialFeatures": [],
       "policyUrl": "https://admetrics.io/en/privacy_policy/",
       "cookieMaxAgeSeconds": 31,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "102": {
@@ -2807,6 +2896,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31556900,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "108": {
@@ -2833,8 +2923,8 @@
       ],
       "policyUrl": "https://richaudience.com/privacy/",
       "cookieMaxAgeSeconds": 31536000,
-      "usesNonCookieAccess": false,
-      "deviceStorageDisclosureUrl": "https://richaudience.com/en/cookies/"
+      "usesCookies": true,
+      "usesNonCookieAccess": false
     },
     "18": {
       "id": 18,
@@ -2860,6 +2950,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.widespace.com/legal/privacy-policy-notice/",
       "cookieMaxAgeSeconds": 32061600,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "http://widespace.com/deviceStorage.json"
     },
@@ -2891,6 +2982,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.avidglobalmedia.com/privacy-policy.html",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "97": {
@@ -2922,6 +3014,7 @@
       "specialFeatures": [],
       "policyUrl": "https://liveramp.fr/iab-transparency-consent-framework/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "138": {
@@ -2950,6 +3043,7 @@
       ],
       "policyUrl": "https://connectadrealtime.com/privacy/",
       "cookieMaxAgeSeconds": 2628000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "72": {
@@ -2974,6 +3068,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nanointeractive.com/privacy-policy/",
       "cookieMaxAgeSeconds": 15724800,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "127": {
@@ -3009,6 +3104,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 34186698,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "136": {
@@ -3035,8 +3131,9 @@
       ],
       "features": [],
       "specialFeatures": [],
-      "policyUrl": "https://www.stroeer.de/fileadmin/de/Konvergenz_und_Konzepte/Daten_und_Technologien/Stroeer_SSP/Downloads/Datenschutz_Stroeer_SSP.pdf",
+      "policyUrl": "https://www.stroeer.de/konvergenz-konzepte/daten-technologien/stroeer-ssp/datenschutz-ssp.html",
       "cookieMaxAgeSeconds": 31336000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://www.stroeer.com/fileadmin/com/StroeerSSP_deviceStorage.json"
     },
@@ -3074,6 +3171,7 @@
       "specialFeatures": [],
       "policyUrl": "https://showheroes.com/privacy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "124": {
@@ -3100,6 +3198,7 @@
       ],
       "policyUrl": "https://teemo.co/fr/confidentialite/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "154": {
@@ -3131,6 +3230,7 @@
       ],
       "policyUrl": "https://yoc.com/privacy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "101": {
@@ -3161,6 +3261,7 @@
       ],
       "policyUrl": "https://wearemiq.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31540000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "149": {
@@ -3189,7 +3290,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://admanmedia.com/politica.html?setLng=es",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": 1210000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "151": {
@@ -3218,6 +3320,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.admedo.com/privacy-policy",
       "cookieMaxAgeSeconds": 259200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "153": {
@@ -3253,6 +3356,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://mobile.mng-ads.com/deviceStorage.json"
     },
@@ -3281,6 +3385,7 @@
       "specialFeatures": [],
       "policyUrl": "https://underdogmedia.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "157": {
@@ -3304,6 +3409,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.seedtag.com/en/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "145": {
@@ -3330,6 +3436,7 @@
       "specialFeatures": [],
       "policyUrl": "https://help.sortable.com/help/privacy-policy",
       "cookieMaxAgeSeconds": 31557600,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "131": {
@@ -3347,6 +3454,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.id5.io/privacy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "158": {
@@ -3373,7 +3481,8 @@
         1
       ],
       "policyUrl": "https://revealmobile.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "147": {
@@ -3410,6 +3519,7 @@
       ],
       "policyUrl": "https://adacado.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "130": {
@@ -3439,6 +3549,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nextroll.com/privacy",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "129": {
@@ -3469,6 +3580,7 @@
       ],
       "policyUrl": "https://www.iponweb.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "128": {
@@ -3498,6 +3610,7 @@
       ],
       "policyUrl": "https://www.bidswitch.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "168": {
@@ -3528,6 +3641,7 @@
       ],
       "policyUrl": "https://login.rtbmarket.com/gdpr",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "164": {
@@ -3566,6 +3680,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.outbrain.com/legal/privacy#privacy-policy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "144": {
@@ -3594,6 +3709,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "163": {
@@ -3623,6 +3739,7 @@
       "specialFeatures": [],
       "policyUrl": "https://bombora.com/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "173": {
@@ -3660,6 +3777,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.yieldmo.com/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "88": {
@@ -3692,7 +3810,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.tresensa.com/eu-privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "78": {
@@ -3718,6 +3837,7 @@
       ],
       "policyUrl": "https://www.flashtalking.com/privacypolicy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "59": {
@@ -3738,7 +3858,8 @@
         1
       ],
       "policyUrl": "https://www.sift.co/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "114": {
@@ -3760,6 +3881,7 @@
       "specialFeatures": [],
       "policyUrl": "https://ayads.co/privacy.php",
       "cookieMaxAgeSeconds": 34164060,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "133": {
@@ -3781,6 +3903,7 @@
       "specialFeatures": [],
       "policyUrl": "https://digitalaudience.io/legal/privacy-cookies/",
       "cookieMaxAgeSeconds": 31557600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "14": {
@@ -3815,6 +3938,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "183": {
@@ -3854,6 +3978,7 @@
       ],
       "policyUrl": "https://emxdigital.com/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "58": {
@@ -3877,7 +4002,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.33across.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "140": {
@@ -3906,6 +4032,7 @@
       ],
       "policyUrl": "https://platform161.com/cookie-and-privacy-policy/",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "90": {
@@ -3927,7 +4054,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.e-planning.net/en/privacy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "141": {
@@ -3957,7 +4085,8 @@
         1
       ],
       "policyUrl": "https://www.emodoinc.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "142": {
@@ -3995,6 +4124,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.media.net/en/privacy-policy",
       "cookieMaxAgeSeconds": 157680000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "209": {
@@ -4025,6 +4155,7 @@
       ],
       "policyUrl": "https://deltaprojects.com/data-collection-policy",
       "cookieMaxAgeSeconds": 47335389,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "195": {
@@ -4051,6 +4182,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.advanced-store.com/de/datenschutz/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "190": {
@@ -4081,6 +4213,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.vi.ai/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "84": {
@@ -4103,6 +4236,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.semasio.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://semasio-tcf-storage.s3-eu-west-1.amazonaws.com/deviceStorage.json"
     },
@@ -4126,7 +4260,8 @@
         1
       ],
       "policyUrl": "https://www.locationsciencesgroup.ai/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "210": {
@@ -4151,6 +4286,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.zemanta.com/legal/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "200": {
@@ -4180,7 +4316,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.tapjoy.com/legal/#privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "217": {
@@ -4213,6 +4350,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ipromote.com/privacy-policy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://www.ipromote.com/.well-known/deviceStorage.json"
     },
@@ -4248,6 +4386,7 @@
       "specialFeatures": [],
       "policyUrl": "https://rezonence.com/privacy-policy/",
       "cookieMaxAgeSeconds": 15768000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "226": {
@@ -4275,6 +4414,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.publicismedia.de/datenschutz/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "198": {
@@ -4298,6 +4438,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sync.tv/privacy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://sync.tv/deviceStorage.json"
     },
@@ -4340,6 +4481,7 @@
       ],
       "policyUrl": "https://www.ortecadscience.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31622400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "205": {
@@ -4364,7 +4506,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://adssets.com/policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "179": {
@@ -4394,6 +4537,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "31": {
@@ -4425,6 +4569,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ogury.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "92": {
@@ -4463,6 +4608,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.1plusx.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "155": {
@@ -4484,6 +4630,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.antvoice.com/en/privacypolicy/",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "115": {
@@ -4519,6 +4666,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "126": {
@@ -4538,7 +4686,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.doubleverify.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "193": {
@@ -4564,7 +4713,8 @@
         1
       ],
       "policyUrl": "https://mediasmart.io/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "213": {
@@ -4599,6 +4749,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.emetriq.com/datenschutz/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "244": {
@@ -4627,6 +4778,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ermes.ai/politique-de-confidentialite/",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "224": {
@@ -4659,6 +4811,7 @@
       ],
       "policyUrl": "https://www.adrule.net/de/datenschutz/",
       "cookieMaxAgeSeconds": 62985600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "174": {
@@ -4680,7 +4833,8 @@
         1
       ],
       "policyUrl": "https://www.amillionads.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "192": {
@@ -4699,7 +4853,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://remerge.io/privacy-policy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "256": {
@@ -4737,6 +4892,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "234": {
@@ -4764,6 +4920,7 @@
       "specialFeatures": [],
       "policyUrl": "https://zbo.media/mentions-legales/politique-de-confidentialite-service-publicitaire/",
       "cookieMaxAgeSeconds": 2628000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "246": {
@@ -4790,7 +4947,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.smartology.net/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "241": {
@@ -4823,6 +4981,7 @@
       ],
       "policyUrl": "https://www.onetag.com/privacy/",
       "cookieMaxAgeSeconds": 64000000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "254": {
@@ -4849,6 +5008,7 @@
       ],
       "policyUrl": "https://liquidm.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "215": {
@@ -4868,6 +5028,7 @@
       "specialFeatures": [],
       "policyUrl": "https://armis.tech/en/armis-personal-data-privacy-policy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "167": {
@@ -4890,7 +5051,8 @@
         2
       ],
       "policyUrl": "https://www.audiens.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "240": {
@@ -4914,6 +5076,7 @@
       "specialFeatures": [],
       "policyUrl": "https://zergnet.com/privacy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "235": {
@@ -4948,6 +5111,7 @@
       ],
       "policyUrl": "https://www.bucksense.com/platform-privacy-policy/",
       "cookieMaxAgeSeconds": 89200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "185": {
@@ -4981,6 +5145,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "211": {
@@ -5015,6 +5180,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 1051200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "273": {
@@ -5036,6 +5202,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bannerflow.com/privacy ",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://shared.bannerflow.com/deviceStorage.json"
     },
@@ -5062,6 +5229,7 @@
       "specialFeatures": [],
       "policyUrl": "https://sonobi.com/privacy-policy/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "162": {
@@ -5092,6 +5260,7 @@
       ],
       "policyUrl": "https://unruly.co/privacy/",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "249": {
@@ -5133,6 +5302,7 @@
       ],
       "policyUrl": "https://www.spolecznosci.pl/polityka-prywatnosci",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "170": {
@@ -5160,7 +5330,8 @@
         1
       ],
       "policyUrl": "https://goodwaygroup.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "160": {
@@ -5195,6 +5366,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "279": {
@@ -5216,7 +5388,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.mirando.de/datenschutz/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "276": {
@@ -5241,6 +5414,7 @@
       "specialFeatures": [],
       "policyUrl": "https://viralize.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "87": {
@@ -5274,6 +5448,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.geniussports.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "255": {
@@ -5300,6 +5475,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.onnetwork.tv/pp_services.php",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "203": {
@@ -5334,6 +5510,7 @@
       "specialFeatures": [],
       "policyUrl": "https://intercom.help/revcontent2/en/articles/4192775-revcontent-privacy-policy-residents-of-european-economic-area",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "274": {
@@ -5361,6 +5538,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "280": {
@@ -5404,6 +5582,7 @@
       ],
       "policyUrl": "https://www.openweb.com/legal-and-privacy/privacy/",
       "cookieMaxAgeSeconds": 300000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "239": {
@@ -5442,6 +5621,7 @@
       ],
       "policyUrl": "https://www.tritondigital.com/privacy-policies",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "177": {
@@ -5468,6 +5648,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.plista.com/about/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "150": {
@@ -5499,6 +5680,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.inskinmedia.com/privacy-policy.html",
       "cookieMaxAgeSeconds": 31622400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "252": {
@@ -5540,7 +5722,8 @@
         1
       ],
       "policyUrl": "https://www.jadudamobile.com/datenschutzerklaerung/",
-      "cookieMaxAgeSeconds": 31536000,
+      "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "248": {
@@ -5567,6 +5750,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "161": {
@@ -5596,6 +5780,7 @@
       ],
       "policyUrl": "https://smadex.com/end-user-privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "285": {
@@ -5611,6 +5796,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.freewheel.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "228": {
@@ -5633,6 +5819,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.primis.tech/privacy-policy/",
       "cookieMaxAgeSeconds": 1209600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "299": {
@@ -5672,6 +5859,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adclear.de/datenschutzerklaerung/",
       "cookieMaxAgeSeconds": 7948800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "277": {
@@ -5701,6 +5889,7 @@
       "specialFeatures": [],
       "policyUrl": "https://voluumdsp.com/end-user-privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "259": {
@@ -5729,6 +5918,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adyoulike.com/privacy_policy.php",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "289": {
@@ -5753,7 +5943,8 @@
         1
       ],
       "policyUrl": "https://www.mobalo.com/en/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "272": {
@@ -5786,7 +5977,40 @@
         1
       ],
       "policyUrl": "https://www.we-are-adot.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "230": {
+      "id": 230,
+      "name": "Steel House, Inc.",
+      "purposes": [
+        1
+      ],
+      "legIntPurposes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://steelhouse.com/privacy-policy/",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "253": {
@@ -5823,6 +6047,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "304": {
@@ -5854,6 +6079,7 @@
       ],
       "policyUrl": "https://s.on-device.com/privacyPolicy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "314": {
@@ -5885,6 +6111,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.kmtx.com/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://cdn.keymantics.com/.well-known/deviceStorage.json"
     },
@@ -5910,6 +6137,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.mainad.com/privacy-policy/",
       "cookieMaxAgeSeconds": 60,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "278": {
@@ -5930,7 +6158,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://integralads.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "295": {
@@ -5964,6 +6193,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sojern.com/privacy/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "315": {
@@ -5987,7 +6217,8 @@
         1
       ],
       "policyUrl": "https://www.celtra.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "165": {
@@ -6023,6 +6254,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 1209600,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "47": {
@@ -6044,6 +6276,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adman.gr/privacy",
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "134": {
@@ -6083,6 +6316,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "325": {
@@ -6124,6 +6358,7 @@
       ],
       "policyUrl": "https://www.knorex.com/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "316": {
@@ -6150,6 +6385,7 @@
       ],
       "policyUrl": "https://www.gamned.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "318": {
@@ -6182,6 +6418,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.instytut-pollster.pl/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "199": {
@@ -6205,6 +6442,7 @@
       ],
       "policyUrl": "https://www.adux.com/donnees-personelles/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "236": {
@@ -6238,6 +6476,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.powerlinks.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "294": {
@@ -6276,6 +6515,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "143": {
@@ -6299,6 +6539,7 @@
       "specialFeatures": [],
       "policyUrl": "https://connatix.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2600000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "297": {
@@ -6328,7 +6569,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://privacy.polar.me",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "319": {
@@ -6353,6 +6595,7 @@
       ],
       "policyUrl": "https://clipcentric.com/privacy.bhtml",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://clipcentric.com/.well-known/deviceStorage.json"
     },
@@ -6378,6 +6621,7 @@
       "specialFeatures": [],
       "policyUrl": "https://readpeak.com/privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "323": {
@@ -6410,6 +6654,7 @@
       ],
       "policyUrl": "https://www.goal.com/en-gb/legal/privacy-policy",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "119": {
@@ -6437,6 +6682,7 @@
       ],
       "policyUrl": "https://www.s4m.io/privacy-policy/",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "302": {
@@ -6468,6 +6714,7 @@
       ],
       "policyUrl": "https://mobpro.com/privacy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "212": {
@@ -6504,6 +6751,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.usemax.de/?l=privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "264": {
@@ -6532,6 +6780,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adobe.com/privacy/experience-cloud.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "44": {
@@ -6573,6 +6822,7 @@
       "specialFeatures": [],
       "policyUrl": "https://theadex.com/privacy-opt-out/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "282": {
@@ -6594,6 +6844,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.welect.de/datenschutz",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "238": {
@@ -6623,6 +6874,7 @@
       ],
       "policyUrl": "https://www.stackadapt.com/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "284": {
@@ -6662,8 +6914,9 @@
       "specialFeatures": [
         1
       ],
-      "policyUrl": "https://weborama.com/privacy_en/",
-      "cookieMaxAgeSeconds": 34128000,
+      "policyUrl": "https://weborama.com/respect-de-la-vie-privee-2-2/",
+      "cookieMaxAgeSeconds": 34300800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "148": {
@@ -6679,6 +6932,7 @@
       "specialFeatures": [],
       "policyUrl": "https://liveintent.com/services-privacy-policy/",
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "301": {
@@ -6695,15 +6949,7 @@
         10
       ],
       "legIntPurposes": [],
-      "flexiblePurposes": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        9,
-        10
-      ],
+      "flexiblePurposes": [],
       "specialPurposes": [],
       "features": [
         1,
@@ -6712,8 +6958,9 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://zeotap.com/privacy_policy",
-      "cookieMaxAgeSeconds": 1051200,
-      "usesNonCookieAccess": false
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
     },
     "275": {
       "id": 275,
@@ -6742,7 +6989,8 @@
         1
       ],
       "policyUrl": "https://static.tabmo.io.s3.amazonaws.com/privacy-policy/index.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "310": {
@@ -6774,6 +7022,7 @@
       ],
       "policyUrl": "https://www.adevinta.com/about/privacy/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "139": {
@@ -6813,6 +7062,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "262": {
@@ -6836,7 +7086,8 @@
         1
       ],
       "policyUrl": "https://www.fyber.com/legal/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "331": {
@@ -6876,6 +7127,7 @@
       ],
       "policyUrl": "https://www.ad6media.fr/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "345": {
@@ -6915,6 +7167,7 @@
       ],
       "policyUrl": "https://www.kantar.com/cookies-policies",
       "cookieMaxAgeSeconds": 78892380,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "308": {
@@ -6938,6 +7191,7 @@
       "specialFeatures": [],
       "policyUrl": "https://scoota.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "270": {
@@ -6953,6 +7207,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.marfeel.com/privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "333": {
@@ -6982,7 +7237,8 @@
         1
       ],
       "policyUrl": "https://www.inmobi.com/privacy-policy-for-eea",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "202": {
@@ -7028,6 +7284,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31556900,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "328": {
@@ -7054,6 +7311,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.gemius.com/cookie-policy.html",
       "cookieMaxAgeSeconds": 189216000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "281": {
@@ -7079,6 +7337,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.wizaly.com/terms-of-use#privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "354": {
@@ -7105,7 +7364,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://apester.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "359": {
@@ -7135,7 +7395,8 @@
         1
       ],
       "policyUrl": "https://www.inmobi.com/privacy-policy-for-eea",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "265": {
@@ -7167,7 +7428,8 @@
         1
       ],
       "policyUrl": "https://instinctive.io/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "349": {
@@ -7207,6 +7469,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.optomaton.com/privacy.html",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "266": {
@@ -7234,6 +7497,7 @@
       "specialFeatures": [],
       "policyUrl": "https://letsrebold.com/es/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "303": {
@@ -7253,7 +7517,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://static.orion-semantics.com/privacy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "261": {
@@ -7282,6 +7547,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.signal.co/privacy-policy/",
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "83": {
@@ -7304,7 +7570,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://primo.design/docs/PrivacyPolicyPrimo.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "343": {
@@ -7348,6 +7615,7 @@
       ],
       "policyUrl": "https://www.ultimedia.com/POLICY.html",
       "cookieMaxAgeSeconds": 34300800,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "231": {
@@ -7381,6 +7649,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "216": {
@@ -7408,6 +7677,7 @@
       "specialFeatures": [],
       "policyUrl": "https://mindlytix.com/privacy/",
       "cookieMaxAgeSeconds": 5356800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "360": {
@@ -7438,6 +7708,7 @@
       "specialFeatures": [],
       "policyUrl": "https://permutive.com/privacy/",
       "cookieMaxAgeSeconds": 94608000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "361": {
@@ -7468,6 +7739,7 @@
       "specialFeatures": [],
       "policyUrl": "https://permutive.com/privacy/",
       "cookieMaxAgeSeconds": 94608000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "311": {
@@ -7496,7 +7768,8 @@
         1
       ],
       "policyUrl": "https://www.mobfox.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": 1209600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "358": {
@@ -7528,6 +7801,7 @@
       ],
       "policyUrl": "https://www.mgid.com/privacy-policy",
       "cookieMaxAgeSeconds": 2147483646,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "152": {
@@ -7550,6 +7824,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.meetrics.com/en/data-privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "251": {
@@ -7580,6 +7855,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.yieldlove.com/cookie-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "371": {
@@ -7614,6 +7890,7 @@
       ],
       "policyUrl": "https://seeding-alliance.de/datenschutz/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "347": {
@@ -7645,6 +7922,7 @@
       ],
       "policyUrl": "https://www.ezoic.com/terms/",
       "cookieMaxAgeSeconds": 220752000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "218": {
@@ -7675,7 +7953,8 @@
         1
       ],
       "policyUrl": "https://www.bigabid.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "350": {
@@ -7719,6 +7998,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "351": {
@@ -7762,6 +8042,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "380": {
@@ -7786,6 +8067,7 @@
       "specialFeatures": [],
       "policyUrl": "https://vidoomy.com/privacy-policy.html",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "378": {
@@ -7803,6 +8085,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.communicationads.net/aboutus/privacy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "184": {
@@ -7837,6 +8120,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.mediarithmics.com/en-us/content/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "368": {
@@ -7865,7 +8149,8 @@
         1
       ],
       "policyUrl": "https://www.vectaury.io/en/personal-data",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "373": {
@@ -7897,6 +8182,7 @@
       ],
       "policyUrl": "https://www.nielsen.com/us/en/legal/privacy-statement/nielsen-marketing-cloud-privacy-notice/",
       "cookieMaxAgeSeconds": 10368000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "388": {
@@ -7928,6 +8214,7 @@
       ],
       "policyUrl": "https://numberly.com/en/privacy/",
       "cookieMaxAgeSeconds": 34187400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "250": {
@@ -7953,6 +8240,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.brandwatch.com/legal/qriously-privacy-notice/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "223": {
@@ -7975,7 +8263,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://atp.io/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "384": {
@@ -8000,7 +8289,8 @@
         2
       ],
       "policyUrl": "https://pixalate.com/privacypolicy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "387": {
@@ -8020,7 +8310,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://appreciate.mobi/page.html#/end-user-privacy-policy",
-      "cookieMaxAgeSeconds": 0,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "312": {
@@ -8050,6 +8341,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "178": {
@@ -8081,13 +8373,21 @@
       "specialFeatures": [],
       "policyUrl": "https://hybridtheory.com/privacy-policy/",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "377": {
       "id": 377,
       "name": "AddApptr GmbH",
       "purposes": [
-        1
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
       ],
       "legIntPurposes": [
         7,
@@ -8101,12 +8401,18 @@
         1,
         2
       ],
-      "features": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
       "specialFeatures": [
-        1
+        1,
+        2
       ],
       "policyUrl": "https://www.addapptr.com/data-privacy",
-      "cookieMaxAgeSeconds": 0,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": true
     },
     "382": {
@@ -8148,6 +8454,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "206": {
@@ -8179,6 +8486,7 @@
       ],
       "policyUrl": "https://hybrid.ai/data_protection_policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://st.hybrid.ai/policy/deviceStorage.json"
     },
@@ -8204,6 +8512,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "242": {
@@ -8237,6 +8546,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 432000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "402": {
@@ -8260,6 +8570,7 @@
       "specialFeatures": [],
       "policyUrl": "https://inter.effiliation.com/politique-confidentialite.html",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "413": {
@@ -8288,6 +8599,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.eulerian.com/en/privacy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "415": {
@@ -8302,7 +8614,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://seenthis.co/privacy-notice-2018-04-18.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "263": {
@@ -8329,6 +8642,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nativo.com/interest-based-ads",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "329": {
@@ -8349,6 +8663,7 @@
       "specialFeatures": [],
       "policyUrl": "https://gobrowsi.com/browsi-privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "337": {
@@ -8375,7 +8690,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.shemedia.com/ad-services-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "422": {
@@ -8395,6 +8711,7 @@
       "specialFeatures": [],
       "policyUrl": "https://collector.brandmetrics.com/brandmetrics_privacypolicy.pdf",
       "cookieMaxAgeSeconds": 33350400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "394": {
@@ -8418,7 +8735,8 @@
         2,
         7,
         8,
-        9
+        9,
+        10
       ],
       "specialPurposes": [
         1,
@@ -8431,6 +8749,7 @@
       "specialFeatures": [],
       "policyUrl": "https://privacy.audienceproject.com",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "243": {
@@ -8464,6 +8783,7 @@
       ],
       "policyUrl": "https://www.cloudtechnologies.pl/en/internet-advertising-privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "416": {
@@ -8491,6 +8811,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.commandersact.com/en/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "434": {
@@ -8499,15 +8820,14 @@
       "purposes": [
         1,
         2,
+        3,
         4,
         7
       ],
-      "legIntPurposes": [
-        3,
-        6,
-        8
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        3
       ],
-      "flexiblePurposes": [],
       "specialPurposes": [
         1,
         2
@@ -8516,11 +8836,10 @@
         1,
         3
       ],
-      "specialFeatures": [
-        1
-      ],
+      "specialFeatures": [],
       "policyUrl": "https://eu.dynadmic.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "435": {
@@ -8548,7 +8867,8 @@
         2
       ],
       "policyUrl": "https://www.singlespot.com/privacy_policy?locale=fr",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "409": {
@@ -8577,7 +8897,8 @@
       ],
       "policyUrl": "https://www.arrivalist.com/privacy",
       "deletedDate": "2020-08-18T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "321": {
@@ -8613,6 +8934,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ziffdavis.com/privacy-policy",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "436": {
@@ -8650,6 +8972,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.invibes.com/terms",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "418": {
@@ -8657,29 +8980,35 @@
       "name": "PROXISTORE",
       "purposes": [
         1,
-        2,
         4,
         7,
         9,
         10
       ],
-      "legIntPurposes": [],
-      "flexiblePurposes": [],
-      "specialPurposes": [],
-      "features": [
+      "legIntPurposes": [
         2
       ],
-      "specialFeatures": [
+      "flexiblePurposes": [],
+      "specialPurposes": [
         1,
         2
       ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
       "policyUrl": "https://www.proxistore.com/common/en/cgv",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "429": {
       "id": 429,
-      "name": "Signals (Next14 Group)",
+      "name": "Next Media",
       "purposes": [
         1,
         2,
@@ -8704,8 +9033,9 @@
         1,
         2
       ],
-      "policyUrl": "https://get.next14.com/docs/platform_privacy_policy_SIGNALS_it.html",
+      "policyUrl": "https://next14.com/media/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "335": {
@@ -8743,6 +9073,7 @@
       ],
       "policyUrl": "https://beachfront.com/privacy-policy/",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "427": {
@@ -8771,6 +9102,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "374": {
@@ -8811,6 +9143,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bmind.es/legal-notice/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "438": {
@@ -8842,6 +9175,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.invidi.com/wp-content/uploads/2020/02/ad-tech-services-privacy-policy.pdf",
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "450": {
@@ -8878,6 +9212,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://support.neodatagroup.com/deviceStorage.json"
     },
@@ -8910,6 +9245,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.innovid.com/privacy-policy",
       "cookieMaxAgeSeconds": 7884000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "444": {
@@ -8942,7 +9278,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://ex.co/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "412": {
@@ -8983,6 +9320,7 @@
       ],
       "policyUrl": "https://www.cxense.com/about-us/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "455": {
@@ -9017,7 +9355,8 @@
         1
       ],
       "policyUrl": "https://fiksu.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "298": {
@@ -9048,6 +9387,7 @@
       ],
       "policyUrl": "https://privacy.cuebiq.com",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "423": {
@@ -9077,7 +9417,9 @@
       ],
       "policyUrl": "https://travelaudience.com/product-privacy-policy/",
       "cookieMaxAgeSeconds": 34300800,
-      "usesNonCookieAccess": false
+      "usesCookies": true,
+      "usesNonCookieAccess": false,
+      "deviceStorageDisclosureUrl": "http://ads.travelaudience.com/deviceStorage.json"
     },
     "397": {
       "id": 397,
@@ -9103,11 +9445,12 @@
         3
       ],
       "specialFeatures": [],
-      "policyUrl": "demandbase.com/privacy-policy/",
+      "policyUrl": "https://www.demandbase.com/privacy-policy/",
       "overflow": {
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "381": {
@@ -9134,6 +9477,7 @@
       ],
       "policyUrl": "https://frontend.adhslx.com/privacy.html?",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "365": {
@@ -9156,6 +9500,7 @@
       ],
       "policyUrl": "https://impact.com/privacy-policy/",
       "cookieMaxAgeSeconds": 62208000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "447": {
@@ -9177,7 +9522,8 @@
         1
       ],
       "policyUrl": "https://adludio.com/privacypolicy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "410": {
@@ -9201,6 +9547,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adtelligent.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2678000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "137": {
@@ -9236,8 +9583,9 @@
       "specialFeatures": [
         1
       ],
-      "policyUrl": "https://www.stroeer.de/fileadmin/de/Konvergenz_und_Konzepte/Daten_und_Technologien/Stroeer_SSP/Downloads/Datenschutz_Stroeer_SSP.pdf",
+      "policyUrl": "https://www.stroeer.de/konvergenz-konzepte/daten-technologien/stroeer-ssp/datenschutz-ssp.html",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://www.stroeer.com/fileadmin/com/StroeerDSP_deviceStorage.json"
     },
@@ -9271,7 +9619,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.bidstack.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "466": {
@@ -9290,6 +9639,7 @@
       "specialFeatures": [],
       "policyUrl": "https://tacticrealtime.com/privacy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "431": {
@@ -9314,7 +9664,8 @@
         2
       ],
       "policyUrl": "https://www.whiteops.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "336": {
@@ -9342,7 +9693,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "469": {
@@ -9380,6 +9732,7 @@
       ],
       "policyUrl": "https://zetaglobal.com/privacy-policy/",
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "440": {
@@ -9408,7 +9761,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.definemedia.de/datenschutz-conative/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "375": {
@@ -9437,6 +9791,7 @@
       ],
       "policyUrl": "https://revx.io/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "196": {
@@ -9468,6 +9823,7 @@
       ],
       "policyUrl": "http://adelement.com/privacy-policy.html",
       "cookieMaxAgeSeconds": 30456000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "475": {
@@ -9499,7 +9855,8 @@
         1
       ],
       "policyUrl": "https://www.taptapnetworks.com/privacy_policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "448": {
@@ -9538,7 +9895,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "428": {
@@ -9566,6 +9924,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ibillboard.com/en/privacy-information/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "461": {
@@ -9606,6 +9965,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.b2bmg.com/en/data-privacy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "486": {
@@ -9624,6 +9984,7 @@
       "specialFeatures": [],
       "policyUrl": "https://delivered-by-madington.com/dat-privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "468": {
@@ -9651,6 +10012,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.home.neustar/privacy",
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "458": {
@@ -9683,7 +10045,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.adcolony.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "293": {
@@ -9714,6 +10077,7 @@
       ],
       "policyUrl": "https://springserve.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31449600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "484": {
@@ -9731,7 +10095,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://adledge.com/data-privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "493": {
@@ -9767,6 +10132,7 @@
       ],
       "policyUrl": "https://carbonrmp.com/privacy.html",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "495": {
@@ -9797,6 +10163,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "496": {
@@ -9820,6 +10187,7 @@
       "specialFeatures": [],
       "policyUrl": "https://wordads.co/privacy-info/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "424": {
@@ -9837,7 +10205,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.kupona.de/dsgvo/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "408": {
@@ -9858,7 +10227,8 @@
       "specialFeatures": [],
       "policyUrl": "https://fidelity-media.com/privacy-policy/",
       "deletedDate": "2020-08-25T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "473": {
@@ -9895,6 +10265,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sub2tech.com/privacy-policy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "467": {
@@ -9917,6 +10288,7 @@
       "specialFeatures": [],
       "policyUrl": "https://haensel-ams.com/data-privacy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "488": {
@@ -9945,6 +10317,7 @@
       "specialFeatures": [],
       "policyUrl": "https://opinary.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "490": {
@@ -9976,6 +10349,7 @@
       "specialFeatures": [],
       "policyUrl": "https://playground.xyz/privacy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "491": {
@@ -10000,6 +10374,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.shinystat.com/it/informativa_privacy_generale.html",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "502": {
@@ -10024,6 +10399,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 60,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "508": {
@@ -10052,6 +10428,7 @@
       "specialFeatures": [],
       "policyUrl": "https://luc.id/privacy-policy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "512": {
@@ -10078,6 +10455,7 @@
       ],
       "policyUrl": "https://pubnative.net/privacy-notice/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "471": {
@@ -10098,6 +10476,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.flexoffers.com/privacy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "516": {
@@ -10122,6 +10501,7 @@
       "specialFeatures": [],
       "policyUrl": "https://pexi.nl/privacy-policy/",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "507": {
@@ -10165,6 +10545,7 @@
       ],
       "policyUrl": "https://www.adswizz.com/our-privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "482": {
@@ -10205,7 +10586,8 @@
         1
       ],
       "policyUrl": "https://ubermedia.com/summary-of-privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "505": {
@@ -10224,7 +10606,8 @@
         1
       ],
       "policyUrl": "https://www.shortlyst.com/eu/privacy_terms.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "517": {
@@ -10251,6 +10634,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.sunmedia.tv/en/cookies",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "511": {
@@ -10285,6 +10669,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "479": {
@@ -10319,6 +10704,7 @@
       ],
       "policyUrl": "https://www.infiniamobile.com/privacy_policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "509": {
@@ -10338,6 +10724,7 @@
       "specialFeatures": [],
       "policyUrl": "https://ad-tech-group.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "521": {
@@ -10356,6 +10743,7 @@
       ],
       "policyUrl": "https://www.netzeffekt.de/en/imprint",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "520": {
@@ -10372,6 +10760,7 @@
       "policyUrl": "https://www.channelsight.com/privacypolicy/",
       "deletedDate": "2020-10-01T00:00:00Z",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "524": {
@@ -10398,7 +10787,8 @@
         1
       ],
       "policyUrl": "https://ozoneproject.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "528": {
@@ -10425,7 +10815,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://kayzen.io/data-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "527": {
@@ -10445,7 +10836,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://jampp.com/privacy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "506": {
@@ -10470,6 +10862,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.salesforce.com/company/privacy/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "535": {
@@ -10499,6 +10892,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.innity.com/privacy-policy.php",
       "cookieMaxAgeSeconds": 62208000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "530": {
@@ -10538,7 +10932,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "539": {
@@ -10569,6 +10964,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.addefend.com/en/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "501": {
@@ -10592,6 +10988,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.alliancegravity.com/politiquedeprotectiondesdonneespersonnelles",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "519": {
@@ -10615,7 +11012,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://studio.nws.ai/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "531": {
@@ -10644,6 +11042,7 @@
       ],
       "policyUrl": "https://rgpd-smartclip.com/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://cdn.smartclip-services.com/.well-known/deviceStorage.json"
     },
@@ -10667,6 +11066,7 @@
       "specialFeatures": [],
       "policyUrl": "https://legal.trendstream.net/non-panellist_privacy_policy",
       "cookieMaxAgeSeconds": 31622400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "544": {
@@ -10688,7 +11088,8 @@
         2
       ],
       "policyUrl": "https://www.kochava.com/support-privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "543": {
@@ -10720,6 +11121,7 @@
       ],
       "policyUrl": "https://www.makethunder.com/privacy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "334": {
@@ -10742,7 +11144,8 @@
       ],
       "policyUrl": "https://www.videmob.com/privacy.html",
       "deletedDate": "2020-11-30T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "547": {
@@ -10765,6 +11168,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.videoreach.com/about/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "546": {
@@ -10791,6 +11195,7 @@
       ],
       "policyUrl": "https://okube-attribution.com/politique-de-confidentialite/",
       "cookieMaxAgeSeconds": 34187400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "541": {
@@ -10830,6 +11235,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "545": {
@@ -10855,7 +11261,8 @@
         2
       ],
       "policyUrl": "https://reignn.com/user-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "439": {
@@ -10877,7 +11284,8 @@
       ],
       "policyUrl": "https://www.rippll.com/privacy",
       "deletedDate": "2020-12-21T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "553": {
@@ -10906,6 +11314,7 @@
       ],
       "policyUrl": "https://adhese.com/privacy-and-cookie-policy",
       "cookieMaxAgeSeconds": 30,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "556": {
@@ -10932,6 +11341,7 @@
       ],
       "policyUrl": "https://v3.adhood.com/en/site/politikavekurallar/gizlilik.php?lang=en",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "550": {
@@ -10950,7 +11360,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.iubenda.com/privacy-policy/93308573/full-legal",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "554": {
@@ -10980,7 +11391,8 @@
         2
       ],
       "policyUrl": "https://www.rms.de/datenschutz/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": true
     },
     "498": {
@@ -11017,7 +11429,8 @@
         1
       ],
       "policyUrl": "https://drbanner.com/privacypolicy_en/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "565": {
@@ -11036,6 +11449,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adobe.com/privacy/policy.html",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "571": {
@@ -11070,11 +11484,12 @@
       "specialFeatures": [],
       "policyUrl": "https://viewpay.tv/mentions-legales/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "568": {
       "id": 568,
-      "name": "Jointag (Next14 Group)",
+      "name": "Next Media SRL",
       "purposes": [
         1,
         2,
@@ -11083,21 +11498,26 @@
         5,
         6,
         7,
-        8
+        8,
+        9,
+        10
       ],
       "legIntPurposes": [],
       "flexiblePurposes": [],
       "specialPurposes": [],
       "features": [
+        1,
+        2,
         3
       ],
       "specialFeatures": [
         1,
         2
       ],
-      "policyUrl": "https://www.jointag.com/privacy/kariboo/publisher/third/",
-      "cookieMaxAgeSeconds": -100,
-      "usesNonCookieAccess": false
+      "policyUrl": "https://next14.com/media/privacy",
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
     },
     "570": {
       "id": 570,
@@ -11138,6 +11558,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.cpex.cz/pro-uzivatele/ochrana-soukromi/",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "559": {
@@ -11170,6 +11591,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.otto.de/shoppages/service/datenschutz",
       "cookieMaxAgeSeconds": 315446400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "569": {
@@ -11197,7 +11619,8 @@
         1
       ],
       "policyUrl": "https://www.kairosfire.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "577": {
@@ -11235,6 +11658,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.pg.com/privacy/english/privacy_statement.shtml",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "590": {
@@ -11250,7 +11674,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.sourcepoint.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "587": {
@@ -11279,7 +11704,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.localsensor.com/privacy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "578": {
@@ -11305,6 +11731,7 @@
       "policyUrl": "https://www.mairdumont-netletix.com/wer-wir-sind/datenschutzerklaerung/",
       "deletedDate": "2021-02-03T00:00:00Z",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "580": {
@@ -11343,7 +11770,8 @@
         1
       ],
       "policyUrl": "https://goldbach.com/ch/de/datenschutz",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "593": {
@@ -11382,6 +11810,7 @@
       "specialFeatures": [],
       "policyUrl": "https://datmean.com/politica-privacidad/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "574": {
@@ -11405,7 +11834,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://realview.realeyesit.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "581": {
@@ -11437,7 +11867,8 @@
         1
       ],
       "policyUrl": "https://www.mobilewalla.com/business-services-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "598": {
@@ -11462,6 +11893,7 @@
       ],
       "policyUrl": "https://www.audio-cc.com/audiocc_privacy_policy.pdf",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "596": {
@@ -11494,7 +11926,8 @@
         1
       ],
       "policyUrl": "https://www.insurads.com/privacy.html",
-      "cookieMaxAgeSeconds": 86400,
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "549": {
@@ -11517,7 +11950,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://corp.bandsintown.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "597": {
@@ -11534,6 +11968,7 @@
       "specialFeatures": [],
       "policyUrl": "https://betterbanners.com/en/privacy",
       "cookieMaxAgeSeconds": 600000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "584": {
@@ -11560,6 +11995,7 @@
       ],
       "policyUrl": "https://dynamic-tracking.com/Datenschutz.aspx",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "601": {
@@ -11577,7 +12013,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://privacy.webads.eu/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "599": {
@@ -11598,6 +12035,7 @@
       ],
       "policyUrl": "https://maximusx.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "606": {
@@ -11634,6 +12072,7 @@
       "specialFeatures": [],
       "policyUrl": "https://impactify.io/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "602": {
@@ -11676,6 +12115,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "612": {
@@ -11695,7 +12135,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.adnami.io/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "591": {
@@ -11715,7 +12156,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://consumable.com/privacy-policy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "614": {
@@ -11747,6 +12189,7 @@
       ],
       "policyUrl": "https://www.mrpfd.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "615": {
@@ -11766,6 +12209,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adsolutions.com/privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "607": {
@@ -11798,6 +12242,7 @@
       ],
       "policyUrl": "https://www.ucfunnel.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "609": {
@@ -11834,7 +12279,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "617": {
@@ -11855,6 +12301,7 @@
       ],
       "policyUrl": "https://adagio.io/privacy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "620": {
@@ -11897,7 +12344,8 @@
         1
       ],
       "policyUrl": "https://www.getblue.io/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "610": {
@@ -11937,7 +12385,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "621": {
@@ -11969,6 +12418,7 @@
       ],
       "policyUrl": "https://www.seznam.cz/ochranaudaju",
       "cookieMaxAgeSeconds": 31556926,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "624": {
@@ -11989,6 +12439,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.norstatpanel.com/en/data-protection",
       "cookieMaxAgeSeconds": 63113904,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "95": {
@@ -12019,6 +12470,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.lotame.com/about-lotame/privacy/lotame-corporate-websites-privacy-policy/",
       "cookieMaxAgeSeconds": 23652000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "618": {
@@ -12044,6 +12496,7 @@
       ],
       "policyUrl": "https://www.beintoo.com/privacy-cookie-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "625": {
@@ -12065,6 +12518,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.maximiles.com/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "628": {
@@ -12092,6 +12546,7 @@
       ],
       "policyUrl": "https://www.tappx.com/en/privacy-policy/",
       "cookieMaxAgeSeconds": 10800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "630": {
@@ -12124,6 +12579,7 @@
       "specialFeatures": [],
       "policyUrl": "https://contactimpact.de/privacy",
       "cookieMaxAgeSeconds": 43200000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "626": {
@@ -12143,6 +12599,7 @@
       ],
       "policyUrl": "https://hivestack.com/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "631": {
@@ -12169,6 +12626,7 @@
       "specialFeatures": [],
       "policyUrl": "https://relay42.com/privacy",
       "cookieMaxAgeSeconds": 63113851,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "638": {
@@ -12186,7 +12644,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://passendo.com/users-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "644": {
@@ -12220,6 +12679,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.gamoshi.com/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "639": {
@@ -12246,6 +12706,7 @@
       ],
       "policyUrl": "https://www.smilewanted.com/privacy.php",
       "cookieMaxAgeSeconds": 7884000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "579": {
@@ -12285,6 +12746,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.optomaton.com/privacy.html",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "645": {
@@ -12317,6 +12779,7 @@
       ],
       "policyUrl": "https://www.finect.com/terminos-legales/politica-de-cookies",
       "cookieMaxAgeSeconds": 63115200,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "653": {
@@ -12337,7 +12800,8 @@
       "specialFeatures": [],
       "policyUrl": "https://smartmeapp.com/info/smartme/aviso_legal.php",
       "deletedDate": "2020-07-03T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "613": {
@@ -12362,6 +12826,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adserve.zone/adserveprivacypolicy.html",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "573": {
@@ -12378,6 +12843,7 @@
         6,
         7,
         8,
+        9,
         10
       ],
       "flexiblePurposes": [],
@@ -12394,6 +12860,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 33696000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "652": {
@@ -12424,6 +12891,7 @@
       ],
       "policyUrl": "https://www.skaze.fr/rgpd/",
       "cookieMaxAgeSeconds": 31557600,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "646": {
@@ -12441,6 +12909,7 @@
       "specialFeatures": [],
       "policyUrl": "https://notify-group.com/en/mentions-legales/",
       "cookieMaxAgeSeconds": 34164060,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "648": {
@@ -12472,7 +12941,8 @@
       ],
       "policyUrl": "https://www.truedata.co/privacy-policy/",
       "deletedDate": "2020-09-02T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "647": {
@@ -12503,6 +12973,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adup-tech.com/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "654": {
@@ -12530,6 +13001,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.graphinium.com/privacy/",
       "cookieMaxAgeSeconds": 25920000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "659": {
@@ -12551,6 +13023,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www2.rampanel.com/privacy-policy/",
       "cookieMaxAgeSeconds": 32000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "656": {
@@ -12579,6 +13052,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.contentignite.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "657": {
@@ -12608,6 +13082,7 @@
       ],
       "policyUrl": "https://www.gsi-one.org/de/privacy-policy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "655": {
@@ -12646,6 +13121,7 @@
       ],
       "policyUrl": "https://www.sportradar.com/about-us/privacy/",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "662": {
@@ -12673,6 +13149,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "665": {
@@ -12708,7 +13185,8 @@
         1
       ],
       "policyUrl": "https://www.digitaleast.mobi/en/legal/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "650": {
@@ -12737,6 +13215,7 @@
       ],
       "policyUrl": "https://www.cognitivemarketing.tid.es/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "666": {
@@ -12767,6 +13246,7 @@
       "specialFeatures": [],
       "policyUrl": "https://beop.io/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://beop.io/deviceStorage.json"
     },
@@ -12791,13 +13271,15 @@
         2
       ],
       "features": [
-        1
+        1,
+        2
       ],
       "specialFeatures": [
         1
       ],
       "policyUrl": "https://www.mobsuccess.com/en/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://www.mobsuccess.com/deviceStorage.json"
     },
@@ -12833,6 +13315,7 @@
       ],
       "policyUrl": "https://bliink.io/privacy-policy",
       "cookieMaxAgeSeconds": 34186669,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "667": {
@@ -12872,7 +13355,8 @@
         1
       ],
       "policyUrl": "https://liftoff.io/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "668": {
@@ -12901,7 +13385,8 @@
         2
       ],
       "policyUrl": "https://www.whatrocks.co/en/privacy-policy ",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "670": {
@@ -12926,6 +13411,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adsbynimbus.com/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "674": {
@@ -12948,7 +13434,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.durationmedia.net/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "675": {
@@ -12972,7 +13459,8 @@
       "specialFeatures": [],
       "policyUrl": "https://instreamatic.com/privacy-policy/",
       "deletedDate": "2020-10-20T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "676": {
@@ -13005,6 +13493,7 @@
       ],
       "policyUrl": "https://www.businessclick.com/documents/RegulaminProgramuBusinessClick-2019.pdf",
       "cookieMaxAgeSeconds": 94670777,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "672": {
@@ -13021,6 +13510,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.cedato.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "664": {
@@ -13049,6 +13539,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.admarketplace.com/privacy-policy/",
       "cookieMaxAgeSeconds": 5270400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "671": {
@@ -13080,6 +13571,7 @@
       "specialFeatures": [],
       "policyUrl": "https://casino.mindthebet.co.uk/themes/mindthebetv2-casino/privacy.php",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "561": {
@@ -13102,6 +13594,7 @@
       "specialFeatures": [],
       "policyUrl": "https://audigent.com/platform-privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "682": {
@@ -13134,6 +13627,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "684": {
@@ -13152,7 +13646,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.bluebillywig.com/privacy-statement/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "686": {
@@ -13181,6 +13676,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.themediagrid.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "685": {
@@ -13212,6 +13708,7 @@
       ],
       "policyUrl": "https://arkeero.com/privacy-2/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "687": {
@@ -13239,6 +13736,7 @@
       "specialFeatures": [],
       "policyUrl": "https://missena.com/confidentialite/",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "690": {
@@ -13259,6 +13757,7 @@
       ],
       "policyUrl": "https://go.pl/polityka-prywatnosci/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "691": {
@@ -13281,7 +13780,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.lifesight.io/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "697": {
@@ -13305,6 +13805,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.adways.com/confidentialite/?lang=en",
       "cookieMaxAgeSeconds": 31556926,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "699": {
@@ -13329,7 +13830,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.hypertvx.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "703": {
@@ -13354,6 +13856,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.mindtake.com/en/reppublika-privacy-policy",
       "cookieMaxAgeSeconds": 8035200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "706": {
@@ -13374,6 +13877,7 @@
       ],
       "policyUrl": "https://vrtcal.com/docs/PrivacyPolicy-Advertising.pdf",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "681": {
@@ -13394,6 +13898,7 @@
       ],
       "policyUrl": "https://www.mytraffic.io/en/privacy",
       "cookieMaxAgeSeconds": 9198000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "649": {
@@ -13412,6 +13917,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adality.de/en/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "711": {
@@ -13437,7 +13943,8 @@
         1
       ],
       "policyUrl": "https://www.situ8ed.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "712": {
@@ -13472,6 +13979,7 @@
       ],
       "policyUrl": "https://byinspired.com/privacypolicy.pdf",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "688": {
@@ -13491,6 +13999,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "702": {
@@ -13518,6 +14027,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.kwanko.com/fr/rgpd/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "715": {
@@ -13548,6 +14058,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bidberrymedia.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "714": {
@@ -13568,7 +14079,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "713": {
@@ -13598,6 +14110,7 @@
       "specialFeatures": [],
       "policyUrl": "https://dataseat.com/privacy-policy",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "716": {
@@ -13631,6 +14144,7 @@
       ],
       "policyUrl": "https://www.onaudience.com/internet-advertising-privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "708": {
@@ -13672,7 +14186,8 @@
       ],
       "policyUrl": "https://dugout.com/privacy-policy",
       "deletedDate": "2019-11-02T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "694": {
@@ -13705,7 +14220,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "717": {
@@ -13733,6 +14249,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.en.audiencenetwork.pl/internet-advertising-privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "718": {
@@ -13763,6 +14280,7 @@
       ],
       "policyUrl": "https://appconsent.io/en/privacy-policy",
       "cookieMaxAgeSeconds": 12,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "683": {
@@ -13785,7 +14303,8 @@
         1
       ],
       "policyUrl": "https://cookie.market/privacyPolicy.php",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "720": {
@@ -13818,6 +14337,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 189302400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "678": {
@@ -13847,7 +14367,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "719": {
@@ -13877,6 +14398,7 @@
       ],
       "policyUrl": "https://www.oan.pl/en/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "707": {
@@ -13906,7 +14428,8 @@
         2
       ],
       "policyUrl": "https://www.dentsuaegisnetwork.com/it/it/policies/info-cookie",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "721": {
@@ -13943,6 +14466,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.engageya.com/privacy",
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "724": {
@@ -13963,6 +14487,29 @@
       "specialFeatures": [],
       "policyUrl": "https://en.betweenx.com/pdata.pdf",
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "726": {
+      "id": 726,
+      "name": "YouGov",
+      "purposes": [
+        1,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://yougov.co.uk/about/terms-combined/#/privacy",
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "728": {
@@ -14005,6 +14552,7 @@
       ],
       "policyUrl": "https://www.appier.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "729": {
@@ -14023,7 +14571,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://cav.ai/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "730": {
@@ -14041,6 +14590,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.infonline.de/en/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "722": {
@@ -14060,7 +14610,8 @@
       "specialFeatures": [],
       "policyUrl": "https://www.agof.de/datenschutz/",
       "deletedDate": "2020-09-14T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "723": {
@@ -14085,7 +14636,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "725": {
@@ -14121,6 +14673,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 315360000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "733": {
@@ -14146,7 +14699,8 @@
         1
       ],
       "policyUrl": "https://anzu.io/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "737": {
@@ -14164,6 +14718,7 @@
       "specialFeatures": [],
       "policyUrl": "https://appmonet.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2678400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "740": {
@@ -14202,6 +14757,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "744": {
@@ -14237,6 +14793,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 2600000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "731": {
@@ -14258,6 +14815,7 @@
       "specialFeatures": [],
       "policyUrl": "https://geistm.com/en/legal/privacy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "741": {
@@ -14282,7 +14840,9 @@
         2
       ],
       "policyUrl": "https://www.wearebrandadvance.com/website-privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "deletedDate": "2021-03-01T00:00:00Z",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "735": {
@@ -14301,6 +14861,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.deutschepost.de/de/c/consentric/datenschutz.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "734": {
@@ -14321,6 +14882,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.cint.com/participant-privacy-notice",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "709": {
@@ -14359,7 +14921,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.ncaudienceexchange.com/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "739": {
@@ -14385,12 +14948,13 @@
         1
       ],
       "policyUrl": "https://blingby.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "727": {
       "id": 727,
-      "name": "Pinpoll GmbH (Private Limited)",
+      "name": "Pinpoll GmbH",
       "purposes": [
         1,
         2,
@@ -14415,6 +14979,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.pinpoll.com/#data_protection_declaration",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "732": {
@@ -14441,6 +15006,7 @@
       "specialFeatures": [],
       "policyUrl": "https://reg.tiscali.cz/privacy-policy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "736": {
@@ -14474,6 +15040,7 @@
       ],
       "policyUrl": "https://explorestack.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "738": {
@@ -14509,6 +15076,7 @@
       ],
       "policyUrl": "https://www.adbility-media.com/datenschutzerklaerung/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "742": {
@@ -14528,6 +15096,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.audiencerate.com/privacy/",
       "cookieMaxAgeSeconds": 1296000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "743": {
@@ -14556,10 +15125,12 @@
         1
       ],
       "policyUrl": "https://moviads.pl/polityka-prywatnosci/",
+      "deletedDate": "2021-03-22T00:00:00Z",
       "overflow": {
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "745": {
@@ -14588,7 +15159,8 @@
         1
       ],
       "policyUrl": "https://www.justtag.com/pdf/PRIVACY_POLICY_Koalametrics_english.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "746": {
@@ -14612,6 +15184,7 @@
       ],
       "policyUrl": "https://adxperience.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "747": {
@@ -14652,6 +15225,7 @@
       ],
       "policyUrl": "https://kairion.de/datenschutzbestimmungen/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "748": {
@@ -14688,6 +15262,7 @@
       ],
       "policyUrl": "https://www.audiomob.io/privacy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "749": {
@@ -14721,6 +15296,7 @@
       "specialFeatures": [],
       "policyUrl": "https://doc.good-loop.com/policy/privacy-policy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "750": {
@@ -14767,7 +15343,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "751": {
@@ -14789,7 +15366,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://kiosked.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "753": {
@@ -14823,6 +15401,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.scalemonk.com/privacy-policy/index.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "754": {
@@ -14849,6 +15428,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "756": {
@@ -14893,6 +15473,7 @@
       ],
       "policyUrl": "https://www.fandom.com/privacy-policy",
       "cookieMaxAgeSeconds": 15780000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "757": {
@@ -14916,7 +15497,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://meazy.co/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "758": {
@@ -14939,6 +15521,7 @@
       "specialFeatures": [],
       "policyUrl": "https://help.sensic.net/privacypolicy_en.html",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "759": {
@@ -14968,6 +15551,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31449000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "760": {
@@ -15001,6 +15585,7 @@
       ],
       "policyUrl": "https://onedash.com/privacy-policy.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "761": {
@@ -15022,7 +15607,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://digiseg.io/privacy-center/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "762": {
@@ -15048,7 +15634,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.protected.media/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "763": {
@@ -15083,6 +15670,7 @@
       ],
       "policyUrl": "https://www.delidatax.net/privacy.htm",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "764": {
@@ -15105,7 +15693,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://golucidity.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "765": {
@@ -15131,7 +15720,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://kervit.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "766": {
@@ -15152,6 +15742,7 @@
       ],
       "policyUrl": "https://www.adcell.de/agb#sector_6",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "767": {
@@ -15182,6 +15773,7 @@
       ],
       "policyUrl": "https://clinch.co/privacy-policy",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "768": {
@@ -15213,6 +15805,7 @@
       ],
       "policyUrl": "https://global.com/privacy-policy/",
       "cookieMaxAgeSeconds": 46657000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "769": {
@@ -15228,7 +15821,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.mediametrie.fr/fr/gestion-des-cookies",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "770": {
@@ -15266,6 +15860,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.marketperf.com/assets/images/app/marketperf/pdf/privacy-policy.pdf",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "771": {
@@ -15285,6 +15880,7 @@
       "specialFeatures": [],
       "policyUrl": "https://bam-interactive.de/privacy-policy/",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "772": {
@@ -15299,7 +15895,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.oracle.com/legal/privacy/services-privacy-policy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "773": {
@@ -15325,6 +15922,7 @@
       ],
       "policyUrl": "https://www.clickonometrics.com/optout/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "774": {
@@ -15349,6 +15947,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.wagawin.com/privacy-en/#productprivacy",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "775": {
@@ -15370,6 +15969,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.selectmedia.asia/terms-and-privacy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "776": {
@@ -15386,7 +15986,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://pay-per-leads.com/terms",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "777": {
@@ -15418,6 +16019,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 8035200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "778": {
@@ -15441,7 +16043,8 @@
         1
       ],
       "policyUrl": "https://discover-tech.io/dsp-privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "779": {
@@ -15461,7 +16064,8 @@
         1
       ],
       "policyUrl": "https://adtarget.com.tr/adtarget-privacy-policy-2020.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "780": {
@@ -15484,6 +16088,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.aniview.com/privacy-policy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "781": {
@@ -15525,6 +16130,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 43200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "782": {
@@ -15545,7 +16151,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://airgid.io/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "783": {
@@ -15588,7 +16195,8 @@
         1
       ],
       "policyUrl": "https://audienzz.ch/wp-content/uploads/2020/03/AGB_audienzz_2020.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "784": {
@@ -15612,6 +16220,7 @@
       "specialFeatures": [],
       "policyUrl": "https://api.recod3suite.com/privacypolicy.php",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "785": {
@@ -15631,6 +16240,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.agof.de/datenschutz/",
       "cookieMaxAgeSeconds": 31622400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "755": {
@@ -15668,6 +16278,7 @@
       "specialFeatures": [],
       "policyUrl": "https://policies.google.com/privacy",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "786": {
@@ -15689,7 +16300,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.target-video.com/datenschutz/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "787": {
@@ -15711,6 +16323,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nonstoppartner.net",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "788": {
@@ -15742,6 +16355,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "789": {
@@ -15773,6 +16387,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "790": {
@@ -15802,6 +16417,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adgear.com/en/privacy",
       "cookieMaxAgeSeconds": 34128000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "791": {
@@ -15820,6 +16436,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.mediasquare.fr/e-privacy/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false,
       "deviceStorageDisclosureUrl": "https://mediasquare.fr/deviceStorage.json"
     },
@@ -15849,6 +16466,7 @@
       "specialFeatures": [],
       "policyUrl": "https://britepool.com/gdpr-privacy-notice",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "794": {
@@ -15883,6 +16501,7 @@
       ],
       "policyUrl": "https://kubient.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "795": {
@@ -15908,6 +16527,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.factor-eleven.de/datenschutz/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "796": {
@@ -15931,6 +16551,7 @@
       "specialFeatures": [],
       "policyUrl": "https://easy-m.de/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "797": {
@@ -15955,6 +16576,7 @@
       "specialFeatures": [],
       "policyUrl": "https://aaa.artefact.com/privacy-policy.do",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "798": {
@@ -15993,6 +16615,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adverticum.net/english/privacy-and-data-processing-information/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "799": {
@@ -16016,7 +16639,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.adpone.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "800": {
@@ -16049,6 +16673,7 @@
       ],
       "policyUrl": "https://www.reppublika.com/privacy-policy",
       "cookieMaxAgeSeconds": 8035200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "801": {
@@ -16072,7 +16697,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://bannernow.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "802": {
@@ -16117,7 +16743,8 @@
         2
       ],
       "policyUrl": "https://static.now-services.de/privacy/index.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "803": {
@@ -16144,6 +16771,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 25200,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "804": {
@@ -16174,6 +16802,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.linkedin.com/legal/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "805": {
@@ -16203,7 +16832,8 @@
         2
       ],
       "policyUrl": "https://www.leesten.io/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "807": {
@@ -16242,6 +16872,7 @@
       ],
       "policyUrl": "https://www.molocoads.com/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "808": {
@@ -16270,6 +16901,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "809": {
@@ -16292,6 +16924,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adnanny.com/en/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "810": {
@@ -16316,6 +16949,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.lead-alliance.net/dataprotection2",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "811": {
@@ -16343,6 +16977,7 @@
       "specialFeatures": [],
       "policyUrl": "https://iprom.eu/privacy_policy/GDPR",
       "cookieMaxAgeSeconds": 7889231,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "812": {
@@ -16370,6 +17005,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nielsen.com/eu/en/legal/privacy-statement/digital-measurement/",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "793": {
@@ -16401,6 +17037,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201909010",
       "cookieMaxAgeSeconds": 34190000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "813": {
@@ -16432,7 +17069,8 @@
       ],
       "policyUrl": "https://www.adjust.com/terms/privacy-policy/",
       "deletedDate": "2020-10-07T00:00:00Z",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "814": {
@@ -16466,6 +17104,7 @@
       ],
       "policyUrl": "https://business.eskimi.com/privacypolicy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "815": {
@@ -16483,6 +17122,7 @@
       "specialFeatures": [],
       "policyUrl": "https://blockthrough.com/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "816": {
@@ -16504,6 +17144,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.nobid.io/privacy-policy/",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "817": {
@@ -16529,7 +17170,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.miaozhen.com/en/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "818": {
@@ -16549,6 +17191,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.zedo.com/about-zedo/privacy-policy-december-2019/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "819": {
@@ -16564,6 +17207,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.retailads.net/ueberuns/datenschutz/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "820": {
@@ -16589,6 +17233,7 @@
       "specialFeatures": [],
       "policyUrl": "https://developers.kameleoon.com/local-storage.html#list-of-collected-data",
       "cookieMaxAgeSeconds": 32832000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "821": {
@@ -16612,6 +17257,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.vitrado.de/datenschutz",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "822": {
@@ -16633,6 +17279,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adverty.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "823": {
@@ -16658,6 +17305,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.gujmedia.de/service/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "824": {
@@ -16689,6 +17337,7 @@
       ],
       "policyUrl": "https://42ads.io/42privacy.pdf",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "825": {
@@ -16730,6 +17379,7 @@
       "specialFeatures": [],
       "policyUrl": "https://abtshield.com/privacy-policy/",
       "cookieMaxAgeSeconds": 63072000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "826": {
@@ -16748,7 +17398,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.adn.ai/fr/politique-confidentialite-adserver",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "827": {
@@ -16771,6 +17422,7 @@
       "specialFeatures": [],
       "policyUrl": "https://privacy.adtriba.com/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "828": {
@@ -16807,6 +17459,7 @@
       ],
       "policyUrl": "https://tx.group/de/rechtliche-hinweise",
       "cookieMaxAgeSeconds": 94608000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "829": {
@@ -16832,6 +17485,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.unilevernotices.com/poland/polish/privacy-notice/notice.html",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "830": {
@@ -16873,7 +17527,8 @@
         1
       ],
       "policyUrl": "https://www.acxiom.com/about-us/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "831": {
@@ -16908,6 +17563,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.united-internet-media.de/de/datenschutzhinweis/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "832": {
@@ -16922,8 +17578,9 @@
       "specialPurposes": [],
       "features": [],
       "specialFeatures": [],
-      "policyUrl": "https://objectivepartners.com/cookie-policy-and-privacy-statement/",
+      "policyUrl": "https://www.objectiveplatform.com/cookie-policy-and-privacy-statement/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "833": {
@@ -16955,6 +17612,7 @@
       ],
       "policyUrl": "https://help.disqus.com/en/articles/1717103-disqus-privacy-policy",
       "cookieMaxAgeSeconds": 31536000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "834": {
@@ -16987,6 +17645,7 @@
       ],
       "policyUrl": "https://adrenalead.com/politique-de-protection-des-donnees/",
       "cookieMaxAgeSeconds": 1123200,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "835": {
@@ -17015,6 +17674,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "836": {
@@ -17039,6 +17699,7 @@
       ],
       "policyUrl": "https://getbring.com/en/legal/privacy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "837": {
@@ -17063,6 +17724,7 @@
       "specialFeatures": [],
       "policyUrl": "https://trinityaudio.ai/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "838": {
@@ -17086,6 +17748,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "839": {
@@ -17107,6 +17770,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.pixfuture.com/data-processing-agreement/",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "840": {
@@ -17139,6 +17803,7 @@
       "specialFeatures": [],
       "policyUrl": "https://cazamba.com/platform-privacy/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "841": {
@@ -17162,7 +17827,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://api.adtube.no/resources/docs/privacy_policy_AppConnect.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "842": {
@@ -17187,6 +17853,7 @@
       "specialFeatures": [],
       "policyUrl": "https://admin.pubwise.io/publisher/privacypolicy",
       "cookieMaxAgeSeconds": 1800,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "843": {
@@ -17214,6 +17881,7 @@
       ],
       "policyUrl": "https://leadsrx.com/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "844": {
@@ -17242,7 +17910,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "845": {
@@ -17263,6 +17932,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.geoedge.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "846": {
@@ -17295,6 +17965,7 @@
       ],
       "policyUrl": "https://www.mp-newmedia.com/datenschutz",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "847": {
@@ -17316,6 +17987,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.crowdynews.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "848": {
@@ -17340,6 +18012,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bsmartdata.com/en/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "849": {
@@ -17359,6 +18032,7 @@
       "specialFeatures": [],
       "policyUrl": "https://epom.com/privacy-policy",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "850": {
@@ -17378,6 +18052,7 @@
       "specialFeatures": [],
       "policyUrl": "https://freestar.com/data-policy/",
       "cookieMaxAgeSeconds": 604800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "851": {
@@ -17400,7 +18075,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.strossle.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "852": {
@@ -17421,6 +18097,33 @@
       "specialFeatures": [],
       "policyUrl": "https://www.intelliad.de/datenschutzerklaerung/",
       "cookieMaxAgeSeconds": 8640000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "853": {
+      "id": 853,
+      "name": "Ensighten",
+      "purposes": [],
+      "legIntPurposes": [
+        7,
+        8
+      ],
+      "flexiblePurposes": [
+        7,
+        8
+      ],
+      "specialPurposes": [
+        1
+      ],
+      "features": [
+        1
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://www.ensighten.com/privacy-policy/",
+      "cookieMaxAgeSeconds": 157680000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "854": {
@@ -17438,6 +18141,7 @@
       "specialFeatures": [],
       "policyUrl": "https://emarketingsolutions.es/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "855": {
@@ -17459,6 +18163,7 @@
       "specialFeatures": [],
       "policyUrl": "https://adnuntius.com/resources/privacy-policy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://adnuntius.com/.well-known/deviceStorage.json"
     },
@@ -17488,8 +18193,9 @@
       ],
       "features": [],
       "specialFeatures": [],
-      "policyUrl": "https://consumer.huawei.com/minisite/cloudservice/ads/privacy-statement.htm?country=EU&amp;language=en-eu",
-      "cookieMaxAgeSeconds": -100,
+      "policyUrl": "https://consumer.huawei.com/minisite/cloudservice/ads/privacy-statement.htm?country=EU&language=en-eu",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "857": {
@@ -17512,10 +18218,15 @@
         1,
         2
       ],
-      "features": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
       "specialFeatures": [],
       "policyUrl": "https://www.sevenonemedia.de/datenerhebung-anderer-dienstleister",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://ad.71i.de/consent/deviceStorage.json"
     },
@@ -17558,6 +18269,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.mediavine.com/privacy-policy",
       "cookieMaxAgeSeconds": 31560000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "859": {
@@ -17599,6 +18311,7 @@
       ],
       "policyUrl": "https://adquiver.com/privacidad/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "860": {
@@ -17621,6 +18334,7 @@
       "specialFeatures": [],
       "policyUrl": "https://getpublica.com/privacy/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "861": {
@@ -17658,6 +18372,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.triple13.io/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "862": {
@@ -17685,6 +18400,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.truvid.com/terms/privacy_policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "863": {
@@ -17706,6 +18422,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.respondi.com/EN/privacy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "865": {
@@ -17729,6 +18446,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.heimspiel.de/privacy-policy-iab-vendor/",
       "cookieMaxAgeSeconds": 172800,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "866": {
@@ -17748,7 +18466,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://yieldlift.com/privacy-policy.html",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "867": {
@@ -17783,6 +18502,7 @@
       ],
       "policyUrl": "https://www.mintegral.com/en/privacy/",
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "868": {
@@ -17808,6 +18528,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.converto.com/datenschutz-privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "869": {
@@ -17830,6 +18551,7 @@
       "specialFeatures": [],
       "policyUrl": "https://thebrave.io/private-policy",
       "cookieMaxAgeSeconds": 30,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "870": {
@@ -17842,7 +18564,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.webgains.com/public/de/datenschutzerklaerung/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "871": {
@@ -17867,6 +18590,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ingenioustechnologies.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "872": {
@@ -17884,7 +18608,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.ivo.io/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "873": {
@@ -17899,7 +18624,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://impact-plus.fr/en/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "874": {
@@ -17922,6 +18648,7 @@
       "specialFeatures": [],
       "policyUrl": "https://preciso.net/privacy/",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "875": {
@@ -17951,6 +18678,7 @@
       "specialFeatures": [],
       "policyUrl": "https://cynapsis.de/impressum/index.html#datenschutz_d",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "876": {
@@ -17976,6 +18704,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "877": {
@@ -17996,7 +18725,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.experian.co.uk/privacy/consumer-information-portal/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "878": {
@@ -18021,6 +18751,7 @@
       "specialFeatures": [],
       "policyUrl": "https://related.hu/adatkezeles/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "879": {
@@ -18035,7 +18766,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.vidstart.com/wp-content/uploads/2018/09/PrivacyPolicyPDF-Vidstart.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "880": {
@@ -18064,6 +18796,7 @@
       ],
       "policyUrl": "https://quantyoo.de/datenschutz",
       "cookieMaxAgeSeconds": 630720000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "881": {
@@ -18078,7 +18811,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.bet365affiliates.com/UI/Pages/Affiliates/Affiliates.aspx?ContentPath=%2fAffiliates%2fv2_Root%2finformationPages%2fPrivacyPolicy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "882": {
@@ -18107,6 +18841,7 @@
       ],
       "policyUrl": "https://portal.eu.numbereight.me/policies-license#software-privacy-notice",
       "cookieMaxAgeSeconds": 7890000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "883": {
@@ -18123,6 +18858,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.brightcom.com/privacy-policy/",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "884": {
@@ -18158,6 +18894,7 @@
       ],
       "policyUrl": "https://listonic.com/privacy/",
       "cookieMaxAgeSeconds": 34560000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "885": {
@@ -18188,6 +18925,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.dianomi.com/legal/privacy.epl",
       "cookieMaxAgeSeconds": 94608000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "886": {
@@ -18208,6 +18946,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.remixd.com/privacy_policy.html",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "887": {
@@ -18225,6 +18964,7 @@
       ],
       "policyUrl": "https://docs.prebid.org/privacy.html",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "888": {
@@ -18248,7 +18988,8 @@
         1
       ],
       "policyUrl": "https://www.gadsme.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "889": {
@@ -18266,6 +19007,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.admo.tv/en/privacy-policy",
       "cookieMaxAgeSeconds": 32000000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "890": {
@@ -18282,6 +19024,7 @@
       "specialFeatures": [],
       "policyUrl": "https://channelpilot.co.uk/privacy-policy",
       "cookieMaxAgeSeconds": 90,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "891": {
@@ -18304,6 +19047,7 @@
       "specialFeatures": [],
       "policyUrl": "https://bealion.com/politica-de-cookies",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "892": {
@@ -18320,7 +19064,8 @@
         1
       ],
       "policyUrl": "https://www.geoprove.io/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "893": {
@@ -18353,6 +19098,7 @@
       ],
       "policyUrl": "https://privacy.timeonegroup.com",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "894": {
@@ -18375,7 +19121,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://threedium.co.uk/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "895": {
@@ -18409,7 +19156,8 @@
         1
       ],
       "policyUrl": "https://www.pokkt.com/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": true
     },
     "896": {
@@ -18435,8 +19183,9 @@
       "specialFeatures": [
         2
       ],
-      "policyUrl": "https://www.ipsos.com/ipsos-mori/en-uk/privacy-data-protection",
+      "policyUrl": "https://iris.ipsos.com/site-centric-privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "897": {
@@ -18462,7 +19211,8 @@
         2
       ],
       "policyUrl": "https://www.fido.id/privacy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "898": {
@@ -18480,16 +19230,15 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://s3-eu-west-1.amazonaws.com/mobkoi-website-2018/MOBKOI_LTD_T%26Cs.pdf",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "899": {
       "id": 899,
       "name": "digidip GmbH",
       "purposes": [
-        1,
-        5,
-        8
+        1
       ],
       "legIntPurposes": [],
       "flexiblePurposes": [],
@@ -18500,6 +19249,7 @@
       "specialFeatures": [],
       "policyUrl": "https://digidip.net/privacy-policy",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "900": {
@@ -18527,6 +19277,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.advisible.com/privacy ",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "901": {
@@ -18557,12 +19308,13 @@
         2
       ],
       "policyUrl": "https://www.studio-gong.de/datenschutz.html ",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "902": {
       "id": 902,
-      "name": "Open Mobi",
+      "name": "adQuery",
       "purposes": [
         1,
         2,
@@ -18590,7 +19342,8 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "903": {
@@ -18609,7 +19362,8 @@
         1
       ],
       "policyUrl": "https://www.placense.com/privacy-notice ",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "905": {
@@ -18648,6 +19402,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 157680000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "906": {
@@ -18664,6 +19419,7 @@
       "specialFeatures": [],
       "policyUrl": "https://addrelevance.be/disclaimer",
       "cookieMaxAgeSeconds": 31556926,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "907": {
@@ -18688,6 +19444,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "908": {
@@ -18722,6 +19479,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "909": {
@@ -18742,7 +19500,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://mobilefuse.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "910": {
@@ -18776,6 +19535,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.insticator.com/privacy/",
       "cookieMaxAgeSeconds": 62208000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "911": {
@@ -18794,7 +19554,8 @@
         2
       ],
       "policyUrl": "https://www.fraudlogix.com/privacy-policy/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "912": {
@@ -18814,7 +19575,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://qwarry.com/imprint/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "913": {
@@ -18841,6 +19603,7 @@
       ],
       "policyUrl": "https://cleveradvertising.com/privacy",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "914": {
@@ -18872,6 +19635,7 @@
       "specialFeatures": [],
       "policyUrl": "https://paypersale.ru/index/privacy#about",
       "cookieMaxAgeSeconds": 283824000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "915": {
@@ -18901,6 +19665,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.optidigital.com/privacy-policy/",
       "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "916": {
@@ -18936,7 +19701,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.sirdata.com/en/Privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "917": {
@@ -18966,7 +19732,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.spotible.com/privacy.php",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "918": {
@@ -18990,7 +19757,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.minutemedia.com/privacy-policy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "919": {
@@ -19017,6 +19785,7 @@
       "specialFeatures": [],
       "policyUrl": "https://livewrapped.com/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "920": {
@@ -19041,6 +19810,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.bertelsmann.de/meta/datenschutz/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "921": {
@@ -19069,6 +19839,7 @@
       "specialFeatures": [],
       "policyUrl": "https://imonomy.com/privacy-policy",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "922": {
@@ -19093,7 +19864,8 @@
         2
       ],
       "policyUrl": "https://mediaintelligence.de/privacy-policy.do",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "923": {
@@ -19108,7 +19880,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.fiducia.eco/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "924": {
@@ -19130,6 +19903,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.viewdeos.com/privacy-policy",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "925": {
@@ -19145,6 +19919,7 @@
       "specialFeatures": [],
       "policyUrl": "https://alphalyr.fr/en/privacy-policy/",
       "cookieMaxAgeSeconds": 30,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "926": {
@@ -19185,6 +19960,7 @@
       "specialFeatures": [],
       "policyUrl": "https://corp.fanbyte.com/legal/privacy",
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "927": {
@@ -19203,7 +19979,8 @@
       "overflow": {
         "httpGetLimit": 32
       },
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "928": {
@@ -19222,6 +19999,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.parrable.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31449600,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "929": {
@@ -19244,6 +20022,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.ebayinc.com/company/privacy-center/gdpr/",
       "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "930": {
@@ -19271,6 +20050,7 @@
       ],
       "policyUrl": "https://iqm.com/privacy-policy",
       "cookieMaxAgeSeconds": 1296000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "931": {
@@ -19294,6 +20074,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.iubenda.com/privacy-policy/30563919",
       "cookieMaxAgeSeconds": 365,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "932": {
@@ -19328,6 +20109,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "933": {
@@ -19344,7 +20126,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://hindsightsolutions.net/terms-of-service/",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "237": {
@@ -19375,6 +20158,7 @@
       ],
       "policyUrl": "https://verve.com/privacy-policy/index.html",
       "cookieMaxAgeSeconds": 180,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "934": {
@@ -19396,7 +20180,8 @@
         2
       ],
       "policyUrl": "https://cms.brid.tv/pages/view/privacy",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "935": {
@@ -19425,6 +20210,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.inis.pl/polityka-prywatnosci",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "936": {
@@ -19450,6 +20236,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.squadata.net/en/private-policy/",
       "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "937": {
@@ -19485,6 +20272,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "938": {
@@ -19522,6 +20310,7 @@
         "httpGetLimit": 32
       },
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "940": {
@@ -19558,6 +20347,7 @@
       "specialFeatures": [],
       "policyUrl": "https://terminus.com/privacy-policy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "941": {
@@ -19588,6 +20378,7 @@
       ],
       "policyUrl": "https://adsocy.com/politica-de-privacidad-y-aviso-legal/",
       "cookieMaxAgeSeconds": 1592000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "9": {
@@ -19621,6 +20412,7 @@
       ],
       "policyUrl": "http://www.admaxim.com/admaxim-privacy-policy/",
       "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "942": {
@@ -19648,6 +20440,7 @@
         "httpGetLimit": 128
       },
       "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "943": {
@@ -19673,6 +20466,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.marfeel.com/docs/compass/privacy/policy/",
       "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "944": {
@@ -19703,6 +20497,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.audiencerun.com/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": true
     },
     "945": {
@@ -19719,7 +20514,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "946": {
@@ -19744,6 +20540,7 @@
       "specialFeatures": [],
       "policyUrl": "https://belboon.com/en/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "947": {
@@ -19768,6 +20565,7 @@
       "specialFeatures": [],
       "policyUrl": "https://powerspace.com/fr/privacy/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "948": {
@@ -19788,6 +20586,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.1agency.de/datenschutz",
       "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "949": {
@@ -19810,6 +20609,7 @@
       "specialFeatures": [],
       "policyUrl": "https://www.getquanty.com/mentions-legales/",
       "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "950": {
@@ -19824,7 +20624,819 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://app.streameye.com/policy/net",
-      "cookieMaxAgeSeconds": -100,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "951": {
+      "id": 951,
+      "name": "Spoods GmbH",
+      "purposes": [],
+      "legIntPurposes": [
+        2,
+        7
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.spoods.info/#gdpr",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "952": {
+      "id": 952,
+      "name": "ProSiebenSat.1 Digital Data GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1,
+        2
+      ],
+      "policyUrl": "https://7pass.de/datenschutzbestimmungen.html",
+      "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "953": {
+      "id": 953,
+      "name": "adbalancer Werbeagentur GmbH",
+      "purposes": [],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.adbalancer.com/datenschutz",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "954": {
+      "id": 954,
+      "name": "Caroda s.r.o.",
+      "purposes": [],
+      "legIntPurposes": [
+        2
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.caroda.io/privacy-statement",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": true
+    },
+    "955": {
+      "id": 955,
+      "name": "Konodrac S.L.",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://konodrac.com/politica-privacidad/",
+      "cookieMaxAgeSeconds": 31356000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "956": {
+      "id": 956,
+      "name": "AirNow Video Ltd",
+      "purposes": [],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.avantisvideo.com/privacypolicy/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "957": {
+      "id": 957,
+      "name": "Evolution Technologies Inc.",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://e-volution.ai/privacy-policy-3/",
+      "cookieMaxAgeSeconds": 86400,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "958": {
+      "id": 958,
+      "name": "Clipr",
+      "purposes": [
+        1,
+        7,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.clipr.co/privacy-terms",
+      "cookieMaxAgeSeconds": 5184000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "959": {
+      "id": 959,
+      "name": "adWMG",
+      "purposes": [
+        1,
+        2,
+        4,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://adwmg.com/privacy-policy/",
+      "cookieMaxAgeSeconds": 0,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "960": {
+      "id": 960,
+      "name": "appTV Ltd.",
+      "purposes": [],
+      "legIntPurposes": [
+        2,
+        7
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.apptv.com/privacy-policy",
+      "cookieMaxAgeSeconds": 172800,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "961": {
+      "id": 961,
+      "name": "PML Innovative Media",
+      "purposes": [
+        2,
+        7,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        2
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://www.pmlatam.com/privacy-policy",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "962": {
+      "id": 962,
+      "name": "Tangoo Srl",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.tangoomedia.com/privacy-policy",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "963": {
+      "id": 963,
+      "name": "CIBLECLIC",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        3
+      ],
+      "specialFeatures": [
+        1,
+        2
+      ],
+      "policyUrl": "https://uzerly.fr/terms-and-conditions/",
+      "cookieMaxAgeSeconds": 15768000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "964": {
+      "id": 964,
+      "name": "Solution coupons",
+      "purposes": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://solution.coupons/privacy",
+      "cookieMaxAgeSeconds": 120,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "965": {
+      "id": 965,
+      "name": "Nexx360",
+      "purposes": [
+        1
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.nexx360.io/en/940-2/",
+      "overflow": {
+        "httpGetLimit": 128
+      },
+      "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "966": {
+      "id": 966,
+      "name": "socoto gmbh & co. kg",
+      "purposes": [
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.socoto.com/datenschutz/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "967": {
+      "id": 967,
+      "name": "glomex GmbH",
+      "purposes": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "legIntPurposes": [
+        2,
+        7,
+        8,
+        10
+      ],
+      "flexiblePurposes": [
+        2,
+        7,
+        8,
+        10
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://www.glomex.com/en/privacy-policy/privacy-notice-for-the-glomex-player/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "968": {
+      "id": 968,
+      "name": "WEMASS MEDIA AUDIENCE SAFE SOLUTIONS, S.L. ",
+      "purposes": [
+        1,
+        3,
+        4,
+        7,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://wemass.com/privacidad/",
+      "cookieMaxAgeSeconds": 94608000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "969": {
+      "id": 969,
+      "name": "SmartFrame Technologies",
+      "purposes": [],
+      "legIntPurposes": [
+        2,
+        7,
+        8
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://smartframe.io/privacy-policy/",
+      "overflow": {
+        "httpGetLimit": 128
+      },
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "29": {
+      "id": 29,
+      "name": "ETARGET SE",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://sk.search.etargetnet.com/policy.html",
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "970": {
+      "id": 970,
+      "name": "Frameplay Corporation",
+      "purposes": [
+        1
+      ],
+      "legIntPurposes": [
+        2,
+        7,
+        8,
+        9,
+        10
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://www.frameplay.gg/terms",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "972": {
+      "id": 972,
+      "name": "Kargo Global Inc.",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        2
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://kargo.com/privacy",
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "973": {
+      "id": 973,
+      "name": "Cluep LLC",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1,
+        2
+      ],
+      "policyUrl": "https://cluep.com/privacy",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "974": {
+      "id": 974,
+      "name": "SpearAd GmbH",
+      "purposes": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://www.spearad.com/privacy61f1c041",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "208": {
+      "id": 208,
+      "name": "Spotad",
+      "purposes": [
+        2,
+        3,
+        4,
+        7,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        2
+      ],
+      "features": [
+        1,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://spotad.co/privacy-policy-2/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "975": {
+      "id": 975,
+      "name": "Playrcart Limited",
+      "purposes": [
+        1,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.playrcart.com/privacy-policy/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "976": {
+      "id": 976,
+      "name": "Pelmorex Media Corp.",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://www.eltiempo.com/politica-privacidad",
+      "cookieMaxAgeSeconds": 13,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "977": {
+      "id": 977,
+      "name": "Sparklit Networks Inc",
+      "purposes": [
+        9
+      ],
+      "legIntPurposes": [
+        8
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.adbutler.com/agreements.spark?agreement=privacy",
+      "cookieMaxAgeSeconds": 15552000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "978": {
+      "id": 978,
+      "name": "ARKHEUS",
+      "purposes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "legIntPurposes": [
+        7
+      ],
+      "flexiblePurposes": [
+        7
+      ],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.arkheus.fr/mentions-legales/",
+      "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "979": {
+      "id": 979,
+      "name": "Mediascore mbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://mediascore.de/datenschutz",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "980": {
+      "id": 980,
+      "name": "WAM Group Ltd, t/a Admix",
+      "purposes": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://admixplay.com/privacypolicy/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "981": {
+      "id": 981,
+      "name": "AREIA (ADLOOP)",
+      "purposes": [
+        1,
+        9
+      ],
+      "legIntPurposes": [
+        7
+      ],
+      "flexiblePurposes": [
+        7
+      ],
+      "specialPurposes": [],
+      "features": [
+        1,
+        2
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://adloop.co/en/privacy-policy/",
+      "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     }
   }
