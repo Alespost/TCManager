@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js" type="application/javascript"></script>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <script src="content_display.js" type="text/javascript"></script>
+    <script src="constants.js" type="text/javascript"></script>
+    <script src="options_vendors.js" type="text/javascript"></script>
+
+    <link href="options.css" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <h1 id="options_header"></h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Vendor</th>
+            <th>ID</th>
+            <th>Choice</th>
+        </tr>
+        </thead>
+        <tbody id="options_vendors_body">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

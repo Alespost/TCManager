@@ -3,63 +3,64 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function restoreOptions () {
-  browser.storage.sync.get().then(setCurrentChoices, onError);
+  browser.storage.sync.get(VENDOR_OPTIONS).then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
-    const global = result[GLOBAL_OPTIONS];
-    delete result[GLOBAL_OPTIONS];
+    const vendorChoices = result[VENDOR_OPTIONS];
+    console.log(vendorChoices);
 
-    const table = document.getElementById('options_body');
-    const row = createOptionsRow(GLOBAL_OPTIONS, global);
-    table.appendChild(row);
+    const table = document.getElementById('options_vendors_body');
 
-    for (const [domain, choices] of Object.entries(result)) {
-      const row = createOptionsRow(domain, choices, global);
-      table.appendChild(row);
-    }
+    const row = createOptionsRow(vendorChoices[GLOBAL_OPTIONS]);
 
-    displayOptionsContent();
+    // for (const [key, value] of Object.entries(vendorChoices)) {
+    //   const row = createOptionsRow(value);
+    //   table.appendChild(row);
+    // }
+
+    // displayContent();
   }
 
-  function createOptionsRow (domain, choices, global = null) {
+  function createOptionsRow (vendor) {
     const row = document.createElement('tr');
-    if (domain === GLOBAL_OPTIONS) {
-      row.id = GLOBAL_ROW_ID;
-    }
 
-    const cell = document.createElement('td');
-    cell.classList.add('row_header', 'left');
+    const nameCell = document.createElement('td');
+    nameCell.classList.add('row_header', 'left');
 
-    if (domain === GLOBAL_OPTIONS) {
-      cell.id = 'global_header';
+    if (vendor.id === null && vendor.name === GLOBAL_OPTIONS) {
+      nameCell.id = 'global_header';
+      nameCell.innerText = vendor.name //TODO remove
     } else {
-      cell.innerText = domain;
+      nameCell.innerText = vendor.name;
     }
 
-    row.appendChild(cell);
+    row.appendChild(nameCell);
 
-    setChoices(PURPOSES_OPTIONS);
-    setChoices(SPECIAL_FEATURES_OPTIONS);
+    const idCell = document.createElement('td');
+    idCell.classList.remove('row_header', 'left');
+    idCell.innerText = vendor.id;
+
+    row.appendChild(idCell);
+
+    setChoices();
     return row;
 
-    function setChoices (type) {
-      for (const [key, choice] of choices[type].entries()) {
+    function setChoices () {
         const cell = document.createElement('td');
-        const choiceClass = (type === PURPOSES_OPTIONS ? PURPOSE_CLASS_PREFIX : SPECIAL_FEATURE_CLASS_PREFIX) + (key + 1);
+        const choiceClass = SPECIAL_FEATURE_CLASS_PREFIX;
 
-        if (domain === GLOBAL_OPTIONS) {
+        if (vendor.name === GLOBAL_OPTIONS) {
           cell.classList.add(GLOBAL_OPTION_CLASS);
-          cell.innerText = key + 1;
           cell.id = choiceClass;
         } else {
           cell.classList.add(OPTION_CLASS);
         }
 
         cell.classList.add(choiceClass);
-        cell.setAttribute(VALUE_ATTRIBUTE, choice);
+        cell.setAttribute(VALUE_ATTRIBUTE, vendor.choice);
         cell.addEventListener('click', optionClickedHandler);
 
-        switch (choice) {
+        switch (vendor.choice) {
           case CONSENT:
             cell.classList.add(LOCAL_CONSENT_COLOR);
             cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
@@ -68,17 +69,16 @@ function restoreOptions () {
             cell.classList.add(LOCAL_OBJECTION_COLOR);
             cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
             break;
-          case GLOBAL_VALUE:
+/*          case GLOBAL_VALUE:
             if (global[type][key] === CONSENT) {
               cell.classList.add(GLOBAL_CONSENT_COLOR);
             } else {
               cell.classList.add(GLOBAL_OBJECTION_COLOR);
             }
-            break;
+            break;*/
         }
 
         row.appendChild(cell);
-      }
     }
   }
 

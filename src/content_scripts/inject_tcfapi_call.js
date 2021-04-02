@@ -7,6 +7,7 @@ function __tcfapi (command, eventName, callback) {
 
   if (parent === null) {
     callback(false, false);
+    return;
   }
 
   const script = document.createElement('script');
