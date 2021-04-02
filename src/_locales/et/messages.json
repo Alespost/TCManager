@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Teabe s\u00e4ilitamine ja/v\u00f5i ligip\u00e4\u00e4s teabele seadmes"}, "purpose1_description": {"message": "Teie seadmes v\u00f5idakse s\u00e4ilitada k\u00fcpsiseid, seadme identifikaatoreid v\u00f5i muud teavet v\u00f5i omada neile ligip\u00e4\u00e4su teile esitatud eesm\u00e4rkidel."}, "purpose2": {"message": "P\u00f5hireklaamide valimine"}, "purpose2_description": {"message": "Teile v\u00f5idakse kuvada reklaame teie vaadatava konteksti, kasutatava rakenduse, ligikaudse asukoha v\u00f5i seadme t\u00fc\u00fcbi p\u00f5hjal."}, "purpose3": {"message": "Isikup\u00e4rastatud reklaamiprofiili loomine"}, "purpose3_description": {"message": "Teie ja teie huvide kohta v\u00f5idakse koostada profiil, et kuvada teile teie jaoks asjakohaseid isikup\u00e4rastatud reklaame."}, "purpose4": {"message": "Isikup\u00e4rastatud reklaamide valimine"}, "purpose4_description": {"message": "Teile v\u00f5idakse kuvada teie profiili p\u00f5hjal isikup\u00e4rastatud reklaame."}, "purpose5": {"message": "Isikup\u00e4rastatud sisuprofiili loomine"}, "purpose5_description": {"message": "Teie ja teie huvide kohta v\u00f5idakse koostada profiil, et kuvada teie jaoks asjakohast isikup\u00e4rastatud sisu."}, "purpose6": {"message": "Isikup\u00e4rastatud sisu valimine"}, "purpose6_description": {"message": "Teile v\u00f5idakse kuvada teie profiili p\u00f5hjal isikup\u00e4rastatud sisu."}, "purpose7": {"message": "Reklaamide tulemuslikkuse m\u00f5\u00f5tmine"}, "purpose7_description": {"message": "V\u00f5idakse m\u00f5\u00f5ta nende reklaamide, mida n\u00e4ete v\u00f5i millega suhtlete, tulemuslikkust ja efektiivsust."}, "purpose8": {"message": "Sisu tulemuslikkuse m\u00f5\u00f5tmine"}, "purpose8_description": {"message": "V\u00f5idakse m\u00f5\u00f5ta selle sisu, mida n\u00e4ete v\u00f5i millega suhtlete, tulemuslikkust ja efektiivsust."}, "purpose9": {"message": "Turu-uuringute tegemine vaatajaskonna anal\u00fc\u00fcsideks"}, "purpose9_description": {"message": "V\u00f5idakse teha turu-uuringuid t\u00e4psema teabe saamiseks veebisaitide k\u00fclastajate / rakenduste kasutajate ja reklaamide vaatajate kohta."}, "purpose10": {"message": "Toodete arendamine ja t\u00e4iustamine"}, "purpose10_description": {"message": "Teie andmeid v\u00f5idakse kasutada olemasolevate s\u00fcsteemide ja tarkvara t\u00e4iustamiseks ja uute toodete arendamiseks."}, "special_feature1": {"message": "T\u00e4psete geolokatsiooniandmete kasutamine"}, "special_feature1_description": {"message": "Teie t\u00e4pseid geolokatsiooniandmeid v\u00f5idakse kasutada \u00fche v\u00f5i mitme eesm\u00e4rgi toetamiseks. See t\u00e4hendab, et teie asukoht v\u00f5ib olla m\u00e4\u00e4ratud kuni m\u00f5ne meetri t\u00e4psusega."}, "special_feature2": {"message": "Seadme omaduste aktiivne skaneerimine tuvastamiseks"}, "special_feature2_description": {"message": "Teie seadet v\u00f5idakse tuvastada teie seadme ainulaadse omaduste kombinatsiooni skaneerimise teel."}}
+{
+  "purpose1": {
+    "message": "Teabe s\u00e4ilitamine ja/v\u00f5i ligip\u00e4\u00e4s teabele seadmes"
+  },
+  "purpose1_description": {
+    "message": "Teie seadmes v\u00f5idakse s\u00e4ilitada k\u00fcpsiseid, seadme identifikaatoreid v\u00f5i muud teavet v\u00f5i omada neile ligip\u00e4\u00e4su teile esitatud eesm\u00e4rkidel."
+  },
+  "purpose2": {
+    "message": "P\u00f5hireklaamide valimine"
+  },
+  "purpose2_description": {
+    "message": "Teile v\u00f5idakse kuvada reklaame teie vaadatava konteksti, kasutatava rakenduse, ligikaudse asukoha v\u00f5i seadme t\u00fc\u00fcbi p\u00f5hjal."
+  },
+  "purpose3": {
+    "message": "Isikup\u00e4rastatud reklaamiprofiili loomine"
+  },
+  "purpose3_description": {
+    "message": "Teie ja teie huvide kohta v\u00f5idakse koostada profiil, et kuvada teile teie jaoks asjakohaseid isikup\u00e4rastatud reklaame."
+  },
+  "purpose4": {
+    "message": "Isikup\u00e4rastatud reklaamide valimine"
+  },
+  "purpose4_description": {
+    "message": "Teile v\u00f5idakse kuvada teie profiili p\u00f5hjal isikup\u00e4rastatud reklaame."
+  },
+  "purpose5": {
+    "message": "Isikup\u00e4rastatud sisuprofiili loomine"
+  },
+  "purpose5_description": {
+    "message": "Teie ja teie huvide kohta v\u00f5idakse koostada profiil, et kuvada teie jaoks asjakohast isikup\u00e4rastatud sisu."
+  },
+  "purpose6": {
+    "message": "Isikup\u00e4rastatud sisu valimine"
+  },
+  "purpose6_description": {
+    "message": "Teile v\u00f5idakse kuvada teie profiili p\u00f5hjal isikup\u00e4rastatud sisu."
+  },
+  "purpose7": {
+    "message": "Reklaamide tulemuslikkuse m\u00f5\u00f5tmine"
+  },
+  "purpose7_description": {
+    "message": "V\u00f5idakse m\u00f5\u00f5ta nende reklaamide, mida n\u00e4ete v\u00f5i millega suhtlete, tulemuslikkust ja efektiivsust."
+  },
+  "purpose8": {
+    "message": "Sisu tulemuslikkuse m\u00f5\u00f5tmine"
+  },
+  "purpose8_description": {
+    "message": "V\u00f5idakse m\u00f5\u00f5ta selle sisu, mida n\u00e4ete v\u00f5i millega suhtlete, tulemuslikkust ja efektiivsust."
+  },
+  "purpose9": {
+    "message": "Turu-uuringute tegemine vaatajaskonna anal\u00fc\u00fcsideks"
+  },
+  "purpose9_description": {
+    "message": "V\u00f5idakse teha turu-uuringuid t\u00e4psema teabe saamiseks veebisaitide k\u00fclastajate / rakenduste kasutajate ja reklaamide vaatajate kohta."
+  },
+  "purpose10": {
+    "message": "Toodete arendamine ja t\u00e4iustamine"
+  },
+  "purpose10_description": {
+    "message": "Teie andmeid v\u00f5idakse kasutada olemasolevate s\u00fcsteemide ja tarkvara t\u00e4iustamiseks ja uute toodete arendamiseks."
+  },
+  "special_feature1": {
+    "message": "T\u00e4psete geolokatsiooniandmete kasutamine"
+  },
+  "special_feature1_description": {
+    "message": "Teie t\u00e4pseid geolokatsiooniandmeid v\u00f5idakse kasutada \u00fche v\u00f5i mitme eesm\u00e4rgi toetamiseks. See t\u00e4hendab, et teie asukoht v\u00f5ib olla m\u00e4\u00e4ratud kuni m\u00f5ne meetri t\u00e4psusega."
+  },
+  "special_feature2": {
+    "message": "Seadme omaduste aktiivne skaneerimine tuvastamiseks"
+  },
+  "special_feature2_description": {
+    "message": "Teie seadet v\u00f5idakse tuvastada teie seadme ainulaadse omaduste kombinatsiooni skaneerimise teel."
+  }
+}

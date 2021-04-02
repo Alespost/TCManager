@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Stocarea \u0219i/sau accesarea informa\u021biilor de pe un dispozitiv"}, "purpose1_description": {"message": "Modulele cookie, identificatorii de dispozitive sau alte informa\u021bii pot fi stocate sau accesate de pe dispozitivul dvs. \u00een scopurile prezentate."}, "purpose2": {"message": "Selectarea reclamelor de baz\u0103"}, "purpose2_description": {"message": "Reclamele v\u0103 pot fi afi\u0219ate pe baza con\u021binutului pe care \u00eel vizualiza\u021bi, a aplica\u021biei pe care o utiliza\u021bi, loca\u021biei dvs. aproximative sau tipului dispozitivului dvs."}, "purpose3": {"message": "Crearea unui profil de reclame personalizate"}, "purpose3_description": {"message": "Un profil poate fi construit despre dvs. \u0219i interesele dvs. pentru a afi\u0219a reclamele personalizate care sunt relevante pentru dvs."}, "purpose4": {"message": "Selectarea reclamelor personalizate"}, "purpose4_description": {"message": "Reclamele personalizate v\u0103 pot fi afi\u0219ate pe baza unui profil despre dvs."}, "purpose5": {"message": "Crearea unui profil de con\u021binut personalizat"}, "purpose5_description": {"message": "Un profil poate fi construit despre dvs. \u0219i interesele dvs. pentru a afi\u0219a con\u021binutul personalizat care este relevant pentru dvs."}, "purpose6": {"message": "Selectarea con\u021binutului personalizat"}, "purpose6_description": {"message": "Con\u021binutul personalizat v\u0103 poate fi afi\u0219at pe baza unui profil despre dvs."}, "purpose7": {"message": "M\u0103surarea performan\u021bei reclamelor"}, "purpose7_description": {"message": "Performan\u021ba \u0219i eficien\u021ba reclamelor pe care le vede\u021bi sau cu care interac\u021biona\u021bi pot fi m\u0103surate."}, "purpose8": {"message": "M\u0103surarea performan\u021bei con\u021binutului"}, "purpose8_description": {"message": "Performan\u021ba \u0219i eficien\u021ba con\u021binutului pe care \u00eel vede\u021bi sau cu care interac\u021biona\u021bi pot fi m\u0103surate."}, "purpose9": {"message": "Aplicarea cercet\u0103rilor de pia\u021b\u0103 pentru a genera informa\u021bii despre audien\u021b\u0103"}, "purpose9_description": {"message": "Cercetarea de pia\u021b\u0103 poate fi utilizat\u0103 pentru a afla mai multe informa\u021bii despre publicul care viziteaz\u0103 site-urile/aplica\u021biile \u0219i vizualizeaz\u0103 reclamele."}, "purpose10": {"message": "Dezvoltarea \u0219i \u00eembun\u0103t\u0103\u021birea produselor"}, "purpose10_description": {"message": "Datele dvs. pot fi utilizate pentru a \u00eembun\u0103t\u0103\u021bi sistemele \u0219i software-ul existente \u0219i pentru a dezvolta noi produse."}, "special_feature1": {"message": "Utilizarea unor date precise de geoloca\u021bie"}, "special_feature1_description": {"message": "Datele dvs. de geoloca\u021bie precise pot fi utilizate pentru sus\u021binerea unuia sau mai multor scopuri. Aceasta \u00eenseamn\u0103 c\u0103 loca\u021bia dvs. poate fi exact\u0103 \u00een limita c\u00e2torva metri."}, "special_feature2": {"message": "Scanarea activ\u0103 a caracteristicilor dispozitivului pentru identificare"}, "special_feature2_description": {"message": "Dispozitivul dvs. poate fi identificat pe baza unei scan\u0103ri a combina\u021biei unice de caracteristici ale dispozitivului dvs."}}
+{
+  "purpose1": {
+    "message": "Stocarea \u0219i/sau accesarea informa\u021biilor de pe un dispozitiv"
+  },
+  "purpose1_description": {
+    "message": "Modulele cookie, identificatorii de dispozitive sau alte informa\u021bii pot fi stocate sau accesate de pe dispozitivul dvs. \u00een scopurile prezentate."
+  },
+  "purpose2": {
+    "message": "Selectarea reclamelor de baz\u0103"
+  },
+  "purpose2_description": {
+    "message": "Reclamele v\u0103 pot fi afi\u0219ate pe baza con\u021binutului pe care \u00eel vizualiza\u021bi, a aplica\u021biei pe care o utiliza\u021bi, loca\u021biei dvs. aproximative sau tipului dispozitivului dvs."
+  },
+  "purpose3": {
+    "message": "Crearea unui profil de reclame personalizate"
+  },
+  "purpose3_description": {
+    "message": "Un profil poate fi construit despre dvs. \u0219i interesele dvs. pentru a afi\u0219a reclamele personalizate care sunt relevante pentru dvs."
+  },
+  "purpose4": {
+    "message": "Selectarea reclamelor personalizate"
+  },
+  "purpose4_description": {
+    "message": "Reclamele personalizate v\u0103 pot fi afi\u0219ate pe baza unui profil despre dvs."
+  },
+  "purpose5": {
+    "message": "Crearea unui profil de con\u021binut personalizat"
+  },
+  "purpose5_description": {
+    "message": "Un profil poate fi construit despre dvs. \u0219i interesele dvs. pentru a afi\u0219a con\u021binutul personalizat care este relevant pentru dvs."
+  },
+  "purpose6": {
+    "message": "Selectarea con\u021binutului personalizat"
+  },
+  "purpose6_description": {
+    "message": "Con\u021binutul personalizat v\u0103 poate fi afi\u0219at pe baza unui profil despre dvs."
+  },
+  "purpose7": {
+    "message": "M\u0103surarea performan\u021bei reclamelor"
+  },
+  "purpose7_description": {
+    "message": "Performan\u021ba \u0219i eficien\u021ba reclamelor pe care le vede\u021bi sau cu care interac\u021biona\u021bi pot fi m\u0103surate."
+  },
+  "purpose8": {
+    "message": "M\u0103surarea performan\u021bei con\u021binutului"
+  },
+  "purpose8_description": {
+    "message": "Performan\u021ba \u0219i eficien\u021ba con\u021binutului pe care \u00eel vede\u021bi sau cu care interac\u021biona\u021bi pot fi m\u0103surate."
+  },
+  "purpose9": {
+    "message": "Aplicarea cercet\u0103rilor de pia\u021b\u0103 pentru a genera informa\u021bii despre audien\u021b\u0103"
+  },
+  "purpose9_description": {
+    "message": "Cercetarea de pia\u021b\u0103 poate fi utilizat\u0103 pentru a afla mai multe informa\u021bii despre publicul care viziteaz\u0103 site-urile/aplica\u021biile \u0219i vizualizeaz\u0103 reclamele."
+  },
+  "purpose10": {
+    "message": "Dezvoltarea \u0219i \u00eembun\u0103t\u0103\u021birea produselor"
+  },
+  "purpose10_description": {
+    "message": "Datele dvs. pot fi utilizate pentru a \u00eembun\u0103t\u0103\u021bi sistemele \u0219i software-ul existente \u0219i pentru a dezvolta noi produse."
+  },
+  "special_feature1": {
+    "message": "Utilizarea unor date precise de geoloca\u021bie"
+  },
+  "special_feature1_description": {
+    "message": "Datele dvs. de geoloca\u021bie precise pot fi utilizate pentru sus\u021binerea unuia sau mai multor scopuri. Aceasta \u00eenseamn\u0103 c\u0103 loca\u021bia dvs. poate fi exact\u0103 \u00een limita c\u00e2torva metri."
+  },
+  "special_feature2": {
+    "message": "Scanarea activ\u0103 a caracteristicilor dispozitivului pentru identificare"
+  },
+  "special_feature2_description": {
+    "message": "Dispozitivul dvs. poate fi identificat pe baza unei scan\u0103ri a combina\u021biei unice de caracteristici ale dispozitivului dvs."
+  }
+}

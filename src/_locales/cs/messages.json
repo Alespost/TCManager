@@ -1,44 +1,36 @@
 {
   "extension_name": {
-    "message": "TCF Manager",
-    "description": "Název rozšíření."
+    "message": "TC Manager"
   },
   "extension_description": {
-    "message": "Popis",
-    "description": "Popis rozšíření."
+    "message": ""
   },
   "options_title": {
-    "message": "Nastavení TCF Manager"
+    "message": "Nastaven\u00ed TC Manager"
   },
   "options_header": {
-    "message": "Nastavení"
+    "message": "Nastaven\u00ed"
   },
   "options_global": {
-    "message": "Globální nastavení"
+    "message": "Glob\u00e1ln\u00ed nastaven\u00ed"
   },
   "no_tcf": {
-    "message": "Tato stránka nevyužívá TCF.",
-    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+    "message": "Tato str\u00e1nka nevyu\u017e\u00edv\u00e1 TCF."
   },
   "unknown_cmp": {
-    "message": "Neznámé CMP",
-    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+    "message": "Nezn\u00e1m\u00e9 CMP"
   },
   "cmp_header": {
-    "message": "CMP",
-    "description": ""
+    "message": "CMP"
   },
   "consent_header": {
-    "message": "Souhlas se zpracováním osobních údajů",
-    "description": ""
+    "message": "Souhlas se zpracov\u00e1n\u00edm osobn\u00edch \u00fadaj\u016f"
   },
   "purposes_header": {
-    "message": "Účely",
-    "description": ""
+    "message": "\u00da\u010dely"
   },
   "special_features_header": {
-    "message": "Zvláštní funkce",
-    "description": ""
+    "message": "Zvl\u00e1\u0161tn\u00ed funkce"
   },
   "purpose1": {
     "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"

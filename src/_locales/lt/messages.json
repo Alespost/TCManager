@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Laikyti ir (arba) gauti informacij\u0105 \u012frenginyje"}, "purpose1_description": {"message": "Slapukai, \u012frengini\u0173 identifikatoriai ar kita informacija gali b\u016bti laikoma ir prieinama j\u016bs\u0173 \u012frenginyje jums nurodytais tikslais."}, "purpose2": {"message": "Pasirinkti pagrindinius reklaminius skelbimus"}, "purpose2_description": {"message": "Reklaminiai skelbimai gali b\u016bti jums rodomi atsi\u017evelgiant \u012f j\u016bs\u0173 per\u017ei\u016brim\u0105 turin\u012f, naudojam\u0105 program\u0117l\u0119, j\u016bs\u0173 apytiksl\u0119 buvimo viet\u0105 arba  j\u016bs\u0173 \u012frenginio tip\u0105."}, "purpose3": {"message": "Kurti suasmenint\u0105 reklamini\u0173 skelbim\u0173 profil\u012f"}, "purpose3_description": {"message": "Profilis gali b\u016bti sukurtas atsi\u017evelgiant \u012f jus ir j\u016bs\u0173 interesus, kad jums b\u016bt\u0173 rodomi asmeni\u0161kai jums pritaikyti ir aktual\u016bs skelbimai."}, "purpose4": {"message": "Pasirinkti suasmenintus skelbimus"}, "purpose4_description": {"message": "Suasmeninti skelbimai gali b\u016bti rodomi vadovaujantis sukurtu j\u016bs\u0173 profiliu."}, "purpose5": {"message": "Sukurti suasmenint\u0105 turinio profil\u012f"}, "purpose5_description": {"message": "Profilis gali b\u016bti sukurtas atsi\u017evelgiant \u012f jus ir j\u016bs\u0173 interesus, kad jums b\u016bt\u0173 rodomas asmeni\u0161kai jums pritaikytas ir aktualus turinys."}, "purpose6": {"message": "Pasirinkti suasmenint\u0105 turin\u012f"}, "purpose6_description": {"message": "Suasmenintas turinys gali b\u016bti rodomas vadovaujantis sukurtu j\u016bs\u0173 profiliu."}, "purpose7": {"message": "Vertinti skelbimo veiksmingum\u0105"}, "purpose7_description": {"message": "Skelbim\u0173, kuriuos matote ir su kuriais s\u0105veikaujate, veiksmingumas ir efektyvumas gali b\u016bti \u012fvertintas."}, "purpose8": {"message": "Vertinti turinio veiksmingum\u0105"}, "purpose8_description": {"message": "Turinio, kur\u012f matote ir su kuriuo s\u0105veikaujate veiksmingumas ir efektyvumas gali b\u016bti \u012fvertintas."}, "purpose9": {"message": "Taikyti rinkos tyrimus auditorijos \u012f\u017evalgoms gauti"}, "purpose9_description": {"message": "Rinkos tyrim\u0173 duomenys gali b\u016bti naudojami siekiant su\u017einoti daugiau apie auditorijas, kurios lankosi svetain\u0117se / program\u0117l\u0117se, ar jas per\u017ei\u016bri."}, "purpose10": {"message": "Kurti ir tobulinti produktus"}, "purpose10_description": {"message": "J\u016bs\u0173 duomenys gali b\u016bti naudojami esamoms sistemoms ir programinei \u012frangai tobulinti ir naujiems produktams kurti."}, "special_feature1": {"message": "Naudoti tikslius geografin\u0117s vietos duomenis"}, "special_feature1_description": {"message": "J\u016bs\u0173 tiksl\u016bs geografin\u0117s vietos duomenys gali b\u016bti naudojami siekiant vieno ar daugiau tiksl\u0173. Tai rei\u0161kia, kad j\u016bs\u0173 buvimo vieta gali b\u016bti nustatyta keli\u0173 metr\u0173 tikslumu."}, "special_feature2": {"message": "Aktyviai skenuoti \u012frenginio charakteristikas identifikavimo tikslais"}, "special_feature2_description": {"message": "J\u016bs\u0173 \u012frenginys gali b\u016bti identifikuotas remiantis j\u016bs\u0173 \u012frenginio unikali\u0173 charakteristik\u0173 derinio skenavimo duomenimis."}}
+{
+  "purpose1": {
+    "message": "Laikyti ir (arba) gauti informacij\u0105 \u012frenginyje"
+  },
+  "purpose1_description": {
+    "message": "Slapukai, \u012frengini\u0173 identifikatoriai ar kita informacija gali b\u016bti laikoma ir prieinama j\u016bs\u0173 \u012frenginyje jums nurodytais tikslais."
+  },
+  "purpose2": {
+    "message": "Pasirinkti pagrindinius reklaminius skelbimus"
+  },
+  "purpose2_description": {
+    "message": "Reklaminiai skelbimai gali b\u016bti jums rodomi atsi\u017evelgiant \u012f j\u016bs\u0173 per\u017ei\u016brim\u0105 turin\u012f, naudojam\u0105 program\u0117l\u0119, j\u016bs\u0173 apytiksl\u0119 buvimo viet\u0105 arba  j\u016bs\u0173 \u012frenginio tip\u0105."
+  },
+  "purpose3": {
+    "message": "Kurti suasmenint\u0105 reklamini\u0173 skelbim\u0173 profil\u012f"
+  },
+  "purpose3_description": {
+    "message": "Profilis gali b\u016bti sukurtas atsi\u017evelgiant \u012f jus ir j\u016bs\u0173 interesus, kad jums b\u016bt\u0173 rodomi asmeni\u0161kai jums pritaikyti ir aktual\u016bs skelbimai."
+  },
+  "purpose4": {
+    "message": "Pasirinkti suasmenintus skelbimus"
+  },
+  "purpose4_description": {
+    "message": "Suasmeninti skelbimai gali b\u016bti rodomi vadovaujantis sukurtu j\u016bs\u0173 profiliu."
+  },
+  "purpose5": {
+    "message": "Sukurti suasmenint\u0105 turinio profil\u012f"
+  },
+  "purpose5_description": {
+    "message": "Profilis gali b\u016bti sukurtas atsi\u017evelgiant \u012f jus ir j\u016bs\u0173 interesus, kad jums b\u016bt\u0173 rodomas asmeni\u0161kai jums pritaikytas ir aktualus turinys."
+  },
+  "purpose6": {
+    "message": "Pasirinkti suasmenint\u0105 turin\u012f"
+  },
+  "purpose6_description": {
+    "message": "Suasmenintas turinys gali b\u016bti rodomas vadovaujantis sukurtu j\u016bs\u0173 profiliu."
+  },
+  "purpose7": {
+    "message": "Vertinti skelbimo veiksmingum\u0105"
+  },
+  "purpose7_description": {
+    "message": "Skelbim\u0173, kuriuos matote ir su kuriais s\u0105veikaujate, veiksmingumas ir efektyvumas gali b\u016bti \u012fvertintas."
+  },
+  "purpose8": {
+    "message": "Vertinti turinio veiksmingum\u0105"
+  },
+  "purpose8_description": {
+    "message": "Turinio, kur\u012f matote ir su kuriuo s\u0105veikaujate veiksmingumas ir efektyvumas gali b\u016bti \u012fvertintas."
+  },
+  "purpose9": {
+    "message": "Taikyti rinkos tyrimus auditorijos \u012f\u017evalgoms gauti"
+  },
+  "purpose9_description": {
+    "message": "Rinkos tyrim\u0173 duomenys gali b\u016bti naudojami siekiant su\u017einoti daugiau apie auditorijas, kurios lankosi svetain\u0117se / program\u0117l\u0117se, ar jas per\u017ei\u016bri."
+  },
+  "purpose10": {
+    "message": "Kurti ir tobulinti produktus"
+  },
+  "purpose10_description": {
+    "message": "J\u016bs\u0173 duomenys gali b\u016bti naudojami esamoms sistemoms ir programinei \u012frangai tobulinti ir naujiems produktams kurti."
+  },
+  "special_feature1": {
+    "message": "Naudoti tikslius geografin\u0117s vietos duomenis"
+  },
+  "special_feature1_description": {
+    "message": "J\u016bs\u0173 tiksl\u016bs geografin\u0117s vietos duomenys gali b\u016bti naudojami siekiant vieno ar daugiau tiksl\u0173. Tai rei\u0161kia, kad j\u016bs\u0173 buvimo vieta gali b\u016bti nustatyta keli\u0173 metr\u0173 tikslumu."
+  },
+  "special_feature2": {
+    "message": "Aktyviai skenuoti \u012frenginio charakteristikas identifikavimo tikslais"
+  },
+  "special_feature2_description": {
+    "message": "J\u016bs\u0173 \u012frenginys gali b\u016bti identifikuotas remiantis j\u016bs\u0173 \u012frenginio unikali\u0173 charakteristik\u0173 derinio skenavimo duomenimis."
+  }
+}

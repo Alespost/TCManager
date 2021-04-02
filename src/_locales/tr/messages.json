@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Bilgileri bir cihazda depolamak ve/veya onlara cihazdan eri\u015fmek"}, "purpose1_description": {"message": "Size sunulan ama\u00e7lar i\u00e7in \u00e7erezler, cihaz belirleyiciler veya ba\u015fka bilgiler cihaz\u0131n\u0131zda depolanabilir ve onlara cihazdan eri\u015filebilir."}, "purpose2": {"message": "Temel reklamlar\u0131 se\u00e7mek"}, "purpose2_description": {"message": "G\u00f6r\u00fcnt\u00fclemekte oldu\u011funuz i\u00e7erik, kullanmakta oldu\u011funuz uygulama, yakla\u015f\u0131k konumunuz veya cihaz t\u00fcr\u00fcn\u00fcz temelinde size reklamlar g\u00f6sterilebilir."}, "purpose3": {"message": "Ki\u015fiselle\u015ftirilmi\u015f bir reklam profili olu\u015fturmak"}, "purpose3_description": {"message": "Sizin ile ilgili olan ki\u015fiselle\u015ftirilmi\u015f reklamlar g\u00f6stermek i\u00e7in siz ve ilgi alanlar\u0131n\u0131z hakk\u0131nda bir profil olu\u015fturulabilir."}, "purpose4": {"message": "Ki\u015fiselle\u015ftirilmi\u015f reklamlar se\u00e7mek"}, "purpose4_description": {"message": "Hakk\u0131n\u0131zdaki bir profil temelinde size ki\u015fiselle\u015ftirilmi\u015f reklamlar g\u00f6sterilebilir."}, "purpose5": {"message": "Ki\u015fiselle\u015ftirilmi\u015f bir i\u00e7erik profili olu\u015fturmak"}, "purpose5_description": {"message": "Sizin ile ilgili olan ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik g\u00f6stermek i\u00e7in siz ve ilgi alanlar\u0131n\u0131z hakk\u0131nda bir profil olu\u015fturulabilir."}, "purpose6": {"message": "Ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik se\u00e7mek"}, "purpose6_description": {"message": "Hakk\u0131n\u0131zdaki bir profil temelinde size ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik g\u00f6sterilebilir."}, "purpose7": {"message": "Reklam performans\u0131n\u0131 \u00f6l\u00e7mek"}, "purpose7_description": {"message": "G\u00f6rd\u00fc\u011f\u00fcn\u00fcz veya etkile\u015fimde bulundu\u011funuz reklamlar\u0131n etki d\u00fczeyi ve performans\u0131 \u00f6l\u00e7\u00fclebilir."}, "purpose8": {"message": "\u0130\u00e7erik performans\u0131n\u0131 \u00f6l\u00e7mek"}, "purpose8_description": {"message": "G\u00f6rd\u00fc\u011f\u00fcn\u00fcz veya etkile\u015fimde bulundu\u011funuz i\u00e7eri\u011fin etki d\u00fczeyi ve performans\u0131 \u00f6l\u00e7\u00fclebilir."}, "purpose9": {"message": "\u0130zleyici g\u00f6r\u00fc\u015fleri \u00fcretmek \u00fczere pazar ara\u015ft\u0131rmas\u0131 uygulamak"}, "purpose9_description": {"message": "Pazar ara\u015ft\u0131rmas\u0131, siteleri/uygulamalar\u0131 ziyaret eden ve reklamlar\u0131 g\u00f6ren izleyiciler hakk\u0131nda daha fazla \u015fey \u00f6\u011frenmek i\u00e7in kullan\u0131labilir."}, "purpose10": {"message": "\u00dcr\u00fcnler geli\u015ftirmek ve iyile\u015ftirmek"}, "purpose10_description": {"message": "Verileriniz mevcut sistemleri ve yaz\u0131l\u0131mlar\u0131 iyile\u015ftirmek ve yeni \u00fcr\u00fcnler geli\u015ftirmek i\u00e7in kullan\u0131labilir."}, "special_feature1": {"message": "Kesin co\u011frafi konum verilerini kullanmak"}, "special_feature1_description": {"message": "Kesin co\u011frafi konum verileriniz bir veya daha \u00e7ok amac\u0131 desteklemek \u00fczere kullan\u0131labilir. Yani konumunuz birka\u00e7 metre dahiline kadar do\u011fru olabilir."}, "special_feature2": {"message": "Belirleme amac\u0131 ile cihaz \u00f6zelliklerini aktif \u015fekilde taramak"}, "special_feature2_description": {"message": "Cihaz\u0131n\u0131z\u0131n \u00f6zg\u00fcn \u00f6zellik bile\u015fiminin taramas\u0131 temelinde cihaz\u0131n\u0131z belirlenebilir."}}
+{
+  "purpose1": {
+    "message": "Bilgileri bir cihazda depolamak ve/veya onlara cihazdan eri\u015fmek"
+  },
+  "purpose1_description": {
+    "message": "Size sunulan ama\u00e7lar i\u00e7in \u00e7erezler, cihaz belirleyiciler veya ba\u015fka bilgiler cihaz\u0131n\u0131zda depolanabilir ve onlara cihazdan eri\u015filebilir."
+  },
+  "purpose2": {
+    "message": "Temel reklamlar\u0131 se\u00e7mek"
+  },
+  "purpose2_description": {
+    "message": "G\u00f6r\u00fcnt\u00fclemekte oldu\u011funuz i\u00e7erik, kullanmakta oldu\u011funuz uygulama, yakla\u015f\u0131k konumunuz veya cihaz t\u00fcr\u00fcn\u00fcz temelinde size reklamlar g\u00f6sterilebilir."
+  },
+  "purpose3": {
+    "message": "Ki\u015fiselle\u015ftirilmi\u015f bir reklam profili olu\u015fturmak"
+  },
+  "purpose3_description": {
+    "message": "Sizin ile ilgili olan ki\u015fiselle\u015ftirilmi\u015f reklamlar g\u00f6stermek i\u00e7in siz ve ilgi alanlar\u0131n\u0131z hakk\u0131nda bir profil olu\u015fturulabilir."
+  },
+  "purpose4": {
+    "message": "Ki\u015fiselle\u015ftirilmi\u015f reklamlar se\u00e7mek"
+  },
+  "purpose4_description": {
+    "message": "Hakk\u0131n\u0131zdaki bir profil temelinde size ki\u015fiselle\u015ftirilmi\u015f reklamlar g\u00f6sterilebilir."
+  },
+  "purpose5": {
+    "message": "Ki\u015fiselle\u015ftirilmi\u015f bir i\u00e7erik profili olu\u015fturmak"
+  },
+  "purpose5_description": {
+    "message": "Sizin ile ilgili olan ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik g\u00f6stermek i\u00e7in siz ve ilgi alanlar\u0131n\u0131z hakk\u0131nda bir profil olu\u015fturulabilir."
+  },
+  "purpose6": {
+    "message": "Ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik se\u00e7mek"
+  },
+  "purpose6_description": {
+    "message": "Hakk\u0131n\u0131zdaki bir profil temelinde size ki\u015fiselle\u015ftirilmi\u015f i\u00e7erik g\u00f6sterilebilir."
+  },
+  "purpose7": {
+    "message": "Reklam performans\u0131n\u0131 \u00f6l\u00e7mek"
+  },
+  "purpose7_description": {
+    "message": "G\u00f6rd\u00fc\u011f\u00fcn\u00fcz veya etkile\u015fimde bulundu\u011funuz reklamlar\u0131n etki d\u00fczeyi ve performans\u0131 \u00f6l\u00e7\u00fclebilir."
+  },
+  "purpose8": {
+    "message": "\u0130\u00e7erik performans\u0131n\u0131 \u00f6l\u00e7mek"
+  },
+  "purpose8_description": {
+    "message": "G\u00f6rd\u00fc\u011f\u00fcn\u00fcz veya etkile\u015fimde bulundu\u011funuz i\u00e7eri\u011fin etki d\u00fczeyi ve performans\u0131 \u00f6l\u00e7\u00fclebilir."
+  },
+  "purpose9": {
+    "message": "\u0130zleyici g\u00f6r\u00fc\u015fleri \u00fcretmek \u00fczere pazar ara\u015ft\u0131rmas\u0131 uygulamak"
+  },
+  "purpose9_description": {
+    "message": "Pazar ara\u015ft\u0131rmas\u0131, siteleri/uygulamalar\u0131 ziyaret eden ve reklamlar\u0131 g\u00f6ren izleyiciler hakk\u0131nda daha fazla \u015fey \u00f6\u011frenmek i\u00e7in kullan\u0131labilir."
+  },
+  "purpose10": {
+    "message": "\u00dcr\u00fcnler geli\u015ftirmek ve iyile\u015ftirmek"
+  },
+  "purpose10_description": {
+    "message": "Verileriniz mevcut sistemleri ve yaz\u0131l\u0131mlar\u0131 iyile\u015ftirmek ve yeni \u00fcr\u00fcnler geli\u015ftirmek i\u00e7in kullan\u0131labilir."
+  },
+  "special_feature1": {
+    "message": "Kesin co\u011frafi konum verilerini kullanmak"
+  },
+  "special_feature1_description": {
+    "message": "Kesin co\u011frafi konum verileriniz bir veya daha \u00e7ok amac\u0131 desteklemek \u00fczere kullan\u0131labilir. Yani konumunuz birka\u00e7 metre dahiline kadar do\u011fru olabilir."
+  },
+  "special_feature2": {
+    "message": "Belirleme amac\u0131 ile cihaz \u00f6zelliklerini aktif \u015fekilde taramak"
+  },
+  "special_feature2_description": {
+    "message": "Cihaz\u0131n\u0131z\u0131n \u00f6zg\u00fcn \u00f6zellik bile\u015fiminin taramas\u0131 temelinde cihaz\u0131n\u0131z belirlenebilir."
+  }
+}

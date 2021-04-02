@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Lagra och/eller f\u00e5 \u00e5tkomst till information p\u00e5 en enhet"}, "purpose1_description": {"message": "Cookies, enhetsidentifierare eller annan information kan lagras eller kommas \u00e5t p\u00e5 din enhet f\u00f6r de syften som presenteras f\u00f6r dig."}, "purpose2": {"message": "V\u00e4lja grundl\u00e4ggande annonser"}, "purpose2_description": {"message": "Annonser kan visas f\u00f6r dig baserat p\u00e5 det inneh\u00e5ll du bes\u00f6ker, den app du anv\u00e4nder, din ungef\u00e4rliga plats eller din enhetstyp."}, "purpose3": {"message": "Skapa en personanpassad annonsprofil"}, "purpose3_description": {"message": "En profil kan byggas om dig och dina intressen f\u00f6r att visa dig personanpassade annonser som \u00e4r relevanta f\u00f6r dig."}, "purpose4": {"message": "V\u00e4lja personanpassade annonser"}, "purpose4_description": {"message": "Personanpassade annonser kan visas f\u00f6r dig baserat p\u00e5 en profil om dig."}, "purpose5": {"message": "Skapa en personanpassad inneh\u00e5llsprofil"}, "purpose5_description": {"message": "En profil kan byggas om dig och dina intressen f\u00f6r att visa dig personanpassat inneh\u00e5ll som \u00e4r relevant f\u00f6r dig."}, "purpose6": {"message": "V\u00e4lja personanpassat inneh\u00e5ll"}, "purpose6_description": {"message": "Personanpassat inneh\u00e5ll kan visas f\u00f6r dig baserat p\u00e5 en profil om dig."}, "purpose7": {"message": "M\u00e4ta annonsprestanda"}, "purpose7_description": {"message": "Prestanda och effektivitet f\u00f6r annonser som du ser eller interagerar med kan m\u00e4tas."}, "purpose8": {"message": "M\u00e4ta inneh\u00e5llsprestanda"}, "purpose8_description": {"message": "Prestanda och effektivitet f\u00f6r inneh\u00e5ll som du ser eller interagerar med kan m\u00e4tas."}, "purpose9": {"message": "Till\u00e4mpa marknadsunders\u00f6kningar f\u00f6r att generera m\u00e5lgruppsinsikter"}, "purpose9_description": {"message": "Marknadsunders\u00f6kningar kan anv\u00e4ndas f\u00f6r att l\u00e4ra sig mer om de m\u00e5lgrupper som bes\u00f6ker webbplatser/appar och ser annonser."}, "purpose10": {"message": "Utveckla och f\u00f6rb\u00e4ttra produkter"}, "purpose10_description": {"message": "Dina uppgifter kan anv\u00e4ndas f\u00f6r att f\u00f6rb\u00e4ttra befintliga system och programvara och f\u00f6r att utveckla nya produkter."}, "special_feature1": {"message": "Anv\u00e4nda exakta uppgifter om geografisk positionering"}, "special_feature1_description": {"message": "Dina exakta uppgifter om geografisk positionering kan anv\u00e4ndas till st\u00f6d f\u00f6r ett eller flera syften. Detta inneb\u00e4r att din plats kan vara exakt inom flera meter."}, "special_feature2": {"message": "L\u00e4sa av enhetens egenskaper aktivt f\u00f6r identifiering"}, "special_feature2_description": {"message": "Din enhet kan identifieras baserat p\u00e5 din enhets kombination av egenskaper."}}
+{
+  "purpose1": {
+    "message": "Lagra och/eller f\u00e5 \u00e5tkomst till information p\u00e5 en enhet"
+  },
+  "purpose1_description": {
+    "message": "Cookies, enhetsidentifierare eller annan information kan lagras eller kommas \u00e5t p\u00e5 din enhet f\u00f6r de syften som presenteras f\u00f6r dig."
+  },
+  "purpose2": {
+    "message": "V\u00e4lja grundl\u00e4ggande annonser"
+  },
+  "purpose2_description": {
+    "message": "Annonser kan visas f\u00f6r dig baserat p\u00e5 det inneh\u00e5ll du bes\u00f6ker, den app du anv\u00e4nder, din ungef\u00e4rliga plats eller din enhetstyp."
+  },
+  "purpose3": {
+    "message": "Skapa en personanpassad annonsprofil"
+  },
+  "purpose3_description": {
+    "message": "En profil kan byggas om dig och dina intressen f\u00f6r att visa dig personanpassade annonser som \u00e4r relevanta f\u00f6r dig."
+  },
+  "purpose4": {
+    "message": "V\u00e4lja personanpassade annonser"
+  },
+  "purpose4_description": {
+    "message": "Personanpassade annonser kan visas f\u00f6r dig baserat p\u00e5 en profil om dig."
+  },
+  "purpose5": {
+    "message": "Skapa en personanpassad inneh\u00e5llsprofil"
+  },
+  "purpose5_description": {
+    "message": "En profil kan byggas om dig och dina intressen f\u00f6r att visa dig personanpassat inneh\u00e5ll som \u00e4r relevant f\u00f6r dig."
+  },
+  "purpose6": {
+    "message": "V\u00e4lja personanpassat inneh\u00e5ll"
+  },
+  "purpose6_description": {
+    "message": "Personanpassat inneh\u00e5ll kan visas f\u00f6r dig baserat p\u00e5 en profil om dig."
+  },
+  "purpose7": {
+    "message": "M\u00e4ta annonsprestanda"
+  },
+  "purpose7_description": {
+    "message": "Prestanda och effektivitet f\u00f6r annonser som du ser eller interagerar med kan m\u00e4tas."
+  },
+  "purpose8": {
+    "message": "M\u00e4ta inneh\u00e5llsprestanda"
+  },
+  "purpose8_description": {
+    "message": "Prestanda och effektivitet f\u00f6r inneh\u00e5ll som du ser eller interagerar med kan m\u00e4tas."
+  },
+  "purpose9": {
+    "message": "Till\u00e4mpa marknadsunders\u00f6kningar f\u00f6r att generera m\u00e5lgruppsinsikter"
+  },
+  "purpose9_description": {
+    "message": "Marknadsunders\u00f6kningar kan anv\u00e4ndas f\u00f6r att l\u00e4ra sig mer om de m\u00e5lgrupper som bes\u00f6ker webbplatser/appar och ser annonser."
+  },
+  "purpose10": {
+    "message": "Utveckla och f\u00f6rb\u00e4ttra produkter"
+  },
+  "purpose10_description": {
+    "message": "Dina uppgifter kan anv\u00e4ndas f\u00f6r att f\u00f6rb\u00e4ttra befintliga system och programvara och f\u00f6r att utveckla nya produkter."
+  },
+  "special_feature1": {
+    "message": "Anv\u00e4nda exakta uppgifter om geografisk positionering"
+  },
+  "special_feature1_description": {
+    "message": "Dina exakta uppgifter om geografisk positionering kan anv\u00e4ndas till st\u00f6d f\u00f6r ett eller flera syften. Detta inneb\u00e4r att din plats kan vara exakt inom flera meter."
+  },
+  "special_feature2": {
+    "message": "L\u00e4sa av enhetens egenskaper aktivt f\u00f6r identifiering"
+  },
+  "special_feature2_description": {
+    "message": "Din enhet kan identifieras baserat p\u00e5 din enhets kombination av egenskaper."
+  }
+}

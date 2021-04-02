@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Stocker et/ou acc\u00e9der \u00e0 des informations sur un terminal"}, "purpose1_description": {"message": "Les cookies, identifiants de votre terminal ou autres informations peuvent \u00eatre stock\u00e9s ou consult\u00e9s sur votre terminal pour les finalit\u00e9s qui vous sont pr\u00e9sent\u00e9es."}, "purpose2": {"message": "S\u00e9lectionner des publicit\u00e9s standard"}, "purpose2_description": {"message": "Les publicit\u00e9s peuvent vous \u00eatre pr\u00e9sent\u00e9es en fonction du contenu \u00e9ditorial que vous consultez, de l\u2019application que vous utilisez, de votre localisation approximative, ou de votre type de terminal\n"}, "purpose3": {"message": "Cr\u00e9er un profil personnalis\u00e9 de publicit\u00e9s"}, "purpose3_description": {"message": "Un profil peut \u00eatre cr\u00e9\u00e9 sur vous et sur vos centres d\u2019int\u00e9r\u00eat pour vous pr\u00e9senter des publicit\u00e9s personnalis\u00e9es susceptibles de vous int\u00e9resser."}, "purpose4": {"message": "S\u00e9lectionner des publicit\u00e9s personnalis\u00e9es"}, "purpose4_description": {"message": "Des publicit\u00e9s personnalis\u00e9es peuvent vous \u00eatre pr\u00e9sent\u00e9es sur la base d\u2019un profil cr\u00e9\u00e9 sur vous."}, "purpose5": {"message": "Cr\u00e9er un profil pour afficher un contenu personnalis\u00e9"}, "purpose5_description": {"message": "Un profil peut \u00eatre cr\u00e9\u00e9 sur vous et sur vos centres d\u2019int\u00e9r\u00eat afin de vous pr\u00e9senter du contenu personnalis\u00e9 susceptible de vous int\u00e9resser."}, "purpose6": {"message": "S\u00e9lectionner du contenu personnalis\u00e9"}, "purpose6_description": {"message": "Du contenu personnalis\u00e9 peut vous \u00eatre pr\u00e9sent\u00e9 sur la base de votre profil utilisateur."}, "purpose7": {"message": "Mesurer la performance des publicit\u00e9s"}, "purpose7_description": {"message": "La performance et l\u2019efficacit\u00e9 des publicit\u00e9s que vous voyez ou avec lesquelles vous interagissez peuvent \u00eatre mesur\u00e9es."}, "purpose8": {"message": "Mesurer la performance du contenu"}, "purpose8_description": {"message": "La performance et l\u2019efficacit\u00e9 du contenu que vous voyez ou avec lequel vous interagissez peuvent \u00eatre mesur\u00e9es."}, "purpose9": {"message": "Exploiter des \u00e9tudes de march\u00e9 afin de g\u00e9n\u00e9rer des donn\u00e9es d\u2019audience"}, "purpose9_description": {"message": "Les \u00e9tudes de march\u00e9 peuvent servir \u00e0 en apprendre davantage sur les audiences qui visitent des sites/utilisent des applications et voient des publicit\u00e9s."}, "purpose10": {"message": "D\u00e9velopper et am\u00e9liorer les produits"}, "purpose10_description": {"message": "Vos donn\u00e9es peuvent \u00eatre utilis\u00e9es pour am\u00e9liorer les syst\u00e8mes et logiciels existants et pour d\u00e9velopper de nouveaux produits."}, "special_feature1": {"message": "Utiliser des donn\u00e9es de g\u00e9olocalisation pr\u00e9cises"}, "special_feature1_description": {"message": "Vos donn\u00e9es de g\u00e9olocalisation pr\u00e9cises peuvent \u00eatre utilis\u00e9es \u00e0 l\u2019appui d\u2019une ou de plusieurs finalit\u00e9s. Cela signifie que votre localisation peut \u00eatre pr\u00e9cise \u00e0 plusieurs m\u00e8tres pr\u00e8s."}, "special_feature2": {"message": "Analyser activement les caract\u00e9ristiques du terminal pour l\u2019identification"}, "special_feature2_description": {"message": "Votre terminal peut \u00eatre identifi\u00e9 sur la base d\u2019une analyse de la combinaison unique de caract\u00e9ristiques de votre terminal."}}
+{
+  "purpose1": {
+    "message": "Stocker et/ou acc\u00e9der \u00e0 des informations sur un terminal"
+  },
+  "purpose1_description": {
+    "message": "Les cookies, identifiants de votre terminal ou autres informations peuvent \u00eatre stock\u00e9s ou consult\u00e9s sur votre terminal pour les finalit\u00e9s qui vous sont pr\u00e9sent\u00e9es."
+  },
+  "purpose2": {
+    "message": "S\u00e9lectionner des publicit\u00e9s standard"
+  },
+  "purpose2_description": {
+    "message": "Les publicit\u00e9s peuvent vous \u00eatre pr\u00e9sent\u00e9es en fonction du contenu \u00e9ditorial que vous consultez, de l\u2019application que vous utilisez, de votre localisation approximative, ou de votre type de terminal\n"
+  },
+  "purpose3": {
+    "message": "Cr\u00e9er un profil personnalis\u00e9 de publicit\u00e9s"
+  },
+  "purpose3_description": {
+    "message": "Un profil peut \u00eatre cr\u00e9\u00e9 sur vous et sur vos centres d\u2019int\u00e9r\u00eat pour vous pr\u00e9senter des publicit\u00e9s personnalis\u00e9es susceptibles de vous int\u00e9resser."
+  },
+  "purpose4": {
+    "message": "S\u00e9lectionner des publicit\u00e9s personnalis\u00e9es"
+  },
+  "purpose4_description": {
+    "message": "Des publicit\u00e9s personnalis\u00e9es peuvent vous \u00eatre pr\u00e9sent\u00e9es sur la base d\u2019un profil cr\u00e9\u00e9 sur vous."
+  },
+  "purpose5": {
+    "message": "Cr\u00e9er un profil pour afficher un contenu personnalis\u00e9"
+  },
+  "purpose5_description": {
+    "message": "Un profil peut \u00eatre cr\u00e9\u00e9 sur vous et sur vos centres d\u2019int\u00e9r\u00eat afin de vous pr\u00e9senter du contenu personnalis\u00e9 susceptible de vous int\u00e9resser."
+  },
+  "purpose6": {
+    "message": "S\u00e9lectionner du contenu personnalis\u00e9"
+  },
+  "purpose6_description": {
+    "message": "Du contenu personnalis\u00e9 peut vous \u00eatre pr\u00e9sent\u00e9 sur la base de votre profil utilisateur."
+  },
+  "purpose7": {
+    "message": "Mesurer la performance des publicit\u00e9s"
+  },
+  "purpose7_description": {
+    "message": "La performance et l\u2019efficacit\u00e9 des publicit\u00e9s que vous voyez ou avec lesquelles vous interagissez peuvent \u00eatre mesur\u00e9es."
+  },
+  "purpose8": {
+    "message": "Mesurer la performance du contenu"
+  },
+  "purpose8_description": {
+    "message": "La performance et l\u2019efficacit\u00e9 du contenu que vous voyez ou avec lequel vous interagissez peuvent \u00eatre mesur\u00e9es."
+  },
+  "purpose9": {
+    "message": "Exploiter des \u00e9tudes de march\u00e9 afin de g\u00e9n\u00e9rer des donn\u00e9es d\u2019audience"
+  },
+  "purpose9_description": {
+    "message": "Les \u00e9tudes de march\u00e9 peuvent servir \u00e0 en apprendre davantage sur les audiences qui visitent des sites/utilisent des applications et voient des publicit\u00e9s."
+  },
+  "purpose10": {
+    "message": "D\u00e9velopper et am\u00e9liorer les produits"
+  },
+  "purpose10_description": {
+    "message": "Vos donn\u00e9es peuvent \u00eatre utilis\u00e9es pour am\u00e9liorer les syst\u00e8mes et logiciels existants et pour d\u00e9velopper de nouveaux produits."
+  },
+  "special_feature1": {
+    "message": "Utiliser des donn\u00e9es de g\u00e9olocalisation pr\u00e9cises"
+  },
+  "special_feature1_description": {
+    "message": "Vos donn\u00e9es de g\u00e9olocalisation pr\u00e9cises peuvent \u00eatre utilis\u00e9es \u00e0 l\u2019appui d\u2019une ou de plusieurs finalit\u00e9s. Cela signifie que votre localisation peut \u00eatre pr\u00e9cise \u00e0 plusieurs m\u00e8tres pr\u00e8s."
+  },
+  "special_feature2": {
+    "message": "Analyser activement les caract\u00e9ristiques du terminal pour l\u2019identification"
+  },
+  "special_feature2_description": {
+    "message": "Votre terminal peut \u00eatre identifi\u00e9 sur la base d\u2019une analyse de la combinaison unique de caract\u00e9ristiques de votre terminal."
+  }
+}

@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Archiviare e/o accedere a informazioni su un dispositivo"}, "purpose1_description": {"message": "I cookie, gli identificatori del dispositivo o altre informazioni possono essere archiviati o reperiti sul dispositivo dell\u2019utente per le finalit\u00e0 presentate."}, "purpose2": {"message": "Selezionare annunci basici (basic ads)"}, "purpose2_description": {"message": "Gli annunci possono essere mostrati in base al contenuto visualizzato dall\u2019utente, all\u2019app utilizzata, alla posizione approssimativa, oppure al tipo di dispositivo."}, "purpose3": {"message": "Creare un profilo di annunci personalizzati"}, "purpose3_description": {"message": "Sar\u00e0 possibile creare un profilo relativo all\u2019utente e ai suoi interessi, al fine di mostrare annunci personalizzati."}, "purpose4": {"message": "Selezionare annunci personalizzati"}, "purpose4_description": {"message": "Annunci personalizzati possono essere mostrati in base al profilo relativo all\u2019utente."}, "purpose5": {"message": "Creare un profilo di contenuto personalizzato"}, "purpose5_description": {"message": "Un profilo relativo all\u2019utente e ai suoi interessi pu\u00f2 essere creato per mostrargli contenuti personalizzati pertinenti."}, "purpose6": {"message": "Selezionare contenuti personalizzati"}, "purpose6_description": {"message": "I contenuti personalizzati possono essere mostrati sulla base di un profilo relativo all\u2019utente."}, "purpose7": {"message": "Valutare le performance degli annunci"}, "purpose7_description": {"message": "\u00c8 possibile valutare le performance e l\u2019efficacia degli annunci visualizzati dall\u2019utente o con cui lo stesso interagisce."}, "purpose8": {"message": "Valutare le performance dei contenuti"}, "purpose8_description": {"message": "\u00c8 possibile valutare le performance e l\u2019efficacia dei contenuti visualizzati dall\u2019utente o con cui lo stesso interagisce."}, "purpose9": {"message": "Applicare ricerche di mercato per generare approfondimenti sul pubblico"}, "purpose9_description": {"message": "La ricerca di mercato pu\u00f2 essere utilizzata per saperne di pi\u00f9 sul pubblico che visita siti/app e visualizza annunci."}, "purpose10": {"message": "Sviluppare e perfezionare i prodotti"}, "purpose10_description": {"message": "I dati dell\u2019utente possono essere utilizzati per perfezionare sistemi e software esistenti e per sviluppare nuovi prodotti."}, "special_feature1": {"message": "Utilizzare dati di geolocalizzazione precisi"}, "special_feature1_description": {"message": "I dati di geolocalizzazione precisi possono essere utilizzati a supporto di una o varie finalit\u00e0. Ci\u00f2 significa che la posizione dell\u2019utente potr\u00e0 determinarsi con esattezza nel raggio di alcuni metri."}, "special_feature2": {"message": "Scansione attiva delle caratteristiche del dispositivo ai fini dell\u2019identificazione"}, "special_feature2_description": {"message": "Il dispositivo pu\u00f2 essere identificato in base a una scansione della combinazione unica di caratteristiche del dispositivo."}}
+{
+  "purpose1": {
+    "message": "Archiviare e/o accedere a informazioni su un dispositivo"
+  },
+  "purpose1_description": {
+    "message": "I cookie, gli identificatori del dispositivo o altre informazioni possono essere archiviati o reperiti sul dispositivo dell\u2019utente per le finalit\u00e0 presentate."
+  },
+  "purpose2": {
+    "message": "Selezionare annunci basici (basic ads)"
+  },
+  "purpose2_description": {
+    "message": "Gli annunci possono essere mostrati in base al contenuto visualizzato dall\u2019utente, all\u2019app utilizzata, alla posizione approssimativa, oppure al tipo di dispositivo."
+  },
+  "purpose3": {
+    "message": "Creare un profilo di annunci personalizzati"
+  },
+  "purpose3_description": {
+    "message": "Sar\u00e0 possibile creare un profilo relativo all\u2019utente e ai suoi interessi, al fine di mostrare annunci personalizzati."
+  },
+  "purpose4": {
+    "message": "Selezionare annunci personalizzati"
+  },
+  "purpose4_description": {
+    "message": "Annunci personalizzati possono essere mostrati in base al profilo relativo all\u2019utente."
+  },
+  "purpose5": {
+    "message": "Creare un profilo di contenuto personalizzato"
+  },
+  "purpose5_description": {
+    "message": "Un profilo relativo all\u2019utente e ai suoi interessi pu\u00f2 essere creato per mostrargli contenuti personalizzati pertinenti."
+  },
+  "purpose6": {
+    "message": "Selezionare contenuti personalizzati"
+  },
+  "purpose6_description": {
+    "message": "I contenuti personalizzati possono essere mostrati sulla base di un profilo relativo all\u2019utente."
+  },
+  "purpose7": {
+    "message": "Valutare le performance degli annunci"
+  },
+  "purpose7_description": {
+    "message": "\u00c8 possibile valutare le performance e l\u2019efficacia degli annunci visualizzati dall\u2019utente o con cui lo stesso interagisce."
+  },
+  "purpose8": {
+    "message": "Valutare le performance dei contenuti"
+  },
+  "purpose8_description": {
+    "message": "\u00c8 possibile valutare le performance e l\u2019efficacia dei contenuti visualizzati dall\u2019utente o con cui lo stesso interagisce."
+  },
+  "purpose9": {
+    "message": "Applicare ricerche di mercato per generare approfondimenti sul pubblico"
+  },
+  "purpose9_description": {
+    "message": "La ricerca di mercato pu\u00f2 essere utilizzata per saperne di pi\u00f9 sul pubblico che visita siti/app e visualizza annunci."
+  },
+  "purpose10": {
+    "message": "Sviluppare e perfezionare i prodotti"
+  },
+  "purpose10_description": {
+    "message": "I dati dell\u2019utente possono essere utilizzati per perfezionare sistemi e software esistenti e per sviluppare nuovi prodotti."
+  },
+  "special_feature1": {
+    "message": "Utilizzare dati di geolocalizzazione precisi"
+  },
+  "special_feature1_description": {
+    "message": "I dati di geolocalizzazione precisi possono essere utilizzati a supporto di una o varie finalit\u00e0. Ci\u00f2 significa che la posizione dell\u2019utente potr\u00e0 determinarsi con esattezza nel raggio di alcuni metri."
+  },
+  "special_feature2": {
+    "message": "Scansione attiva delle caratteristiche del dispositivo ai fini dell\u2019identificazione"
+  },
+  "special_feature2_description": {
+    "message": "Il dispositivo pu\u00f2 essere identificato in base a una scansione della combinazione unica di caratteristiche del dispositivo."
+  }
+}

@@ -1,1 +1,74 @@
-{"purpose1": {"message": "Armazenar e/ou aceder a informa\u00e7\u00f5es num dispositivo"}, "purpose1_description": {"message": "Os cookies, identificadores de dispositivos ou outras informa\u00e7\u00f5es podem ser armazenados ou acedidos no seu dispositivo para os fins que lhe s\u00e3o apresentados."}, "purpose2": {"message": "Selecionar an\u00fancios b\u00e1sicos"}, "purpose2_description": {"message": "Os an\u00fancios podem ser-lhe apresentados com base nos conte\u00fados que est\u00e1 a visualizar, na aplica\u00e7\u00e3o que est\u00e1 a utilizar, na sua localiza\u00e7\u00e3o aproximada ou no seu tipo de dispositivo."}, "purpose3": {"message": "Criar um perfil de an\u00fancios personalizados"}, "purpose3_description": {"message": "Pode ser criado um perfil sobre si e os seus interesses para lhe mostrar an\u00fancios personalizados que s\u00e3o relevantes para si."}, "purpose4": {"message": "Selecionar an\u00fancios personalizados"}, "purpose4_description": {"message": "Os an\u00fancios personalizados podem ser-lhe mostrados com base num perfil sobre si."}, "purpose5": {"message": "Criar um perfil de conte\u00fados personalizados"}, "purpose5_description": {"message": "Pode ser criado um perfil sobre si e os seus interesses para lhe mostrar conte\u00fados personalizados que s\u00e3o relevantes para si."}, "purpose6": {"message": "Selecionar conte\u00fados personalizados"}, "purpose6_description": {"message": "O conte\u00fado personalizado pode ser-lhe mostrado com base num perfil sobre si."}, "purpose7": {"message": "Medir o desempenho do an\u00fancio"}, "purpose7_description": {"message": "O desempenho e a efic\u00e1cia dos an\u00fancios que v\u00ea ou com os quais interage podem ser medidos."}, "purpose8": {"message": "Medir o desempenho dos conte\u00fados"}, "purpose8_description": {"message": "O desempenho e a efic\u00e1cia dos conte\u00fados que v\u00ea ou com os quais interage podem ser medidos."}, "purpose9": {"message": "Aplicar os resultados das pesquisas de mercado para gerar perspetivas sobre o p\u00fablico"}, "purpose9_description": {"message": "A pesquisa de mercado pode ser usada para saber mais sobre os p\u00fablicos que visitam sites/aplica\u00e7\u00f5es e veem an\u00fancios."}, "purpose10": {"message": "Desenvolver e melhorar produtos"}, "purpose10_description": {"message": "Os seus dados podem ser utilizados para melhorar os sistemas e o software existentes e para desenvolver novos produtos."}, "special_feature1": {"message": "Utilizar dados de geolocaliza\u00e7\u00e3o precisos"}, "special_feature1_description": {"message": "Os seus dados de geolocaliza\u00e7\u00e3o precisa podem ser utilizados para apoiar uma ou mais finalidades. Isto significa que a sua localiza\u00e7\u00e3o pode ser precisa at\u00e9 alguns metros."}, "special_feature2": {"message": "Procurar ativamente as caracter\u00edsticas do dispositivo para identifica\u00e7\u00e3o"}, "special_feature2_description": {"message": "O seu dispositivo pode ser identificado com base na respetiva leitura da combina\u00e7\u00e3o \u00fanica de caracter\u00edsticas."}}
+{
+  "purpose1": {
+    "message": "Armazenar e/ou aceder a informa\u00e7\u00f5es num dispositivo"
+  },
+  "purpose1_description": {
+    "message": "Os cookies, identificadores de dispositivos ou outras informa\u00e7\u00f5es podem ser armazenados ou acedidos no seu dispositivo para os fins que lhe s\u00e3o apresentados."
+  },
+  "purpose2": {
+    "message": "Selecionar an\u00fancios b\u00e1sicos"
+  },
+  "purpose2_description": {
+    "message": "Os an\u00fancios podem ser-lhe apresentados com base nos conte\u00fados que est\u00e1 a visualizar, na aplica\u00e7\u00e3o que est\u00e1 a utilizar, na sua localiza\u00e7\u00e3o aproximada ou no seu tipo de dispositivo."
+  },
+  "purpose3": {
+    "message": "Criar um perfil de an\u00fancios personalizados"
+  },
+  "purpose3_description": {
+    "message": "Pode ser criado um perfil sobre si e os seus interesses para lhe mostrar an\u00fancios personalizados que s\u00e3o relevantes para si."
+  },
+  "purpose4": {
+    "message": "Selecionar an\u00fancios personalizados"
+  },
+  "purpose4_description": {
+    "message": "Os an\u00fancios personalizados podem ser-lhe mostrados com base num perfil sobre si."
+  },
+  "purpose5": {
+    "message": "Criar um perfil de conte\u00fados personalizados"
+  },
+  "purpose5_description": {
+    "message": "Pode ser criado um perfil sobre si e os seus interesses para lhe mostrar conte\u00fados personalizados que s\u00e3o relevantes para si."
+  },
+  "purpose6": {
+    "message": "Selecionar conte\u00fados personalizados"
+  },
+  "purpose6_description": {
+    "message": "O conte\u00fado personalizado pode ser-lhe mostrado com base num perfil sobre si."
+  },
+  "purpose7": {
+    "message": "Medir o desempenho do an\u00fancio"
+  },
+  "purpose7_description": {
+    "message": "O desempenho e a efic\u00e1cia dos an\u00fancios que v\u00ea ou com os quais interage podem ser medidos."
+  },
+  "purpose8": {
+    "message": "Medir o desempenho dos conte\u00fados"
+  },
+  "purpose8_description": {
+    "message": "O desempenho e a efic\u00e1cia dos conte\u00fados que v\u00ea ou com os quais interage podem ser medidos."
+  },
+  "purpose9": {
+    "message": "Aplicar os resultados das pesquisas de mercado para gerar perspetivas sobre o p\u00fablico"
+  },
+  "purpose9_description": {
+    "message": "A pesquisa de mercado pode ser usada para saber mais sobre os p\u00fablicos que visitam sites/aplica\u00e7\u00f5es e veem an\u00fancios."
+  },
+  "purpose10": {
+    "message": "Desenvolver e melhorar produtos"
+  },
+  "purpose10_description": {
+    "message": "Os seus dados podem ser utilizados para melhorar os sistemas e o software existentes e para desenvolver novos produtos."
+  },
+  "special_feature1": {
+    "message": "Utilizar dados de geolocaliza\u00e7\u00e3o precisos"
+  },
+  "special_feature1_description": {
+    "message": "Os seus dados de geolocaliza\u00e7\u00e3o precisa podem ser utilizados para apoiar uma ou mais finalidades. Isto significa que a sua localiza\u00e7\u00e3o pode ser precisa at\u00e9 alguns metros."
+  },
+  "special_feature2": {
+    "message": "Procurar ativamente as caracter\u00edsticas do dispositivo para identifica\u00e7\u00e3o"
+  },
+  "special_feature2_description": {
+    "message": "O seu dispositivo pode ser identificado com base na respetiva leitura da combina\u00e7\u00e3o \u00fanica de caracter\u00edsticas."
+  }
+}
