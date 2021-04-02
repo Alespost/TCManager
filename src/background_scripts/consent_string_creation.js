@@ -9,11 +9,14 @@ browser.runtime.onMessage.addListener(consentRequestMessageHandler);
 function consentRequestMessageHandler (request, sender, sendResponse) {
   const url = new URL(request.url);
 
-  getOptions(url.hostname)
-    .then(createTCModel.bind(null, request))
-    .then(createBitField)
-    .then(encode)
-    .then(storeConsent.bind(null, url));
+  return new Promise(resolve => {
+    getOptions(url.hostname)
+      .then(createTCModel.bind(null, request))
+      .then(createBitField)
+      .then(encode)
+      .then(storeConsent.bind(null, url))
+      .then(() => resolve());
+  });
 }
 
 /**
@@ -76,15 +79,15 @@ function getOptions (domain) {
  */
 function createTCModel (data, options) {
   const vendorConsent = {
-    maxVendorId: 1, //TODO
+    maxVendorId: 982, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: [0], //TODO
+    bitField: Array(982).fill(1), //TODO
   };
 
   const vendorLI = {
-    maxVendorId: 1, //TODO
+    maxVendorId: 982, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: [0], //TODO
+    bitField: Array(982).fill(1), //TODO
   };
 
   const timestamp = Math.round((new Date()).getTime() / 100);
@@ -97,7 +100,7 @@ function createTCModel (data, options) {
     cmpVersion: data.cmpVersion,
     consentScreen: 1,
     consentLanguage: consentLanguage(),
-    vendorListVersion: 80, //TODO
+    vendorListVersion: 84, //TODO
     tcfPolicyVersion: 2,
     isServiceSpecific: 1,
     nonStandardStacks: 0,
@@ -203,14 +206,14 @@ function storeConsent (url, TCString) {
  */
 function storeCookies (TCString, url) {
   const cookieNames = ['euconsent-v2', 'eupubconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
-  const domain = url.hostname.replace(new RegExp('www'), '');
+  const hostname = url.hostname;
+  const domains = [hostname.replace(new RegExp('www'), ''), '.' + hostname];
 
   const expiration = new Date();
   expiration.setFullYear(expiration.getFullYear() + 1);
 
   const cookie =
     {
-      domain: domain,
       url: url.origin,
       expirationDate: Math.floor(expiration / 1000),
       path: '/',
@@ -220,7 +223,10 @@ function storeCookies (TCString, url) {
 
   for (const name of cookieNames) {
     cookie.name = name;
-    browser.cookies.set(cookie);
+    for (const [i, domain] of domains.entries()) {
+      cookie.domain = domain;
+      browser.cookies.set(cookie);
+    }
   }
 
   storeCookiesClosingBanner(cookie);

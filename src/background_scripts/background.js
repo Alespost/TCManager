@@ -10,7 +10,7 @@ function initOptions () {
   function onSuccess (result) {
     // browser.storage.sync.remove(Object.keys(result));
 
-    if (result.hasOwnProperty(GLOBAL_OPTIONS)) {
+    if (!result.hasOwnProperty(GLOBAL_OPTIONS)) {
       console.log('setting global');
       setDefaultOptions();
     }
@@ -54,12 +54,21 @@ function initOptions () {
   }
 }
 
+browser.webRequest.onBeforeRequest.addListener(
+  listener,
+  {urls: ["*://*/api/v1/euconsent"]},
+  ['blocking']
+);
 
-/*browser.webRequest.onBeforeRequest.addListener(
-    listener,
-    {urls: ["*://!*.consensu.org/!*", "https://login.seznam.cz/api/v1/euconsent"]},
-    ['blocking']
-    //([A-Za-z0-9_-]{4}){10,}(\.?[^\\ "]+)+
+browser.webRequest.onBeforeRequest.addListener(
+  listener,
+  {urls: ["*://*.consensu.org/*"]},
+);
+
+browser.webRequest.onBeforeRequest.addListener(
+  details => {console.log('blocking: ' + details.url); return {cancel:true};},
+  {urls: ["https://quantcast.mgr.consensu.org/tcfv2/*/cmp2ui-en.js"]},
+  ['blocking']
 );
 
 function listener(details)
@@ -70,20 +79,28 @@ function listener(details)
         return;
     }
 
-    let domain = new URL(details.originUrl);
     let filter = browser.webRequest.filterResponseData(details.requestId);
     let encoder = new TextEncoder();
     let decoder = new TextDecoder('utf-8');
 
     filter.ondata = event => {
         let str = decoder.decode(event.data, {stream: true});
+
+        let json = JSON.parse(str);
+        json.euconsent = JSON.parse(json.euconsent);
+        console.log(json);
+        json.euconsent.v2.encodedCookie = 'CPECLrOPECLrOD3ACBCSBUCgAEAAAEAAAATIHrP___________________________________________________________________________________________________________________________________________________________________A9Z___________________________________________________________________________________________________________________________________________________________________4AAA.YAAAAAAAAAAA';
+        console.log(json);
+
+        str = JSON.stringify(json);
         // Just change any instance of Example in the HTTP response
         // to WebExtension Example.
-          str = str.replace(/window\.cmp_config_data_cs="[^"]*"/g, 'window.cmp_config_data_cs=\"CPD3plpPD3plpAfYJBCSBQCgAAgAAAgAAAigAAgAAgAA\"');
+
+        // str = str.replace(/window\.cmp_config_data_cs="[^"]*"/g, 'window.cmp_config_data_cs=\"CPD3plpPD3plpAfYJBCSBQCgAAgAAAgAAAigAAgAAgAA\"');
         filter.write(encoder.encode(str));
         filter.disconnect();
     }
 
     return {};
 
-}*/
+}

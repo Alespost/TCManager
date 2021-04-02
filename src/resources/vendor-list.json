@@ -1,8 +1,8 @@
 {
   "gvlSpecificationVersion": 2,
-  "vendorListVersion": 83,
+  "vendorListVersion": 84,
   "tcfPolicyVersion": 2,
-  "lastUpdated": "2021-03-25T16:05:32Z",
+  "lastUpdated": "2021-04-01T16:05:39Z",
   "purposes": {
     "1": {
       "id": 1,
@@ -343,7 +343,7 @@
         10
       ],
       "specialFeatures": [],
-      "name": "Content measurement, audience insights, and product development.",
+      "name": "Content measurement, audience insights, and product development",
       "description": "Content performance can be measured. Insights about the audiences who saw the ads and content can be derived. Data can be used to build or improve user experience, systems, and software."
     },
     "22": {
@@ -3022,15 +3022,18 @@
       "name": "ConnectAd Realtime GmbH",
       "purposes": [
         1,
+        2,
         3,
         4,
-        5
+        7,
+        10
       ],
-      "legIntPurposes": [
+      "legIntPurposes": [],
+      "flexiblePurposes": [
         2,
-        7
+        7,
+        10
       ],
-      "flexiblePurposes": [],
       "specialPurposes": [
         1,
         2
@@ -3154,12 +3157,8 @@
       ],
       "flexiblePurposes": [
         2,
-        3,
-        4,
         7,
-        8,
-        9,
-        10
+        8
       ],
       "specialPurposes": [
         1,
@@ -4154,7 +4153,7 @@
         1
       ],
       "policyUrl": "https://deltaprojects.com/data-collection-policy",
-      "cookieMaxAgeSeconds": 47335389,
+      "cookieMaxAgeSeconds": 31560000,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -6203,23 +6202,34 @@
         1,
         2,
         4,
-        7,
+        7
+      ],
+      "legIntPurposes": [
         10
       ],
-      "legIntPurposes": [],
-      "flexiblePurposes": [],
+      "flexiblePurposes": [
+        2,
+        4,
+        7
+      ],
       "specialPurposes": [
         1,
         2
       ],
-      "features": [],
+      "features": [
+        3
+      ],
       "specialFeatures": [
         1
       ],
       "policyUrl": "https://www.celtra.com/privacy-policy/",
+      "overflow": {
+        "httpGetLimit": 32
+      },
       "cookieMaxAgeSeconds": null,
       "usesCookies": false,
-      "usesNonCookieAccess": false
+      "usesNonCookieAccess": true,
+      "deviceStorageDisclosureUrl": "https://celtra.com/privacy-policy/"
     },
     "165": {
       "id": 165,
@@ -8867,36 +8877,6 @@
         2
       ],
       "policyUrl": "https://www.singlespot.com/privacy_policy?locale=fr",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
-      "usesNonCookieAccess": false
-    },
-    "409": {
-      "id": 409,
-      "name": "Arrivalist Co.",
-      "purposes": [
-        1,
-        7,
-        8,
-        9
-      ],
-      "legIntPurposes": [],
-      "flexiblePurposes": [
-        7,
-        8
-      ],
-      "specialPurposes": [],
-      "features": [
-        1,
-        2,
-        3
-      ],
-      "specialFeatures": [
-        1,
-        2
-      ],
-      "policyUrl": "https://www.arrivalist.com/privacy",
-      "deletedDate": "2020-08-18T00:00:00Z",
       "cookieMaxAgeSeconds": null,
       "usesCookies": false,
       "usesNonCookieAccess": false
@@ -18425,6 +18405,38 @@
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
+    "864": {
+      "id": 864,
+      "name": "I.R.V. D.O.O.",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "specialPurposes": [],
+      "features": [
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://www.contentexchange.me/privacy-policy/",
+      "cookieMaxAgeSeconds": 63072000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
     "865": {
       "id": 865,
       "name": "HEIMSPIEL Medien GmbH & Co KG",
@@ -21436,6 +21448,60 @@
       "specialFeatures": [],
       "policyUrl": "https://adloop.co/en/privacy-policy/",
       "cookieMaxAgeSeconds": 31556952,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "409": {
+      "id": 409,
+      "name": "Arrivalist Co",
+      "purposes": [
+        1
+      ],
+      "legIntPurposes": [
+        7,
+        8,
+        9
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1,
+        2
+      ],
+      "policyUrl": "https://www.arrivalist.com/privacy/",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": 11510640000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "982": {
+      "id": 982,
+      "name": "Netpoint Media GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.netpoint-media.de/technik/datenschutz",
+      "cookieMaxAgeSeconds": 31560000,
       "usesCookies": true,
       "usesNonCookieAccess": false
     }
