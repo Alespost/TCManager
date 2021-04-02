@@ -37,55 +37,79 @@
     "description": ""
   },
   "special_features_header": {
-    "message": "Speciální funkce",
+    "message": "Zvláštní funkce",
     "description": ""
   },
   "purpose1": {
-    "message": "Ukládání a/nebo přístup k informacím v zařízení",
-    "description": ""
+    "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"
+  },
+  "purpose1_description": {
+    "message": "Ve va\u0161em za\u0159\u00edzen\u00ed se mohou ukl\u00e1dat soubory cookie, identifik\u00e1tory za\u0159\u00edzen\u00ed nebo dal\u0161\u00ed informace nebo k nim ve va\u0161em za\u0159\u00edzen\u00ed m\u016f\u017ee b\u00fdt umo\u017en\u011bn p\u0159\u00edstup pro \u00fa\u010dely, kter\u00e9 v\u00e1m byly sd\u011bleny."
   },
   "purpose2": {
-    "message": "Základní nastavení reklamy",
-    "description": ""
+    "message": "Z\u00e1kladn\u00ed nastaven\u00ed reklamy"
+  },
+  "purpose2_description": {
+    "message": "Reklamy se mohou zobrazovat na z\u00e1klad\u011b obsahu, kter\u00fd prohl\u00ed\u017e\u00edte, aplikace, kterou pou\u017e\u00edv\u00e1te, va\u0161\u00ed p\u0159ibli\u017en\u00e9 polohy nebo typu va\u0161eho za\u0159\u00edzen\u00ed."
   },
   "purpose3": {
-    "message": "Vytvoření profilu pro personalizovanou reklamu",
-    "description": ""
+    "message": "Vytvo\u0159en\u00ed profilu pro personalizovanou reklamu"
+  },
+  "purpose3_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho chov\u00e1n\u00ed na internetu m\u016f\u017ee b\u00fdt vytvo\u0159en v\u00e1\u0161 profil, aby v\u00e1m mohla b\u00fdt zobrazena relevantn\u00ed reklama."
   },
   "purpose4": {
-    "message": "Výběr personalizované reklamy",
-    "description": ""
+    "message": "V\u00fdb\u011br personalizovan\u00e9 reklamy"
+  },
+  "purpose4_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho profilu se v\u00e1m m\u016f\u017ee zobrazovat personalizovan\u00e1 reklama."
   },
   "purpose5": {
-    "message": "Vytvoření profilu pro personalizovaný obsah",
-    "description": ""
+    "message": "Vytvo\u0159en\u00ed profilu pro personalizovan\u00fd obsah"
+  },
+  "purpose5_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho chov\u00e1n\u00ed na internetu m\u016f\u017ee b\u00fdt vytvo\u0159en v\u00e1\u0161 profil, a to proto, aby v\u00e1m mohl b\u00fdt zobrazov\u00e1n obsah, kter\u00fd je pro v\u00e1s relevantn\u00ed."
   },
   "purpose6": {
-    "message": "Výběr personalizovaného obsahu",
-    "description": ""
+    "message": "V\u00fdb\u011br personalizovan\u00e9ho obsahu"
+  },
+  "purpose6_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho profilu se v\u00e1m m\u016f\u017ee zobrazovat personalizovan\u00fd obsah."
   },
   "purpose7": {
-    "message": "Měření výkonu reklamy",
-    "description": ""
+    "message": "M\u011b\u0159en\u00ed v\u00fdkonu reklamy"
+  },
+  "purpose7_description": {
+    "message": "V\u00fdkon a \u00fa\u010dinnost reklamy, kterou vid\u00edte nebo na kterou reagujete, mohou b\u00fdt m\u011b\u0159eny"
   },
   "purpose8": {
-    "message": "Měření výkonu obsahu",
-    "description": ""
+    "message": "M\u011b\u0159en\u00ed v\u00fdkonu obsahu"
+  },
+  "purpose8_description": {
+    "message": "\u00da\u010dinnost a v\u00fdkon obsahu, kter\u00fd vid\u00edte nebo na kter\u00fd reagujete, mohou b\u00fdt m\u011b\u0159eny."
   },
   "purpose9": {
-    "message": "Používání výzkumu trhu pro získání poznatků o uživatelích",
-    "description": ""
+    "message": "Pou\u017e\u00edv\u00e1n\u00ed v\u00fdzkumu trhu pro z\u00edsk\u00e1n\u00ed poznatk\u016f o u\u017eivatel\u00edch"
+  },
+  "purpose9_description": {
+    "message": "V\u00fdzkum trhu lze vyu\u017e\u00edt k z\u00edsk\u00e1n\u00ed v\u00edce informac\u00ed o u\u017eivatel\u00edch, kte\u0159\u00ed nav\u0161t\u011bvuj\u00ed str\u00e1nky/aplikace a jim\u017e jsou zobrazeny reklamy."
   },
   "purpose10": {
-    "message": "Vývoj a zlepšování produktů",
-    "description": ""
+    "message": "V\u00fdvoj a zlep\u0161ov\u00e1n\u00ed produkt\u016f"
+  },
+  "purpose10_description": {
+    "message": "Va\u0161e \u00fadaje lze vyu\u017e\u00edt ke zlep\u0161en\u00ed st\u00e1vaj\u00edc\u00edch syst\u00e9m\u016f a softwaru a k v\u00fdvoji nov\u00fdch produkt\u016f."
   },
   "special_feature1": {
-    "message": "Používání přesných údajů o geografické poloze",
-    "description": ""
+    "message": "Pou\u017e\u00edv\u00e1n\u00ed p\u0159esn\u00fdch \u00fadaj\u016f o geografick\u00e9 poloze"
+  },
+  "special_feature1_description": {
+    "message": "P\u0159esn\u00e9 \u00fadaje o va\u0161\u00ed geografick\u00e9 poloze lze pou\u017e\u00edt za \u00fa\u010delem podpory jednoho nebo v\u00edce \u00fa\u010del\u016f. Znamen\u00e1 to, \u017ee va\u0161i polohu lze ur\u010dit s p\u0159esnost\u00ed na n\u011bkolik metr\u016f."
   },
   "special_feature2": {
-    "message": "Aktivní vyhledávání identifikačních údajů v rámci vlastností zařízení",
-    "description": ""
+    "message": "Aktivn\u00ed vyhled\u00e1v\u00e1n\u00ed identifika\u010dn\u00edch \u00fadaj\u016f v r\u00e1mci vlastnost\u00ed za\u0159\u00edzen\u00ed"
+  },
+  "special_feature2_description": {
+    "message": "Va\u0161e za\u0159\u00edzen\u00ed lze identifikovat na z\u00e1klad\u011b prohled\u00e1n\u00ed jedine\u010dn\u00e9 kombinace vlastnost\u00ed va\u0161eho za\u0159\u00edzen\u00ed."
   }
 }

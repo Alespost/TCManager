@@ -1,18 +1,1 @@
-{
-  "extensionName": {
-    "message": "TCF Manager",
-    "description": "Název rozšíření."
-  },
-  "extensionDescription": {
-    "message": "Description",
-    "description": "Popis rozšíření."
-  },
-  "consentHeader": {
-    "message": "Consent",
-    "description": ""
-  },
-  "purposesHeader": {
-    "message": "Purposes",
-    "description": ""
-  }
-}
+{"purpose1": {"message": "Store and/or access information on a device"}, "purpose1_description": {"message": "Cookies, device identifiers, or other information can be stored or accessed on your device for the purposes presented to you."}, "purpose2": {"message": "Select basic ads"}, "purpose2_description": {"message": "Ads can be shown to you based on the content you\u2019re viewing, the app you\u2019re using, your approximate location, or your device type."}, "purpose3": {"message": "Create a personalised ads profile"}, "purpose3_description": {"message": "A profile can be built about you and your interests to show you personalised ads that are relevant to you."}, "purpose4": {"message": "Select personalised ads"}, "purpose4_description": {"message": "Personalised ads can be shown to you based on a profile about you."}, "purpose5": {"message": "Create a personalised content profile"}, "purpose5_description": {"message": "A profile can be built about you and your interests to show you personalised content that is relevant to you."}, "purpose6": {"message": "Select personalised content"}, "purpose6_description": {"message": "Personalised content can be shown to you based on a profile about you."}, "purpose7": {"message": "Measure ad performance"}, "purpose7_description": {"message": "The performance and effectiveness of ads that you see or interact with can be measured."}, "purpose8": {"message": "Measure content performance"}, "purpose8_description": {"message": "The performance and effectiveness of content that you see or interact with can be measured."}, "purpose9": {"message": "Apply market research to generate audience insights"}, "purpose9_description": {"message": "Market research can be used to learn more about the audiences who visit sites/apps and view ads."}, "purpose10": {"message": "Develop and improve products"}, "purpose10_description": {"message": "Your data can be used to improve existing systems and software, and to develop new products"}, "special_feature1": {"message": "Use precise geolocation data"}, "special_feature1_description": {"message": "Your precise geolocation data can be used in support of one or more purposes. This means your location can be accurate to within several meters."}, "special_feature2": {"message": "Actively scan device characteristics for identification"}, "special_feature2_description": {"message": "Your device can be identified based on a scan of your device's unique combination of characteristics."}}
