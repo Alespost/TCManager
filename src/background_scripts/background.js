@@ -56,12 +56,6 @@ function initOptions () {
 
 browser.webRequest.onBeforeRequest.addListener(
   listener,
-  {urls: ["*://*/api/v1/euconsent"]},
-  ['blocking']
-);
-
-browser.webRequest.onBeforeRequest.addListener(
-  listener,
   {urls: ["*://*.consensu.org/*"]},
 );
 
@@ -75,7 +69,7 @@ function listener(details)
 {
     console.log(details.url);
 
-    if (typeof browser.webRequest.filterResponseData !== 'function') {
+    /*if (typeof browser.webRequest.filterResponseData !== 'function') {
         return;
     }
 
@@ -84,15 +78,18 @@ function listener(details)
     let decoder = new TextDecoder('utf-8');
 
     filter.ondata = event => {
-        let str = decoder.decode(event.data, {stream: true});
+        let str = decoder.decode(event.data, {stream: false});
+        console.log(str);
 
-        let json = JSON.parse(str);
+        const json = JSON.parse(str);
         json.euconsent = JSON.parse(json.euconsent);
+        json.euconsent.v2.encodedCookie = 'CPEE2DqPEE2DqD3ACBCSBUCgAEAAAEAAAAAAHrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
+        json.euconsent.v2.allowedPurposeIds = [2];
+        json.euconsent.v2.allowedVendorIds = [];
         console.log(json);
-        json.euconsent.v2.encodedCookie = 'CPECLrOPECLrOD3ACBCSBUCgAEAAAEAAAATIHrP___________________________________________________________________________________________________________________________________________________________________A9Z___________________________________________________________________________________________________________________________________________________________________4AAA.YAAAAAAAAAAA';
-        console.log(json);
-
+        json.euconsent = JSON.stringify(json.euconsent);
         str = JSON.stringify(json);
+        console.log(str);
         // Just change any instance of Example in the HTTP response
         // to WebExtension Example.
 
@@ -101,6 +98,5 @@ function listener(details)
         filter.disconnect();
     }
 
-    return {};
-
+    return {};*/
 }

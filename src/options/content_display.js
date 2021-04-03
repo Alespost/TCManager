@@ -1,19 +1,30 @@
 function displayOptionsContent () {
   document.title = localizedMessage('options_title');
   displayOptionsHeader();
+  displayNavItems();
   displayListHeaders();
   displayGlobalOptionsHeader();
 }
 
 function displayDescriptionContent() {
-  document.title = localizedMessage('options_title');//TODO
+  document.title = localizedMessage('options_title');
+  displayOptionsHeader()
+  displayNavItems();
   displayListHeaders();
   displayListItems('purpose');
   displayListItems('special_feature');
 }
 
+
+
 function displayOptionsHeader () {
   document.getElementById('options_header').innerText = localizedMessage('options_header');
+}
+
+function displayNavItems() {
+  document.getElementById('nav_options').innerText = localizedMessage('nav_options');
+  document.getElementById('nav_description').innerText = localizedMessage('nav_description');
+  document.getElementById('nav_about').innerText = localizedMessage('nav_about');
 }
 
 function displayListHeaders () {
@@ -40,12 +51,15 @@ function displayListItems (listIdPrefix) {
 
   const list = document.getElementById(listIdPrefix + '_list');
   for (let i = 1; i <= count; i++) {
-    const name = document.createElement('dt');
-    name.innerText = i + '. ' + localizedMessage(listIdPrefix + i);
-    list.appendChild(name);
+    const name = document.createElement('li');
+    name.classList.add('bold');
+    name.innerText = localizedMessage(listIdPrefix + i);
+    // list.appendChild(name);
 
-    const description = document.createElement('dd');
-    description.innerText = localizedMessage(listIdPrefix + i + '_description');
-    list.appendChild(description);
+    const description = document.createElement('ul');
+    description.classList.add('description');
+    description.innerHTML = '<li>' + localizedMessage(listIdPrefix + i + '_description') + '</li>';
+    name.appendChild(description);
+    list.appendChild(name);
   }
 }

@@ -13,8 +13,24 @@
     "webRequestBlocking",
     "<all_urls>"
   ],
+  "icons": {
+    "48": "resources/img/icon-48.png",
+    "64": "resources/img/icon-64.png",
+    "96": "resources/img/icon-96.png",
+    "128": "resources/img/icon-128.png",
+    "256": "resources/img/icon-256.png",
+    "512": "resources/img/icon-512.png"
+  },
   "browser_action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "resources/img/icon-48.png",
+      "64": "resources/img/icon-64.png",
+      "96": "resources/img/icon-96.png",
+      "128": "resources/img/icon-128.png",
+      "256": "resources/img/icon-256.png",
+      "512": "resources/img/icon-512.png"
+    }
   },
   "background": {
     "scripts": [

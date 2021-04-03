@@ -81,13 +81,13 @@ function createTCModel (data, options) {
   const vendorConsent = {
     maxVendorId: 982, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: Array(982).fill(1), //TODO
+    bitField: Array(982).fill(0), //TODO
   };
 
   const vendorLI = {
     maxVendorId: 982, //TODO
     isRangeEncoding: 0, // BitField
-    bitField: Array(982).fill(1), //TODO
+    bitField: Array(982).fill(0), //TODO
   };
 
   const timestamp = Math.round((new Date()).getTime() / 100);

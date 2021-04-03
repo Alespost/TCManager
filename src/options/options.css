@@ -1,23 +1,20 @@
-.content {
-    font-size: 100%;
-    width: 1280px;
+table {
     margin: auto;
+    border-collapse: collapse;
 }
 
-table {
-    border-collapse: collapse;
+table, th, td {
+    border: 1px solid black;
 }
 
 th {
     font-size: 1.1em;
 }
 
-td {
-    width: 65px;
-}
-
-table, th, td {
-    border: 1px solid black;
+td:not(.row_header) {
+    min-width: 35px;
+    max-width: 70px;
+    width: 70px;
 }
 
 #global_row td {
@@ -35,17 +32,17 @@ table, th, td {
 }
 
 .red {
-    background-color: red;
+    background-color: #ff3030;
 }
 
 .green {
-    background-color: green;
+    background-color: #2cbe2c;
 }
 
 .light-red {
-    background-color: lightcoral;
+    background-color: #ff8b8b;
 }
 
 .light-green {
-    background-color: lightgreen;
+    background-color: #82ff82;
 }

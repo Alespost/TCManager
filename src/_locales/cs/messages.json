@@ -11,6 +11,15 @@
   "options_header": {
     "message": "Nastaven\u00ed"
   },
+  "nav_options": {
+    "message": "Nastaven\u00ed souhlasu"
+  },
+  "nav_description": {
+    "message": "Popisy \u00fa\u010del\u016f"
+  },
+  "nav_about": {
+    "message": "O roz\u0161\u00ed\u0159en\u00ed"
+  },
   "options_global": {
     "message": "Glob\u00e1ln\u00ed nastaven\u00ed"
   },

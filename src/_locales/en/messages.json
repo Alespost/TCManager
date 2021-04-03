@@ -9,7 +9,16 @@
     "message": "TC Manager Options"
   },
   "options_header": {
-    "message": "Options"
+    "message": "Settings"
+  },
+  "nav_options": {
+    "message": "Consent settings"
+  },
+  "nav_description": {
+    "message": "Description of purposes"
+  },
+  "nav_about": {
+    "message": "About extension"
   },
   "options_global": {
     "message": ""
