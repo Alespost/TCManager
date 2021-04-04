@@ -16,8 +16,9 @@ function displayHeaders () {
 function displayListItems (items, listIdPrefix) {
   for (const [key, value] of Object.entries(items)) {
     if (value === true) {
-      const item = document.createElement('dt');
-      item.innerText = key + ': ' + localizedMessage(listIdPrefix + key);
+      const item = document.createElement('li');
+      item.setAttribute('value', key);
+      item.innerText = localizedMessage(listIdPrefix + key);
 
       document.getElementById(listIdPrefix + '_list').appendChild(item);
     }

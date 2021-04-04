@@ -9,6 +9,7 @@
     <script src="constants.js" type="text/javascript"></script>
     <script src="options.js" type="text/javascript"></script>
 
+    <link href="../common/fonts.css" rel="stylesheet">
     <link href="layout.css" rel="stylesheet">
     <link href="options.css" rel="stylesheet">
 </head>
@@ -20,20 +21,29 @@
             <li><a href="options.html" class="active" id="nav_options"></a></li>
             <li><a href="description.html" id="nav_description"></a></li>
             <li><a href="about.html" id="nav_about"></a></li>
-            <li><a href="https://github.com/Alespost/TCManager" target="_blank" class="icon"><img src="../resources/img/icon-48.png" alt=""> <span>TC Manager</span></a></li>
+            <li><a href="https://github.com/Alespost/TCManager" target="_blank" class="logo"><img src="../resources/img/logo.png" alt=""></a></li>
         </ul>
     </nav>
-    <table>
-        <thead>
-        <tr>
-            <th></th>
-            <th colspan="10" id="purposes_header"></th>
-            <th colspan="2" id="special_features_header"></th>
-        </tr>
-        </thead>
-        <tbody id="options_body">
-        </tbody>
-    </table>
+        <div class="content">
+            <div class="buttons center">
+                <button id="reset">Reset</button>
+                <button id="use_global">Use global</button>
+                <button id="remove_domains">Remove domains</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th colspan="10" id="purposes_header"></th>
+                <th colspan="2" id="special_features_header"></th>
+                <th id="actions_header">Akce</th>
+            </tr>
+            </thead>
+            <tbody id="options_body">
+            </tbody>
+        </table>
+
 </div>
 </body>
 </html>

@@ -51,15 +51,18 @@ function displayListItems (listIdPrefix) {
 
   const list = document.getElementById(listIdPrefix + '_list');
   for (let i = 1; i <= count; i++) {
-    const name = document.createElement('li');
-    name.classList.add('bold');
-    name.innerText = localizedMessage(listIdPrefix + i);
-    // list.appendChild(name);
+    const item = document.createElement('li');
+    item.classList.add('bold');
+    item.innerText = localizedMessage(listIdPrefix + i);
 
     const description = document.createElement('ul');
     description.classList.add('description');
-    description.innerHTML = '<li>' + localizedMessage(listIdPrefix + i + '_description') + '</li>';
-    name.appendChild(description);
-    list.appendChild(name);
+
+    const descriptionItem = document.createElement('li');
+    descriptionItem.innerText = localizedMessage(listIdPrefix + i + '_description');
+
+    description.appendChild(descriptionItem);
+    item.appendChild(description);
+    list.appendChild(item);
   }
 }

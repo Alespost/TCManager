@@ -1,20 +1,64 @@
+.center {
+    text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    background-color: white;
+}
+
+button:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 8px 25px;
+}
+
+.action {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.action:last-child {
+    margin-right: 0;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
 table {
     margin: auto;
+    min-width: 1024px;
     border-collapse: collapse;
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
 
 th {
+    padding: 8px;
     font-size: 1.1em;
 }
 
 td:not(.row_header) {
     min-width: 35px;
-    max-width: 70px;
-    width: 70px;
+    max-width: 60px;
+    width: 60px;
+}
+
+td:not(.row_header):hover {
+    cursor: pointer;
 }
 
 #global_row td {
@@ -28,7 +72,7 @@ td:not(.row_header) {
 .row_header {
     width: auto;
     text-align: left !important;
-    padding: 5px 10px;
+    padding: 5px 15px 5px 5px;
 }
 
 .red {

@@ -27,17 +27,10 @@ function initOptions () {
   }
 
   function setDefaultOptions () {
-    let purposes = [];
-    for (let i = 0; i < 10; i++) {
-      purposes.push(OBJECTION);
-    }
+    const purposes = Array(PURPOSES_COUNT).fill(OBJECTION);
+    const specialFeatures = Array(SPECIAL_FEATURES_COUNT).fill(OBJECTION);
 
-    let specialFeatures = [];
-    for (let i = 0; i < 2; i++) {
-      specialFeatures.push(OBJECTION);
-    }
-
-    let globalOptions = {};
+    const globalOptions = {};
     globalOptions[GLOBAL_OPTIONS] = {};
     globalOptions[GLOBAL_OPTIONS][PURPOSES_OPTIONS] = purposes;
     globalOptions[GLOBAL_OPTIONS][SPECIAL_FEATURES_OPTIONS] = specialFeatures;

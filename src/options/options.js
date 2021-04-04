@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   restoreOptions();
+  document.getElementById('reset').addEventListener('click', resetToDefaults);
+  document.getElementById('use_global').addEventListener('click', useGlobal);
+  document.getElementById('remove_domains').addEventListener('click', removeDomains);
 });
 
 function restoreOptions () {
+  document.getElementById('options_body').innerHTML = '';
   browser.storage.sync.get().then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
@@ -13,7 +17,16 @@ function restoreOptions () {
     const row = createOptionsRow(GLOBAL_OPTIONS, global);
     table.appendChild(row);
 
-    for (const [domain, choices] of Object.entries(result)) {
+    const sorted = Object.entries(result).sort((a, b) => {
+      if (a[0] > b[0])
+        return 1;
+      else if (a[0] < b[0])
+        return -1;
+      else
+        return 0;
+    });
+
+    for (const [domain, choices] of sorted) {
       const row = createOptionsRow(domain, choices, global);
       table.appendChild(row);
     }
@@ -40,6 +53,28 @@ function restoreOptions () {
 
     setChoices(PURPOSES_OPTIONS);
     setChoices(SPECIAL_FEATURES_OPTIONS);
+
+    const actions = document.createElement('td');
+    actions.classList.add('center');
+
+    const reset = document.createElement('button');
+    reset.classList.add('action');
+    reset.innerHTML = '<img class="icon" src="../resources/img/undo-solid.svg" alt="">';
+    reset.setAttribute(VALUE_ATTRIBUTE, domain);
+    reset.addEventListener('click', resetDomain);
+    actions.appendChild(reset);
+
+    if (domain !== GLOBAL_OPTIONS) {
+      const remove = document.createElement('button');
+      remove.classList.add('action');
+      remove.setAttribute(VALUE_ATTRIBUTE, domain);
+      remove.addEventListener('click', removeDomain);
+      remove.innerHTML = '<img class="icon" src="../resources/img/trash-alt-solid.svg" alt="">';
+      actions.appendChild(remove);
+    }
+
+    row.appendChild(actions);
+
     return row;
 
     function setChoices (type) {
@@ -225,4 +260,75 @@ function storeOptions (row) {
   options[name][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
   browser.storage.sync.set(options);
+}
+
+function resetToDefaults() {
+  browser.storage.sync.get().then(
+    result => {
+      for (const [key, value] of Object.entries(result)) {
+        if (key === GLOBAL_OPTIONS) {
+          value[PURPOSES_OPTIONS].fill(OBJECTION);
+          value[SPECIAL_FEATURES_OPTIONS].fill(OBJECTION);
+        } else {
+          value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
+          value[SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+        }
+      }
+
+      browser.storage.sync.set(result).then(restoreOptions);
+    }
+  );
+}
+
+function useGlobal() {
+  browser.storage.sync.get().then(
+    result => {
+      delete result[GLOBAL_OPTIONS];
+
+      for (const [key, value] of Object.entries(result)) {
+        value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
+        value[SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+      }
+
+      browser.storage.sync.set(result).then(restoreOptions);
+    }
+  );
+}
+
+function removeDomains() {
+  browser.storage.sync.get().then(
+    result => {
+      delete result[GLOBAL_OPTIONS];
+
+      const domains = Object.keys(result);
+
+      browser.storage.sync.remove(domains).then(restoreOptions);
+    }
+  );
+}
+
+function resetDomain(e) {
+  const domain = e.currentTarget.getAttribute(VALUE_ATTRIBUTE);
+
+  browser.storage.sync.get(domain).then(
+    result => {
+      if (domain === GLOBAL_OPTIONS) {
+        result[domain][PURPOSES_OPTIONS].fill(OBJECTION);
+        result[domain][SPECIAL_FEATURES_OPTIONS].fill(OBJECTION);
+      } else {
+        result[domain][PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
+        result[domain][SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+      }
+
+      browser.storage.sync.set(result).then(restoreOptions);
+    }
+  );
+}
+
+function removeDomain(e) {
+  const domain = e.currentTarget.getAttribute(VALUE_ATTRIBUTE);
+
+  if (domain !== GLOBAL_OPTIONS) {
+    browser.storage.sync.remove(domain).then(restoreOptions);
+  }
 }

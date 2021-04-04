@@ -23,6 +23,7 @@
   },
   "browser_action": {
     "default_popup": "popup/popup.html",
+    "default_title": "TC Manager",
     "default_icon": {
       "48": "resources/img/icon-48.png",
       "64": "resources/img/icon-64.png",
