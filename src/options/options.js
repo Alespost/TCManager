@@ -60,6 +60,8 @@ function restoreOptions () {
     const reset = document.createElement('button');
     reset.classList.add('action');
     reset.innerHTML = '<img class="icon" src="../resources/img/undo-solid.svg" alt="">';
+    reset.title = localizedMessage('use_global_domain_tooltip');
+
     reset.setAttribute(VALUE_ATTRIBUTE, domain);
     reset.addEventListener('click', resetDomain);
     actions.appendChild(reset);
@@ -67,9 +69,11 @@ function restoreOptions () {
     if (domain !== GLOBAL_OPTIONS) {
       const remove = document.createElement('button');
       remove.classList.add('action');
+      remove.innerHTML = '<img class="icon" src="../resources/img/trash-alt-solid.svg" alt="">';
+      remove.title = localizedMessage('remove_domain_tooltip');
+
       remove.setAttribute(VALUE_ATTRIBUTE, domain);
       remove.addEventListener('click', removeDomain);
-      remove.innerHTML = '<img class="icon" src="../resources/img/trash-alt-solid.svg" alt="">';
       actions.appendChild(remove);
     }
 
@@ -79,17 +83,26 @@ function restoreOptions () {
 
     function setChoices (type) {
       for (const [key, choice] of choices[type].entries()) {
+        const number = key + 1;
         const cell = document.createElement('td');
-        const choiceClass = (type === PURPOSES_OPTIONS ? PURPOSE_CLASS_PREFIX : SPECIAL_FEATURE_CLASS_PREFIX) + (key + 1);
+        const choiceClass = (type === PURPOSES_OPTIONS ? PURPOSE_CLASS_PREFIX : SPECIAL_FEATURE_CLASS_PREFIX) + number;
 
         if (domain === GLOBAL_OPTIONS) {
           cell.classList.add(GLOBAL_OPTION_CLASS);
-          cell.innerText = key + 1;
+          cell.innerText = number;
           cell.id = choiceClass;
         } else {
           cell.classList.add(OPTION_CLASS);
         }
 
+        let prefix;
+        if (type === PURPOSES_OPTIONS) {
+          prefix = 'purpose'
+        } else {
+          prefix = 'special_feature'
+        }
+
+        cell.title = localizedMessage(prefix + number);
         cell.classList.add(choiceClass);
         cell.setAttribute(VALUE_ATTRIBUTE, choice);
         cell.addEventListener('click', optionClickedHandler);

@@ -2,8 +2,10 @@ function displayOptionsContent () {
   document.title = localizedMessage('options_title');
   displayOptionsHeader();
   displayNavItems();
+  displayButtons();
   displayListHeaders();
   displayGlobalOptionsHeader();
+  displayActionsHeader();
 }
 
 function displayDescriptionContent() {
@@ -15,8 +17,6 @@ function displayDescriptionContent() {
   displayListItems('special_feature');
 }
 
-
-
 function displayOptionsHeader () {
   document.getElementById('options_header').innerText = localizedMessage('options_header');
 }
@@ -27,6 +27,20 @@ function displayNavItems() {
   document.getElementById('nav_about').innerText = localizedMessage('nav_about');
 }
 
+function displayButtons() {
+  const reset = document.getElementById('reset');
+  reset.innerText = localizedMessage('reset_to_defaults');
+  reset.title = localizedMessage('reset_to_defaults_tooltip');
+
+  const useGlobal = document.getElementById('use_global');
+  useGlobal.innerText = localizedMessage('use_global_all');
+  useGlobal.title = localizedMessage('use_global_all_tooltip');
+
+  const removeDomains = document.getElementById('remove_domains');
+  removeDomains.innerText = localizedMessage('remove_domains');
+  removeDomains.title = localizedMessage('remove_domains_tooltip');
+}
+
 function displayListHeaders () {
   document.getElementById('purposes_header').innerText = localizedMessage('purposes_header');
   document.getElementById('special_features_header').innerText = localizedMessage('special_features_header');
@@ -34,6 +48,10 @@ function displayListHeaders () {
 
 function displayGlobalOptionsHeader() {
   document.getElementById('global_header').innerText = localizedMessage('options_global');
+}
+
+function displayActionsHeader() {
+  document.getElementById('actions_header').innerText = localizedMessage('actions_header');
 }
 
 function displayListItems (listIdPrefix) {

@@ -12,7 +12,12 @@ button:hover {
     color: red;
 }
 
+button:focus {
+    outline: none;
+}
+
 .buttons {
+    max-width: inherit;
     margin-bottom: 20px;
 }
 
@@ -76,15 +81,15 @@ td:not(.row_header):hover {
 }
 
 .red {
-    background-color: #ff3030;
+    background-color: #ff4646;
 }
 
 .green {
-    background-color: #2cbe2c;
+    background-color: #4caf50;
 }
 
 .light-red {
-    background-color: #ff8b8b;
+    background-color: #ff9595;
 }
 
 .light-green {

@@ -18,7 +18,11 @@ function displayListItems (items, listIdPrefix) {
     if (value === true) {
       const item = document.createElement('li');
       item.setAttribute('value', key);
-      item.innerText = localizedMessage(listIdPrefix + key);
+
+      const abbr = document.createElement('abbr');
+      abbr.title = localizedMessage(listIdPrefix + key + '_description')
+      abbr.innerText = localizedMessage(listIdPrefix + key);
+      item.appendChild(abbr);
 
       document.getElementById(listIdPrefix + '_list').appendChild(item);
     }

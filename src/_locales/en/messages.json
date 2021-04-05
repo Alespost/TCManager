@@ -20,8 +20,32 @@
   "nav_about": {
     "message": "About extension"
   },
+  "reset_to_defaults": {
+    "message": "Restore default settings"
+  },
+  "reset_to_defaults_tooltip": {
+    "message": "Sets all global setting items to objection. Domains will use global settings."
+  },
+  "remove_domains": {
+    "message": "Delete domain settings"
+  },
+  "remove_domains_tooltip": {
+    "message": "Deletes records for all domains."
+  },
+  "use_global_all": {
+    "message": "Use global settings"
+  },
+  "use_global_all_tooltip": {
+    "message": "Changes domain settings to use global settings."
+  },
+  "use_global_domain_tooltip": {
+    "message": "Resets settings to use global settings."
+  },
+  "remove_domain_tooltip": {
+    "message": "Deletes the record."
+  },
   "options_global": {
-    "message": ""
+    "message": "Global settings"
   },
   "no_tcf": {
     "message": ""
@@ -40,6 +64,9 @@
   },
   "special_features_header": {
     "message": "Special Features"
+  },
+  "actions_header": {
+    "message": "Action"
   },
   "purpose1": {
     "message": "Store and/or access information on a device"

@@ -20,6 +20,30 @@
   "nav_about": {
     "message": "O roz\u0161\u00ed\u0159en\u00ed"
   },
+  "reset_to_defaults": {
+    "message": "Obnovit v\u00fdchoz\u00ed nastaven\u00ed"
+  },
+  "reset_to_defaults_tooltip": {
+    "message": "Nastav\u00ed v\u0161echny polo\u017eky glob\u00e1ln\u00edho nastaven\u00ed na nesouhlas. D\u00f3m\u00e9ny budou vyu\u017e\u00edvat glob\u00e1ln\u00ed nastaven\u00ed."
+  },
+  "remove_domains": {
+    "message": "Odstranit nastaven\u00ed dom\u00e9n"
+  },
+  "remove_domains_tooltip": {
+    "message": "Odstran\u00ed z\u00e1znamy o v\u0161ech dom\u00e9n\u00e1ch."
+  },
+  "use_global_all": {
+    "message": "Pou\u017e\u00edt glob\u00e1ln\u00ed nastaven\u00ed"
+  },
+  "use_global_all_tooltip": {
+    "message": "Zm\u011bn\u00ed nastaven\u00ed dom\u00e9n na pou\u017eit\u00ed glob\u00e1ln\u00edho nastaven\u00ed."
+  },
+  "use_global_domain_tooltip": {
+    "message": "Obnov\u00ed nastaven\u00ed na pou\u017eit\u00ed glob\u00e1ln\u00edho nastaven\u00ed."
+  },
+  "remove_domain_tooltip": {
+    "message": "Odstran\u00ed z\u00e1znam."
+  },
   "options_global": {
     "message": "Glob\u00e1ln\u00ed nastaven\u00ed"
   },
@@ -40,6 +64,9 @@
   },
   "special_features_header": {
     "message": "Zvl\u00e1\u0161tn\u00ed funkce"
+  },
+  "actions_header": {
+    "message": "Akce"
   },
   "purpose1": {
     "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"
