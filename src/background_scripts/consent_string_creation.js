@@ -8,6 +8,7 @@ browser.runtime.onMessage.addListener(consentRequestMessageHandler);
  */
 function consentRequestMessageHandler (request, sender, sendResponse) {
   const url = new URL(request.url);
+  browser.storage.local.get().then(result => console.log('local storage', result));
 
   return new Promise(resolve => {
     getOptions(url.hostname)

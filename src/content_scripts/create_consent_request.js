@@ -19,8 +19,6 @@ function createConsentRequest () {
         cmpReady = data.cmpLoaded;
       }
 
-      console.log('event data: ', data, success);
-
       if (cmpReady) {
         getDataAndSendRequest();
       }

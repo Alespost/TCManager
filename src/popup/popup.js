@@ -14,6 +14,7 @@ function pingAndFetch () {
 function pingHandler (response) {
   if (response === undefined) {
     document.getElementById('data').innerText = 'něco se pokazilo: PING';
+    sendPingMessage();
     //TODO
     return;
   }
@@ -32,11 +33,13 @@ function fetchTCData () {
 function fetchHandler (response) {
   if (response === undefined || !response.success) {
     document.getElementById('data').innerText = 'něco se pokazilo: DATA';
+    sendGetTCDataMessage();
     //TODO
     return;
   }
 
   if (!response.data) {
+    document.getElementById('data').innerText = 'no data';
     return;
   }
 
@@ -53,7 +56,7 @@ function sendGetTCDataMessage () {
   sendMessage(message, fetchHandler);
 }
 
-function sendMessage (message, handler) {
+function sendMessage (message, callback) {
   const query = browser.tabs.query(
     {
       currentWindow: true,
@@ -61,6 +64,6 @@ function sendMessage (message, handler) {
     });
 
   query.then(tabs => {
-    browser.tabs.sendMessage(tabs[0].id, message).then(handler);
+    browser.tabs.sendMessage(tabs[0].id, message).then(callback);
   });
 }
