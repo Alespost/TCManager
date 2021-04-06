@@ -8,7 +8,6 @@ browser.runtime.onMessage.addListener(consentRequestMessageHandler);
  */
 function consentRequestMessageHandler (request, sender, sendResponse) {
   const url = new URL(request.url);
-  browser.storage.local.get().then(result => console.log('local storage', result));
 
   return new Promise(resolve => {
     getOptions(url.hostname)
@@ -208,7 +207,13 @@ function storeConsent (url, TCString) {
 function storeCookies (TCString, url) {
   const cookieNames = ['euconsent-v2', 'eupubconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
   const hostname = url.hostname;
-  const domains = [hostname.replace(new RegExp('www'), ''), '.' + hostname];
+  let domains = [
+    hostname.replace(/www/, ''),
+    '.' + hostname,
+    hostname.replace(/^.*(?=\.\w*\.\w*$)/, '')
+  ];
+
+  domains = [...new Set(domains)];
 
   const expiration = new Date();
   expiration.setFullYear(expiration.getFullYear() + 1);

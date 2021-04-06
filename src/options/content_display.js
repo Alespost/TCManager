@@ -1,7 +1,5 @@
 function displayOptionsContent () {
-  document.title = localizedMessage('options_title');
-  displayOptionsHeader();
-  displayNavItems();
+  displayLayoutContent();
   displayButtons();
   displayListHeaders();
   displayGlobalOptionsHeader();
@@ -9,12 +7,30 @@ function displayOptionsContent () {
 }
 
 function displayDescriptionContent() {
-  document.title = localizedMessage('options_title');
-  displayOptionsHeader()
-  displayNavItems();
+  displayLayoutContent();
   displayListHeaders();
   displayListItems('purpose');
   displayListItems('special_feature');
+}
+
+function displayAboutContent() {
+  displayLayoutContent();
+  document.getElementById('about_header').innerText = localizedMessage('about_header');
+  document.getElementById('about').innerText = localizedMessage('about');
+  document.getElementById('author_header').innerText = localizedMessage('author_header');
+  document.getElementById('name').innerText = localizedMessage('name') + ':';
+  document.getElementById('email').innerText = localizedMessage('email') + ':';
+  document.getElementById('organization').innerText = localizedMessage('organization') + ':';
+  document.getElementById('org_name').innerText = localizedMessage('org_name');
+  document.getElementById('used_icons_header').innerText = localizedMessage('used_icons_header');
+  document.getElementById('icons_taken_form').innerText = localizedMessage('icons_taken_from');
+  document.getElementById('license').innerText = localizedMessage('license');
+}
+
+function displayLayoutContent() {
+  document.title = localizedMessage('options_title');
+  displayOptionsHeader();
+  displayNavItems();
 }
 
 function displayOptionsHeader () {
@@ -84,3 +100,4 @@ function displayListItems (listIdPrefix) {
     list.appendChild(item);
   }
 }
+

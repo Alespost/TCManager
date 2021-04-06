@@ -68,6 +68,33 @@
   "actions_header": {
     "message": "Akce"
   },
+  "about_header": {
+    "message": "O roz\u0161\u00ed\u0159en\u00ed TC Manager"
+  },
+  "about": {
+    "message": "TBD"
+  },
+  "author_header": {
+    "message": "Autor"
+  },
+  "name": {
+    "message": "Jm\u00e9no"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "organization": {
+    "message": "Organizace"
+  },
+  "used_icons_header": {
+    "message": "Pou\u017eit\u00e9 ikony"
+  },
+  "icons_taken_from": {
+    "message": "N\u00e1sleduj\u00edc\u00ed ikony byly p\u0159evzaty z"
+  },
+  "license": {
+    "message": "Licence"
+  },
   "purpose1": {
     "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"
   },

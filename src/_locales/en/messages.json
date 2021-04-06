@@ -68,6 +68,33 @@
   "actions_header": {
     "message": "Action"
   },
+  "about_header": {
+    "message": "About TC Manager extension"
+  },
+  "about": {
+    "message": "TBD"
+  },
+  "author_header": {
+    "message": "Author"
+  },
+  "name": {
+    "message": "Name"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "organization": {
+    "message": "Organization"
+  },
+  "used_icons_header": {
+    "message": "Used icons"
+  },
+  "icons_taken_from": {
+    "message": "The following icons were taken from"
+  },
+  "license": {
+    "message": "License"
+  },
   "purpose1": {
     "message": "Store and/or access information on a device"
   },

@@ -7,7 +7,7 @@
     <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js" type="application/javascript"></script>
     <script src="../common/common.js" type="text/javascript"></script>
     <script src="content_display.js" type="text/javascript"></script>
-    <script src="description.js" type="text/javascript"></script>
+    <script src="about.js" type="text/javascript"></script>
 
     <link href="../common/fonts.css" rel="stylesheet">
     <link href="layout.css" rel="stylesheet">
@@ -29,28 +29,28 @@
         </ul>
     </nav>
     <div class="content">
-        <h2 id="about_header">O rozšíření</h2>
-        <p id="about">TBD</p>
-        <h2 id="credits_header">Credits</h2>
-        <h3 id="author_header">Autor</h3>
+        <h2 id="about_header"></h2>
+        <p id="about"></p>
+
+        <h3 id="author_header"></h3>
         <dl>
             <dt>
-                <span id="name" class="bold">Jméno:</span> Aleš Postulka
+                <span id="name" class="bold"></span> Aleš Postulka
             </dt>
             <dt>
-                <span id="email" class="bold">Email:</span> xpostu03@stud.fit.vutbr.cz
+                <span id="email" class="bold"></span> xpostu03@stud.fit.vutbr.cz
             </dt>
             <dt>
-                <span id="organization" class="bold">Organizace:</span> FIT VUT v Brně
+                <span id="organization" class="bold"></span> <span id="org_name"></span>
             </dt>
         </dl>
         
-        <h3>Použité ikony</h3>
-        <p>Následující ikony byly převzaty z <a href="https://fontawesome.com/">Font Awesome</a> pod licencí <a href="https://fontawesome.com/license">Creative Commons Attribution 4.0 International</a>.</p>
+        <h3 id="used_icons_header"></h3>
+        <p><span id="icons_taken_form"></span> <a href="https://fontawesome.com/">Font Awesome</a>. <span id="license"></span>: <a href="https://fontawesome.com/license">Creative Commons Attribution 4.0 International</a>.</p>
         <img src="../resources/img/cog-solid-hover.svg" class="icon" alt="">
         <img src="../resources/img/trash-alt-solid.svg" class="icon" alt="">
         <img src="../resources/img/undo-solid.svg" class="icon" alt="">
-        <img src="../resources/img/question-circle.svg" class="icon" alt="">
+        <img src="../resources/img/question-circle-hover.svg" class="icon" alt="">
     </div>
 </div>
 </body>
