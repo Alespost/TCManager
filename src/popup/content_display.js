@@ -18,11 +18,13 @@ function displayListItems (items, listIdPrefix) {
     if (value === true) {
       const item = document.createElement('li');
       item.setAttribute('value', key);
+      item.innerText = localizedMessage(listIdPrefix + key);
 
-      const abbr = document.createElement('abbr');
-      abbr.title = localizedMessage(listIdPrefix + key + '_description')
-      abbr.innerText = localizedMessage(listIdPrefix + key);
-      item.appendChild(abbr);
+      const description = document.createElement('span');
+      description.classList.add('question_icon');
+      description.title = localizedMessage(listIdPrefix + key + '_description')
+      description.innerHTML = ' ';
+      item.appendChild(description);
 
       document.getElementById(listIdPrefix + '_list').appendChild(item);
     }

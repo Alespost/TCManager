@@ -1,10 +1,32 @@
-body {
-    /*background-color: #eee;*/
+.container {
+    width: auto;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 0 10px 10px;
 }
 
-.container {
-    width: 550px;
-    padding: 0 10px 10px;
+.header {
+    margin-top: 15px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: inherit;
+}
+
+#options_button {
+    background: url("../resources/img/cog-solid.svg") no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+#options_button:hover {
+    background: url("../resources/img/cog-solid-hover.svg") no-repeat;
+    cursor: pointer;
 }
 
 h1 {
@@ -17,4 +39,17 @@ h3, h4 {
 
 ol li {
     margin-top: 5px;
+    white-space: nowrap;
+}
+
+.question_icon {
+    display: inline-block;
+    background: url("../resources/img/question-circle.svg") no-repeat;
+    margin-left: 5px;
+    width: 13px;
+    height: 13px;
+}
+
+.question_icon:hover {
+    background: url("../resources/img/question-circle-hover.svg") no-repeat;
 }

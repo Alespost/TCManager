@@ -8,8 +8,9 @@ button {
 }
 
 button:hover {
-    border: 1px solid red;
-    color: red;
+    border: 1px solid #ff4646;
+    color: #ff4646;
+    cursor: pointer;
 }
 
 button:focus {
@@ -30,10 +31,27 @@ button:focus {
     height: 25px;
     padding: 3px;
     margin-right: 5px;
+    background: no-repeat content-box;
 }
 
 .action:last-child {
     margin-right: 0;
+}
+
+.action.reset {
+    background-image: url("../resources/img/undo-solid.svg");
+}
+
+.action.reset:hover {
+    background-image: url("../resources/img/undo-solid-hover.svg");
+}
+
+.action.remove {
+    background-image: url("../resources/img/trash-alt-solid.svg");
+}
+
+.action.remove:hover {
+    background-image: url("../resources/img/trash-alt-solid-hover.svg");
 }
 
 .icon {
