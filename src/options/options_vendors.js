@@ -6,61 +6,74 @@ function restoreOptions () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
+    console.log(result);
     const vendorChoices = result[VENDOR_OPTIONS];
-    console.log(vendorChoices);
 
-    const table = document.getElementById('options_vendors_body');
+    openVendorList().then(jsonResponse => {
+      const table = document.getElementById('options_vendors_body');
+      const globalRow = createOptionsRow(null, vendorChoices[GLOBAL_OPTIONS]);
+      globalRow.id = GLOBAL_ROW_ID;
+      table.appendChild(globalRow);
 
-    const row = createOptionsRow(vendorChoices[GLOBAL_OPTIONS]);
+      for (const [key, vendor] of Object.entries(jsonResponse.vendors)) {
+        const row = createOptionsRow(vendor, vendorChoices[key], vendorChoices[GLOBAL_OPTIONS]);
+        table.appendChild(row);
+      }
+    });
 
-    // for (const [key, value] of Object.entries(vendorChoices)) {
-    //   const row = createOptionsRow(value);
-    //   table.appendChild(row);
-    // }
-
-    // displayContent();
+    // displayOptionsContent();
   }
 
-  function createOptionsRow (vendor) {
+  function createOptionsRow (vendor, choice, global = null) {
     const row = document.createElement('tr');
 
     const nameCell = document.createElement('td');
     nameCell.classList.add('row_header', 'left');
 
-    if (vendor.id === null && vendor.name === GLOBAL_OPTIONS) {
+    if (vendor === null) {
       nameCell.id = 'global_header';
-      nameCell.innerText = vendor.name //TODO remove
     } else {
+      row.id = vendor.id;
       nameCell.innerText = vendor.name;
     }
 
     row.appendChild(nameCell);
 
     const idCell = document.createElement('td');
-    idCell.classList.remove('row_header', 'left');
-    idCell.innerText = vendor.id;
+    if (vendor !== null) {
+      idCell.classList.add('right');
+      idCell.innerText = vendor.id;
+    }
 
     row.appendChild(idCell);
 
-    setChoices();
+    const policyUrlCell = document.createElement('td');
+    if (vendor !== null) {
+      const link = document.createElement('a');
+      link.href = vendor.policyUrl;
+      link.innerText = vendor.policyUrl;
+      policyUrlCell.appendChild(link);
+    }
+
+    row.appendChild(policyUrlCell);
+
+    setChoice();
     return row;
 
-    function setChoices () {
+    function setChoice () {
         const cell = document.createElement('td');
-        const choiceClass = SPECIAL_FEATURE_CLASS_PREFIX;
 
-        if (vendor.name === GLOBAL_OPTIONS) {
+        if (vendor === null) {
           cell.classList.add(GLOBAL_OPTION_CLASS);
-          cell.id = choiceClass;
+          cell.id = GLOBAL_OPTION_CLASS;
         } else {
           cell.classList.add(OPTION_CLASS);
         }
 
-        cell.classList.add(choiceClass);
-        cell.setAttribute(VALUE_ATTRIBUTE, vendor.choice);
+        cell.setAttribute(VALUE_ATTRIBUTE, choice);
         cell.addEventListener('click', optionClickedHandler);
 
-        switch (vendor.choice) {
+        switch (choice) {
           case CONSENT:
             cell.classList.add(LOCAL_CONSENT_COLOR);
             cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
@@ -69,13 +82,13 @@ function restoreOptions () {
             cell.classList.add(LOCAL_OBJECTION_COLOR);
             cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
             break;
-/*          case GLOBAL_VALUE:
-            if (global[type][key] === CONSENT) {
+          case GLOBAL_VALUE:
+            if (global === CONSENT) {
               cell.classList.add(GLOBAL_CONSENT_COLOR);
             } else {
               cell.classList.add(GLOBAL_OBJECTION_COLOR);
             }
-            break;*/
+            break;
         }
 
         row.appendChild(cell);
@@ -89,7 +102,7 @@ function restoreOptions () {
 
 function optionClickedHandler (event) {
   const clickedOption = event.target;
-  const id = clickedOption.getAttribute('id');
+  const isGlobal = clickedOption.classList.contains(GLOBAL_OPTION_CLASS);
 
   if (clickedOption.classList.contains(LOCAL_OBJECTION_COLOR)) {
     setConsent();
@@ -106,8 +119,8 @@ function optionClickedHandler (event) {
     setObjection();
   }
 
-  if (id !== null) {
-    const domainsChoices = document.getElementsByClassName(OPTION_CLASS + ' ' + id);
+  if (isGlobal) {
+    const domainsChoices = document.getElementsByClassName(OPTION_CLASS);
     for (const choice of domainsChoices) {
       invertGlobal(choice);
     }
@@ -132,11 +145,7 @@ function optionClickedHandler (event) {
   function setGlobal () {
     removeClasses();
 
-    const choiceType = clickedOption.className.match(
-      new RegExp('(' + PURPOSE_CLASS_PREFIX + '|' + SPECIAL_FEATURE_CLASS_PREFIX + ')[^\s]*'),
-    )[0];
-
-    const globalOption = document.getElementById(choiceType);
+    const globalOption = document.getElementById(GLOBAL_OPTION_CLASS);
     if (globalOption.getAttribute(VALUE_ATTRIBUTE) === CONSENT.toString()) {
       clickedOption.classList.add(GLOBAL_CONSENT_COLOR);
     } else {
@@ -165,64 +174,20 @@ function optionClickedHandler (event) {
 }
 
 function storeOptions (row) {
-  let cell = row.firstElementChild;
 
   let name;
   if (row.id === GLOBAL_ROW_ID) {
     name = GLOBAL_OPTIONS;
   } else {
-    name = cell.innerHTML;
+    name = row.id;
   }
 
-  cell = cell.nextElementSibling;
+  const value = parseInt(row.lastElementChild.getAttribute(VALUE_ATTRIBUTE));
 
-  let purposes = [];
-  for (let i = 0; i < PURPOSES_COUNT; i++) {
-    let value = false;
+  browser.storage.sync.get(VENDOR_OPTIONS)
+    .then(result => {
+      result[VENDOR_OPTIONS][name] = value;
 
-    if (cell.classList.contains(PURPOSE_CLASS_PREFIX + (i + 1))) {
-      switch (cell.getAttribute(VALUE_ATTRIBUTE)) {
-        case CONSENT.toString():
-          value = CONSENT;
-          break;
-        case OBJECTION.toString():
-          value = OBJECTION;
-          break;
-        case String(GLOBAL_VALUE):
-          value = GLOBAL_VALUE;
-          break;
-      }
-    }
-
-    purposes.push(value);
-    cell = cell.nextElementSibling;
-  }
-
-  let specialFeatures = [];
-  for (let i = 0; i < SPECIAL_FEATURES_COUNT; i++) {
-    let value = false;
-    if (cell.classList.contains(SPECIAL_FEATURE_CLASS_PREFIX + (i + 1))) {
-      switch (cell.getAttribute(VALUE_ATTRIBUTE)) {
-        case CONSENT.toString():
-          value = CONSENT;
-          break;
-        case OBJECTION.toString():
-          value = OBJECTION;
-          break;
-        case String(GLOBAL_VALUE):
-          value = GLOBAL_VALUE;
-          break;
-      }
-    }
-
-    specialFeatures.push(value);
-    cell = cell.nextElementSibling;
-  }
-
-  const options = {};
-  options[name] = {};
-  options[name][PURPOSES_OPTIONS] = purposes;
-  options[name][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
-
-  browser.storage.sync.set(options);
+      browser.storage.sync.set(result);
+    });
 }

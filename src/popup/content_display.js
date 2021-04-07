@@ -32,19 +32,16 @@ function displayListItems (items, listIdPrefix) {
 }
 
 function displayCMPData (cmpId) {
-  let url = browser.runtime.getURL('resources/cmp-list.json');
-  fetch(url)
-    .then(response => response.json())
-    .then(jsonResponse => {
-      let cmpName;
-      if (jsonResponse.cmps[cmpId]) {
-        cmpName = jsonResponse.cmps[cmpId].name;
-      } else {
-        cmpName = localizedMessage('unknown_cmp');
-      }
+  openCMPList().then(jsonResponse => {
+    let cmpName;
+    if (jsonResponse.cmps[cmpId]) {
+      cmpName = jsonResponse.cmps[cmpId].name;
+    } else {
+      cmpName = localizedMessage('unknown_cmp');
+    }
 
-      document.getElementById('cmp_name').innerText = cmpName;
-    });
+    document.getElementById('cmp_name').innerText = cmpName;
+  });
 
   document.getElementById('cmp_id').innerText = '(ID:' + cmpId + ')';
 }

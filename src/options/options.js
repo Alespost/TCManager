@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function restoreOptions () {
-  document.getElementById('options_body').innerHTML = '';
   browser.storage.sync.get().then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
     const global = result[GLOBAL_OPTIONS];
     delete result[GLOBAL_OPTIONS];
+    delete result[VENDOR_OPTIONS];
 
     const table = document.getElementById('options_body');
     const row = createOptionsRow(GLOBAL_OPTIONS, global);

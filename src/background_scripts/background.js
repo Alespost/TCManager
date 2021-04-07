@@ -15,9 +15,9 @@ function initOptions () {
       setDefaultOptions();
     }
 
-    if (!result.hasOwnProperty(VENDOR_OPTIONS)) {
-      // console.log('setting vendors')
-      // setDefaultVendorOptions();
+    if (result.hasOwnProperty(VENDOR_OPTIONS)) {
+      console.log('setting vendors')
+      setDefaultVendorOptions();
     }
   }
 
@@ -43,7 +43,13 @@ function initOptions () {
     vendorOptions[VENDOR_OPTIONS] = {};
     vendorOptions[VENDOR_OPTIONS][GLOBAL_OPTIONS] = OBJECTION;
 
-    browser.storage.sync.set(vendorOptions);
+    openVendorList().then(jsonResponse => {
+      for (const [key, vendor] of Object.entries(jsonResponse.vendors)) {
+        vendorOptions[VENDOR_OPTIONS][vendor.id] = GLOBAL_VALUE;
+      }
+
+      browser.storage.sync.set(vendorOptions);
+    });
   }
 }
 

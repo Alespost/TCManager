@@ -12,3 +12,20 @@ const PURPOSES_COUNT = 10;
 const SPECIAL_FEATURES_COUNT = 2;
 
 const localizedMessage = browser.i18n.getMessage;
+
+
+function openVendorList()
+{
+  return openJSON('resources/vendor-list.json');
+}
+
+function openCMPList()
+{
+  return openJSON('resources/cmp-list.json');
+}
+
+function openJSON(path)
+{
+  const url = browser.runtime.getURL(path);
+  return fetch(url).then(response => response.json())
+}
