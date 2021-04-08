@@ -12,10 +12,13 @@
     "message": "Nastaven\u00ed"
   },
   "nav_options": {
-    "message": "Nastaven\u00ed souhlasu"
+    "message": "Nastaven\u00ed souhlasu s \u00fa\u010dely zpracov\u00e1n\u00ed"
   },
   "nav_description": {
     "message": "Popisy \u00fa\u010del\u016f"
+  },
+  "nav_options_vendor": {
+    "message": "Nastaven\u00ed souhlasu pro prodejce"
   },
   "nav_about": {
     "message": "O roz\u0161\u00ed\u0159en\u00ed"
@@ -65,6 +68,12 @@
   "special_features_header": {
     "message": "Zvl\u00e1\u0161tn\u00ed funkce"
   },
+  "vendors_header": {
+    "message": "Prodejci s ud\u011blen\u00fdm souhlasem"
+  },
+  "vendor_list_header": {
+    "message": "Seznam prodejc\u016f"
+  },
   "actions_header": {
     "message": "Akce"
   },
@@ -94,6 +103,24 @@
   },
   "license": {
     "message": "Licence"
+  },
+  "vendor_list_version": {
+    "message": "Verze seznamu prodejc\u016f"
+  },
+  "vendor_count": {
+    "message": "Po\u010det prodejc\u016f"
+  },
+  "vendor_name_header": {
+    "message": "Jm\u00e9no"
+  },
+  "policy_link": {
+    "message": "Odkaz na politiku"
+  },
+  "link": {
+    "message": "Odkaz"
+  },
+  "vendor_choice": {
+    "message": "Volba"
   },
   "purpose1": {
     "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"

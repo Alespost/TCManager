@@ -12,10 +12,13 @@
     "message": "Settings"
   },
   "nav_options": {
-    "message": "Consent settings"
+    "message": "Consent settings for processing purposes"
   },
   "nav_description": {
     "message": "Description of purposes"
+  },
+  "nav_options_vendor": {
+    "message": "Consent setting for vendors"
   },
   "nav_about": {
     "message": "About extension"
@@ -65,6 +68,12 @@
   "special_features_header": {
     "message": "Special Features"
   },
+  "vendors_header": {
+    "message": "Vendors with consent"
+  },
+  "vendor_list_header": {
+    "message": "Vendor list"
+  },
   "actions_header": {
     "message": "Action"
   },
@@ -94,6 +103,24 @@
   },
   "license": {
     "message": "License"
+  },
+  "vendor_list_version": {
+    "message": "Vendor list version"
+  },
+  "vendor_count": {
+    "message": "Number of vendors"
+  },
+  "vendor_name_header": {
+    "message": "Name"
+  },
+  "policy_link": {
+    "message": "Policy link"
+  },
+  "link": {
+    "message": "Link"
+  },
+  "vendor_choice": {
+    "message": "Choice"
   },
   "purpose1": {
     "message": "Store and/or access information on a device"

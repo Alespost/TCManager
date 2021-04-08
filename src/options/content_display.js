@@ -2,13 +2,14 @@ function displayOptionsContent () {
   displayLayoutContent();
   displayButtons();
   displayListHeaders();
-  displayGlobalOptionsHeader();
   displayActionsHeader();
 }
 
 function displayVendorsOptionsContent() {
   displayLayoutContent();
-  displayGlobalOptionsHeader();
+  document.getElementById('vendor_name_header').innerText = localizedMessage('vendor_name_header');
+  document.getElementById('policy_link').innerText = localizedMessage('policy_link');
+  document.getElementById('vendor_choice').innerText = localizedMessage('vendor_choice');
 }
 
 function displayDescriptionContent() {
@@ -45,6 +46,7 @@ function displayOptionsHeader () {
 function displayNavItems() {
   document.getElementById('nav_options').innerText = localizedMessage('nav_options');
   document.getElementById('nav_description').innerText = localizedMessage('nav_description');
+  document.getElementById('nav_vendors').innerText = localizedMessage('nav_options_vendor');
   document.getElementById('nav_about').innerText = localizedMessage('nav_about');
 }
 

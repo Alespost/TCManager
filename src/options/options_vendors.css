@@ -7,3 +7,12 @@ td:not(.row_header, .option) {
     max-width: none;
     width: auto;
 }
+
+.link {
+    text-align: center;
+}
+
+.id {
+    padding-right: 5px;
+    padding-left: 5px;
+}

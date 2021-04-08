@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  displayVendorsOptionsContent();
   restoreOptions();
 });
 
@@ -14,13 +15,12 @@ function restoreOptions () {
       const globalRow = createOptionsRow(null, vendorChoices[GLOBAL_OPTIONS]);
       globalRow.id = GLOBAL_ROW_ID;
       table.appendChild(globalRow);
+      displayGlobalOptionsHeader();
 
       for (const [key, vendor] of Object.entries(jsonResponse.vendors)) {
         const row = createOptionsRow(vendor, vendorChoices[key], vendorChoices[GLOBAL_OPTIONS]);
         table.appendChild(row);
       }
-
-      displayVendorsOptionsContent();
     });
   }
 
@@ -40,6 +40,7 @@ function restoreOptions () {
     row.appendChild(nameCell);
 
     const idCell = document.createElement('td');
+    idCell.classList.add('id');
     if (vendor !== null) {
       idCell.classList.add('right');
       idCell.innerText = vendor.id;
@@ -48,10 +49,11 @@ function restoreOptions () {
     row.appendChild(idCell);
 
     const policyUrlCell = document.createElement('td');
+    policyUrlCell.classList.add('link');
     if (vendor !== null) {
       const link = document.createElement('a');
       link.href = vendor.policyUrl;
-      link.innerText = 'link';
+      link.innerText = localizedMessage('link');
       policyUrlCell.appendChild(link);
     }
 

@@ -1,3 +1,1 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  displayDescriptionContent();
-});
+document.addEventListener('DOMContentLoaded', displayDescriptionContent);

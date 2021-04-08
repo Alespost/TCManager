@@ -37,9 +37,48 @@ h3, h4 {
     margin-bottom: 5px;
 }
 
+h5 {
+    font-size: 12pt;
+}
+
 ol li {
     margin-top: 5px;
     white-space: nowrap;
+}
+
+#vendors_info, #vendor_list {
+    font-family: Arial, Helvetica, Arial, sans-serif;
+}
+
+#vendors_info {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#vendor_list_header.hidden {
+    display: none;
+}
+
+#vendor_list {
+    border: 1px solid black;
+    padding: 5px;
+    max-height: 100px;
+    overflow:hidden;
+    overflow-y: scroll;
+
+    list-style-type: none;
+}
+
+#vendor_list.empty {
+    display: none;
+}
+
+#vendor_list li {
+    margin-bottom: 3px;
+}
+
+#vendor_list li:last-child {
+    margin-bottom: 0;
 }
 
 .question_icon {

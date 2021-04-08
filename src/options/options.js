@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  displayOptionsContent();
   restoreOptions();
   document.getElementById('reset').addEventListener('click', resetToDefaults);
   document.getElementById('use_global').addEventListener('click', useGlobal);
@@ -14,8 +15,10 @@ function restoreOptions () {
     delete result[VENDOR_OPTIONS];
 
     const table = document.getElementById('options_body');
+    table.innerHTML = '';
     const row = createOptionsRow(GLOBAL_OPTIONS, global);
     table.appendChild(row);
+    displayGlobalOptionsHeader();
 
     const sorted = Object.entries(result).sort((a, b) => {
       if (a[0] > b[0])
@@ -30,8 +33,6 @@ function restoreOptions () {
       const row = createOptionsRow(domain, choices, global);
       table.appendChild(row);
     }
-
-    displayOptionsContent();
   }
 
   function createOptionsRow (domain, choices, global = null) {
@@ -276,6 +277,8 @@ function storeOptions (row) {
 function resetToDefaults() {
   browser.storage.sync.get().then(
     result => {
+      delete result[VENDOR_OPTIONS];
+
       for (const [key, value] of Object.entries(result)) {
         if (key === GLOBAL_OPTIONS) {
           value[PURPOSES_OPTIONS].fill(OBJECTION);
@@ -295,6 +298,7 @@ function useGlobal() {
   browser.storage.sync.get().then(
     result => {
       delete result[GLOBAL_OPTIONS];
+      delete result[VENDOR_OPTIONS];
 
       for (const [key, value] of Object.entries(result)) {
         value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
@@ -310,6 +314,7 @@ function removeDomains() {
   browser.storage.sync.get().then(
     result => {
       delete result[GLOBAL_OPTIONS];
+      delete result[VENDOR_OPTIONS];
 
       const domains = Object.keys(result);
 
@@ -323,6 +328,8 @@ function resetDomain(e) {
 
   browser.storage.sync.get(domain).then(
     result => {
+      delete result[VENDOR_OPTIONS];
+
       if (domain === GLOBAL_OPTIONS) {
         result[domain][PURPOSES_OPTIONS].fill(OBJECTION);
         result[domain][SPECIAL_FEATURES_OPTIONS].fill(OBJECTION);
