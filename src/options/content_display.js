@@ -6,6 +6,11 @@ function displayOptionsContent () {
   displayActionsHeader();
 }
 
+function displayVendorsOptionsContent() {
+  displayLayoutContent();
+  displayGlobalOptionsHeader();
+}
+
 function displayDescriptionContent() {
   displayLayoutContent();
   displayListHeaders();

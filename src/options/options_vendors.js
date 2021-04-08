@@ -19,9 +19,9 @@ function restoreOptions () {
         const row = createOptionsRow(vendor, vendorChoices[key], vendorChoices[GLOBAL_OPTIONS]);
         table.appendChild(row);
       }
-    });
 
-    // displayOptionsContent();
+      displayVendorsOptionsContent();
+    });
   }
 
   function createOptionsRow (vendor, choice, global = null) {
@@ -51,7 +51,7 @@ function restoreOptions () {
     if (vendor !== null) {
       const link = document.createElement('a');
       link.href = vendor.policyUrl;
-      link.innerText = vendor.policyUrl;
+      link.innerText = 'link';
       policyUrlCell.appendChild(link);
     }
 

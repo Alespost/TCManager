@@ -1,0 +1,9 @@
+table {
+    min-width: 650px;
+}
+
+td:not(.row_header, .option) {
+    min-width: auto;
+    max-width: none;
+    width: auto;
+}

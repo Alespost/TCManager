@@ -25,7 +25,7 @@ function consentRequestMessageHandler (request, sender, sendResponse) {
  * @returns {PromiseLike<{} | *[]> | Promise<{} | *[]>}
  */
 function getOptions (domain) {
-  return browser.storage.sync.get([GLOBAL_OPTIONS, domain])
+  return browser.storage.sync.get([GLOBAL_OPTIONS, VENDOR_OPTIONS, domain])
     .then(onSuccess, onError);
 
   /**
@@ -58,7 +58,7 @@ function getOptions (domain) {
     requiredOptions[PURPOSES_OPTIONS] = purposes;
     requiredOptions[SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-    return requiredOptions;
+    return [requiredOptions, result[VENDOR_OPTIONS]];
   }
 
   /**
@@ -78,16 +78,37 @@ function getOptions (domain) {
  * @returns {object}
  */
 function createTCModel (data, options) {
+  const vendors = options[1];
+  const globalVendorOpt = vendors[GLOBAL_OPTIONS];
+  const vendorListVersion = vendors[VENDOR_OPTIONS];
+  delete vendors[GLOBAL_OPTIONS];
+  delete vendors[VENDOR_OPTIONS];
+
+  options = options[0];
+
+  const maxId = Math.max(...Object.keys(vendors));
+  const bitField = [];
+
+  for (let i = 1; i <= maxId; i++) {
+    if (vendors.hasOwnProperty(i) && vendors[i] === GLOBAL_VALUE) {
+      bitField.push(globalVendorOpt);
+    } else if (vendors.hasOwnProperty(i)) {
+      bitField.push(vendors[i]);
+    } else {
+      bitField.push(OBJECTION);
+    }
+  }
+
   const vendorConsent = {
-    maxVendorId: 982, //TODO
+    maxVendorId: maxId,
     isRangeEncoding: 0, // BitField
-    bitField: Array(982).fill(0), //TODO
+    bitField: bitField
   };
 
   const vendorLI = {
-    maxVendorId: 982, //TODO
+    maxVendorId: maxId,
     isRangeEncoding: 0, // BitField
-    bitField: Array(982).fill(0), //TODO
+    bitField: bitField
   };
 
   const timestamp = Math.round((new Date()).getTime() / 100);
@@ -205,7 +226,7 @@ function storeConsent (url, TCString) {
  * @param url
  */
 function storeCookies (TCString, url) {
-  const cookieNames = ['euconsent-v2', 'eupubconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
+  const cookieNames = ['euconsent-v2', 'eupubconsent-v2', 'cconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
   const hostname = url.hostname;
   let domains = [
     hostname.replace(/www/, ''),

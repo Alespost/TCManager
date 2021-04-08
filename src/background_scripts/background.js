@@ -15,9 +15,12 @@ function initOptions () {
       setDefaultOptions();
     }
 
-    if (result.hasOwnProperty(VENDOR_OPTIONS)) {
-      console.log('setting vendors')
+    if (!result.hasOwnProperty(VENDOR_OPTIONS)) {
+      console.log('setting vendors');
       setDefaultVendorOptions();
+    } else {
+      console.log('updating vendors');
+      updateVendorOptions();
     }
   }
 
@@ -44,12 +47,50 @@ function initOptions () {
     vendorOptions[VENDOR_OPTIONS][GLOBAL_OPTIONS] = OBJECTION;
 
     openVendorList().then(jsonResponse => {
-      for (const [key, vendor] of Object.entries(jsonResponse.vendors)) {
+      vendorOptions[VENDOR_OPTIONS][VENDOR_OPTIONS] = jsonResponse.vendorListVersion;
+      for (const [, vendor] of Object.entries(jsonResponse.vendors)) {
         vendorOptions[VENDOR_OPTIONS][vendor.id] = GLOBAL_VALUE;
       }
 
       browser.storage.sync.set(vendorOptions);
     });
+  }
+
+  function updateVendorOptions() {
+    browser.storage.sync.get(VENDOR_OPTIONS).then(
+      result => {
+        const choices = result[VENDOR_OPTIONS];
+        const global = choices[GLOBAL_OPTIONS];
+        delete choices[GLOBAL_OPTIONS];
+        delete choices[VENDOR_OPTIONS];
+
+        openVendorList().then(
+          vendors => {
+            const version = vendors.vendorListVersion;
+            vendors = vendors.vendors;
+            for (const [key] of Object.entries(choices)) {
+              if (!vendors.hasOwnProperty(key)) {
+                console.log('removing: ', key);
+                delete choices[key];
+              }
+            }
+
+            for (const [, vendor] of Object.entries(vendors)) {
+              if (!choices.hasOwnProperty(vendor.id)) {
+                console.log('adding: ', vendor.id);
+                choices[vendor.id] = GLOBAL_VALUE;
+              }
+            }
+
+            choices[VENDOR_OPTIONS] = version;
+            choices[GLOBAL_OPTIONS] = global;
+            result[VENDOR_OPTIONS] = choices;
+
+            browser.storage.sync.set(result);
+          }
+        );
+      }
+  );
   }
 }
 

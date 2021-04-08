@@ -1,4 +1,5 @@
 createConsentRequest();
+closeBanner();
 
 function createConsentRequest () {
   let cmpReady = false;
@@ -46,6 +47,17 @@ function createConsentRequest () {
       };
 
       browser.runtime.sendMessage(message);
+
     }
   }
+}
+
+function closeBanner()
+{
+  const style = document.createElement('style');
+  style.innerText = '#gdpr-consent-tool-wrapper {display: none}';
+
+  const parent = document.body;
+  parent.insertBefore(style, parent.firstChild);
+
 }

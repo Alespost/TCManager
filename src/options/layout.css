@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+.right {
+    text-align: right;
+}
+
 nav {
     margin-bottom: 20px;
     position: sticky;
