@@ -36,6 +36,7 @@
   "background": {
     "scripts": [
       "node_modules/webextension-polyfill/dist/browser-polyfill.js",
+      "node_modules/tc-string-parse/tc-string-parse.js",
       "common/common.js",
       "common/bit_field_conversion.js",
       "background_scripts/consent_string_creation.js",

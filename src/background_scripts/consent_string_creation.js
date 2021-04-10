@@ -67,7 +67,6 @@ function getOptions (domain) {
    */
   function onError (error) {
     console.error(`Error: ${error}`);
-    return [];
   }
 }
 
@@ -121,7 +120,7 @@ function createTCModel (data, options) {
     cmpVersion: data.cmpVersion,
     consentScreen: 1,
     consentLanguage: consentLanguage(),
-    vendorListVersion: 84, //TODO
+    vendorListVersion: vendorListVersion,
     tcfPolicyVersion: 2,
     isServiceSpecific: 1,
     nonStandardStacks: 0,
@@ -226,39 +225,93 @@ function storeConsent (url, TCString) {
  * @param url
  */
 function storeCookies (TCString, url) {
-  const cookieNames = ['euconsent-v2', 'eupubconsent-v2', 'cconsent-v2', '__cmpconsentx11319', '__cmpconsent6648'];
-  const hostname = url.hostname;
-  let domains = [
-    hostname.replace(/www/, ''),
-    '.' + hostname,
-    hostname.replace(/^.*(?=\.\w*\.\w*$)/, '')
-  ];
-
-  domains = [...new Set(domains)];
+  const standardCookies = ['euconsent-v2', 'eupubconsent-v2', 'cconsent-v2'];
 
   const expiration = new Date();
   expiration.setFullYear(expiration.getFullYear() + 1);
 
-  const cookie =
-    {
-      url: url.origin,
-      expirationDate: Math.floor(expiration / 1000),
-      path: '/',
-      secure: true,
-      value: TCString,
-    };
+  checkNonStandardCookieExists().then(result => {
+    let cookie;
+    if (result == null) {
+      cookie = storeStandardCookies();
+    } else {
+      cookie =
+        {
+          name: result.cookie.name,
+          domain: result.cookie.domain,
+          url: url.origin,
+          expirationDate: Math.floor(expiration / 1000),
+          path: '/',
+          secure: true,
+          value: result.cookie.value.replace(result.TCString, TCString),
+        };
 
-  for (const name of cookieNames) {
-    cookie.name = name;
-    for (const [i, domain] of domains.entries()) {
-      cookie.domain = domain;
+      console.log(cookie.value);
       browser.cookies.set(cookie);
     }
-  }
 
   storeCookiesClosingBanner(cookie);
 
   console.log('Cookies stored.');
+
+  });
+
+
+  function storeStandardCookies() {
+    const hostname = url.hostname;
+    let domains = [
+      hostname.replace(/www/, ''),
+      '.' + hostname,
+      hostname.replace(/^.*(?=\.\w*\.\w*$)/, '')
+    ];
+
+    domains = [...new Set(domains)];
+
+    let cookie =
+      {
+        url: url.origin,
+        expirationDate: Math.floor(expiration / 1000),
+        path: '/',
+        secure: true,
+        value: TCString,
+      };
+
+    for (const name of standardCookies) {
+      cookie.name = name;
+      for (const [i, domain] of domains.entries()) {
+        cookie.domain = domain;
+        browser.cookies.set(cookie);
+      }
+    }
+
+    return cookie;
+  }
+
+  function checkNonStandardCookieExists() {
+    return browser.cookies.getAll({url: url.toString()}).then(
+      cookies => {
+        for (let cookie of cookies) {
+          if (!standardCookies.includes(cookie.name)) {
+            const matches = cookie.value.match(/[A-Za-z0-9_-]{39,}/g);
+
+            if (!matches) {
+              continue;
+            }
+
+            for (let match of matches) {
+              try {
+                TCStringParse(match);
+                return {cookie: cookie, TCString: match};
+              } catch (e) {}
+            }
+          }
+        }
+
+        return null;
+      }
+    );
+  }
+
 
   function storeCookiesClosingBanner (cookie) {
     const cookies = [
