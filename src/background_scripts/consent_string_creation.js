@@ -235,19 +235,7 @@ function storeCookies (TCString, url) {
     if (result == null) {
       cookie = storeStandardCookies();
     } else {
-      cookie =
-        {
-          name: result.cookie.name,
-          domain: result.cookie.domain,
-          url: url.origin,
-          expirationDate: Math.floor(expiration / 1000),
-          path: '/',
-          secure: true,
-          value: result.cookie.value.replace(result.TCString, TCString),
-        };
-
-      console.log(cookie.value);
-      browser.cookies.set(cookie);
+      cookie = storeNonStandardCookie(result);
     }
 
   storeCookiesClosingBanner(cookie);
@@ -256,6 +244,30 @@ function storeCookies (TCString, url) {
 
   });
 
+  function checkNonStandardCookieExists() {
+    return browser.cookies.getAll({url: url.toString()}).then(
+      cookies => {
+        for (let cookie of cookies) {
+          if (!standardCookies.includes(cookie.name)) {
+            const matches = cookie.value.match(/[A-Za-z0-9_-]{39,}/g);
+
+            // No TC string candidate in cookie
+            if (!matches) {
+              continue;
+            }
+
+            for (let match of matches) {
+              try {
+                TCStringParse(match);
+                return {cookie: cookie, TCString: match};
+              } catch (e) {}
+            } // for (match of matches)
+          } // if (!standardCookies.includes(cookie.name))
+        } // for (cookie of cookies)
+        return null;
+      }
+    );
+  }
 
   function storeStandardCookies() {
     const hostname = url.hostname;
@@ -278,7 +290,7 @@ function storeCookies (TCString, url) {
 
     for (const name of standardCookies) {
       cookie.name = name;
-      for (const [i, domain] of domains.entries()) {
+      for (const [, domain] of domains.entries()) {
         cookie.domain = domain;
         browser.cookies.set(cookie);
       }
@@ -287,31 +299,27 @@ function storeCookies (TCString, url) {
     return cookie;
   }
 
-  function checkNonStandardCookieExists() {
-    return browser.cookies.getAll({url: url.toString()}).then(
-      cookies => {
-        for (let cookie of cookies) {
-          if (!standardCookies.includes(cookie.name)) {
-            const matches = cookie.value.match(/[A-Za-z0-9_-]{39,}/g);
+  /**
+   *
+   * @param values {{cookie: *, TCString: string}}
+   * @returns {{path: string, domain: *, name, secure: boolean, value: *, url: string, expirationDate: number}}
+   */
+  function storeNonStandardCookie(values) {
+    const cookie =
+      {
+        name: values.cookie.name,
+        domain: values.cookie.domain,
+        url: url.origin,
+        expirationDate: Math.floor(expiration / 1000),
+        path: '/',
+        secure: true,
+        value: values.cookie.value.replace(values.TCString, TCString),
+      };
 
-            if (!matches) {
-              continue;
-            }
+    browser.cookies.set(cookie);
 
-            for (let match of matches) {
-              try {
-                TCStringParse(match);
-                return {cookie: cookie, TCString: match};
-              } catch (e) {}
-            }
-          }
-        }
-
-        return null;
-      }
-    );
+    return cookie;
   }
-
 
   function storeCookiesClosingBanner (cookie) {
     const cookies = [
