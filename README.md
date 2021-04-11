@@ -21,4 +21,4 @@ soubor `manifest.json`
 
 ### Google Chrome
 
-Nabídka > Další nástroje > Rozšíření > Načíst nerozbalené > Zvolit adresář `src`
+Nabídka > Další nástroje > Rozšíření > Zapnout režim pro vývojáře > Načíst nerozbalené > Zvolit adresář `src`
