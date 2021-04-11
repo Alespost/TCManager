@@ -15,7 +15,6 @@ function __tcfapi (command, eventName, callback) {
 
   script.async = false;
   script.text = `__tcfapi(\'${command}\', 2, (returnData, success) => {\n` +
-    `                    console.log(\'injected script: \', \'${command}\', returnData, success);\n` +
     `                    document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
     '                       detail: {data: returnData, success: success}\n' +
     '                    }));' +

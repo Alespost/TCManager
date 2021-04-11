@@ -7,6 +7,7 @@ function displayOptionsContent () {
 
 function displayVendorsOptionsContent() {
   displayLayoutContent();
+  displayUseGlobalButton();
   document.getElementById('vendor_name_header').innerText = localizedMessage('vendor_name_header');
   document.getElementById('policy_link').innerText = localizedMessage('policy_link');
   document.getElementById('vendor_choice').innerText = localizedMessage('vendor_choice');
@@ -51,14 +52,24 @@ function displayNavItems() {
 }
 
 function displayButtons() {
+  displayResetButton();
+  displayUseGlobalButton();
+  displayRemoveDomainsButton();
+}
+
+function displayResetButton() {
   const reset = document.getElementById('reset');
   reset.innerText = localizedMessage('reset_to_defaults');
   reset.title = localizedMessage('reset_to_defaults_tooltip');
+}
 
+function displayUseGlobalButton() {
   const useGlobal = document.getElementById('use_global');
   useGlobal.innerText = localizedMessage('use_global_all');
-  useGlobal.title = localizedMessage('use_global_all_tooltip');
+  useGlobal.title = localizedMessage('use_global_vendors_tooltip');
+}
 
+function displayRemoveDomainsButton() {
   const removeDomains = document.getElementById('remove_domains');
   removeDomains.innerText = localizedMessage('remove_domains');
   removeDomains.title = localizedMessage('remove_domains_tooltip');

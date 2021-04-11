@@ -11,15 +11,12 @@ function initOptions () {
     // browser.storage.sync.remove(Object.keys(result));
 
     if (!result.hasOwnProperty(GLOBAL_OPTIONS)) {
-      console.log('setting global');
       setDefaultOptions();
     }
 
     if (!result.hasOwnProperty(VENDOR_OPTIONS)) {
-      console.log('setting vendors');
       setDefaultVendorOptions();
     } else {
-      console.log('updating vendors');
       updateVendorOptions();
     }
   }
@@ -70,14 +67,12 @@ function initOptions () {
             vendors = vendors.vendors;
             for (const [key] of Object.entries(choices)) {
               if (!vendors.hasOwnProperty(key)) {
-                console.log('removing: ', key);
                 delete choices[key];
               }
             }
 
             for (const [, vendor] of Object.entries(vendors)) {
               if (!choices.hasOwnProperty(vendor.id)) {
-                console.log('adding: ', vendor.id);
                 choices[vendor.id] = GLOBAL_VALUE;
               }
             }
@@ -94,10 +89,10 @@ function initOptions () {
   }
 }
 
-browser.webRequest.onBeforeRequest.addListener(
+/*browser.webRequest.onBeforeRequest.addListener(
   listener,
-  {urls: ["*://*.consensu.org/*"]},
-);
+  {urls: ["*://!*.consensu.org/!*"]},
+);*/
 
 browser.webRequest.onBeforeRequest.addListener(
   details => {console.log('blocking: ' + details.url); return {cancel:true};},

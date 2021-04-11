@@ -358,7 +358,6 @@ function createDomainOptions (domain) {
   options[domain][PURPOSES_OPTIONS] = purposes;
   options[domain][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-  console.log(options);
   browser.storage.sync.set(options);
 
   return options;

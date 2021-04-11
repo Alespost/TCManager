@@ -13,6 +13,12 @@
     "webRequestBlocking",
     "<all_urls>"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tcmanager@tcm.com",
+      "strict_min_version": "42.0"
+    }
+  },
   "icons": {
     "48": "resources/img/icon-48.png",
     "64": "resources/img/icon-64.png",
@@ -60,11 +66,5 @@
         "content_scripts/message_listener.js"
       ]
     }
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "tcmanager@fitvut.com",
-      "strict_min_version": "42.0"
-    }
-  }
+  ]
 }

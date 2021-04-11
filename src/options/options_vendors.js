@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   displayVendorsOptionsContent();
   restoreOptions();
+  document.getElementById('use_global').addEventListener('click', useGlobal);
 });
 
 function restoreOptions () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
-    console.log(result);
-    const vendorChoices = result[VENDOR_OPTIONS];
+    const table = document.getElementById('options_vendors_body');
+    table.innerHTML = '';
 
+    const vendorChoices = result[VENDOR_OPTIONS];
     openVendorList().then(jsonResponse => {
-      const table = document.getElementById('options_vendors_body');
       const globalRow = createOptionsRow(null, vendorChoices[GLOBAL_OPTIONS]);
       globalRow.id = GLOBAL_ROW_ID;
       table.appendChild(globalRow);
@@ -192,4 +193,24 @@ function storeOptions (row) {
 
       browser.storage.sync.set(result);
     });
+}
+
+function useGlobal() {
+  browser.storage.sync.get(VENDOR_OPTIONS).then(
+    result => {
+      const vendors = result[VENDOR_OPTIONS];
+
+      for (const [key] of Object.entries(vendors)) {
+        if (key === GLOBAL_OPTIONS) {
+          continue;
+        }
+
+        vendors[key] = GLOBAL_VALUE;
+      }
+
+      result[VENDOR_OPTIONS] = vendors;
+      browser.storage.sync.set(result);
+      restoreOptions();
+    }
+  );
 }

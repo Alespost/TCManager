@@ -7,7 +7,7 @@ function createConsentRequest () {
   let timeout = setTimeout(
     () => {
       clearInterval(interval);
-      console.log('Interval cleared by timeout.');
+      // console.log('Interval cleared by timeout.');
     },
     15000,
   );
@@ -37,7 +37,7 @@ function createConsentRequest () {
       clearInterval(interval);
       clearTimeout(timeout);
 
-      console.log('Timeout and interval cleared.');
+      // console.log('Timeout and interval cleared.');
 
       const message = {
         cmpId: data.cmpId,
