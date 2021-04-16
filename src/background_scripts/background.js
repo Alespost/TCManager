@@ -89,10 +89,11 @@ function initOptions () {
   }
 }
 
-/*browser.webRequest.onBeforeRequest.addListener(
+browser.webRequest.onBeforeRequest.addListener(
   listener,
-  {urls: ["*://!*.consensu.org/!*"]},
-);*/
+  {urls: ["*://*.consensu.org/*", "https://*/*zdconsent.js"]},
+  ['blocking']
+);
 
 browser.webRequest.onBeforeRequest.addListener(
   details => {console.log('blocking: ' + details.url); return {cancel:true};},
@@ -104,34 +105,50 @@ function listener(details)
 {
     console.log(details.url);
 
-    /*if (typeof browser.webRequest.filterResponseData !== 'function') {
+    if (typeof browser.webRequest.filterResponseData !== 'function') {
         return;
     }
 
     let filter = browser.webRequest.filterResponseData(details.requestId);
     let encoder = new TextEncoder();
-    let decoder = new TextDecoder('utf-8');
 
+    let data = [];
     filter.ondata = event => {
-        let str = decoder.decode(event.data, {stream: false});
-        console.log(str);
+      data.push(event.data);
+    };
 
-        const json = JSON.parse(str);
-        json.euconsent = JSON.parse(json.euconsent);
-        json.euconsent.v2.encodedCookie = 'CPEE2DqPEE2DqD3ACBCSBUCgAEAAAEAAAAAAHrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
-        json.euconsent.v2.allowedPurposeIds = [2];
-        json.euconsent.v2.allowedVendorIds = [];
-        console.log(json);
-        json.euconsent = JSON.stringify(json.euconsent);
-        str = JSON.stringify(json);
-        console.log(str);
-        // Just change any instance of Example in the HTTP response
-        // to WebExtension Example.
+    filter.onstop = async event => {
+      let blob = new Blob(data);
+      let str = await blob.text();
 
-        // str = str.replace(/window\.cmp_config_data_cs="[^"]*"/g, 'window.cmp_config_data_cs=\"CPD3plpPD3plpAfYJBCSBQCgAAgAAAgAAAigAAgAAgAA\"');
-        filter.write(encoder.encode(str));
-        filter.disconnect();
-    }
+/*      getOptions(url.hostname)
+        .then(createTCModel.bind(null, request))
+        .then(createBitField)
+        .then(encode).then(TCString => {*/
 
-    return {};*/
+      console.log(str);
+
+      const matches = str.match(/(%27)?[A-Za-z0-9_-]{39,}(%27)?/g);
+
+      // No TC string candidate in cookie
+      if (!matches) {
+        return;
+      }
+
+      for (let match of matches) {
+        try {
+          const cleared = match.replace('%27', '');
+          TCStringParse(cleared);
+
+          str = str.replace(cleared, 'CPEw2YOPEw2YOASACBCSBVCgAIgAAIgAAAwIHsJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPYSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+        } catch (e) {}
+      }
+
+      console.log(str);
+
+      filter.write(encoder.encode(str));
+      filter.close();
+      /*});*/
+    };
+
 }

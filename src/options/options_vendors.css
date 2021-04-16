@@ -12,6 +12,10 @@ td:not(.row_header, .option) {
     text-align: center;
 }
 
+a {
+   color: blue;
+}
+
 .id {
     padding-right: 5px;
     padding-left: 5px;

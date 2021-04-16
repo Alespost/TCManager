@@ -5,21 +5,21 @@ function __tcfapi (command, eventName, callback) {
 
   const parent = locateCmpFrame();
 
-  if (parent === null) {
-    callback(false, false);
-    return;
-  }
-
   const script = document.createElement('script');
   document.addEventListener(eventName, eventHandler);
 
   script.async = false;
-  script.text = `__tcfapi(\'${command}\', 2, (returnData, success) => {\n` +
+  script.text = 'if (typeof __tcfapi !== \'function\') {\n' +
+    `               document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
+    '                   detail: {data: false, success: false}\n' +
+    '               }));\n' +
+    '            } else {\n' +
+    `               __tcfapi(\'${command}\', 2, (returnData, success) => {\n` +
     `                    document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
     '                       detail: {data: returnData, success: success}\n' +
-    '                    }));' +
-    '            \n' +
-    '            }); ';
+    '                    }));\n' +
+    '               });\n' +
+    '            }'
 
   parent.insertBefore(script, parent.firstChild);
   parent.removeChild(script);
@@ -37,5 +37,5 @@ function locateCmpFrame () {
     return locatorFrames[0].parentElement;
   }
 
-  return null;
+  return document.documentElement;
 }

@@ -1,6 +1,18 @@
 function displayTCContent (TCData) {
   displayHeaders();
 
+  if (TCData.tcString && (TCData.purpose || !TCData.specialFeatureOptins || !TCData.vendor)) {
+    try {
+      const TCModel = TCStringParse(TCData.tcString).core;
+
+      TCData.purpose = {consents: TCModel.purposeConsents};
+      TCData.specialFeatureOptins = TCModel.specialFeatureOptins;
+      TCData.vendor = {consents: TCModel.vendorConsents};
+    } catch (e) {
+      console.exception(e);
+    }
+  }
+
   displayCMPData(TCData.cmpId);
   displayListItems(TCData.purpose.consents, 'purpose');
   displayListItems(TCData.specialFeatureOptins, 'special_feature');

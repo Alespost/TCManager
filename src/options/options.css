@@ -107,9 +107,11 @@ td:not(.row_header):hover {
 }
 
 .light-red {
-    background-color: #ff9595;
+    /*background-color: #ff9595;*/
+    background-color: #f8d0d0;
 }
 
 .light-green {
-    background-color: #82ff82;
+    /*background-color: #82ff82;*/
+    background-color: #d0f0d0;
 }

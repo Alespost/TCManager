@@ -300,7 +300,7 @@ function useGlobal() {
       delete result[GLOBAL_OPTIONS];
       delete result[VENDOR_OPTIONS];
 
-      for (const [key, value] of Object.entries(result)) {
+      for (const [, value] of Object.entries(result)) {
         value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
         value[SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
       }

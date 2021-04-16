@@ -240,8 +240,6 @@ function storeCookies (TCString, url) {
 
   storeCookiesClosingBanner(cookie);
 
-  console.log('Cookies stored.');
-
   });
 
   function checkNonStandardCookieExists() {
@@ -249,7 +247,7 @@ function storeCookies (TCString, url) {
       cookies => {
         for (let cookie of cookies) {
           if (!standardCookies.includes(cookie.name)) {
-            const matches = cookie.value.match(/[A-Za-z0-9_-]{39,}/g);
+            const matches = cookie.value.match(/(%27)?[A-Za-z0-9_-]{39,}(%27)?/g);
 
             // No TC string candidate in cookie
             if (!matches) {
@@ -258,8 +256,10 @@ function storeCookies (TCString, url) {
 
             for (let match of matches) {
               try {
-                TCStringParse(match);
-                return {cookie: cookie, TCString: match};
+                const cleared = match.replace('%27', '');
+
+                TCStringParse(cleared);
+                return {cookie: cookie, TCString: cleared};
               } catch (e) {}
             } // for (match of matches)
           } // if (!standardCookies.includes(cookie.name))

@@ -20,6 +20,10 @@ function displayDescriptionContent() {
   displayListItems('special_feature');
 }
 
+function displayHelpContent() {
+  displayLayoutContent();
+}
+
 function displayAboutContent() {
   displayLayoutContent();
   document.getElementById('about_header').innerText = localizedMessage('about_header');
@@ -66,7 +70,7 @@ function displayResetButton() {
 function displayUseGlobalButton() {
   const useGlobal = document.getElementById('use_global');
   useGlobal.innerText = localizedMessage('use_global_all');
-  useGlobal.title = localizedMessage('use_global_vendors_tooltip');
+  useGlobal.title = localizedMessage('use_global_all_tooltip');
 }
 
 function displayRemoveDomainsButton() {

@@ -1,0 +1,12 @@
+.content.help {
+    max-width: 1024px;
+}
+
+img:not(.logo img){
+    max-width: 100%;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 15px;
+}

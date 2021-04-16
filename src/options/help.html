@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js" type="application/javascript"></script>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <script src="content_display.js" type="text/javascript"></script>
+    <script src="help.js" type="text/javascript"></script>
+
+    <link href="../common/fonts.css" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+    <link href="help.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 id="options_header">df</h1>
+    <nav>
+        <ul>
+            <li><a href="options.html" id="nav_options"></a></li>
+            <li><a href="description.html" id="nav_description"></a></li>
+            <li><a href="options_vendors.html" id="nav_vendors"></a></li>
+            <li><a href="help.html" class="active" id="nav_help">Nápověda</a></li>
+            <li><a href="about.html" id="nav_about"></a></li>
+            <li>
+                <a href="https://github.com/Alespost/TCManager" target="_blank" class="logo">
+                    <img src="../resources/img/logo.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content help">
+        <h2>Vyskakovací okno</h2>
+        <p>Ve vyskakovacím okně jsou zobrazovány informace o poskytnutém souhlasu se zpracováním osobních údajů uložené aktuální webovou stránkou.</p>
+        <p></p>
+        <img src="../resources/img/popup-impl.png" alt="">
+
+        <h2>Nastavení</h2>
+        <p>Umožňuje nastavit souhlas s jednotlivými účely zpracování osobních údajů a s poskytováním těchto údajů jednotlivým prodejcům.</p>
+        
+        <h3>Nastavení souhlasu s účely zpracování</h3>
+        <img src="../resources/img/purposes-settings.png" alt="">
+        <ul>
+            <li><span class="bold">Globální nastavení</span> &ndash; Slouží jako výchozí nastavení pro udělení souhlasu webovým stránkám využívajícím TCF.</li>
+            <li><img src="../resources/img/trash-alt-solid.svg" class="icon" alt=""> &ndash; Odstraní nastavení pro danou doménu.</li>
+            <li><img src="../resources/img/undo-solid.svg" class="icon" alt=""> &ndash; Změní nastavení domény na hodnoty globálního nastavení.</li>
+            <li><span class="bold">Použít globální nastavení </span> &ndash; Změní nastavení všech domén na hodnoty globálního nastavení.</li>
+            <li><span class="bold">Odstranit nastavení domén</span> &ndash; Odstraní všechny domény z tabulky. (Ponechá pouze Globální nastavení.)</li>
+            <li><span class="bold">Obnovit výchozí nastavení</span> &ndash; Obnoví výchozí nastavení.</li>
+        </ul>
+
+        <ul>
+            <li>Po najetí myší na buňku tabluky se zobrazí název příslušného účelu/zvláštní funkce.</li>
+            <li>Popisy jednotlivých účelů a zvláštních funkcí jsou umístěny v záložce 'Popisy účelů'.</li>
+        </ul>
+
+        <h3>Nastavení souhlasu pro prodejce</h3>
+        <img src="../resources/img/vendor-settings.png" alt="">
+
+    </div>
+</div>
+</body>
+</html>
