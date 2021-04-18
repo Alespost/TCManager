@@ -42,7 +42,7 @@ function createConsentRequest () {
       const message = {
         cmpId: data.cmpId,
         cmpVersion: data.cmpVersion ?? 1,
-        publisherCC: data.publisherCC ?? 'EN',
+        publisherCC: data.publisherCC ?? 'GB',
         url: location.href,
       };
 
