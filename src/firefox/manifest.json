@@ -45,6 +45,7 @@
       "common/common.js",
       "common/bit_field_conversion.js",
       "background_scripts/consent_string_creation.js",
+      "background_scripts/web_request_listeners.js",
       "background_scripts/background.js"
     ]
   },

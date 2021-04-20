@@ -8,8 +8,6 @@ function initOptions () {
   return getting.then(onSuccess, onError);
 
   function onSuccess (result) {
-    // browser.storage.sync.remove(Object.keys(result));
-
     if (!result.hasOwnProperty(GLOBAL_OPTIONS)) {
       setDefaultOptions();
     }
@@ -87,84 +85,4 @@ function initOptions () {
       }
   );
   }
-}
-
-if (typeof browser.webRequest.filterResponseData === 'function') {
-  browser.webRequest.onBeforeRequest.addListener(
-    listener,
-    { urls: ["*://*.consensu.org/*", "*://*/*zdconsent.js"] },
-    ['blocking']
-  );
-}
-browser.webRequest.onBeforeRequest.addListener(
-  details => {console.log('blocking: ' + details.url); return {cancel:true};},
-  {urls: ["https://quantcast.mgr.consensu.org/tcfv2/*/cmp2ui-en.js", "*://*/*evidon-barrier.js"]},
-  ['blocking']
-);
-
-function listener(details)
-{
-    console.log(details.url);
-
-    let filter = browser.webRequest.filterResponseData(details.requestId);
-    let encoder = new TextEncoder();
-
-    let data = [];
-    filter.ondata = event => {
-      data.push(event.data);
-    };
-
-    filter.onstop = async event => {
-      let blob = new Blob(data);
-      let str = await blob.text();
-
-      const url = new URL(details.originUrl);
-      const matches = str.match(/(%27)?[A-Za-z0-9_-]{39,}(%27)?/g);
-
-      if (!Array.isArray(matches)) {
-        filter.write(encoder.encode(str));
-        filter.close();
-      }
-
-      let cmpInfo;
-
-      for (let match of matches) {
-        try {
-          const cleared = match.replace('%27', '');
-          const TCModel = TCStringParse(cleared).core;
-          cmpInfo = {
-            cmpId: TCModel.cmpId,
-            cmpVersion: TCModel.cmpVersion ?? 1,
-            publisherCC: TCModel.publisherCountryCode ?? 'GB',
-          }
-
-          break;
-        } catch (e) {}
-      }
-
-      if (!cmpInfo) {
-        filter.write(encoder.encode(str));
-        filter.close();
-      }
-
-      getOptions(url.hostname)
-        .then(createTCModel.bind(null, cmpInfo))
-        .then(createBitField)
-        .then(encode).then(TCString => {
-
-
-      for (let match of matches) {
-        try {
-          const cleared = match.replace('%27', '');
-          TCStringParse(cleared);
-
-          str = str.replace(cleared, TCString);
-        } catch (e) {}
-      }
-
-      filter.write(encoder.encode(str));
-      filter.close();
-      });
-    };
-
 }
