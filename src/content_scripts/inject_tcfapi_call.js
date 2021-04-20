@@ -19,7 +19,7 @@ function __tcfapi (command, eventName, callback) {
     '                       detail: {data: returnData, success: success}\n' +
     '                    }));\n' +
     '               });\n' +
-    '            }'
+    '            }';
 
   parent.insertBefore(script, parent.firstChild);
   parent.removeChild(script);

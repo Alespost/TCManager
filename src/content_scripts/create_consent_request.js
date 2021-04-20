@@ -52,8 +52,7 @@ function createConsentRequest () {
   }
 }
 
-function closeBanner()
-{
+function closeBanner () {
   const style = document.createElement('style');
   style.innerText = '#gdpr-consent-tool-wrapper, #qc-cmp2-container {display: none}';
 

@@ -63,7 +63,7 @@ ol li {
     border: 1px solid black;
     padding: 5px;
     max-height: 100px;
-    overflow:hidden;
+    overflow: hidden;
     overflow-y: scroll;
 
     list-style-type: none;

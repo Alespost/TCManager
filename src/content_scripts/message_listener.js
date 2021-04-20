@@ -1,6 +1,6 @@
-browser.runtime.onMessage.addListener(messageHandler);
+browser.runtime.onMessage.addListener(messageListener);
 
-function messageHandler (message) {
+function messageListener (message) {
   if (!message.hasOwnProperty('command')) {
     console.error('Attribute \'command\' is missing in message.');
     return;

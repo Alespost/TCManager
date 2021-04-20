@@ -5,9 +5,9 @@ function displayTCContent (TCData) {
     try {
       const TCModel = TCStringParse(TCData.tcString).core;
 
-      TCData.purpose = {consents: TCModel.purposeConsents};
+      TCData.purpose = { consents: TCModel.purposeConsents };
       TCData.specialFeatureOptins = TCModel.specialFeatureOptins;
-      TCData.vendor = {consents: TCModel.vendorConsents};
+      TCData.vendor = { consents: TCModel.vendorConsents };
     } catch (e) {
       console.exception(e);
     }
@@ -58,7 +58,7 @@ function displayListItems (items, listIdPrefix) {
 
       const description = document.createElement('span');
       description.classList.add('question_icon');
-      description.title = localizedMessage(listIdPrefix + key + '_description')
+      description.title = localizedMessage(listIdPrefix + key + '_description');
       description.innerHTML = ' ';
       item.appendChild(description);
 
@@ -67,7 +67,7 @@ function displayListItems (items, listIdPrefix) {
   }
 }
 
-function displayVendors(vendors) {
+function displayVendors (vendors) {
   const count = document.createElement('span');
   const version = document.createElement('span');
   const list = document.getElementById('vendor_list');

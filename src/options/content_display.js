@@ -5,7 +5,7 @@ function displayOptionsContent () {
   displayActionsHeader();
 }
 
-function displayVendorsOptionsContent() {
+function displayVendorsOptionsContent () {
   displayLayoutContent();
   displayUseGlobalButton();
   document.getElementById('vendor_name_header').innerText = localizedMessage('vendor_name_header');
@@ -13,14 +13,14 @@ function displayVendorsOptionsContent() {
   document.getElementById('vendor_choice').innerText = localizedMessage('vendor_choice');
 }
 
-function displayDescriptionContent() {
+function displayDescriptionContent () {
   displayLayoutContent();
   displayListHeaders();
   displayListItems('purpose');
   displayListItems('special_feature');
 }
 
-function displayAboutContent() {
+function displayAboutContent () {
   displayLayoutContent();
   document.getElementById('about_header').innerText = localizedMessage('about_header');
   document.getElementById('version').innerText =
@@ -36,7 +36,7 @@ function displayAboutContent() {
   document.getElementById('license').innerText = localizedMessage('license');
 }
 
-function displayLayoutContent() {
+function displayLayoutContent () {
   document.title = localizedMessage('options_title');
   displayOptionsHeader();
   displayNavItems();
@@ -46,32 +46,32 @@ function displayOptionsHeader () {
   document.getElementById('options_header').innerText = localizedMessage('options_header');
 }
 
-function displayNavItems() {
+function displayNavItems () {
   document.getElementById('nav_options').innerText = localizedMessage('nav_options');
   document.getElementById('nav_description').innerText = localizedMessage('nav_description');
   document.getElementById('nav_vendors').innerText = localizedMessage('nav_options_vendor');
   document.getElementById('nav_about').innerText = localizedMessage('nav_about');
 }
 
-function displayButtons() {
+function displayButtons () {
   displayResetButton();
   displayUseGlobalButton();
   displayRemoveDomainsButton();
 }
 
-function displayResetButton() {
+function displayResetButton () {
   const reset = document.getElementById('reset');
   reset.innerText = localizedMessage('reset_to_defaults');
   reset.title = localizedMessage('reset_to_defaults_tooltip');
 }
 
-function displayUseGlobalButton() {
+function displayUseGlobalButton () {
   const useGlobal = document.getElementById('use_global');
   useGlobal.innerText = localizedMessage('use_global_all');
   useGlobal.title = localizedMessage('use_global_all_tooltip');
 }
 
-function displayRemoveDomainsButton() {
+function displayRemoveDomainsButton () {
   const removeDomains = document.getElementById('remove_domains');
   removeDomains.innerText = localizedMessage('remove_domains');
   removeDomains.title = localizedMessage('remove_domains_tooltip');
@@ -82,11 +82,11 @@ function displayListHeaders () {
   document.getElementById('special_features_header').innerText = localizedMessage('special_features_header');
 }
 
-function displayGlobalOptionsHeader() {
+function displayGlobalOptionsHeader () {
   document.getElementById('global_header').innerText = localizedMessage('options_global');
 }
 
-function displayActionsHeader() {
+function displayActionsHeader () {
   document.getElementById('actions_header').innerText = localizedMessage('actions_header');
 }
 

@@ -1,31 +1,29 @@
 if (typeof browser.webRequest.filterResponseData === 'function') {
   browser.webRequest.onBeforeRequest.addListener(
     replaceTCStrings,
-    { urls: ["*://*.consensu.org/*", "*://*/*zdconsent.js"] },
-    ['blocking']
+    { urls: ['*://*.consensu.org/*', '*://*/*zdconsent.js'] },
+    ['blocking'],
   );
 
   browser.webRequest.onBeforeRequest.addListener(
     cancelRequest,
-    {urls: ["*://*/*evidon-barrier.js"]},
-    ['blocking']
+    { urls: ['*://*/*evidon-barrier.js'] },
+    ['blocking'],
   );
 }
 
 browser.webRequest.onBeforeRequest.addListener(
   cancelRequest,
-  {urls: ["https://quantcast.mgr.consensu.org/tcfv2/*/cmp2ui-en.js"]},
-  ['blocking']
+  { urls: ['https://quantcast.mgr.consensu.org/tcfv2/*/cmp2ui-en.js'] },
+  ['blocking'],
 );
 
-function cancelRequest(details)
-{
+function cancelRequest (details) {
   console.log('Canceling request: ' + details.url);
-  return {cancel:true};
+  return { cancel: true };
 }
 
-function replaceTCStrings(details)
-{
+function replaceTCStrings (details) {
   console.log(details.url);
 
   let filter = browser.webRequest.filterResponseData(details.requestId);
@@ -58,7 +56,7 @@ function replaceTCStrings(details)
           cmpId: TCModel.cmpId,
           cmpVersion: TCModel.cmpVersion ?? 1,
           publisherCC: TCModel.publisherCountryCode ?? 'GB',
-        }
+        };
 
         break;
       } catch (e) {}
@@ -73,7 +71,6 @@ function replaceTCStrings(details)
       .then(createTCModel.bind(null, cmpInfo))
       .then(createBitField)
       .then(encode).then(TCString => {
-
 
       for (let match of matches) {
         try {

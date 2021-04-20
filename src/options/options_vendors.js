@@ -64,37 +64,37 @@ function restoreOptions () {
     return row;
 
     function setChoice () {
-        const cell = document.createElement('td');
+      const cell = document.createElement('td');
 
-        if (vendor === null) {
-          cell.classList.add(GLOBAL_OPTION_CLASS);
-          cell.id = GLOBAL_OPTION_CLASS;
-        } else {
-          cell.classList.add(OPTION_CLASS);
-        }
+      if (vendor === null) {
+        cell.classList.add(GLOBAL_OPTION_CLASS);
+        cell.id = GLOBAL_OPTION_CLASS;
+      } else {
+        cell.classList.add(OPTION_CLASS);
+      }
 
-        cell.setAttribute(VALUE_ATTRIBUTE, choice);
-        cell.addEventListener('click', optionClickedHandler);
+      cell.setAttribute(VALUE_ATTRIBUTE, choice);
+      cell.addEventListener('click', optionClickedListener);
 
-        switch (choice) {
-          case CONSENT:
-            cell.classList.add(LOCAL_CONSENT_COLOR);
-            cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
-            break;
-          case OBJECTION:
-            cell.classList.add(LOCAL_OBJECTION_COLOR);
-            cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
-            break;
-          case GLOBAL_VALUE:
-            if (global === CONSENT) {
-              cell.classList.add(GLOBAL_CONSENT_COLOR);
-            } else {
-              cell.classList.add(GLOBAL_OBJECTION_COLOR);
-            }
-            break;
-        }
+      switch (choice) {
+        case CONSENT:
+          cell.classList.add(LOCAL_CONSENT_COLOR);
+          cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
+          break;
+        case OBJECTION:
+          cell.classList.add(LOCAL_OBJECTION_COLOR);
+          cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
+          break;
+        case GLOBAL_VALUE:
+          if (global === CONSENT) {
+            cell.classList.add(GLOBAL_CONSENT_COLOR);
+          } else {
+            cell.classList.add(GLOBAL_OBJECTION_COLOR);
+          }
+          break;
+      }
 
-        row.appendChild(cell);
+      row.appendChild(cell);
     }
   }
 
@@ -103,7 +103,7 @@ function restoreOptions () {
   }
 }
 
-function optionClickedHandler (event) {
+function optionClickedListener (event) {
   const clickedOption = event.target;
   const isGlobal = clickedOption.classList.contains(GLOBAL_OPTION_CLASS);
 
@@ -195,7 +195,7 @@ function storeOptions (row) {
     });
 }
 
-function useGlobal() {
+function useGlobal () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(
     result => {
       const vendors = result[VENDOR_OPTIONS];
@@ -211,6 +211,6 @@ function useGlobal() {
       result[VENDOR_OPTIONS] = vendors;
       browser.storage.sync.set(result);
       restoreOptions();
-    }
+    },
   );
 }

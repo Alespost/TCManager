@@ -51,7 +51,7 @@ function initOptions () {
     });
   }
 
-  function updateVendorOptions() {
+  function updateVendorOptions () {
     browser.storage.sync.get(VENDOR_OPTIONS).then(
       result => {
         const choices = result[VENDOR_OPTIONS];
@@ -80,9 +80,9 @@ function initOptions () {
             result[VENDOR_OPTIONS] = choices;
 
             browser.storage.sync.set(result);
-          }
+          },
         );
-      }
-  );
+      },
+    );
   }
 }

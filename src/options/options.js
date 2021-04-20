@@ -96,15 +96,15 @@ function restoreOptions () {
 
         let prefix;
         if (type === PURPOSES_OPTIONS) {
-          prefix = 'purpose'
+          prefix = 'purpose';
         } else {
-          prefix = 'special_feature'
+          prefix = 'special_feature';
         }
 
         cell.title = localizedMessage(prefix + number);
         cell.classList.add(choiceClass);
         cell.setAttribute(VALUE_ATTRIBUTE, choice);
-        cell.addEventListener('click', optionClickedHandler);
+        cell.addEventListener('click', optionClickedListener);
 
         switch (choice) {
           case CONSENT:
@@ -134,7 +134,7 @@ function restoreOptions () {
   }
 }
 
-function optionClickedHandler (event) {
+function optionClickedListener (event) {
   const clickedOption = event.target;
   const id = clickedOption.getAttribute('id');
 
@@ -274,7 +274,7 @@ function storeOptions (row) {
   browser.storage.sync.set(options);
 }
 
-function resetToDefaults() {
+function resetToDefaults () {
   browser.storage.sync.get().then(
     result => {
       delete result[VENDOR_OPTIONS];
@@ -290,11 +290,11 @@ function resetToDefaults() {
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
-    }
+    },
   );
 }
 
-function useGlobal() {
+function useGlobal () {
   browser.storage.sync.get().then(
     result => {
       delete result[GLOBAL_OPTIONS];
@@ -306,11 +306,11 @@ function useGlobal() {
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
-    }
+    },
   );
 }
 
-function removeDomains() {
+function removeDomains () {
   browser.storage.sync.get().then(
     result => {
       delete result[GLOBAL_OPTIONS];
@@ -319,11 +319,11 @@ function removeDomains() {
       const domains = Object.keys(result);
 
       browser.storage.sync.remove(domains).then(restoreOptions);
-    }
+    },
   );
 }
 
-function resetDomain(e) {
+function resetDomain (e) {
   const domain = e.currentTarget.getAttribute(VALUE_ATTRIBUTE);
 
   browser.storage.sync.get(domain).then(
@@ -339,11 +339,11 @@ function resetDomain(e) {
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
-    }
+    },
   );
 }
 
-function removeDomain(e) {
+function removeDomain (e) {
   const domain = e.currentTarget.getAttribute(VALUE_ATTRIBUTE);
 
   if (domain !== GLOBAL_OPTIONS) {

@@ -11,7 +11,7 @@ function pingAndFetch () {
   sendPingMessage();
 }
 
-function pingHandler (response) {
+function pingListener (response) {
   if (response === undefined) {
     sendPingMessage();
     return;
@@ -28,7 +28,7 @@ function fetchTCData () {
   sendGetTCDataMessage();
 }
 
-function fetchHandler (response) {
+function fetchListener (response) {
   if (response === undefined || !response.success) {
     sendGetTCDataMessage();
     return;
@@ -43,12 +43,12 @@ function fetchHandler (response) {
 
 function sendPingMessage () {
   const message = { command: 'ping', eventName: 'tcfapiEvent' };
-  sendMessage(message, pingHandler);
+  sendMessage(message, pingListener);
 }
 
 function sendGetTCDataMessage () {
   const message = { command: 'getTCData', eventName: 'tcfapiEvent' };
-  sendMessage(message, fetchHandler);
+  sendMessage(message, fetchListener);
 }
 
 function sendMessage (message, callback) {
@@ -59,6 +59,6 @@ function sendMessage (message, callback) {
     });
 
   query.then(tabs => {
-    browser.tabs.sendMessage(tabs[0].id, message).then(callback);
+    browser.tabs.sendMessage(tabs[0].id, message).then(callback, displayNoTCFMessage);
   });
 }

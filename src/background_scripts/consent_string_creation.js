@@ -101,13 +101,13 @@ function createTCModel (data, options) {
   const vendorConsent = {
     maxVendorId: maxId,
     isRangeEncoding: 0, // BitField
-    bitField: bitField
+    bitField: bitField,
   };
 
   const vendorLI = {
     maxVendorId: maxId,
     isRangeEncoding: 0, // BitField
-    bitField: bitField
+    bitField: bitField,
   };
 
   const timestamp = Math.round((new Date()).getTime() / 100);
@@ -238,12 +238,12 @@ function storeCookies (TCString, url) {
       cookie = storeNonStandardCookie(result);
     }
 
-  storeCookiesClosingBanner(cookie);
+    storeCookiesClosingBanner(cookie);
 
   });
 
-  function checkNonStandardCookieExists() {
-    return browser.cookies.getAll({url: url.toString()}).then(
+  function checkNonStandardCookieExists () {
+    return browser.cookies.getAll({ url: url.toString() }).then(
       cookies => {
         for (let cookie of cookies) {
           if (!standardCookies.includes(cookie.name)) {
@@ -259,22 +259,22 @@ function storeCookies (TCString, url) {
                 const cleared = match.replace('%27', '');
 
                 TCStringParse(cleared);
-                return {cookie: cookie, TCString: cleared};
+                return { cookie: cookie, TCString: cleared };
               } catch (e) {}
             } // for (match of matches)
           } // if (!standardCookies.includes(cookie.name))
         } // for (cookie of cookies)
         return null;
-      }
+      },
     );
   }
 
-  function storeStandardCookies() {
+  function storeStandardCookies () {
     const hostname = url.hostname;
     let domains = [
       hostname.replace(/www/, ''),
       '.' + hostname,
-      hostname.replace(/^.*(?=\.\w*\.\w*$)/, '')
+      hostname.replace(/^.*(?=\.\w*\.\w*$)/, ''),
     ];
 
     domains = [...new Set(domains)];
@@ -304,7 +304,7 @@ function storeCookies (TCString, url) {
    * @param values {{cookie: *, TCString: string}}
    * @returns {{path: string, domain: *, name, secure: boolean, value: *, url: string, expirationDate: number}}
    */
-  function storeNonStandardCookie(values) {
+  function storeNonStandardCookie (values) {
     const cookie =
       {
         name: values.cookie.name,
