@@ -3,7 +3,7 @@
     "message": "TC Manager"
   },
   "extension_description": {
-    "message": ""
+    "message": "Manage consents to the processing of personal data at websites that use IAB Europe's TCF v2.0."
   },
   "options_title": {
     "message": "TC Manager Options"
@@ -18,10 +18,10 @@
     "message": "Description of purposes"
   },
   "nav_options_vendor": {
-    "message": "Consent setting for vendors"
+    "message": "Vendor consent settings"
   },
   "nav_about": {
-    "message": "About extension"
+    "message": "About"
   },
   "reset_to_defaults": {
     "message": "Restore default settings"
@@ -51,7 +51,7 @@
     "message": "Global settings"
   },
   "no_tcf": {
-    "message": ""
+    "message": "This website does not use IAB Europe's Transparency & Consent Framework."
   },
   "unknown_cmp": {
     "message": "Unknown CMP"
@@ -60,7 +60,7 @@
     "message": "CMP"
   },
   "consent_header": {
-    "message": ""
+    "message": "Consent to the processing of personal data"
   },
   "purposes_header": {
     "message": "Purposes"
@@ -78,10 +78,10 @@
     "message": "Action"
   },
   "about_header": {
-    "message": "About TC Manager extension"
+    "message": "About"
   },
-  "about": {
-    "message": "TBD"
+  "version": {
+    "message": "Version"
   },
   "author_header": {
     "message": "Author"
@@ -94,6 +94,9 @@
   },
   "organization": {
     "message": "Organization"
+  },
+  "org_name": {
+    "message": "Faculty of Information Technology, BUT"
   },
   "used_icons_header": {
     "message": "Used icons"

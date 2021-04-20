@@ -20,14 +20,12 @@ function displayDescriptionContent() {
   displayListItems('special_feature');
 }
 
-function displayHelpContent() {
-  displayLayoutContent();
-}
-
 function displayAboutContent() {
   displayLayoutContent();
   document.getElementById('about_header').innerText = localizedMessage('about_header');
-  document.getElementById('about').innerText = localizedMessage('about');
+  document.getElementById('version').innerText =
+    localizedMessage('version') + ': ' + browser.runtime.getManifest().version;
+
   document.getElementById('author_header').innerText = localizedMessage('author_header');
   document.getElementById('name').innerText = localizedMessage('name') + ':';
   document.getElementById('email').innerText = localizedMessage('email') + ':';

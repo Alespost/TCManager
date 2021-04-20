@@ -3,7 +3,7 @@
     "message": "TC Manager"
   },
   "extension_description": {
-    "message": ""
+    "message": "Spravujte souhlasy se zpracov\u00e1n\u00edm osobn\u00edch \u00fadaj\u016f na webov\u00fdch str\u00e1nk\u00e1ch, kter\u00e9 vyu\u017e\u00edvaj\u00ed TCF v2.0 od organizace IAB Europe."
   },
   "options_title": {
     "message": "Nastaven\u00ed TC Manager"
@@ -18,7 +18,7 @@
     "message": "Popisy \u00fa\u010del\u016f"
   },
   "nav_options_vendor": {
-    "message": "Nastaven\u00ed souhlasu pro prodejce"
+    "message": "Nastaven\u00ed souhlasu prodejc\u016fm"
   },
   "nav_about": {
     "message": "O roz\u0161\u00ed\u0159en\u00ed"
@@ -51,7 +51,7 @@
     "message": "Glob\u00e1ln\u00ed nastaven\u00ed"
   },
   "no_tcf": {
-    "message": "Tato str\u00e1nka nevyu\u017e\u00edv\u00e1 TCF."
+    "message": "Tento web nepou\u017e\u00edv\u00e1 Transparency & Consent Framework od organizace IAB Europe."
   },
   "unknown_cmp": {
     "message": "Nezn\u00e1m\u00e9 CMP"
@@ -78,10 +78,10 @@
     "message": "Akce"
   },
   "about_header": {
-    "message": "O roz\u0161\u00ed\u0159en\u00ed TC Manager"
+    "message": "O TC Manager"
   },
-  "about": {
-    "message": "TBD"
+  "version": {
+    "message": "Verze"
   },
   "author_header": {
     "message": "Autor"
@@ -94,6 +94,9 @@
   },
   "organization": {
     "message": "Organizace"
+  },
+  "org_name": {
+    "message": "Fakulta informa\u010dn\u00edch technologi\u00ed VUT v Brn\u011b"
   },
   "used_icons_header": {
     "message": "Pou\u017eit\u00e9 ikony"
