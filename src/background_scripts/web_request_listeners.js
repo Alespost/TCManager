@@ -24,7 +24,7 @@ function cancelRequest (details) {
 }
 
 function replaceTCStrings (details) {
-  console.log(details.url);
+  // console.log(details.url);
 
   let filter = browser.webRequest.filterResponseData(details.requestId);
   let encoder = new TextEncoder();
