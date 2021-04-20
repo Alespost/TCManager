@@ -4,13 +4,13 @@ dependencies:
 	cd src && npm install
 
 firefox: dependencies
-	cd src && cp -rf mozilla/manifest.json .
+	cd src && cp -rf firefox/manifest.json .
 
 chrome: dependencies
 	cd src && cp -rf chrome/manifest.json .
 
 firefox-pack: firefox
-	cd src && zip -r ../tcmanager-mozilla.zip * -x package*.json
+	cd src && zip -r ../tcmanager-firefox.zip * -x package*.json
 
 chrome-pack: chrome
 	cd src && zip -r ../tcmanager-chrome.zip * -x package*.json
