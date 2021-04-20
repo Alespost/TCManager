@@ -54,7 +54,13 @@ function createConsentRequest () {
 
 function closeBanner () {
   const style = document.createElement('style');
-  style.innerText = '#gdpr-consent-tool-wrapper, #qc-cmp2-container {display: none}';
+  style.innerText =
+    '#gdpr-consent-tool-wrapper,' +
+    '#qc-cmp2-container,' +
+    'sra-cmp-layout' +
+    '{' +
+    '  display: none;' +
+    '}';
 
   const parent = document.body;
   parent.insertBefore(style, parent.firstChild);
