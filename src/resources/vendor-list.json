@@ -1,8 +1,8 @@
 {
   "gvlSpecificationVersion": 2,
-  "vendorListVersion": 85,
+  "vendorListVersion": 86,
   "tcfPolicyVersion": 2,
-  "lastUpdated": "2021-04-08T16:05:26Z",
+  "lastUpdated": "2021-04-15T16:05:36Z",
   "purposes": {
     "1": {
       "id": 1,
@@ -3135,7 +3135,7 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.stroeer.de/konvergenz-konzepte/daten-technologien/stroeer-ssp/datenschutz-ssp.html",
-      "cookieMaxAgeSeconds": 31336000,
+      "cookieMaxAgeSeconds": 31536000,
       "usesCookies": true,
       "usesNonCookieAccess": true,
       "deviceStorageDisclosureUrl": "https://www.stroeer.com/fileadmin/com/StroeerSSP_deviceStorage.json"
@@ -3827,12 +3827,11 @@
       "flexiblePurposes": [],
       "specialPurposes": [],
       "features": [
-        1,
         2,
         3
       ],
       "specialFeatures": [
-        1
+        2
       ],
       "policyUrl": "https://www.flashtalking.com/privacypolicy/",
       "cookieMaxAgeSeconds": 63072000,
@@ -5370,7 +5369,7 @@
     },
     "279": {
       "id": 279,
-      "name": "Mirando GmbH &amp; Co KG",
+      "name": "Mirando GmbH & Co KG",
       "purposes": [],
       "legIntPurposes": [
         2,
@@ -7484,7 +7483,7 @@
     },
     "266": {
       "id": 266,
-      "name": "Rebold Marketing &amp; Communication SLU",
+      "name": "Rebold Marketing & Communication SLU",
       "purposes": [
         1,
         2,
@@ -8082,7 +8081,7 @@
     },
     "378": {
       "id": 378,
-      "name": "communicationAds GmbH &amp; Co. KG",
+      "name": "communicationAds GmbH & Co. KG",
       "purposes": [
         1
       ],
@@ -10691,6 +10690,7 @@
       "id": 509,
       "name": "One Tech Group GmbH",
       "purposes": [
+        1,
         2,
         7
       ],
@@ -10702,7 +10702,7 @@
       "specialPurposes": [],
       "features": [],
       "specialFeatures": [],
-      "policyUrl": "https://ad-tech-group.com/privacy-policy/",
+      "policyUrl": "https://onetech.group/en/privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
       "usesCookies": true,
       "usesNonCookieAccess": false
@@ -15758,7 +15758,7 @@
     },
     "768": {
       "id": 768,
-      "name": "Global Media &amp; Entertainment Limited",
+      "name": "Global Media & Entertainment Limited",
       "purposes": [
         1,
         2,
@@ -16032,11 +16032,15 @@
       "name": "Adtarget Medya A.S.",
       "purposes": [
         1,
+        2,
         7
       ],
       "legIntPurposes": [],
       "flexiblePurposes": [],
-      "specialPurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
       "features": [
         3
       ],
@@ -16044,8 +16048,8 @@
         1
       ],
       "policyUrl": "https://adtarget.com.tr/adtarget-privacy-policy-2020.pdf",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
+      "cookieMaxAgeSeconds": 2678000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "780": {
@@ -18595,8 +18599,10 @@
     },
     "870": {
       "id": 870,
-      "name": "ad pepper media GmbH - Webgains",
-      "purposes": [],
+      "name": "Webgains GmbH",
+      "purposes": [
+        1
+      ],
       "legIntPurposes": [],
       "flexiblePurposes": [],
       "specialPurposes": [],
@@ -20670,12 +20676,15 @@
     "951": {
       "id": 951,
       "name": "Spoods GmbH",
-      "purposes": [],
-      "legIntPurposes": [
+      "purposes": [
         2,
         7
       ],
-      "flexiblePurposes": [],
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        2,
+        7
+      ],
       "specialPurposes": [
         1,
         2
@@ -21367,7 +21376,7 @@
         1
       ],
       "policyUrl": "https://www.eltiempo.com/politica-privacidad",
-      "cookieMaxAgeSeconds": 13,
+      "cookieMaxAgeSeconds": 34190000,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -21606,6 +21615,63 @@
       "policyUrl": "https://www.pulselive.com/privacy-policy",
       "cookieMaxAgeSeconds": 2592000,
       "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "986": {
+      "id": 986,
+      "name": "BYTEDANCE PTE. LTD.",
+      "purposes": [
+        1,
+        3,
+        4
+      ],
+      "legIntPurposes": [
+        2,
+        7,
+        9,
+        10
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://www.pangleglobal.com/privacy",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": true
+    },
+    "987": {
+      "id": 987,
+      "name": "Media16 ltd",
+      "purposes": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        1,
+        3
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://media16.tv/privacy-policy/",
+      "overflow": {
+        "httpGetLimit": 32
+      },
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     }
   }

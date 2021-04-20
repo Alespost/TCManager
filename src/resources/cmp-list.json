@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2021-02-18T17:03:10Z",
+  "lastUpdated": "2021-04-15T17:03:13Z",
   "cmps": {
     "2": {
       "id": 2,
@@ -595,6 +595,31 @@
       "id": 355,
       "name": "Onesecondbefore B.V.",
       "isCommercial": true
+    },
+    "360": {
+      "id": 360,
+      "name": "ucfunnel Co., Ltd.",
+      "isCommercial": true
+    },
+    "358": {
+      "id": 358,
+      "name": "Seers",
+      "isCommercial": true
+    },
+    "361": {
+      "id": 361,
+      "name": "BEINTOO SPA",
+      "isCommercial": true
+    },
+    "359": {
+      "id": 359,
+      "name": "TX Group Ltd",
+      "isCommercial": true
+    },
+    "369": {
+      "id": 369,
+      "name": "Rakuten TV Europe S.L.U.",
+      "isCommercial": false
     }
   }
 }
