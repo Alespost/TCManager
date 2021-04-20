@@ -1,5 +1,3 @@
-"use strict";
-
 const GLOBAL_ROW_ID = 'global_row';
 const GLOBAL_OPTION_CLASS = 'global_option';
 const OPTION_CLASS = 'option';
@@ -13,7 +11,3 @@ const LOCAL_OBJECTION_COLOR = 'red';
 const GLOBAL_OBJECTION_COLOR = 'light-red';
 
 const VALUE_ATTRIBUTE = 'data-value';
-
-const GLOBAL_VALUE = null;
-const CONSENT = true;
-const OBJECTION = false;

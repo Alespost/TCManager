@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Informationen auf einem Ger\u00e4t speichern und/oder abrufen"
+  },
+  "purpose1_description": {
+    "message": "F\u00fcr die Ihnen angezeigten Verarbeitungszwecke k\u00f6nnen Cookies, Ger\u00e4te-Kennungen oder andere Informationen auf Ihrem Ger\u00e4t gespeichert oder abgerufen werden."
+  },
+  "purpose2": {
+    "message": "Auswahl einfacher Anzeigen"
+  },
+  "purpose2_description": {
+    "message": "Anzeigen k\u00f6nnen Ihnen basierend auf den Inhalten, die Sie ansehen, der Anwendung, die Sie verwenden und Ihrem ungef\u00e4hren Standort oder Ihrem Ger\u00e4tetyp eingeblendet werden."
+  },
+  "purpose3": {
+    "message": "Ein personalisiertes Anzeigen-Profil erstellen"
+  },
+  "purpose3_description": {
+    "message": "\u00dcber Sie und Ihre Interessen kann ein Profil erstellt werden, um Ihnen f\u00fcr Sie relevante personalisierte Anzeigen einzublenden."
+  },
+  "purpose4": {
+    "message": "Personalisierte Anzeigen ausw\u00e4hlen"
+  },
+  "purpose4_description": {
+    "message": "Personalisierte Anzeigen k\u00f6nnen Ihnen basierend auf einem \u00fcber Sie erstellten Profil eingeblendet werden."
+  },
+  "purpose5": {
+    "message": "Ein personalisiertes Inhalts-Profil erstellen"
+  },
+  "purpose5_description": {
+    "message": "\u00dcber Sie und Ihre Interessen kann ein Profil erstellt werden, um Ihnen f\u00fcr Sie relevante personalisierte Inhalte anzuzeigen."
+  },
+  "purpose6": {
+    "message": "Personalisierte Inhalte ausw\u00e4hlen"
+  },
+  "purpose6_description": {
+    "message": "Personalisierte Inhalte k\u00f6nnen Ihnen basierend auf einem \u00fcber Sie erstellten Profil angezeigt werden."
+  },
+  "purpose7": {
+    "message": "Anzeigen-Leistung messen"
+  },
+  "purpose7_description": {
+    "message": "Die Leistung und Wirksamkeit von Anzeigen, die Sie sehen oder mit denen Sie interagieren, kann gemessen werden."
+  },
+  "purpose8": {
+    "message": "Inhalte-Leistung messen"
+  },
+  "purpose8_description": {
+    "message": "Die Leistung und Wirksamkeit von Inhalten, die Sie sehen oder mit denen Sie interagieren, kann gemessen werden."
+  },
+  "purpose9": {
+    "message": "Marktforschung einsetzen, um Erkenntnisse \u00fcber Zielgruppen zu gewinnen"
+  },
+  "purpose9_description": {
+    "message": "Marktforschung kann verwendet werden, um mehr \u00fcber die Zielgruppen zu erfahren, die Dienste oder Anwendungen verwenden und sich Anzeigen ansehen."
+  },
+  "purpose10": {
+    "message": "Produkte entwickeln und verbessern"
+  },
+  "purpose10_description": {
+    "message": "Ihre Daten k\u00f6nnen verwendet werden, um bestehende Systeme und Software zu verbessern und neue Produkte zu entwickeln."
+  },
+  "special_feature1": {
+    "message": "Genaue Standortdaten verwenden"
+  },
+  "special_feature1_description": {
+    "message": "Ihre genauen Standortdaten k\u00f6nnen f\u00fcr einen oder mehrere Verarbeitungszwecke genutzt werden. Das bedeutet, dass Ihr Standort bis auf wenige Meter pr\u00e4zise bestimmt werden kann"
+  },
+  "special_feature2": {
+    "message": "Ger\u00e4teeigenschaften zur Identifikation aktiv abfragen"
+  },
+  "special_feature2_description": {
+    "message": "Ihr Ger\u00e4t kann \u00fcber eine Abfrage seiner spezifischen Merkmale erkannt werden."
+  }
+}

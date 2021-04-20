@@ -1,98 +1,200 @@
 {
   "extension_name": {
-    "message": "TCF Manager",
-    "description": "Název rozšíření."
+    "message": "TC Manager"
   },
   "extension_description": {
-    "message": "Popis",
-    "description": "Popis rozšíření."
+    "message": "Spravujte souhlasy se zpracov\u00e1n\u00edm osobn\u00edch \u00fadaj\u016f na webov\u00fdch str\u00e1nk\u00e1ch, kter\u00e9 vyu\u017e\u00edvaj\u00ed TCF v2.0 od organizace IAB Europe."
   },
-
-
-
   "options_title": {
-    "message": "Nastavení TCF Manager"
+    "message": "Nastaven\u00ed TC Manager"
   },
   "options_header": {
-    "message": "Nastavení"
+    "message": "Nastaven\u00ed"
+  },
+  "nav_options": {
+    "message": "Nastaven\u00ed souhlasu s \u00fa\u010dely zpracov\u00e1n\u00ed"
+  },
+  "nav_description": {
+    "message": "Popisy \u00fa\u010del\u016f"
+  },
+  "nav_options_vendor": {
+    "message": "Nastaven\u00ed souhlasu prodejc\u016fm"
+  },
+  "nav_about": {
+    "message": "O roz\u0161\u00ed\u0159en\u00ed"
+  },
+  "reset_to_defaults": {
+    "message": "Obnovit v\u00fdchoz\u00ed nastaven\u00ed"
+  },
+  "reset_to_defaults_tooltip": {
+    "message": "Nastav\u00ed v\u0161echny polo\u017eky glob\u00e1ln\u00edho nastaven\u00ed na nesouhlas. D\u00f3m\u00e9ny budou vyu\u017e\u00edvat glob\u00e1ln\u00ed nastaven\u00ed."
+  },
+  "remove_domains": {
+    "message": "Odstranit nastaven\u00ed dom\u00e9n"
+  },
+  "remove_domains_tooltip": {
+    "message": "Odstran\u00ed z\u00e1znamy o v\u0161ech dom\u00e9n\u00e1ch."
+  },
+  "use_global_all": {
+    "message": "Pou\u017e\u00edt glob\u00e1ln\u00ed nastaven\u00ed"
+  },
+  "use_global_all_tooltip": {
+    "message": "Zm\u011bn\u00ed nastaven\u00ed dom\u00e9n na pou\u017eit\u00ed glob\u00e1ln\u00edho nastaven\u00ed."
+  },
+  "use_global_domain_tooltip": {
+    "message": "Obnov\u00ed nastaven\u00ed na pou\u017eit\u00ed glob\u00e1ln\u00edho nastaven\u00ed."
+  },
+  "remove_domain_tooltip": {
+    "message": "Odstran\u00ed z\u00e1znam."
   },
   "options_global": {
-    "message": "Globální nastavení"
+    "message": "Glob\u00e1ln\u00ed nastaven\u00ed"
   },
-
-
-
-
   "no_tcf": {
-    "message": "Tato stránka nevyužívá TCF.",
-    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+    "message": "Tento web nepou\u017e\u00edv\u00e1 Transparency & Consent Framework od organizace IAB Europe."
   },
   "unknown_cmp": {
-    "message": "Neznámé CMP",
-    "description": "Zobrazuje se místo jména CMP, pokud není nalezeno."
+    "message": "Nezn\u00e1m\u00e9 CMP"
   },
   "cmp_header": {
-    "message": "CMP",
-    "description": ""
+    "message": "CMP"
   },
   "consent_header": {
-    "message": "Souhlas se zpracováním osobních údajů",
-    "description": ""
+    "message": "Souhlas se zpracov\u00e1n\u00edm osobn\u00edch \u00fadaj\u016f"
   },
   "purposes_header": {
-    "message": "Účely",
-    "description": ""
+    "message": "\u00da\u010dely"
   },
   "special_features_header": {
-  "message": "Speciální funkce",
-  "description": ""
-},
+    "message": "Zvl\u00e1\u0161tn\u00ed funkce"
+  },
+  "vendors_header": {
+    "message": "Prodejci s ud\u011blen\u00fdm souhlasem"
+  },
+  "vendor_list_header": {
+    "message": "Seznam prodejc\u016f"
+  },
+  "actions_header": {
+    "message": "Akce"
+  },
+  "about_header": {
+    "message": "O TC Manager"
+  },
+  "version": {
+    "message": "Verze"
+  },
+  "author_header": {
+    "message": "Autor"
+  },
+  "name": {
+    "message": "Jm\u00e9no"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "organization": {
+    "message": "Organizace"
+  },
+  "org_name": {
+    "message": "Fakulta informa\u010dn\u00edch technologi\u00ed VUT v Brn\u011b"
+  },
+  "used_icons_header": {
+    "message": "Pou\u017eit\u00e9 ikony"
+  },
+  "icons_taken_from": {
+    "message": "N\u00e1sleduj\u00edc\u00ed ikony byly p\u0159evzaty z"
+  },
+  "license": {
+    "message": "Licence"
+  },
+  "vendor_list_version": {
+    "message": "Verze seznamu prodejc\u016f"
+  },
+  "vendor_count": {
+    "message": "Po\u010det prodejc\u016f"
+  },
+  "vendor_name_header": {
+    "message": "Jm\u00e9no"
+  },
+  "policy_link": {
+    "message": "Odkaz na politiku"
+  },
+  "link": {
+    "message": "Odkaz"
+  },
+  "vendor_choice": {
+    "message": "Volba"
+  },
   "purpose1": {
-    "message": "Ukládání a/nebo přístup k informacím v zařízení",
-    "description": ""
+    "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"
+  },
+  "purpose1_description": {
+    "message": "Ve va\u0161em za\u0159\u00edzen\u00ed se mohou ukl\u00e1dat soubory cookie, identifik\u00e1tory za\u0159\u00edzen\u00ed nebo dal\u0161\u00ed informace nebo k nim ve va\u0161em za\u0159\u00edzen\u00ed m\u016f\u017ee b\u00fdt umo\u017en\u011bn p\u0159\u00edstup pro \u00fa\u010dely, kter\u00e9 v\u00e1m byly sd\u011bleny."
   },
   "purpose2": {
-    "message": "Základní nastavení reklamy",
-    "description": ""
+    "message": "Z\u00e1kladn\u00ed nastaven\u00ed reklamy"
+  },
+  "purpose2_description": {
+    "message": "Reklamy se mohou zobrazovat na z\u00e1klad\u011b obsahu, kter\u00fd prohl\u00ed\u017e\u00edte, aplikace, kterou pou\u017e\u00edv\u00e1te, va\u0161\u00ed p\u0159ibli\u017en\u00e9 polohy nebo typu va\u0161eho za\u0159\u00edzen\u00ed."
   },
   "purpose3": {
-    "message": "Vytvoření profilu pro personalizovanou reklamu",
-    "description": ""
+    "message": "Vytvo\u0159en\u00ed profilu pro personalizovanou reklamu"
+  },
+  "purpose3_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho chov\u00e1n\u00ed na internetu m\u016f\u017ee b\u00fdt vytvo\u0159en v\u00e1\u0161 profil, aby v\u00e1m mohla b\u00fdt zobrazena relevantn\u00ed reklama."
   },
   "purpose4": {
-    "message": "Výběr personalizované reklamy",
-    "description": ""
+    "message": "V\u00fdb\u011br personalizovan\u00e9 reklamy"
+  },
+  "purpose4_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho profilu se v\u00e1m m\u016f\u017ee zobrazovat personalizovan\u00e1 reklama."
   },
   "purpose5": {
-    "message": "Vytvoření profilu pro personalizovaný obsah",
-    "description": ""
+    "message": "Vytvo\u0159en\u00ed profilu pro personalizovan\u00fd obsah"
+  },
+  "purpose5_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho chov\u00e1n\u00ed na internetu m\u016f\u017ee b\u00fdt vytvo\u0159en v\u00e1\u0161 profil, a to proto, aby v\u00e1m mohl b\u00fdt zobrazov\u00e1n obsah, kter\u00fd je pro v\u00e1s relevantn\u00ed."
   },
   "purpose6": {
-    "message": "Výběr personalizovaného obsahu",
-    "description": ""
+    "message": "V\u00fdb\u011br personalizovan\u00e9ho obsahu"
+  },
+  "purpose6_description": {
+    "message": "Na z\u00e1klad\u011b va\u0161eho profilu se v\u00e1m m\u016f\u017ee zobrazovat personalizovan\u00fd obsah."
   },
   "purpose7": {
-    "message": "Měření výkonu reklamy",
-    "description": ""
+    "message": "M\u011b\u0159en\u00ed v\u00fdkonu reklamy"
+  },
+  "purpose7_description": {
+    "message": "V\u00fdkon a \u00fa\u010dinnost reklamy, kterou vid\u00edte nebo na kterou reagujete, mohou b\u00fdt m\u011b\u0159eny"
   },
   "purpose8": {
-    "message": "Měření výkonu obsahu",
-    "description": ""
+    "message": "M\u011b\u0159en\u00ed v\u00fdkonu obsahu"
+  },
+  "purpose8_description": {
+    "message": "\u00da\u010dinnost a v\u00fdkon obsahu, kter\u00fd vid\u00edte nebo na kter\u00fd reagujete, mohou b\u00fdt m\u011b\u0159eny."
   },
   "purpose9": {
-    "message": "Používání výzkumu trhu pro získání poznatků o uživatelích",
-    "description": ""
+    "message": "Pou\u017e\u00edv\u00e1n\u00ed v\u00fdzkumu trhu pro z\u00edsk\u00e1n\u00ed poznatk\u016f o u\u017eivatel\u00edch"
+  },
+  "purpose9_description": {
+    "message": "V\u00fdzkum trhu lze vyu\u017e\u00edt k z\u00edsk\u00e1n\u00ed v\u00edce informac\u00ed o u\u017eivatel\u00edch, kte\u0159\u00ed nav\u0161t\u011bvuj\u00ed str\u00e1nky/aplikace a jim\u017e jsou zobrazeny reklamy."
   },
   "purpose10": {
-    "message": "Vývoj a zlepšování produktů",
-    "description": ""
+    "message": "V\u00fdvoj a zlep\u0161ov\u00e1n\u00ed produkt\u016f"
+  },
+  "purpose10_description": {
+    "message": "Va\u0161e \u00fadaje lze vyu\u017e\u00edt ke zlep\u0161en\u00ed st\u00e1vaj\u00edc\u00edch syst\u00e9m\u016f a softwaru a k v\u00fdvoji nov\u00fdch produkt\u016f."
   },
   "special_feature1": {
-    "message": "Používání přesných údajů o geografické poloze",
-    "description": ""
+    "message": "Pou\u017e\u00edv\u00e1n\u00ed p\u0159esn\u00fdch \u00fadaj\u016f o geografick\u00e9 poloze"
+  },
+  "special_feature1_description": {
+    "message": "P\u0159esn\u00e9 \u00fadaje o va\u0161\u00ed geografick\u00e9 poloze lze pou\u017e\u00edt za \u00fa\u010delem podpory jednoho nebo v\u00edce \u00fa\u010del\u016f. Znamen\u00e1 to, \u017ee va\u0161i polohu lze ur\u010dit s p\u0159esnost\u00ed na n\u011bkolik metr\u016f."
   },
   "special_feature2": {
-    "message": "Aktivní vyhledávání identifikačních údajů v rámci vlastností zařízení",
-    "description": ""
+    "message": "Aktivn\u00ed vyhled\u00e1v\u00e1n\u00ed identifika\u010dn\u00edch \u00fadaj\u016f v r\u00e1mci vlastnost\u00ed za\u0159\u00edzen\u00ed"
+  },
+  "special_feature2_description": {
+    "message": "Va\u0161e za\u0159\u00edzen\u00ed lze identifikovat na z\u00e1klad\u011b prohled\u00e1n\u00ed jedine\u010dn\u00e9 kombinace vlastnost\u00ed va\u0161eho za\u0159\u00edzen\u00ed."
   }
 }

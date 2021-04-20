@@ -1,2 +1,8 @@
 
 .idea/
+
+*.zip
+
+src/node_modules/
+
+src/manifest.json

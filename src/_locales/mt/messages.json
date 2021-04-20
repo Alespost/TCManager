@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "A\u0127\u017cen u/jew a\u010b\u010bessa informazzjoni fuq tag\u0127mir"
+  },
+  "purpose1_description": {
+    "message": "Cookies, identifikaturi tat-tag\u0127mir, jew informazjoni o\u0127ra jisg\u0127u jin\u0127a\u017cnu jew ji\u0121u a\u010b\u010bessati fuq it-tag\u0127mir tieg\u0127ek g\u0127all-g\u0127anijiet ippre\u017centati lilek."
+  },
+  "purpose2": {
+    "message": "Ag\u0127\u017cel reklami ba\u017ci\u010bi"
+  },
+  "purpose2_description": {
+    "message": "Ir-reklami jistg\u0127u jintwerewlek abba\u017ci tal-kontenut li qed tara, l-app li qed tu\u017ca, il-lokalit\u00e0 approssimattiva tieg\u0127ek, jew it-tip ta\u2019 tag\u0127mir tieg\u0127ek."
+  },
+  "purpose3": {
+    "message": "O\u0127loq profil ta\u2019 reklami personalizzati"
+  },
+  "purpose3_description": {
+    "message": "Jista\u2019 jinbena profil dwarek u dwar l-interessi tieg\u0127ek biex tara reklami personalizzati li huma rilevanti g\u0127alik"
+  },
+  "purpose4": {
+    "message": "Ag\u0127\u017cel reklami personalizzati"
+  },
+  "purpose4_description": {
+    "message": "Ir-reklami personalizzati jistg\u0127u jintwerewlek abba\u017ci ta\u2019 profil dwarek."
+  },
+  "purpose5": {
+    "message": "O\u0127loq profil ta\u2019 kontenut personalizzat"
+  },
+  "purpose5_description": {
+    "message": "Profil jista\u2019 jinbena dwarek u dwar l-interessi tieg\u0127ek biex juruk kontenut personalizzat li hu relevanti g\u0127alik."
+  },
+  "purpose6": {
+    "message": "Ag\u0127\u017cel kontenut personalizzat"
+  },
+  "purpose6_description": {
+    "message": "Il-kontenut personalizzat jista\u2019 jintwera lilek abba\u017ci ta\u2019 profil dwarek."
+  },
+  "purpose7": {
+    "message": "Kejjel il-prestazzjoni tar-reklam"
+  },
+  "purpose7_description": {
+    "message": "Il-prestazzjoni u l-effettivit\u00e0 tar-reklami li inti tara jew tintera\u0121ixxi mag\u0127hom jistg\u0127u\u2019 jitkejlu."
+  },
+  "purpose8": {
+    "message": "Kejjel il-prestazzjoni tal-kontenut"
+  },
+  "purpose8_description": {
+    "message": "Il-prestazzjoni u l-effettivit\u00e0 tal-kontenut li inti tara jew tintera\u0121ixxi mag\u0127hom jistg\u0127u jitkejlu."
+  },
+  "purpose9": {
+    "message": "Applika r-ri\u010berka tas-suq biex ti\u0121\u0121enera intuwizzjonijiet tal-udjenza"
+  },
+  "purpose9_description": {
+    "message": "Ir-ri\u010berka dwar is-suq tista\u2019 tintu\u017ca biex wie\u0127ed isir jaf aktar dwar l-udjenzi li j\u017curu siti/apps u jaraw reklami."
+  },
+  "purpose10": {
+    "message": "\u017bviluppa u tejjeb il-prodotti"
+  },
+  "purpose10_description": {
+    "message": "Id-dejta tieg\u0127ek tista\u2019 tintu\u017ca biex ittejjeb sistemi u softwer e\u017cistenti, u biex ji\u0121u \u017cviluppati prodotti \u0121odda."
+  },
+  "special_feature1": {
+    "message": "U\u017ca dejta \u0121eolokalizzata pre\u010bi\u017ca"
+  },
+  "special_feature1_description": {
+    "message": "Id-dejta \u0121eolokalizzata pre\u010bi\u017ca tieg\u0127ek tista\u2019 tintu\u017ca b\u2019sapport g\u0127al g\u0127an wie\u0127ed jew aktar. Dan ifisser li l-lokalit\u00e0 tieg\u0127ek tista\u2019 tkun pre\u010bi\u017ca f\u2019medda ta\u2019 diversi metri."
+  },
+  "special_feature2": {
+    "message": "Iskenja l-karatteristiki tat-tag\u0127mir b\u2019mod attiv g\u0127all-identifikazzjoni"
+  },
+  "special_feature2_description": {
+    "message": "It-tag\u0127mir tieg\u0127ek jista\u2019 ji\u0121i identifikat abba\u017ci ta\u2019 skenn tat-ta\u0127lita unika tal-karatteristiki tat-tag\u0127mir tieg\u0127ek."
+  }
+}

@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "webextension-polyfill": "^0.7.0"
+  },
+  "dependencies": {
+    "tc-string-parse": "^1.3.0"
   }
 }

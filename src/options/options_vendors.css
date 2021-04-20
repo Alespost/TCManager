@@ -1,0 +1,22 @@
+table {
+    min-width: 650px;
+}
+
+td:not(.row_header, .option) {
+    min-width: auto;
+    max-width: none;
+    width: auto;
+}
+
+.link {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+.id {
+    padding-right: 5px;
+    padding-left: 5px;
+}

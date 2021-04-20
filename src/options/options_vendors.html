@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js" type="application/javascript"></script>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <script src="content_display.js" type="text/javascript"></script>
+    <script src="constants.js" type="text/javascript"></script>
+    <script src="options_vendors.js" type="text/javascript"></script>
+
+    <link href="../common/fonts.css" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+    <link href="options.css" rel="stylesheet">
+    <link href="options_vendors.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 id="options_header"></h1>
+    <nav>
+        <ul>
+            <li><a href="options.html" id="nav_options"></a></li>
+            <li><a href="description.html" id="nav_description"></a></li>
+            <li><a class="active" href="options_vendors.html" id="nav_vendors"></a></li>
+            <li><a href="about.html" id="nav_about"></a></li>
+            <li>
+                <a class="logo" href="https://github.com/Alespost/TCManager" target="_blank">
+                    <img alt="" src="../resources/img/logo.png">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content buttons center">
+        <button id="use_global"></button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th id="vendor_name_header"></th>
+            <th>ID</th>
+            <th id="policy_link"></th>
+            <th id="vendor_choice"></th>
+        </tr>
+        </thead>
+        <tbody id="options_vendors_body">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

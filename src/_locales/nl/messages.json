@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Informatie op een apparaat opslaan en/of openen"
+  },
+  "purpose1_description": {
+    "message": "Cookies, apparaatidentificatoren of andere informatie kunnen op uw apparaat worden opgeslagen of geopend voor de doeleinden die aan u worden gepresenteerd."
+  },
+  "purpose2": {
+    "message": "Basisadvertenties selecteren"
+  },
+  "purpose2_description": {
+    "message": "Advertenties kunnen aan u worden getoond op basis van de content die u bekijkt, de app die u gebruikt, uw locatie bij benadering of uw apparaattype."
+  },
+  "purpose3": {
+    "message": "Een gepersonaliseerd advertentieprofiel aanmaken"
+  },
+  "purpose3_description": {
+    "message": "Er kan een profiel over u en uw interesses worden gebouwd om u gepersonaliseerde advertenties te tonen die relevant zijn voor u."
+  },
+  "purpose4": {
+    "message": "Gepersonaliseerde advertenties selecteren"
+  },
+  "purpose4_description": {
+    "message": "Gepersonaliseerde advertenties kunnen aan u worden getoond op basis van een profiel over u."
+  },
+  "purpose5": {
+    "message": "Een gepersonaliseerd content profiel aanmaken"
+  },
+  "purpose5_description": {
+    "message": "Er kan een profiel over u en uw interesses worden gebouwd om u gepersonaliseerde content te tonen die relevant is voor u."
+  },
+  "purpose6": {
+    "message": "Gepersonaliseerde content selecteren"
+  },
+  "purpose6_description": {
+    "message": "Gepersonaliseerde content kan aan u worden getoond op basis van een profiel over u."
+  },
+  "purpose7": {
+    "message": "Prestaties van advertenties meten"
+  },
+  "purpose7_description": {
+    "message": "De prestaties en doeltreffendheid van advertenties die u ziet of waarmee u interactie aangaat, kunnen worden gemeten."
+  },
+  "purpose8": {
+    "message": "Content prestaties meten"
+  },
+  "purpose8_description": {
+    "message": "De prestaties en doeltreffendheid van content die u ziet of waar u interactie mee aangaat, kunnen worden gemeten."
+  },
+  "purpose9": {
+    "message": "Marktonderzoek toepassen om inzichten in het publiek te genereren"
+  },
+  "purpose9_description": {
+    "message": "Marktonderzoek kan worden gebruikt om meer te weten te komen over het publiek dat sites/apps bezoekt en advertenties bekijkt."
+  },
+  "purpose10": {
+    "message": "Producten ontwikkelen en verbeteren"
+  },
+  "purpose10_description": {
+    "message": "Uw gegevens kunnen worden gebruikt om bestaande systemen en software te verbeteren en nieuwe producten te ontwikkelen."
+  },
+  "special_feature1": {
+    "message": "Precieze geolocatie gegevens gebruiken"
+  },
+  "special_feature1_description": {
+    "message": "Uw precieze geolocatie gegevens kunnen worden gebruikt ter ondersteuning van een of meer doeleinden. Dit betekent dat uw locatie tot op enkele meters nauwkeurig kan zijn.\n"
+  },
+  "special_feature2": {
+    "message": "De apparaat kenmerken actief scannen voor identificatie"
+  },
+  "special_feature2_description": {
+    "message": "Uw apparaat kan worden ge\u00efdentificeerd op basis van een scan van de unieke combinatie van kenmerken van uw apparaat."
+  }
+}

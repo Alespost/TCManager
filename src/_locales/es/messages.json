@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Almacenar o acceder a informaci\u00f3n en un dispositivo"
+  },
+  "purpose1_description": {
+    "message": "Se puede almacenar o acceder a cookies, identificadores de dispositivo u otra informaci\u00f3n en su dispositivo para las finalidades que se le presentan."
+  },
+  "purpose2": {
+    "message": "Seleccionar anuncios b\u00e1sicos"
+  },
+  "purpose2_description": {
+    "message": "Los anuncios se pueden mostrar en funci\u00f3n del contenido que se est\u00e9 visualizando, la aplicaci\u00f3n que se est\u00e9 utilizando, su localizaci\u00f3n aproximada o su tipo de dispositivo."
+  },
+  "purpose3": {
+    "message": "Crear un perfil publicitario personalizado"
+  },
+  "purpose3_description": {
+    "message": "Se puede elaborar un perfil sobre usted y sus intereses para mostrarle anuncios personalizados que sean pertinentes para usted."
+  },
+  "purpose4": {
+    "message": "Seleccionar anuncios personalizados"
+  },
+  "purpose4_description": {
+    "message": "Se pueden mostrar anuncios personalizados bas\u00e1ndose en su perfil."
+  },
+  "purpose5": {
+    "message": "Crear un perfil para la personalizaci\u00f3n de contenidos"
+  },
+  "purpose5_description": {
+    "message": "Se puede crear un perfil sobre usted y sus intereses para mostrarle contenido personalizado que le fuera pertinente."
+  },
+  "purpose6": {
+    "message": "Seleccionar contenido personalizado"
+  },
+  "purpose6_description": {
+    "message": "Se puede mostrar contenido personalizado basado en su perfil."
+  },
+  "purpose7": {
+    "message": "Medir el rendimiento de los anuncios"
+  },
+  "purpose7_description": {
+    "message": "Se puede medir el rendimiento y eficacia de los anuncios que usted ve o con los que interact\u00faa."
+  },
+  "purpose8": {
+    "message": "Medir el rendimiento del contenido"
+  },
+  "purpose8_description": {
+    "message": "Se puede medir el rendimiento y la eficacia del contenido que ve o con el que interact\u00faa."
+  },
+  "purpose9": {
+    "message": "Utilizar estudios de mercado a fin de generar informaci\u00f3n sobre el p\u00fablico"
+  },
+  "purpose9_description": {
+    "message": "La investigaci\u00f3n de mercado puede utilizarse para obtener m\u00e1s informaci\u00f3n sobre el p\u00fablico que visita sitios webs/aplicaciones y visualiza los anuncios."
+  },
+  "purpose10": {
+    "message": "Desarrollar y mejorar productos"
+  },
+  "purpose10_description": {
+    "message": "Sus datos pueden utilizarse para mejorar los sistemas y/o el software existente, as\u00ed como para desarrollar nuevos productos."
+  },
+  "special_feature1": {
+    "message": "Utilizar datos de localizaci\u00f3n geogr\u00e1fica precisa"
+  },
+  "special_feature1_description": {
+    "message": "Sus datos de localizaci\u00f3n geogr\u00e1fica precisa se pueden utilizar para una o m\u00e1s finalidades. Esto significa que su ubicaci\u00f3n puede tener una precisi\u00f3n de varios metros."
+  },
+  "special_feature2": {
+    "message": "Analizar activamente las caracter\u00edsticas del dispositivo para su identificaci\u00f3n"
+  },
+  "special_feature2_description": {
+    "message": "Su dispositivo puede identificarse bas\u00e1ndose en un an\u00e1lisis de la combinaci\u00f3n \u00fanica de las caracter\u00edsticas de su dispositivo."
+  }
+}

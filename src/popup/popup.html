@@ -2,38 +2,46 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../node_modules/webextension-polyfill/dist/browser-polyfill.js"></script>
-    <script type="text/javascript" src="../common/common.js"></script>
-    <script type="text/javascript" src="content_display.js"></script>
-    <script type="text/javascript" src="popup.js"></script>
-    <link rel="stylesheet" href="popup.css">
+    <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js" type="text/javascript"></script>
+    <script src="../node_modules/tc-string-parse/tc-string-parse.js" type="text/javascript"></script>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <script src="content_display.js" type="text/javascript"></script>
+    <script src="popup.js" type="text/javascript"></script>
+
+    <link href="../common/fonts.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>TC Manager</h1>
-        <div id="debug">
-            <p id="ping"></p>
-            <p id="hello"></p>
-            <p id="data" style="overflow-wrap: break-word"></p>
-        </div>
-        <button id="options_button">Options</button>
-        <p id="no_tcf_message"></p>
-        <h3 id="cmp_header"></h3>
-        <dl>
-            <dt>
-                <span id="cmp_name" style="font-weight: bold"></span>
-                <span id="cmp_id"></span>
-            </dt>
-        </dl>
-
-        <h3 id="consent_header"></h3>
-        <h4 id="purposes_header"></h4>
-        <dl id="purpose_list">
-        </dl>
-
-        <h4 id="special_features_header"></h4>
-        <dl id="special_feature_list">
-        </dl>
+<div class="container">
+    <div class="header">
+        <img alt="" class="logo" src="../resources/img/logo-inverted.png">
+        <span id="options_button"></span>
     </div>
+
+    <p id="no_tcf_message"></p>
+    <h3 id="cmp_header"></h3>
+    <dl>
+        <dt>
+            <span id="cmp_name" style="font-weight: bold"></span>
+            <span id="cmp_id"></span>
+        </dt>
+    </dl>
+
+    <h3 id="consent_header"></h3>
+    <h4 id="purposes_header"></h4>
+    <ol id="purpose_list"></ol>
+
+    <h4 id="special_features_header"></h4>
+    <ol id="special_feature_list"></ol>
+
+    <h4 id="vendors_header"></h4>
+    <ul id="vendors_info">
+        <li id="vendor_list_version"></li>
+        <li id="vendor_count"></li>
+    </ul>
+    <h5 class="hidden" id="vendor_list_header"></h5>
+    <ul class="empty" id="vendor_list">
+    </ul>
+</div>
 </body>
 </html>

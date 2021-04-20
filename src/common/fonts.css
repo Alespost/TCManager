@@ -1,0 +1,12 @@
+body {
+    font-family: Times, serif;
+    font-size: 11pt;
+}
+
+h1, h2, h3, h4, h5, h6, nav, ol li, th, td {
+    font-family: Arial, Helvetica, Arial, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}

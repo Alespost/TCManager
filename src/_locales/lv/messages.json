@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Inform\u0101cijas ievieto\u0161ana ier\u012bc\u0113 un/vai piek\u013cuve tai"
+  },
+  "purpose1_description": {
+    "message": "M\u0113s varam ievietot j\u016bsu ier\u012bc\u0113 s\u012bkdatnes, ier\u012b\u010du identifikatorus un citu inform\u0101ciju un piek\u013c\u016bt tai jums izkl\u0101st\u012btajos nol\u016bkos."
+  },
+  "purpose2": {
+    "message": "Pamata rekl\u0101mu atlase"
+  },
+  "purpose2_description": {
+    "message": "Rekl\u0101mas var tikt r\u0101d\u012btas, pamatojoties uz j\u016bsu apl\u016bkoto saturu lietotnes izmanto\u0161anas laik\u0101, j\u016bsu aptuveno atra\u0161an\u0101s vietu vai j\u016bsu ier\u012bces veidu."
+  },
+  "purpose3": {
+    "message": "Personaliz\u0113ta rekl\u0101mu profila izveide"
+  },
+  "purpose3_description": {
+    "message": "Par jums un j\u016bsu interes\u0113m var tikt izveidots profils, lai r\u0101d\u012btu jums atbilsto\u0161as personaliz\u0113tas rekl\u0101mas."
+  },
+  "purpose4": {
+    "message": "Personaliz\u0113tu rekl\u0101mu atlase"
+  },
+  "purpose4_description": {
+    "message": "Jums var tikt r\u0101d\u012btas personaliz\u0113tas rekl\u0101mas, pamatojoties uz profilu, kas izveidots par jums."
+  },
+  "purpose5": {
+    "message": "Personaliz\u0113ta satura profila izveide"
+  },
+  "purpose5_description": {
+    "message": "Par jums un j\u016bsu interes\u0113m var tikt veidots profils, lai r\u0101d\u012btu jums atbilsto\u0161u personaliz\u0113tu saturu."
+  },
+  "purpose6": {
+    "message": "Personaliz\u0113ta satura atlase"
+  },
+  "purpose6_description": {
+    "message": "Jums var tikt r\u0101d\u012bts personaliz\u0113ts saturs, pamatojoties uz profilu, kas izveidots par jums."
+  },
+  "purpose7": {
+    "message": "Rekl\u0101mas efektivit\u0101tes nov\u0113rt\u0113\u0161ana"
+  },
+  "purpose7_description": {
+    "message": "Var tikt izv\u0113rt\u0113ta to rekl\u0101mu efektivit\u0101te un pan\u0101kumi, kuras jums tika att\u0113lotas vai ar kur\u0101m esat mijiedarbojies(-usies)."
+  },
+  "purpose8": {
+    "message": "Satura efektivit\u0101tes nov\u0113rt\u0113\u0161ana"
+  },
+  "purpose8_description": {
+    "message": "Var tikt izv\u0113rt\u0113ta t\u0101da satura efektivit\u0101te un sasniegumi, kur\u0161 jums ticis att\u0113lots vai ar kuru esat mijiedarbojies."
+  },
+  "purpose9": {
+    "message": "Tirgus p\u0113t\u012bjumu izmanto\u0161ana anal\u012btisk\u0101s inform\u0101cijas veido\u0161anai par m\u0113r\u0137a grup\u0101m"
+  },
+  "purpose9_description": {
+    "message": "Var tikt veikta tirgus izp\u0113te, lai uzzin\u0101tu vair\u0101k par lietot\u0101ju grup\u0101m, kuras apmekl\u0113 vietnes/lietotnes un apl\u016bko rekl\u0101mas."
+  },
+  "purpose10": {
+    "message": "Produktu izstr\u0101d\u0101\u0161ana un uzlabo\u0161ana"
+  },
+  "purpose10_description": {
+    "message": "J\u016bsu dati var tikt izmantoti eso\u0161o sist\u0113mu un programmat\u016bras uzlabo\u0161anai un jaunu produktu izstr\u0101dei."
+  },
+  "special_feature1": {
+    "message": "Prec\u012bzas atra\u0161an\u0101s vietas izmanto\u0161ana"
+  },
+  "special_feature1_description": {
+    "message": "Var tikt izmantoti prec\u012bzi j\u016bsu atra\u0161an\u0101s vietas dati viena vai vair\u0101ku nol\u016bku izpildei. Tas noz\u012bm\u0113 to, ka j\u016bsu atra\u0161an\u0101s vietas precizit\u0101tes l\u012bmenis var b\u016bt p\u0101ris metru r\u0101dius\u0101."
+  },
+  "special_feature2": {
+    "message": "Ier\u012bces parametru akt\u012bva sken\u0113\u0161ana identifik\u0101cijas nol\u016bk\u0101"
+  },
+  "special_feature2_description": {
+    "message": "J\u016bsu ier\u012bce var tikt identific\u0113ta, pamatojoties uz j\u016bsu ier\u012bces unik\u0101lo parametru kombin\u0101cijas sken\u0113\u0161anu."
+  }
+}

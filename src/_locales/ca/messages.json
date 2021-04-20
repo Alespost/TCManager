@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Emmagatzemar informaci\u00f3 i/o accedir a la informaci\u00f3 d\u2019un dispositiu"
+  },
+  "purpose1_description": {
+    "message": "Es poden emmagatzemar o accedir a les galetes, els identificadors del dispositiu i altra informaci\u00f3 del seu dispositiu amb les finalitats que se li indiquin."
+  },
+  "purpose2": {
+    "message": "Seleccionar anuncis b\u00e0sics"
+  },
+  "purpose2_description": {
+    "message": "Se li poden mostrar anuncis en funci\u00f3 del contingut que vost\u00e8 visualitza, l\u2019aplicaci\u00f3 que utilitza, la seva ubicaci\u00f3 aproximada o el seu tipus de dispositiu."
+  },
+  "purpose3": {
+    "message": "Crear un perfil publicitari personalitzat"
+  },
+  "purpose3_description": {
+    "message": "Es pot crear un perfil sobre vost\u00e8 i els seus interessos per mostrar-li anuncis personalitzats que siguin pertinents per a vost\u00e8."
+  },
+  "purpose4": {
+    "message": "Seleccionar anuncis personalitzats"
+  },
+  "purpose4_description": {
+    "message": "Se li poden mostrar anuncis personalitzats en funci\u00f3 d\u2019un perfil sobre vost\u00e8."
+  },
+  "purpose5": {
+    "message": "Crear un perfil per a la personalitzaci\u00f3 de continguts"
+  },
+  "purpose5_description": {
+    "message": "Es pot crear un perfil sobre vost\u00e8 i els seus interessos per mostrar-li contingut personalitzat que sigui pertinent per a vost\u00e8."
+  },
+  "purpose6": {
+    "message": "Seleccionar contingut personalitzat"
+  },
+  "purpose6_description": {
+    "message": "Se li pot mostrar contingut personalitzat en funci\u00f3 d\u2019un perfil sobre vost\u00e8."
+  },
+  "purpose7": {
+    "message": "Mesurar el rendiment dels anuncis"
+  },
+  "purpose7_description": {
+    "message": "Es pot mesurar el rendiment i l\u2019efic\u00e0cia dels anuncis que es veuen o els anuncis amb els quals s\u2019interactua."
+  },
+  "purpose8": {
+    "message": "Mesurar el rendiment del contingut"
+  },
+  "purpose8_description": {
+    "message": "Es pot mesurar el rendiment i l\u2019efic\u00e0cia del contingut que es veu o amb el qual interactua."
+  },
+  "purpose9": {
+    "message": "Utilitzar estudis de mercat per generar coneixements sobre l\u2019audi\u00e8ncia"
+  },
+  "purpose9_description": {
+    "message": "Els estudis de mercat es poden utilitzar per obtenir m\u00e9s informaci\u00f3 de l\u2019audi\u00e8ncia que visita llocs web/aplicacions i visualitza anuncis."
+  },
+  "purpose10": {
+    "message": "Desenvolupar i millorar productes"
+  },
+  "purpose10_description": {
+    "message": "Les seves dades es poden utilitzar per millorar els sistemes i programari existents, i desenvolupar nous productes."
+  },
+  "special_feature1": {
+    "message": "Utilitzar dades de geolocalitzaci\u00f3 precises"
+  },
+  "special_feature1_description": {
+    "message": "Les seves dades de geolocalitzaci\u00f3 precisa es poden utilitzar per a una o m\u00e9s finalitats. Aix\u00f2 vol dir que la seva ubicaci\u00f3 pot tenir una precisi\u00f3 de pocs metres."
+  },
+  "special_feature2": {
+    "message": "Explorar activament les caracter\u00edstiques del dispositiu per a la seva identificaci\u00f3"
+  },
+  "special_feature2_description": {
+    "message": "Es pot identificar el seu dispositiu en funci\u00f3 de l\u2019an\u00e0lisi de la combinaci\u00f3 \u00fanica de caracter\u00edstiques del seu dispositiu."
+  }
+}

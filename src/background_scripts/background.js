@@ -1,62 +1,88 @@
-"use strict";
-
 browser.runtime.onInstalled.addListener(
-    details => {
-        initOptions();
+  details => {
+    initOptions();
+  });
+
+function initOptions () {
+  let getting = browser.storage.sync.get();
+  return getting.then(onSuccess, onError);
+
+  function onSuccess (result) {
+    if (!result.hasOwnProperty(GLOBAL_OPTIONS)) {
+      setDefaultOptions();
+    }
+
+    if (!result.hasOwnProperty(VENDOR_OPTIONS)) {
+      setDefaultVendorOptions();
+    } else {
+      updateVendorOptions();
+    }
+  }
+
+  function onError (error) {
+    console.error(`Error: ${error}`);
+    return false;
+  }
+
+  function setDefaultOptions () {
+    const purposes = Array(PURPOSES_COUNT).fill(OBJECTION);
+    const specialFeatures = Array(SPECIAL_FEATURES_COUNT).fill(OBJECTION);
+
+    const globalOptions = {};
+    globalOptions[GLOBAL_OPTIONS] = {};
+    globalOptions[GLOBAL_OPTIONS][PURPOSES_OPTIONS] = purposes;
+    globalOptions[GLOBAL_OPTIONS][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
+
+    browser.storage.sync.set(globalOptions);
+  }
+
+  function setDefaultVendorOptions () {
+    let vendorOptions = {};
+    vendorOptions[VENDOR_OPTIONS] = {};
+    vendorOptions[VENDOR_OPTIONS][GLOBAL_OPTIONS] = OBJECTION;
+
+    openVendorList().then(jsonResponse => {
+      vendorOptions[VENDOR_OPTIONS][VENDOR_OPTIONS] = jsonResponse.vendorListVersion;
+      for (const [, vendor] of Object.entries(jsonResponse.vendors)) {
+        vendorOptions[VENDOR_OPTIONS][vendor.id] = GLOBAL_VALUE;
+      }
+
+      browser.storage.sync.set(vendorOptions);
     });
+  }
 
-browser.webRequest.onBeforeRequest.addListener(
-    listener,
-    {urls: ["*://*.consensu.org/*", "https://login.seznam.cz/api/v1/euconsent"]},
-    ["blocking"]
-    //([A-Za-z0-9_-]{4}){10,}(\.?[^\\ "]+)+
-);
+  function updateVendorOptions () {
+    browser.storage.sync.get(VENDOR_OPTIONS).then(
+      result => {
+        const choices = result[VENDOR_OPTIONS];
+        const global = choices[GLOBAL_OPTIONS];
+        delete choices[GLOBAL_OPTIONS];
+        delete choices[VENDOR_OPTIONS];
 
-function listener(details)
-{
-    if (typeof browser.webRequest.filterResponseData !== 'function') {
-        return;
-    }
+        openVendorList().then(
+          vendors => {
+            const version = vendors.vendorListVersion;
+            vendors = vendors.vendors;
+            for (const [key] of Object.entries(choices)) {
+              if (!vendors.hasOwnProperty(key)) {
+                delete choices[key];
+              }
+            }
 
-    let encoder = new TextEncoder();
-    let decoder = new TextDecoder('utf-8');
+            for (const [, vendor] of Object.entries(vendors)) {
+              if (!choices.hasOwnProperty(vendor.id)) {
+                choices[vendor.id] = GLOBAL_VALUE;
+              }
+            }
 
-    console.log(details.url);
-}
+            choices[VENDOR_OPTIONS] = version;
+            choices[GLOBAL_OPTIONS] = global;
+            result[VENDOR_OPTIONS] = choices;
 
-
-function initOptions() {
-    let getting = browser.storage.sync.get(GLOBAL_OPTIONS);
-    return getting.then(onSuccess, onError);
-
-    function onSuccess(result) {
-        if (result.hasOwnProperty(GLOBAL_OPTIONS)) {
-            return;
-        }
-
-        setDefaultOptions();
-    }
-
-    function onError(error) {
-        console.error(`Error: ${error}`);
-        return false;
-    }
-
-    function setDefaultOptions() {
-        let purposes = [];
-        for (let i = 0; i < 10; i++) {
-            purposes.push(false);
-        }
-
-        let specialFeatures = [];
-        for (let i = 0; i < 2; i++) {
-            specialFeatures.push(false);
-        }
-
-        let globalOptions = {};
-        globalOptions[GLOBAL_OPTIONS] = {}
-        globalOptions[GLOBAL_OPTIONS][PURPOSES_OPTIONS] = purposes;
-        globalOptions[GLOBAL_OPTIONS][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
-        browser.storage.sync.set(globalOptions);
-    }
+            browser.storage.sync.set(result);
+          },
+        );
+      },
+    );
+  }
 }

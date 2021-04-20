@@ -1,0 +1,74 @@
+{
+  "purpose1": {
+    "message": "Lagre og/eller f\u00e5 tilgang til informasjon p\u00e5 en enhet"
+  },
+  "purpose1_description": {
+    "message": "Informasjonskapsler, enhetsidentifikatorer eller annen informasjon kan lagres eller \u00e5pnes p\u00e5 enheten din for de form\u00e5lene som presenteres for deg."
+  },
+  "purpose2": {
+    "message": "Velg grunnleggende annonser"
+  },
+  "purpose2_description": {
+    "message": "Annonser kan vises til deg basert p\u00e5 innholdet du ser p\u00e5, appen du bruker, den omtrentlige lokasjonen din eller enhetstypen din."
+  },
+  "purpose3": {
+    "message": "Opprett en personlig annonseprofil"
+  },
+  "purpose3_description": {
+    "message": "En profil kan bygges om deg og interessene dine for \u00e5 vise deg personlige annonser som er relevante for deg."
+  },
+  "purpose4": {
+    "message": "Velg personlige annonser"
+  },
+  "purpose4_description": {
+    "message": "Personlige annonser kan vises til deg basert p\u00e5 en profil om deg."
+  },
+  "purpose5": {
+    "message": "Opprette en personlig innholdsprofil"
+  },
+  "purpose5_description": {
+    "message": "En profil kan bygges om deg og interessene dine for \u00e5 vise deg personlig innhold som er relevant for deg."
+  },
+  "purpose6": {
+    "message": "Velge personlig innhold"
+  },
+  "purpose6_description": {
+    "message": "Personlig innhold kan vises til deg basert p\u00e5 en profil om deg."
+  },
+  "purpose7": {
+    "message": "M\u00e5le annonseprestasjon"
+  },
+  "purpose7_description": {
+    "message": "Prestasjonen og effektiviteten til annonser du ser eller samhandler med kan m\u00e5les."
+  },
+  "purpose8": {
+    "message": "M\u00e5le innholdsprestasjon"
+  },
+  "purpose8_description": {
+    "message": "Prestasjonen og effektiviteten til innhold du ser eller samhandler med kan m\u00e5les."
+  },
+  "purpose9": {
+    "message": "Bruk markedsunders\u00f8kelser til \u00e5 generere publikumsinnsikt"
+  },
+  "purpose9_description": {
+    "message": "Markedsunders\u00f8kelser kan brukes til \u00e5 l\u00e6re mer om publikum som bes\u00f8ker nettsteder/apper og ser p\u00e5 annonser."
+  },
+  "purpose10": {
+    "message": "Utvikle og forbedre produkter"
+  },
+  "purpose10_description": {
+    "message": "Dataene dine kan brukes til \u00e5 forbedre eksisterende systemer og programvare, og til \u00e5 utvikle nye produkter."
+  },
+  "special_feature1": {
+    "message": "Bruke n\u00f8yaktige geolokasjonsdata"
+  },
+  "special_feature1_description": {
+    "message": "De n\u00f8yaktige geolokasjonsdataene dine kan brukes til \u00e5 st\u00f8tte ett eller flere form\u00e5l. Dette betyr at plasseringen din kan v\u00e6re n\u00f8yaktig til innenfor et par meter."
+  },
+  "special_feature2": {
+    "message": "Aktivt skanne enhetsegenskaper for identifikasjon"
+  },
+  "special_feature2_description": {
+    "message": "Enheten din kan identifiseres basert p\u00e5 en skanning av enhetens unike kombinasjon av egenskaper."
+  }
+}
