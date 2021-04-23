@@ -20,14 +20,14 @@ function displayTCContent (TCData) {
 }
 
 function displayHeaders () {
-  document.getElementById('cmp_header').innerText = localizedMessage('cmp_header');
-  document.getElementById('consent_header').innerText = localizedMessage('consent_header');
-  document.getElementById('purposes_header').innerText = localizedMessage('purposes_header');
-  document.getElementById('special_features_header').innerText = localizedMessage('special_features_header');
-  document.getElementById('vendors_header').innerText = localizedMessage('vendors_header');
-  document.getElementById('vendor_list_header').innerText = localizedMessage('vendor_list_header');
-  document.getElementById('vendor_list_version').innerText = localizedMessage('vendor_list_version') + ': ';
-  document.getElementById('vendor_count').innerText = localizedMessage('vendor_count') + ': ';
+  document.getElementById('cmp_header').innerText = getMessage('cmp_header');
+  document.getElementById('consent_header').innerText = getMessage('consent_header');
+  document.getElementById('purposes_header').innerText = getMessage('purposes_header');
+  document.getElementById('special_features_header').innerText = getMessage('special_features_header');
+  document.getElementById('vendors_header').innerText = getMessage('vendors_header');
+  document.getElementById('vendor_list_header').innerText = getMessage('vendor_list_header');
+  document.getElementById('vendor_list_version').innerText = getMessage('vendor_list_version') + ': ';
+  document.getElementById('vendor_count').innerText = getMessage('vendor_count') + ': ';
 }
 
 function displayCMPData (cmpId) {
@@ -36,7 +36,7 @@ function displayCMPData (cmpId) {
     if (jsonResponse.cmps[cmpId]) {
       cmpName = jsonResponse.cmps[cmpId].name;
     } else {
-      cmpName = localizedMessage('unknown_cmp');
+      cmpName = getMessage('unknown_cmp');
     }
 
     document.getElementById('cmp_name').innerText = cmpName;
@@ -46,7 +46,7 @@ function displayCMPData (cmpId) {
 }
 
 function displayNoTCFMessage () {
-  document.getElementById('no_tcf_message').innerText = localizedMessage('no_tcf');
+  document.getElementById('no_tcf_message').innerText = getMessage('no_tcf');
 }
 
 function displayListItems (items, listIdPrefix) {
@@ -54,11 +54,11 @@ function displayListItems (items, listIdPrefix) {
     if (value === true) {
       const item = document.createElement('li');
       item.setAttribute('value', key);
-      item.innerText = localizedMessage(listIdPrefix + key);
+      item.innerText = getMessage(listIdPrefix + key);
 
       const description = document.createElement('span');
       description.classList.add('question_icon');
-      description.title = localizedMessage(listIdPrefix + key + '_description');
+      description.title = getMessage(listIdPrefix + key + '_description');
       description.innerHTML = ' ';
       item.appendChild(description);
 

@@ -11,7 +11,7 @@ const GLOBAL_VALUE = 2;
 const PURPOSES_COUNT = 10;
 const SPECIAL_FEATURES_COUNT = 2;
 
-const localizedMessage = browser.i18n.getMessage;
+const getMessage = browser.i18n.getMessage;
 
 function openVendorList () {
   return openJSON('resources/vendor-list.json');

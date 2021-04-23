@@ -54,7 +54,7 @@ function restoreOptions () {
     if (vendor !== null) {
       const link = document.createElement('a');
       link.href = vendor.policyUrl;
-      link.innerText = localizedMessage('link');
+      link.innerText = getMessage('link');
       policyUrlCell.appendChild(link);
     }
 

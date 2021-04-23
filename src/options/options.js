@@ -60,7 +60,7 @@ function restoreOptions () {
 
     const reset = document.createElement('button');
     reset.classList.add('action', 'reset');
-    reset.title = localizedMessage('use_global_domain_tooltip');
+    reset.title = getMessage('use_global_domain_tooltip');
 
     reset.setAttribute(VALUE_ATTRIBUTE, domain);
     reset.addEventListener('click', resetDomain);
@@ -69,7 +69,7 @@ function restoreOptions () {
     if (domain !== GLOBAL_OPTIONS) {
       const remove = document.createElement('button');
       remove.classList.add('action', 'remove');
-      remove.title = localizedMessage('remove_domain_tooltip');
+      remove.title = getMessage('remove_domain_tooltip');
 
       remove.setAttribute(VALUE_ATTRIBUTE, domain);
       remove.addEventListener('click', removeDomain);
@@ -101,7 +101,7 @@ function restoreOptions () {
           prefix = 'special_feature';
         }
 
-        cell.title = localizedMessage(prefix + number);
+        cell.title = getMessage(prefix + number);
         cell.classList.add(choiceClass);
         cell.setAttribute(VALUE_ATTRIBUTE, choice);
         cell.addEventListener('click', optionClickedListener);
