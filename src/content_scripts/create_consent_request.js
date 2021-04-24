@@ -57,13 +57,24 @@ function createConsentRequest () {
 
 function closeBanner () {
   const style = document.createElement('style');
+
   style.innerText =
     '#gdpr-consent-tool-wrapper,' +
     '#qc-cmp2-container,' +
     'sra-cmp-layout' +
     '{' +
-    '  display: none;' +
+    '  display: none !important;' +
     '}';
+
+  // Remove banner of CMP Sourcepoint Technologies, Inc. on Firefox browser
+  if (browser !== undefined) {
+    style.innerText = '[id^="sp_message_container"],' + style.innerText;
+
+    document.documentElement.setAttribute(
+      'style',
+      'overflow: initial !important; position: initial !important'
+    );
+  }
 
   const parent = document.body;
   parent.insertBefore(style, parent.firstChild);

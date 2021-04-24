@@ -62,8 +62,9 @@
       "js": [
         "node_modules/webextension-polyfill/dist/browser-polyfill.js",
         "common/common.js",
-        "content_scripts/inject_tcfapi_call.js",
-        "content_scripts/inject_local_storage_call.js",
+        "content_scripts/inject.js",
+        "content_scripts/__tcfapi.js",
+        "content_scripts/local_storage.js",
         "content_scripts/create_consent_request.js",
         "content_scripts/message_listener.js"
       ]

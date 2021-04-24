@@ -13,10 +13,12 @@ function displayTCContent (TCData) {
     }
   }
 
+  try {
   displayCMPData(TCData.cmpId);
   displayListItems(TCData.purpose.consents, 'purpose');
   displayListItems(TCData.specialFeatureOptins, 'special_feature');
   displayVendors(TCData.vendor.consents);
+  } catch (e) {}
 }
 
 function displayHeaders () {

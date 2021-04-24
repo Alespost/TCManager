@@ -4,12 +4,7 @@ function __tcfapi (command, eventName, callback) {
   }
 
   const parent = locateCmpFrame();
-
-  const script = document.createElement('script');
-  document.addEventListener(eventName, eventListener);
-
-  script.async = false;
-  script.text = 'if (typeof __tcfapi !== \'function\') {\n' +
+  const code = 'if (typeof __tcfapi !== \'function\') {\n' +
     `               document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
     '                   detail: {data: false, success: false}\n' +
     '               }));\n' +
@@ -21,8 +16,9 @@ function __tcfapi (command, eventName, callback) {
     '               });\n' +
     '            }';
 
-  parent.insertBefore(script, parent.firstChild);
-  parent.removeChild(script);
+
+  document.addEventListener(eventName, eventListener);
+  inject(code, parent);
 
   function eventListener (e) {
     document.removeEventListener(eventName, eventListener);
