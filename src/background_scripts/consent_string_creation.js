@@ -14,8 +14,8 @@ function consentRequestMessageHandler (request, sender, sendResponse) {
       .then(createTCModel.bind(null, request))
       .then(createBitField)
       .then(encode)
-      .then(storeConsent.bind(null, url))
-      .then(() => resolve());
+      .then(storeConsent.bind(null, url, request.localStorageItems))
+      .then((updatedItems) => resolve(updatedItems));
   });
 }
 
@@ -59,14 +59,6 @@ function getOptions (domain) {
     requiredOptions[SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
     return [requiredOptions, result[VENDOR_OPTIONS]];
-  }
-
-  /**
-   * @param error
-   * @returns {*[]}
-   */
-  function onError (error) {
-    console.error(`Error: ${error}`);
   }
 }
 
@@ -213,10 +205,13 @@ function encode (bitString) {
 /**
  *
  * @param url
+ * @param localStorageItems
  * @param TCString
  */
-function storeConsent (url, TCString) {
+function storeConsent (url, localStorageItems, TCString) {
   storeCookies(TCString, url);
+
+  return updateLocalStorageTCStrings(localStorageItems, TCString);
 }
 
 /**
@@ -254,7 +249,7 @@ function storeCookies (TCString, url) {
               continue;
             }
 
-            for (let match of matches) {
+            for (const match of matches) {
               try {
                 const cleared = match.replace('%27', '');
 
@@ -292,7 +287,7 @@ function storeCookies (TCString, url) {
       cookie.name = name;
       for (const [, domain] of domains.entries()) {
         cookie.domain = domain;
-        browser.cookies.set(cookie);
+        browser.cookies.set(cookie).catch(onError);
       }
     }
 
@@ -316,7 +311,7 @@ function storeCookies (TCString, url) {
         value: values.cookie.value.replace(values.TCString, TCString),
       };
 
-    browser.cookies.set(cookie);
+    browser.cookies.set(cookie).catch(onError);
 
     return cookie;
   }
@@ -331,9 +326,46 @@ function storeCookies (TCString, url) {
     for (const c of cookies) {
       cookie.name = c.name;
       cookie.value = c.value;
-      browser.cookies.set(cookie);
+      browser.cookies.set(cookie).catch(onError);
     }
   }
+}
+
+/**
+ *
+ * @param localStorageItems
+ * @param TCString
+ * @returns {{}}
+ */
+function updateLocalStorageTCStrings(localStorageItems, TCString) {
+  const regex = /(%27)?[A-Za-z0-9_-]{39,}(%27)?/g;
+
+  const updatedItems = {};
+
+  for (const [key, value] of Object.entries(localStorageItems)) {
+    const matches = value.match(regex);
+
+    if (!matches) {
+      continue;
+    }
+
+    let updatedValue = value;
+    for (const match of matches) {
+      try {
+        let cleared = match.replace('%27', '');
+
+        TCStringParse(cleared);
+        updatedValue = updatedValue.replace(cleared, TCString);
+      } catch (e) {}
+    }
+
+    if (value !== updatedValue) {
+      updatedItems[key] = updatedValue;
+    }
+  }
+
+  console.log(updatedItems);
+  return updatedItems;
 }
 
 /**

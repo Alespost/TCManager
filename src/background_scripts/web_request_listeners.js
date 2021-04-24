@@ -1,7 +1,12 @@
+/*browser.webRequest.onBeforeRequest.addListener(
+  (request) => console.log(request.url),
+  {urls: ["<all_urls>"]}
+);*/
+
 if (typeof browser.webRequest.filterResponseData === 'function') {
   browser.webRequest.onBeforeRequest.addListener(
     replaceTCStrings,
-    { urls: ['*://*.consensu.org/*', '*://*/*zdconsent.js'] },
+    { urls: ['*://*.consensu.org/*', '*://*/*zdconsent.js', '*://*/*tcfv2*'] },
     ['blocking'],
   );
 
@@ -41,9 +46,10 @@ function replaceTCStrings (details) {
     const url = new URL(details.originUrl);
     const matches = str.match(/(%27)?[A-Za-z0-9_-]{39,}(%27)?/g);
 
-    if (!Array.isArray(matches)) {
+    if (!Array.isArray(matches) || !matches) {
       filter.write(encoder.encode(str));
       filter.close();
+      return;
     }
 
     let cmpInfo;
@@ -65,6 +71,7 @@ function replaceTCStrings (details) {
     if (!cmpInfo) {
       filter.write(encoder.encode(str));
       filter.close();
+      return;
     }
 
     getOptions(url.hostname)

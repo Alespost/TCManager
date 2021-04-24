@@ -19,11 +19,6 @@ function initOptions () {
     }
   }
 
-  function onError (error) {
-    console.error(`Error: ${error}`);
-    return false;
-  }
-
   function setDefaultOptions () {
     const purposes = Array(PURPOSES_COUNT).fill(OBJECTION);
     const specialFeatures = Array(SPECIAL_FEATURES_COUNT).fill(OBJECTION);

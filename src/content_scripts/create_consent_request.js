@@ -46,7 +46,10 @@ function createConsentRequest () {
         url: location.href,
       };
 
-      browser.runtime.sendMessage(message);
+      getLocalStorageItems(items => {
+        message.localStorageItems = items;
+        browser.runtime.sendMessage(message).then(updateItems);
+      });
 
     }
   }

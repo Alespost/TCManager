@@ -97,10 +97,6 @@ function restoreOptions () {
       row.appendChild(cell);
     }
   }
-
-  function onError (error) {
-    console.error(`Error: ${error}`);
-  }
 }
 
 function optionClickedListener (event) {

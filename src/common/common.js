@@ -25,3 +25,12 @@ function openJSON (path) {
   const url = browser.runtime.getURL(path);
   return fetch(url).then(response => response.json());
 }
+
+function onError (error) {
+  let err = error;
+  if (error.hasOwnProperty('message')) {
+    err = error.message;
+  }
+
+  console.error(`Error: ${err}`);
+}

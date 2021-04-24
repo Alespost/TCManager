@@ -6,7 +6,7 @@ function __tcfapi (command, eventName, callback) {
   const parent = locateCmpFrame();
 
   const script = document.createElement('script');
-  document.addEventListener(eventName, eventHandler);
+  document.addEventListener(eventName, eventListener);
 
   script.async = false;
   script.text = 'if (typeof __tcfapi !== \'function\') {\n' +
@@ -24,8 +24,8 @@ function __tcfapi (command, eventName, callback) {
   parent.insertBefore(script, parent.firstChild);
   parent.removeChild(script);
 
-  function eventHandler (e) {
-    document.removeEventListener(eventName, eventHandler);
+  function eventListener (e) {
+    document.removeEventListener(eventName, eventListener);
     callback(e.detail.data, e.detail.success);
   }
 }

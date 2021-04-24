@@ -128,10 +128,6 @@ function restoreOptions () {
       }
     }
   }
-
-  function onError (error) {
-    console.error(`Error: ${error}`);
-  }
 }
 
 function optionClickedListener (event) {
