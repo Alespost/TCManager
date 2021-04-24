@@ -260,8 +260,7 @@ function storeCookies (TCString, url) {
           } // if (!standardCookies.includes(cookie.name))
         } // for (cookie of cookies)
         return null;
-      },
-    );
+      }, onError);
   }
 
   function storeStandardCookies () {
@@ -319,8 +318,6 @@ function storeCookies (TCString, url) {
   function storeCookiesClosingBanner (cookie) {
     const cookies = [
       { name: 'OptanonAlertBoxClosed', value: (new Date()).toISOString() },
-      { name: '__cmpcvcx11319', value: 'U' },
-      { name: '__cmpcvcu6648', value: 'U' },
     ];
 
     for (const c of cookies) {
@@ -390,7 +387,7 @@ function createDomainOptions (domain) {
   options[domain][PURPOSES_OPTIONS] = purposes;
   options[domain][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-  browser.storage.sync.set(options);
+  browser.storage.sync.set(options).catch(onError);
 
   return options;
 }

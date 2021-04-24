@@ -28,7 +28,7 @@ function initOptions () {
     globalOptions[GLOBAL_OPTIONS][PURPOSES_OPTIONS] = purposes;
     globalOptions[GLOBAL_OPTIONS][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-    browser.storage.sync.set(globalOptions);
+    browser.storage.sync.set(globalOptions).catch(onError);
   }
 
   function setDefaultVendorOptions () {
@@ -42,8 +42,8 @@ function initOptions () {
         vendorOptions[VENDOR_OPTIONS][vendor.id] = GLOBAL_VALUE;
       }
 
-      browser.storage.sync.set(vendorOptions);
-    });
+      browser.storage.sync.set(vendorOptions).catch(onError);
+    }, onError);
   }
 
   function updateVendorOptions () {
@@ -74,10 +74,8 @@ function initOptions () {
             choices[GLOBAL_OPTIONS] = global;
             result[VENDOR_OPTIONS] = choices;
 
-            browser.storage.sync.set(result);
-          },
-        );
-      },
-    );
+            browser.storage.sync.set(result).catch(onError);
+          }, onError);
+      }, onError);
   }
 }

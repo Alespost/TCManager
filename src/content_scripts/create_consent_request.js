@@ -48,7 +48,7 @@ function createConsentRequest () {
 
       getLocalStorageItems(items => {
         message.localStorageItems = items;
-        browser.runtime.sendMessage(message).then(updateItems);
+        browser.runtime.sendMessage(message).then(updateItems, onError);
       });
 
     }

@@ -183,12 +183,12 @@ function storeOptions (row) {
 
   const value = parseInt(row.lastElementChild.getAttribute(VALUE_ATTRIBUTE));
 
-  browser.storage.sync.get(VENDOR_OPTIONS)
-    .then(result => {
+  browser.storage.sync.get(VENDOR_OPTIONS).then(
+    result => {
       result[VENDOR_OPTIONS][name] = value;
 
-      browser.storage.sync.set(result);
-    });
+      browser.storage.sync.set(result).catch(onError);
+    }, onError);
 }
 
 function useGlobal () {
@@ -205,8 +205,7 @@ function useGlobal () {
       }
 
       result[VENDOR_OPTIONS] = vendors;
-      browser.storage.sync.set(result);
+      browser.storage.sync.set(result).catch(onError);
       restoreOptions();
-    },
-  );
+    }, onError);
 }

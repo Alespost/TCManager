@@ -23,7 +23,7 @@ function openCMPList () {
 
 function openJSON (path) {
   const url = browser.runtime.getURL(path);
-  return fetch(url).then(response => response.json());
+  return fetch(url).then(response => response.json(), onError);
 }
 
 function onError (error) {

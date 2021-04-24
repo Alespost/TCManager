@@ -267,7 +267,7 @@ function storeOptions (row) {
   options[name][PURPOSES_OPTIONS] = purposes;
   options[name][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-  browser.storage.sync.set(options);
+  browser.storage.sync.set(options).catch(onError);
 }
 
 function resetToDefaults () {
@@ -285,9 +285,8 @@ function resetToDefaults () {
         }
       }
 
-      browser.storage.sync.set(result).then(restoreOptions);
-    },
-  );
+      browser.storage.sync.set(result).then(restoreOptions, onError);
+    }, onError);
 }
 
 function useGlobal () {
@@ -302,8 +301,7 @@ function useGlobal () {
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
-    },
-  );
+    }, onError);
 }
 
 function removeDomains () {
@@ -315,8 +313,7 @@ function removeDomains () {
       const domains = Object.keys(result);
 
       browser.storage.sync.remove(domains).then(restoreOptions);
-    },
-  );
+    }, onError);
 }
 
 function resetDomain (e) {
@@ -335,14 +332,13 @@ function resetDomain (e) {
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
-    },
-  );
+    }, onError);
 }
 
 function removeDomain (e) {
   const domain = e.currentTarget.getAttribute(VALUE_ATTRIBUTE);
 
   if (domain !== GLOBAL_OPTIONS) {
-    browser.storage.sync.remove(domain).then(restoreOptions);
+    browser.storage.sync.remove(domain).then(restoreOptions, onError);
   }
 }
