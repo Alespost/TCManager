@@ -61,6 +61,7 @@ function closeBanner () {
   style.innerText =
     '#gdpr-consent-tool-wrapper,' +
     '#qc-cmp2-container,' +
+    '#uniccmp,' +
     'sra-cmp-layout' +
     '{' +
     '  display: none !important;' +
