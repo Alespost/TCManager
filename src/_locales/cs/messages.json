@@ -125,6 +125,27 @@
   "vendor_choice": {
     "message": "Volba"
   },
+  "consent": {
+    "message": "souhlas"
+  },
+  "objection": {
+    "message": "n\u00e1mitka"
+  },
+  "inherited": {
+    "message": "zd\u011bd\u011bno"
+  },
+  "consent_extended": {
+    "message": "ud\u011blen souhlas"
+  },
+  "objection_extended": {
+    "message": "vznesena n\u00e1mitka"
+  },
+  "inherited_consent": {
+    "message": "ud\u011blen souhlas (zd\u011bd\u011bno)"
+  },
+  "inherited_objection": {
+    "message": "vznesena n\u00e1mitka (zd\u011bd\u011bno)"
+  },
   "purpose1": {
     "message": "Ukl\u00e1d\u00e1n\u00ed a/nebo p\u0159\u00edstup k informac\u00edm v za\u0159\u00edzen\u00ed"
   },

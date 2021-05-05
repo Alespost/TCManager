@@ -1,5 +1,6 @@
 const GLOBAL_ROW_ID = 'global_row';
 const GLOBAL_OPTION_CLASS = 'global_option';
+const VENDOR_OPTION_CLASS = 'vendor_option';
 const OPTION_CLASS = 'option';
 
 const PURPOSE_CLASS_PREFIX = 'p_';

@@ -361,7 +361,6 @@ function updateLocalStorageTCStrings(localStorageItems, TCString) {
     }
   }
 
-  console.log(updatedItems);
   return updatedItems;
 }
 

@@ -67,7 +67,7 @@ function restoreOptions () {
       const cell = document.createElement('td');
 
       if (vendor === null) {
-        cell.classList.add(GLOBAL_OPTION_CLASS);
+        cell.classList.add(GLOBAL_OPTION_CLASS, VENDOR_OPTION_CLASS);
         cell.id = GLOBAL_OPTION_CLASS;
       } else {
         cell.classList.add(OPTION_CLASS);
@@ -80,16 +80,20 @@ function restoreOptions () {
         case CONSENT:
           cell.classList.add(LOCAL_CONSENT_COLOR);
           cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
+          cell.title = getMessage('consent_extended');
           break;
         case OBJECTION:
           cell.classList.add(LOCAL_OBJECTION_COLOR);
           cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
+          cell.title = getMessage('objection_extended');
           break;
         case GLOBAL_VALUE:
           if (global === CONSENT) {
             cell.classList.add(GLOBAL_CONSENT_COLOR);
+            cell.title = getMessage('inherited_consent');
           } else {
             cell.classList.add(GLOBAL_OBJECTION_COLOR);
+            cell.title = getMessage('inherited_objection');
           }
           break;
       }
@@ -132,6 +136,7 @@ function optionClickedListener (event) {
 
     clickedOption.classList.add(LOCAL_CONSENT_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, CONSENT);
+    clickedOption.title = getMessage('consent_extended');
   }
 
   function setObjection () {
@@ -139,6 +144,7 @@ function optionClickedListener (event) {
 
     clickedOption.classList.add(LOCAL_OBJECTION_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
+    clickedOption.title = getMessage('objection_extended');
   }
 
   function setGlobal () {
@@ -147,8 +153,10 @@ function optionClickedListener (event) {
     const globalOption = document.getElementById(GLOBAL_OPTION_CLASS);
     if (globalOption.getAttribute(VALUE_ATTRIBUTE) === CONSENT.toString()) {
       clickedOption.classList.add(GLOBAL_CONSENT_COLOR);
+      clickedOption.title = getMessage('inherited_consent');
     } else {
       clickedOption.classList.add(GLOBAL_OBJECTION_COLOR);
+      clickedOption.title = getMessage('inherited_objection');
     }
 
     clickedOption.setAttribute(VALUE_ATTRIBUTE, GLOBAL_VALUE);
@@ -158,9 +166,11 @@ function optionClickedListener (event) {
     if (choice.classList.contains(GLOBAL_CONSENT_COLOR)) {
       choice.classList.remove(GLOBAL_CONSENT_COLOR);
       choice.classList.add(GLOBAL_OBJECTION_COLOR);
+      choice.title = getMessage('inherited_objection');
     } else if (choice.classList.contains(GLOBAL_OBJECTION_COLOR)) {
       choice.classList.remove(GLOBAL_OBJECTION_COLOR);
       choice.classList.add(GLOBAL_CONSENT_COLOR);
+      choice.title = getMessage('inherited_consent');
     }
   }
 
