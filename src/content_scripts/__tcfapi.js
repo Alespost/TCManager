@@ -1,3 +1,9 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
 function __tcfapi (command, eventName, callback) {
   if (typeof callback !== 'function') {
     return;

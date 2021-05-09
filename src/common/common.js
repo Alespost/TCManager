@@ -1,3 +1,9 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
 const VENDOR_OPTIONS = 'v';
 const GLOBAL_OPTIONS = 'g';
 const PURPOSES_OPTIONS = 'p';

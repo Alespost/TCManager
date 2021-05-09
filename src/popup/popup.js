@@ -1,3 +1,9 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
 document.addEventListener('DOMContentLoaded', (event) => {
   document.getElementById('options_button').addEventListener('click', function (e) {
     browser.runtime.openOptionsPage();
