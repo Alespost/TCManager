@@ -4,12 +4,20 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
+/**
+ * Inject code to access CMP API. Pass result to the callback.
+ */
 function __tcfapi (command, eventName, callback) {
   if (typeof callback !== 'function') {
     return;
   }
 
   const parent = locateCmpFrame();
+
+  /*
+   * Code accessing CMP API, that will be injected to the page.
+   * Data are returned via CustomEvent.
+   */
   const code = 'if (typeof __tcfapi !== \'function\') {\n' +
     `               document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
     '                   detail: {data: false, success: false}\n' +
@@ -32,6 +40,10 @@ function __tcfapi (command, eventName, callback) {
   }
 }
 
+/**
+ * Locate frame with name '__tcfapiLocator' and return its parent element.
+ * If no such frame is found, return document element.
+ */
 function locateCmpFrame () {
   let locatorFrames = document.getElementsByName('__tcfapiLocator');
 

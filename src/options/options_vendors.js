@@ -93,7 +93,7 @@ function restoreOptions () {
           cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
           cell.title = getMessage('objection_extended');
           break;
-        case GLOBAL_VALUE:
+        case INHERITED_VALUE:
           if (global === CONSENT) {
             cell.classList.add(GLOBAL_CONSENT_COLOR);
             cell.title = getMessage('inherited_consent');
@@ -165,7 +165,7 @@ function optionClickedListener (event) {
       clickedOption.title = getMessage('inherited_objection');
     }
 
-    clickedOption.setAttribute(VALUE_ATTRIBUTE, GLOBAL_VALUE);
+    clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED_VALUE);
   }
 
   function invertGlobal (choice) {
@@ -217,7 +217,7 @@ function useGlobal () {
           continue;
         }
 
-        vendors[key] = GLOBAL_VALUE;
+        vendors[key] = INHERITED_VALUE;
       }
 
       result[VENDOR_OPTIONS] = vendors;

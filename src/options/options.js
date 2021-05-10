@@ -123,7 +123,7 @@ function restoreOptions () {
             cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
             cell.title += getMessage('objection_extended');
             break;
-          case GLOBAL_VALUE:
+          case INHERITED_VALUE:
             if (global[type][key] === CONSENT) {
               cell.classList.add(GLOBAL_CONSENT_COLOR);
               cell.title += getMessage('inherited_consent');
@@ -200,7 +200,7 @@ function optionClickedListener (event) {
       clickedOption.title = clickedOption.title.split(':')[0] + ': ' + getMessage('inherited_objection');
     }
 
-    clickedOption.setAttribute(VALUE_ATTRIBUTE, GLOBAL_VALUE);
+    clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED_VALUE);
   }
 
   function invertGlobal (choice) {
@@ -247,8 +247,8 @@ function storeOptions (row) {
         case OBJECTION.toString():
           value = OBJECTION;
           break;
-        case String(GLOBAL_VALUE):
-          value = GLOBAL_VALUE;
+        case String(INHERITED_VALUE):
+          value = INHERITED_VALUE;
           break;
       }
     }
@@ -268,8 +268,8 @@ function storeOptions (row) {
         case OBJECTION.toString():
           value = OBJECTION;
           break;
-        case String(GLOBAL_VALUE):
-          value = GLOBAL_VALUE;
+        case String(INHERITED_VALUE):
+          value = INHERITED_VALUE;
           break;
       }
     }
@@ -296,8 +296,8 @@ function resetToDefaults () {
           value[PURPOSES_OPTIONS].fill(OBJECTION);
           value[SPECIAL_FEATURES_OPTIONS].fill(OBJECTION);
         } else {
-          value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
-          value[SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+          value[PURPOSES_OPTIONS].fill(INHERITED_VALUE);
+          value[SPECIAL_FEATURES_OPTIONS].fill(INHERITED_VALUE);
         }
       }
 
@@ -312,8 +312,8 @@ function useGlobal () {
       delete result[VENDOR_OPTIONS];
 
       for (const [, value] of Object.entries(result)) {
-        value[PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
-        value[SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+        value[PURPOSES_OPTIONS].fill(INHERITED_VALUE);
+        value[SPECIAL_FEATURES_OPTIONS].fill(INHERITED_VALUE);
       }
 
       browser.storage.sync.set(result).then(restoreOptions);
@@ -343,8 +343,8 @@ function resetDomain (e) {
         result[domain][PURPOSES_OPTIONS].fill(OBJECTION);
         result[domain][SPECIAL_FEATURES_OPTIONS].fill(OBJECTION);
       } else {
-        result[domain][PURPOSES_OPTIONS].fill(GLOBAL_VALUE);
-        result[domain][SPECIAL_FEATURES_OPTIONS].fill(GLOBAL_VALUE);
+        result[domain][PURPOSES_OPTIONS].fill(INHERITED_VALUE);
+        result[domain][SPECIAL_FEATURES_OPTIONS].fill(INHERITED_VALUE);
       }
 
       browser.storage.sync.set(result).then(restoreOptions);

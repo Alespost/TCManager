@@ -4,22 +4,17 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
+const RADIX = 2;
 
 /**
- *
- * @param number {number}
- * @param requiredLength {number}
- * @returns {string}
+ * Convert integer to bit field of required length.
  */
 function intToBitField (number, requiredLength) {
-  return number.toString(2).padStart(requiredLength, '0');
+  return number.toString(RADIX).padStart(requiredLength, '0');
 }
 
 /**
- *
- * @param str {string}
- * @param requiredLength {number}
- * @returns {string}
+ * Convert string to bit field of required length.
  */
 function stringToBitField (str, requiredLength) {
   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -32,7 +27,7 @@ function stringToBitField (str, requiredLength) {
     if (alphabet.indexOf(str[i]) !== -1) {
       bits += alphabet
         .indexOf(str[i])
-        .toString(2)
+        .toString(RADIX)
         .padStart(charBitLength, '0');
     }
   }
@@ -40,9 +35,7 @@ function stringToBitField (str, requiredLength) {
 }
 
 /**
- *
- * @param array
- * @param requiredLength
+ * Convert array of 0 and 1 to bit field of required length.
  */
 function arrayToBitField (array, requiredLength) {
   let bits = '';

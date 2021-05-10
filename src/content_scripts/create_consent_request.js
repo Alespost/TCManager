@@ -7,17 +7,24 @@
 createConsentRequest();
 closeBanner();
 
+/**
+ * Check if web is using TCF and CMP API is loaded.
+ * Checking is performed at 500 ms intervals for up to 15 s.
+ * If website is using TCF, then send request to create consent to background script.
+ */
 function createConsentRequest () {
   let cmpReady = false;
   let interval = setInterval(ping, 500);
   let timeout = setTimeout(
     () => {
       clearInterval(interval);
-      // console.log('Interval cleared by timeout.');
     },
     15000,
   );
 
+  /**
+   * Check if CMP API is present and fully loaded.
+   */
   function ping () {
     __tcfapi('ping', 'tcfapiRequestEvent', handler);
 
@@ -32,6 +39,9 @@ function createConsentRequest () {
     }
   }
 
+  /**
+   * Get data about CMP and local storage items and send request to background script.
+   */
   function getDataAndSendRequest () {
     __tcfapi('getTCData', 'tcfapiRequestEvent', handler);
 
@@ -42,8 +52,6 @@ function createConsentRequest () {
 
       clearInterval(interval);
       clearTimeout(timeout);
-
-      // console.log('Timeout and interval cleared.');
 
       const message = {
         cmpId: data.cmpId,
@@ -61,6 +69,9 @@ function createConsentRequest () {
   }
 }
 
+/**
+ * Inject CSS to block cookie banners on some websites.
+ */
 function closeBanner () {
   const style = document.createElement('style');
 
@@ -75,5 +86,4 @@ function closeBanner () {
 
   const parent = document.body;
   parent.insertBefore(style, parent.firstChild);
-
 }

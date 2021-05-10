@@ -9,9 +9,12 @@ browser.runtime.onInstalled.addListener(
     initOptions();
   });
 
+/**
+ * Init or update purposes and vendor options.
+ */
 function initOptions () {
-  let getting = browser.storage.sync.get();
-  return getting.then(onSuccess, onError);
+  browser.storage.sync.get()
+    .then(onSuccess, onError);
 
   function onSuccess (result) {
     if (!result.hasOwnProperty(GLOBAL_OPTIONS)) {
@@ -25,6 +28,9 @@ function initOptions () {
     }
   }
 
+  /**
+   * Create global options with all purposes and special features set to 'objection'.
+   */
   function setDefaultOptions () {
     const purposes = Array(PURPOSES_COUNT).fill(OBJECTION);
     const specialFeatures = Array(SPECIAL_FEATURES_COUNT).fill(OBJECTION);
@@ -37,6 +43,10 @@ function initOptions () {
     browser.storage.sync.set(globalOptions).catch(onError);
   }
 
+  /**
+   * Create global options for vendors set to 'objection'.
+   * Create default options for all vendors from vendor list.
+   */
   function setDefaultVendorOptions () {
     let vendorOptions = {};
     vendorOptions[VENDOR_OPTIONS] = {};
@@ -45,13 +55,18 @@ function initOptions () {
     openVendorList().then(jsonResponse => {
       vendorOptions[VENDOR_OPTIONS][VENDOR_OPTIONS] = jsonResponse.vendorListVersion;
       for (const [, vendor] of Object.entries(jsonResponse.vendors)) {
-        vendorOptions[VENDOR_OPTIONS][vendor.id] = GLOBAL_VALUE;
+        vendorOptions[VENDOR_OPTIONS][vendor.id] = INHERITED_VALUE;
       }
 
       browser.storage.sync.set(vendorOptions).catch(onError);
     }, onError);
   }
 
+  /**
+   * Update records of vendor options.
+   * Remove options for vendors which are not present in current version of vendor list.
+   * Create default options for vendors which were added in current version of vendor list.
+   */
   function updateVendorOptions () {
     browser.storage.sync.get(VENDOR_OPTIONS).then(
       result => {
@@ -64,15 +79,18 @@ function initOptions () {
           vendors => {
             const version = vendors.vendorListVersion;
             vendors = vendors.vendors;
+
+            // Removes options for removed vendors.
             for (const [key] of Object.entries(choices)) {
               if (!vendors.hasOwnProperty(key)) {
                 delete choices[key];
               }
             }
 
+            // Creates default options for new vendors.
             for (const [, vendor] of Object.entries(vendors)) {
               if (!choices.hasOwnProperty(vendor.id)) {
-                choices[vendor.id] = GLOBAL_VALUE;
+                choices[vendor.id] = INHERITED_VALUE;
               }
             }
 

@@ -4,6 +4,9 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
+/**
+ * Obtain local storage items by injecting code to the web page.
+ */
 function getLocalStorageItems(callback)
 {
   const event = 'StorageItemsLoaded';
@@ -27,11 +30,10 @@ function getLocalStorageItems(callback)
   }
 }
 
+/**
+ * Update given local storage items by injecting code to the web page.
+ */
 function updateItems(items) {
-  // console.log(items);
-  const code = `localStorage.setItem(\'test\', \'updated value\')`;
-  inject(code);
-
   for (const [key, value] of Object.entries(items)) {
     const code = `localStorage.setItem(\'${key}\', ${JSON.stringify(value)})`;
     inject(code);

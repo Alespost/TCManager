@@ -4,8 +4,8 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  document.getElementById('options_button').addEventListener('click', function (e) {
+document.addEventListener('DOMContentLoaded', event => {
+  document.getElementById('options_button').addEventListener('click', e => {
     browser.runtime.openOptionsPage();
     window.close();
   });
@@ -17,11 +17,20 @@ function getConsentData () {
   sendPingMessage();
 }
 
+/**
+ * Send message with ping command to check if CMP is present on page
+ * and if it is fully loaded.
+ */
 function sendPingMessage () {
   const message = { command: 'ping', eventName: 'tcfapiEvent' };
   sendMessage(message, pingListener);
 }
 
+/**
+ * Check response data.
+ * If CMP is loaded, send request to get consent data.
+ * If page is not using TCF, display relevant info message.
+ */
 function pingListener (response) {
   if (response === undefined || (response.data && !response.data.cmpLoaded)) {
     sendPingMessage();
@@ -35,12 +44,19 @@ function pingListener (response) {
   }
 }
 
+/**
+ * Send request to get consent data.
+ */
 function sendGetTCDataMessage () {
   const message = { command: 'getTCData', eventName: 'tcfapiEvent' };
-  sendMessage(message, fetchListener);
+  sendMessage(message, getTCDataListener);
 }
 
-function fetchListener (response) {
+/**
+ * Check retrieved consent data.
+ * If data are valid, display them into the popup.
+ */
+function getTCDataListener (response) {
   if (response === undefined || !response.success) {
     sendGetTCDataMessage();
     return;
@@ -53,6 +69,9 @@ function fetchListener (response) {
   displayTCContent(response.data);
 }
 
+/**
+ * Send message to current tab.
+ */
 function sendMessage (message, listener) {
   const query = browser.tabs.query(
     {
