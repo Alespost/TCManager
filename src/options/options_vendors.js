@@ -84,21 +84,21 @@ function restoreOptions () {
 
       switch (choice) {
         case CONSENT:
-          cell.classList.add(LOCAL_CONSENT_COLOR);
+          cell.classList.add(CONSENT_COLOR);
           cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
           cell.title = getMessage('consent_extended');
           break;
         case OBJECTION:
-          cell.classList.add(LOCAL_OBJECTION_COLOR);
+          cell.classList.add(OBJECTION_COLOR);
           cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
           cell.title = getMessage('objection_extended');
           break;
-        case INHERITED_VALUE:
+        case INHERITED:
           if (global === CONSENT) {
-            cell.classList.add(GLOBAL_CONSENT_COLOR);
+            cell.classList.add(INHERITED_CONSENT_COLOR);
             cell.title = getMessage('inherited_consent');
           } else {
-            cell.classList.add(GLOBAL_OBJECTION_COLOR);
+            cell.classList.add(INHERITED_OBJECTION_COLOR);
             cell.title = getMessage('inherited_objection');
           }
           break;
@@ -113,17 +113,17 @@ function optionClickedListener (event) {
   const clickedOption = event.target;
   const isGlobal = clickedOption.classList.contains(GLOBAL_OPTION_CLASS);
 
-  if (clickedOption.classList.contains(LOCAL_OBJECTION_COLOR)) {
+  if (clickedOption.classList.contains(OBJECTION_COLOR)) {
     setConsent();
-  } else if (clickedOption.classList.contains(LOCAL_CONSENT_COLOR)) {
+  } else if (clickedOption.classList.contains(CONSENT_COLOR)) {
     if (clickedOption.classList.contains(GLOBAL_OPTION_CLASS)) {
       setObjection();
     } else {
       setGlobal();
     }
   } else if (
-    clickedOption.classList.contains(GLOBAL_CONSENT_COLOR) ||
-    clickedOption.classList.contains(GLOBAL_OBJECTION_COLOR)
+    clickedOption.classList.contains(INHERITED_CONSENT_COLOR) ||
+    clickedOption.classList.contains(INHERITED_OBJECTION_COLOR)
   ) {
     setObjection();
   }
@@ -140,7 +140,7 @@ function optionClickedListener (event) {
   function setConsent () {
     removeClasses();
 
-    clickedOption.classList.add(LOCAL_CONSENT_COLOR);
+    clickedOption.classList.add(CONSENT_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, CONSENT);
     clickedOption.title = getMessage('consent_extended');
   }
@@ -148,7 +148,7 @@ function optionClickedListener (event) {
   function setObjection () {
     removeClasses();
 
-    clickedOption.classList.add(LOCAL_OBJECTION_COLOR);
+    clickedOption.classList.add(OBJECTION_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
     clickedOption.title = getMessage('objection_extended');
   }
@@ -158,33 +158,33 @@ function optionClickedListener (event) {
 
     const globalOption = document.getElementById(GLOBAL_OPTION_CLASS);
     if (globalOption.getAttribute(VALUE_ATTRIBUTE) === CONSENT.toString()) {
-      clickedOption.classList.add(GLOBAL_CONSENT_COLOR);
+      clickedOption.classList.add(INHERITED_CONSENT_COLOR);
       clickedOption.title = getMessage('inherited_consent');
     } else {
-      clickedOption.classList.add(GLOBAL_OBJECTION_COLOR);
+      clickedOption.classList.add(INHERITED_OBJECTION_COLOR);
       clickedOption.title = getMessage('inherited_objection');
     }
 
-    clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED_VALUE);
+    clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED);
   }
 
   function invertGlobal (choice) {
-    if (choice.classList.contains(GLOBAL_CONSENT_COLOR)) {
-      choice.classList.remove(GLOBAL_CONSENT_COLOR);
-      choice.classList.add(GLOBAL_OBJECTION_COLOR);
+    if (choice.classList.contains(INHERITED_CONSENT_COLOR)) {
+      choice.classList.remove(INHERITED_CONSENT_COLOR);
+      choice.classList.add(INHERITED_OBJECTION_COLOR);
       choice.title = getMessage('inherited_objection');
-    } else if (choice.classList.contains(GLOBAL_OBJECTION_COLOR)) {
-      choice.classList.remove(GLOBAL_OBJECTION_COLOR);
-      choice.classList.add(GLOBAL_CONSENT_COLOR);
+    } else if (choice.classList.contains(INHERITED_OBJECTION_COLOR)) {
+      choice.classList.remove(INHERITED_OBJECTION_COLOR);
+      choice.classList.add(INHERITED_CONSENT_COLOR);
       choice.title = getMessage('inherited_consent');
     }
   }
 
   function removeClasses () {
-    clickedOption.classList.remove(LOCAL_CONSENT_COLOR);
-    clickedOption.classList.remove(LOCAL_OBJECTION_COLOR);
-    clickedOption.classList.remove(GLOBAL_CONSENT_COLOR);
-    clickedOption.classList.remove(GLOBAL_OBJECTION_COLOR);
+    clickedOption.classList.remove(CONSENT_COLOR);
+    clickedOption.classList.remove(OBJECTION_COLOR);
+    clickedOption.classList.remove(INHERITED_CONSENT_COLOR);
+    clickedOption.classList.remove(INHERITED_OBJECTION_COLOR);
   }
 }
 
@@ -217,7 +217,7 @@ function useGlobal () {
           continue;
         }
 
-        vendors[key] = INHERITED_VALUE;
+        vendors[key] = INHERITED;
       }
 
       result[VENDOR_OPTIONS] = vendors;

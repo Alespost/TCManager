@@ -55,7 +55,7 @@ function initOptions () {
     openVendorList().then(jsonResponse => {
       vendorOptions[VENDOR_OPTIONS][VENDOR_OPTIONS] = jsonResponse.vendorListVersion;
       for (const [, vendor] of Object.entries(jsonResponse.vendors)) {
-        vendorOptions[VENDOR_OPTIONS][vendor.id] = INHERITED_VALUE;
+        vendorOptions[VENDOR_OPTIONS][vendor.id] = INHERITED;
       }
 
       browser.storage.sync.set(vendorOptions).catch(onError);
@@ -90,7 +90,7 @@ function initOptions () {
             // Creates default options for new vendors.
             for (const [, vendor] of Object.entries(vendors)) {
               if (!choices.hasOwnProperty(vendor.id)) {
-                choices[vendor.id] = INHERITED_VALUE;
+                choices[vendor.id] = INHERITED;
               }
             }
 

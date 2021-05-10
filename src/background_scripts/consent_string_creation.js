@@ -45,7 +45,7 @@ function getOptions (domain) {
 
     const purposes = [];
     for (const [index, value] of domainOptions[PURPOSES_OPTIONS].entries()) {
-      if (value !== INHERITED_VALUE) {
+      if (value !== INHERITED) {
         purposes.push(value);
       } else {
         purposes.push(globalOptions[PURPOSES_OPTIONS][index]);
@@ -54,7 +54,7 @@ function getOptions (domain) {
 
     const specialFeatures = [];
     for (const [index, value] of domainOptions[SPECIAL_FEATURES_OPTIONS].entries()) {
-      if (value !== INHERITED_VALUE) {
+      if (value !== INHERITED) {
         specialFeatures.push(value);
       } else {
         specialFeatures.push(globalOptions[SPECIAL_FEATURES_OPTIONS][index]);
@@ -85,7 +85,7 @@ function createTCModel (data, options) {
   const bitField = [];
 
   for (let i = 1; i <= maxId; i++) {
-    if (vendors.hasOwnProperty(i) && vendors[i] === INHERITED_VALUE) {
+    if (vendors.hasOwnProperty(i) && vendors[i] === INHERITED) {
       bitField.push(globalVendorOpt);
     } else if (vendors.hasOwnProperty(i)) {
       bitField.push(vendors[i]);
@@ -398,11 +398,11 @@ function createDomainOptions (domain) {
   let specialFeatures = [];
 
   for (let i = 0; i < PURPOSES_COUNT; i++) {
-    purposes.push(INHERITED_VALUE);
+    purposes.push(INHERITED);
   }
 
   for (let i = 0; i < SPECIAL_FEATURES_COUNT; i++) {
-    specialFeatures.push(INHERITED_VALUE);
+    specialFeatures.push(INHERITED);
   }
 
   let options = {};

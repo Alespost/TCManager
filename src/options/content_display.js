@@ -4,6 +4,9 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
+/**
+ * Display localized content for purposes options page.
+ */
 function displayOptionsContent () {
   displayLayoutContent();
   displayButtons();
@@ -11,6 +14,9 @@ function displayOptionsContent () {
   displayActionsHeader();
 }
 
+/**
+ * Display localized content for vendor options page.
+ */
 function displayVendorsOptionsContent () {
   displayLayoutContent();
   displayUseGlobalButton();
@@ -19,6 +25,9 @@ function displayVendorsOptionsContent () {
   document.getElementById('vendor_choice').innerText = getMessage('vendor_choice');
 }
 
+/**
+ * Display localized content for purposes description page.
+ */
 function displayDescriptionContent () {
   displayLayoutContent();
   displayListHeaders();
@@ -26,6 +35,9 @@ function displayDescriptionContent () {
   displayListItems('special_feature');
 }
 
+/**
+ * Display localized content for about page.
+ */
 function displayAboutContent () {
   displayLayoutContent();
   document.getElementById('about_header').innerText = getMessage('about_header');
@@ -42,16 +54,25 @@ function displayAboutContent () {
   document.getElementById('license').innerText = getMessage('license');
 }
 
+/**
+ * Display content common to all option pages.
+ */
 function displayLayoutContent () {
   document.title = getMessage('options_title');
   displayOptionsHeader();
   displayNavItems();
 }
 
+/**
+ * Display localized options header.
+ */
 function displayOptionsHeader () {
   document.getElementById('options_header').innerText = getMessage('options_header');
 }
 
+/**
+ * Display localized navigation items.
+ */
 function displayNavItems () {
   document.getElementById('nav_options').innerText = getMessage('nav_options');
   document.getElementById('nav_description').innerText = getMessage('nav_description');
@@ -59,6 +80,9 @@ function displayNavItems () {
   document.getElementById('nav_about').innerText = getMessage('nav_about');
 }
 
+/**
+ * Display localized text in buttons in purposes options page.
+ */
 function displayButtons () {
   displayResetButton();
   displayUseGlobalButton();
@@ -83,19 +107,31 @@ function displayRemoveDomainsButton () {
   removeDomains.title = getMessage('remove_domains_tooltip');
 }
 
+/**
+ * Display localized headers Purposes and Special Features headers.
+ */
 function displayListHeaders () {
   document.getElementById('purposes_header').innerText = getMessage('purposes_header');
   document.getElementById('special_features_header').innerText = getMessage('special_features_header');
 }
 
+/**
+ * Display localized text for global options
+ */
 function displayGlobalOptionsHeader () {
   document.getElementById('global_header').innerText = getMessage('options_global');
 }
 
+/**
+ * Display localized header for Action column.
+ */
 function displayActionsHeader () {
   document.getElementById('actions_header').innerText = getMessage('actions_header');
 }
 
+/**
+ * Display localized descriptions of purposes and special features.
+ */
 function displayListItems (listIdPrefix) {
   let count;
   switch (listIdPrefix) {

@@ -4,9 +4,13 @@
 /* FIT VUT, 2020/2021                                    */
 /*********************************************************/
 
+/**
+ * Display retrieved information about consent stored on current web.
+ */
 function displayTCContent (TCData) {
   displayHeaders();
 
+  // If data does not contain required attributes, try to obtain them by parsing TC String.
   if (TCData.tcString && (TCData.purpose || !TCData.specialFeatureOptins || !TCData.vendor)) {
     try {
       const TCModel = TCStringParse(TCData.tcString).core;
@@ -27,6 +31,9 @@ function displayTCContent (TCData) {
   } catch (e) {}
 }
 
+/**
+ * Display localized headers in popup.
+ */
 function displayHeaders () {
   document.getElementById('cmp_header').innerText = getMessage('cmp_header');
   document.getElementById('consent_header').innerText = getMessage('consent_header');
@@ -38,6 +45,10 @@ function displayHeaders () {
   document.getElementById('vendor_count').innerText = getMessage('vendor_count') + ': ';
 }
 
+/**
+ * Display ID and name of CMP used on current web.
+ * CMP name is obtained from cmp-list.json by CMP ID.
+ */
 function displayCMPData (cmpId) {
   openCMPList().then(jsonResponse => {
     let cmpName;
@@ -53,10 +64,16 @@ function displayCMPData (cmpId) {
   document.getElementById('cmp_id').innerText = '(ID:' + cmpId + ')';
 }
 
+/**
+ * Display message that the page does not use TCF.
+ */
 function displayNoTCFMessage () {
   document.getElementById('no_tcf_message').innerText = getMessage('no_tcf');
 }
 
+/**
+ * Display purposes/special features for which consent has been given.
+ */
 function displayListItems (items, listIdPrefix) {
   for (const [key, value] of Object.entries(items)) {
     if (value === true) {
@@ -64,6 +81,7 @@ function displayListItems (items, listIdPrefix) {
       item.setAttribute('value', key);
       item.innerText = getMessage(listIdPrefix + key);
 
+      // icon with purpose/special feature description tooltip
       const description = document.createElement('span');
       description.classList.add('question_icon');
       description.title = getMessage(listIdPrefix + key + '_description');
@@ -75,6 +93,11 @@ function displayListItems (items, listIdPrefix) {
   }
 }
 
+/**
+ * Display vendors for which consent has been given.
+ * Display vendor list.
+ * Display count of vendors for which consent has been given.
+ */
 function displayVendors (vendors) {
   const count = document.createElement('span');
   const version = document.createElement('span');
