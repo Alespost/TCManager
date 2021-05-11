@@ -359,7 +359,7 @@ function storeCookies (TCString, url) {
 /**
  * Detect and replace TC String in local storage items.
  */
-function updateLocalStorageTCStrings(localStorageItems, TCString) {
+function updateLocalStorageTCStrings (localStorageItems, TCString) {
   const regex = /(%27)?[A-Za-z0-9_-]{39,}(%27)?/g;
 
   const updatedItems = {};

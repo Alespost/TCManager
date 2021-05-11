@@ -72,7 +72,6 @@ function restoreOptions () {
     setChoices(PURPOSES_OPTIONS);
     setChoices(SPECIAL_FEATURES_OPTIONS);
 
-
     // Cell with action buttons
     const actions = document.createElement('td');
     actions.classList.add('center');

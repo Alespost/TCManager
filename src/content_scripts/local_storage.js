@@ -7,8 +7,7 @@
 /**
  * Obtain local storage items by injecting code to the web page.
  */
-function getLocalStorageItems(callback)
-{
+function getLocalStorageItems (callback) {
   const event = 'StorageItemsLoaded';
 
   const code =
@@ -33,7 +32,7 @@ function getLocalStorageItems(callback)
 /**
  * Update given local storage items by injecting code to the web page.
  */
-function updateItems(items) {
+function updateItems (items) {
   for (const [key, value] of Object.entries(items)) {
     const code = `localStorage.setItem(\'${key}\', ${JSON.stringify(value)})`;
     inject(code);

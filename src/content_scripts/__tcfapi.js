@@ -30,7 +30,6 @@ function __tcfapi (command, eventName, callback) {
     '               });\n' +
     '            }';
 
-
   document.addEventListener(eventName, eventListener);
   inject(code, parent);
 
