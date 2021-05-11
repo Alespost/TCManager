@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.getElementById('use_global').addEventListener('click', useGlobal);
 });
 
+/**
+ * Load vendor options from storage and display into the table.
+ */
 function restoreOptions () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
     const table = document.getElementById('options_vendors_body');
-    table.innerHTML = '';
+    table.innerHTML = ''; // Clear table.
 
     const vendorChoices = result[VENDOR_OPTIONS];
     openVendorList().then(jsonResponse => {
@@ -31,6 +34,9 @@ function restoreOptions () {
     });
   }
 
+  /**
+   * Create table row element with option for given vendor.
+   */
   function createOptionsRow (vendor, choice, global = null) {
     const row = document.createElement('tr');
 
@@ -69,6 +75,9 @@ function restoreOptions () {
     setChoice();
     return row;
 
+    /**
+     * Create table cell with choice for vendor.
+     */
     function setChoice () {
       const cell = document.createElement('td');
 
@@ -82,15 +91,14 @@ function restoreOptions () {
       cell.setAttribute(VALUE_ATTRIBUTE, choice);
       cell.addEventListener('click', optionClickedListener);
 
+      // Set cell color and tooltip message
       switch (choice) {
         case CONSENT:
           cell.classList.add(CONSENT_COLOR);
-          cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
           cell.title = getMessage('consent_extended');
           break;
         case OBJECTION:
           cell.classList.add(OBJECTION_COLOR);
-          cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
           cell.title = getMessage('objection_extended');
           break;
         case INHERITED:
@@ -109,6 +117,9 @@ function restoreOptions () {
   }
 }
 
+/**
+ * Change option after choice cell is clicked.
+ */
 function optionClickedListener (event) {
   const clickedOption = event.target;
   const isGlobal = clickedOption.classList.contains(GLOBAL_OPTION_CLASS);
@@ -119,7 +130,7 @@ function optionClickedListener (event) {
     if (clickedOption.classList.contains(GLOBAL_OPTION_CLASS)) {
       setObjection();
     } else {
-      setGlobal();
+      setInherited();
     }
   } else if (
     clickedOption.classList.contains(INHERITED_CONSENT_COLOR) ||
@@ -128,15 +139,19 @@ function optionClickedListener (event) {
     setObjection();
   }
 
+  // If global option is changed, change inherited options of vendors.
   if (isGlobal) {
-    const domainsChoices = document.getElementsByClassName(OPTION_CLASS);
-    for (const choice of domainsChoices) {
-      invertGlobal(choice);
+    const vendorsChoices = document.getElementsByClassName(OPTION_CLASS);
+    for (const choice of vendorsChoices) {
+      invertInherited(choice);
     }
   }
 
   storeOptions(clickedOption.parentElement);
 
+  /**
+   * Change option to consent.
+   */
   function setConsent () {
     removeClasses();
 
@@ -145,6 +160,9 @@ function optionClickedListener (event) {
     clickedOption.title = getMessage('consent_extended');
   }
 
+  /**
+   * Change option to objection.
+   */
   function setObjection () {
     removeClasses();
 
@@ -153,7 +171,11 @@ function optionClickedListener (event) {
     clickedOption.title = getMessage('objection_extended');
   }
 
-  function setGlobal () {
+  /**
+   * Change option to inherited.
+   * Inherited consent or inherited objection is set depending on global option.
+   */
+  function setInherited () {
     removeClasses();
 
     const globalOption = document.getElementById(GLOBAL_OPTION_CLASS);
@@ -168,7 +190,12 @@ function optionClickedListener (event) {
     clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED);
   }
 
-  function invertGlobal (choice) {
+  /**
+   * Change inherited option value.
+   * If inherited consent is set, change to inherited objection.
+   * If inherited objection is set, change to inherited consent.
+   */
+  function invertInherited (choice) {
     if (choice.classList.contains(INHERITED_CONSENT_COLOR)) {
       choice.classList.remove(INHERITED_CONSENT_COLOR);
       choice.classList.add(INHERITED_OBJECTION_COLOR);
@@ -180,6 +207,9 @@ function optionClickedListener (event) {
     }
   }
 
+  /**
+   * Remove element classes which defines cell color.
+   */
   function removeClasses () {
     clickedOption.classList.remove(CONSENT_COLOR);
     clickedOption.classList.remove(OBJECTION_COLOR);
@@ -188,6 +218,9 @@ function optionClickedListener (event) {
   }
 }
 
+/**
+ * Store current vendor options to sync storage.
+ */
 function storeOptions (row) {
 
   let name;
@@ -207,6 +240,9 @@ function storeOptions (row) {
     }, onError);
 }
 
+/**
+ * Set all vendor options to inherit option value from global options.
+ */
 function useGlobal () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(
     result => {
