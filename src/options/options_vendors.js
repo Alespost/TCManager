@@ -1,15 +1,24 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
 document.addEventListener('DOMContentLoaded', (event) => {
   displayVendorsOptionsContent();
   restoreOptions();
   document.getElementById('use_global').addEventListener('click', useGlobal);
 });
 
+/**
+ * Load vendor options from storage and display into the table.
+ */
 function restoreOptions () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(setCurrentChoices, onError);
 
   function setCurrentChoices (result) {
     const table = document.getElementById('options_vendors_body');
-    table.innerHTML = '';
+    table.innerHTML = ''; // Clear table.
 
     const vendorChoices = result[VENDOR_OPTIONS];
     openVendorList().then(jsonResponse => {
@@ -25,6 +34,9 @@ function restoreOptions () {
     });
   }
 
+  /**
+   * Create table row element with option for given vendor.
+   */
   function createOptionsRow (vendor, choice, global = null) {
     const row = document.createElement('tr');
 
@@ -54,7 +66,7 @@ function restoreOptions () {
     if (vendor !== null) {
       const link = document.createElement('a');
       link.href = vendor.policyUrl;
-      link.innerText = localizedMessage('link');
+      link.innerText = getMessage('link');
       policyUrlCell.appendChild(link);
     }
 
@@ -63,11 +75,14 @@ function restoreOptions () {
     setChoice();
     return row;
 
+    /**
+     * Create table cell with choice for vendor.
+     */
     function setChoice () {
       const cell = document.createElement('td');
 
       if (vendor === null) {
-        cell.classList.add(GLOBAL_OPTION_CLASS);
+        cell.classList.add(GLOBAL_OPTION_CLASS, VENDOR_OPTION_CLASS);
         cell.id = GLOBAL_OPTION_CLASS;
       } else {
         cell.classList.add(OPTION_CLASS);
@@ -76,20 +91,23 @@ function restoreOptions () {
       cell.setAttribute(VALUE_ATTRIBUTE, choice);
       cell.addEventListener('click', optionClickedListener);
 
+      // Set cell color and tooltip message
       switch (choice) {
         case CONSENT:
-          cell.classList.add(LOCAL_CONSENT_COLOR);
-          cell.setAttribute(VALUE_ATTRIBUTE, CONSENT);
+          cell.classList.add(CONSENT_COLOR);
+          cell.title = getMessage('consent_extended');
           break;
         case OBJECTION:
-          cell.classList.add(LOCAL_OBJECTION_COLOR);
-          cell.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
+          cell.classList.add(OBJECTION_COLOR);
+          cell.title = getMessage('objection_extended');
           break;
-        case GLOBAL_VALUE:
+        case INHERITED:
           if (global === CONSENT) {
-            cell.classList.add(GLOBAL_CONSENT_COLOR);
+            cell.classList.add(INHERITED_CONSENT_COLOR);
+            cell.title = getMessage('inherited_consent');
           } else {
-            cell.classList.add(GLOBAL_OBJECTION_COLOR);
+            cell.classList.add(INHERITED_OBJECTION_COLOR);
+            cell.title = getMessage('inherited_objection');
           }
           break;
       }
@@ -97,85 +115,112 @@ function restoreOptions () {
       row.appendChild(cell);
     }
   }
-
-  function onError (error) {
-    console.error(`Error: ${error}`);
-  }
 }
 
+/**
+ * Change option after choice cell is clicked.
+ */
 function optionClickedListener (event) {
   const clickedOption = event.target;
   const isGlobal = clickedOption.classList.contains(GLOBAL_OPTION_CLASS);
 
-  if (clickedOption.classList.contains(LOCAL_OBJECTION_COLOR)) {
+  if (clickedOption.classList.contains(OBJECTION_COLOR)) {
     setConsent();
-  } else if (clickedOption.classList.contains(LOCAL_CONSENT_COLOR)) {
+  } else if (clickedOption.classList.contains(CONSENT_COLOR)) {
     if (clickedOption.classList.contains(GLOBAL_OPTION_CLASS)) {
       setObjection();
     } else {
-      setGlobal();
+      setInherited();
     }
   } else if (
-    clickedOption.classList.contains(GLOBAL_CONSENT_COLOR) ||
-    clickedOption.classList.contains(GLOBAL_OBJECTION_COLOR)
+    clickedOption.classList.contains(INHERITED_CONSENT_COLOR) ||
+    clickedOption.classList.contains(INHERITED_OBJECTION_COLOR)
   ) {
     setObjection();
   }
 
+  // If global option is changed, change inherited options of vendors.
   if (isGlobal) {
-    const domainsChoices = document.getElementsByClassName(OPTION_CLASS);
-    for (const choice of domainsChoices) {
-      invertGlobal(choice);
+    const vendorsChoices = document.getElementsByClassName(OPTION_CLASS);
+    for (const choice of vendorsChoices) {
+      invertInherited(choice);
     }
   }
 
   storeOptions(clickedOption.parentElement);
 
+  /**
+   * Change option to consent.
+   */
   function setConsent () {
     removeClasses();
 
-    clickedOption.classList.add(LOCAL_CONSENT_COLOR);
+    clickedOption.classList.add(CONSENT_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, CONSENT);
+    clickedOption.title = getMessage('consent_extended');
   }
 
+  /**
+   * Change option to objection.
+   */
   function setObjection () {
     removeClasses();
 
-    clickedOption.classList.add(LOCAL_OBJECTION_COLOR);
+    clickedOption.classList.add(OBJECTION_COLOR);
     clickedOption.setAttribute(VALUE_ATTRIBUTE, OBJECTION);
+    clickedOption.title = getMessage('objection_extended');
   }
 
-  function setGlobal () {
+  /**
+   * Change option to inherited.
+   * Inherited consent or inherited objection is set depending on global option.
+   */
+  function setInherited () {
     removeClasses();
 
     const globalOption = document.getElementById(GLOBAL_OPTION_CLASS);
     if (globalOption.getAttribute(VALUE_ATTRIBUTE) === CONSENT.toString()) {
-      clickedOption.classList.add(GLOBAL_CONSENT_COLOR);
+      clickedOption.classList.add(INHERITED_CONSENT_COLOR);
+      clickedOption.title = getMessage('inherited_consent');
     } else {
-      clickedOption.classList.add(GLOBAL_OBJECTION_COLOR);
+      clickedOption.classList.add(INHERITED_OBJECTION_COLOR);
+      clickedOption.title = getMessage('inherited_objection');
     }
 
-    clickedOption.setAttribute(VALUE_ATTRIBUTE, GLOBAL_VALUE);
+    clickedOption.setAttribute(VALUE_ATTRIBUTE, INHERITED);
   }
 
-  function invertGlobal (choice) {
-    if (choice.classList.contains(GLOBAL_CONSENT_COLOR)) {
-      choice.classList.remove(GLOBAL_CONSENT_COLOR);
-      choice.classList.add(GLOBAL_OBJECTION_COLOR);
-    } else if (choice.classList.contains(GLOBAL_OBJECTION_COLOR)) {
-      choice.classList.remove(GLOBAL_OBJECTION_COLOR);
-      choice.classList.add(GLOBAL_CONSENT_COLOR);
+  /**
+   * Change inherited option value.
+   * If inherited consent is set, change to inherited objection.
+   * If inherited objection is set, change to inherited consent.
+   */
+  function invertInherited (choice) {
+    if (choice.classList.contains(INHERITED_CONSENT_COLOR)) {
+      choice.classList.remove(INHERITED_CONSENT_COLOR);
+      choice.classList.add(INHERITED_OBJECTION_COLOR);
+      choice.title = getMessage('inherited_objection');
+    } else if (choice.classList.contains(INHERITED_OBJECTION_COLOR)) {
+      choice.classList.remove(INHERITED_OBJECTION_COLOR);
+      choice.classList.add(INHERITED_CONSENT_COLOR);
+      choice.title = getMessage('inherited_consent');
     }
   }
 
+  /**
+   * Remove element classes which defines cell color.
+   */
   function removeClasses () {
-    clickedOption.classList.remove(LOCAL_CONSENT_COLOR);
-    clickedOption.classList.remove(LOCAL_OBJECTION_COLOR);
-    clickedOption.classList.remove(GLOBAL_CONSENT_COLOR);
-    clickedOption.classList.remove(GLOBAL_OBJECTION_COLOR);
+    clickedOption.classList.remove(CONSENT_COLOR);
+    clickedOption.classList.remove(OBJECTION_COLOR);
+    clickedOption.classList.remove(INHERITED_CONSENT_COLOR);
+    clickedOption.classList.remove(INHERITED_OBJECTION_COLOR);
   }
 }
 
+/**
+ * Store current vendor options to sync storage.
+ */
 function storeOptions (row) {
 
   let name;
@@ -187,14 +232,17 @@ function storeOptions (row) {
 
   const value = parseInt(row.lastElementChild.getAttribute(VALUE_ATTRIBUTE));
 
-  browser.storage.sync.get(VENDOR_OPTIONS)
-    .then(result => {
+  browser.storage.sync.get(VENDOR_OPTIONS).then(
+    result => {
       result[VENDOR_OPTIONS][name] = value;
 
-      browser.storage.sync.set(result);
-    });
+      browser.storage.sync.set(result).catch(onError);
+    }, onError);
 }
 
+/**
+ * Set all vendor options to inherit option value from global options.
+ */
 function useGlobal () {
   browser.storage.sync.get(VENDOR_OPTIONS).then(
     result => {
@@ -205,12 +253,11 @@ function useGlobal () {
           continue;
         }
 
-        vendors[key] = GLOBAL_VALUE;
+        vendors[key] = INHERITED;
       }
 
       result[VENDOR_OPTIONS] = vendors;
-      browser.storage.sync.set(result);
+      browser.storage.sync.set(result).catch(onError);
       restoreOptions();
-    },
-  );
+    }, onError);
 }

@@ -1,3 +1,12 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
+/**
+ * Inject code to access CMP API. Pass result to the callback.
+ */
 function __tcfapi (command, eventName, callback) {
   if (typeof callback !== 'function') {
     return;
@@ -5,11 +14,11 @@ function __tcfapi (command, eventName, callback) {
 
   const parent = locateCmpFrame();
 
-  const script = document.createElement('script');
-  document.addEventListener(eventName, eventHandler);
-
-  script.async = false;
-  script.text = 'if (typeof __tcfapi !== \'function\') {\n' +
+  /*
+   * Code accessing CMP API, that will be injected to the page.
+   * Data are returned via CustomEvent.
+   */
+  const code = 'if (typeof __tcfapi !== \'function\') {\n' +
     `               document.dispatchEvent(new CustomEvent(\'${eventName}\', {\n` +
     '                   detail: {data: false, success: false}\n' +
     '               }));\n' +
@@ -21,15 +30,19 @@ function __tcfapi (command, eventName, callback) {
     '               });\n' +
     '            }';
 
-  parent.insertBefore(script, parent.firstChild);
-  parent.removeChild(script);
+  document.addEventListener(eventName, eventListener);
+  inject(code, parent);
 
-  function eventHandler (e) {
-    document.removeEventListener(eventName, eventHandler);
+  function eventListener (e) {
+    document.removeEventListener(eventName, eventListener);
     callback(e.detail.data, e.detail.success);
   }
 }
 
+/**
+ * Locate frame with name '__tcfapiLocator' and return its parent element.
+ * If no such frame is found, return document element.
+ */
 function locateCmpFrame () {
   let locatorFrames = document.getElementsByName('__tcfapiLocator');
 

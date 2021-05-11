@@ -1,12 +1,19 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
+// Store consent after received request message.
 browser.runtime.onMessage.addListener(consentRequestMessageHandler);
 
 /**
+ * Create and store consent.
  *
- * @param request
- * @param sender
- * @param sendResponse
+ * @param request Message data with basic information about CMP, web URL and local storage items.
+ * @returns {Promise} Message response with updated local storage items.
  */
-function consentRequestMessageHandler (request, sender, sendResponse) {
+function consentRequestMessageHandler (request) {
   const url = new URL(request.url);
 
   return new Promise(resolve => {
@@ -14,31 +21,31 @@ function consentRequestMessageHandler (request, sender, sendResponse) {
       .then(createTCModel.bind(null, request))
       .then(createBitField)
       .then(encode)
-      .then(storeConsent.bind(null, url))
-      .then(() => resolve());
+      .then(storeConsent.bind(null, url, request.localStorageItems))
+      .then((updatedItems) => resolve(updatedItems));
   });
 }
 
 /**
- *
- * @param {string} domain
- * @returns {PromiseLike<{} | *[]> | Promise<{} | *[]>}
+ * Load user's options for provided domain.
+ * @param domain Domain for which should be options loaded.
+ * @returns {PromiseLike} Loaded options.
  */
 function getOptions (domain) {
   return browser.storage.sync.get([GLOBAL_OPTIONS, VENDOR_OPTIONS, domain])
     .then(onSuccess, onError);
 
   /**
-   * @param result
-   * @returns {{}}
+   * Parse successfully loaded options.
    */
   function onSuccess (result) {
+    // If options for required domain does not exist, create default options for this domain.
     const domainOptions = result[domain] ?? createDomainOptions(domain)[domain];
     const globalOptions = result[GLOBAL_OPTIONS];
 
     const purposes = [];
     for (const [index, value] of domainOptions[PURPOSES_OPTIONS].entries()) {
-      if (value !== GLOBAL_VALUE) {
+      if (value !== INHERITED) {
         purposes.push(value);
       } else {
         purposes.push(globalOptions[PURPOSES_OPTIONS][index]);
@@ -47,7 +54,7 @@ function getOptions (domain) {
 
     const specialFeatures = [];
     for (const [index, value] of domainOptions[SPECIAL_FEATURES_OPTIONS].entries()) {
-      if (value !== GLOBAL_VALUE) {
+      if (value !== INHERITED) {
         specialFeatures.push(value);
       } else {
         specialFeatures.push(globalOptions[SPECIAL_FEATURES_OPTIONS][index]);
@@ -60,21 +67,10 @@ function getOptions (domain) {
 
     return [requiredOptions, result[VENDOR_OPTIONS]];
   }
-
-  /**
-   * @param error
-   * @returns {*[]}
-   */
-  function onError (error) {
-    console.error(`Error: ${error}`);
-  }
 }
 
 /**
- *
- * @param data
- * @param options
- * @returns {object}
+ * Create TC Model with data required to create consent string.
  */
 function createTCModel (data, options) {
   const vendors = options[1];
@@ -89,7 +85,7 @@ function createTCModel (data, options) {
   const bitField = [];
 
   for (let i = 1; i <= maxId; i++) {
-    if (vendors.hasOwnProperty(i) && vendors[i] === GLOBAL_VALUE) {
+    if (vendors.hasOwnProperty(i) && vendors[i] === INHERITED) {
       bitField.push(globalVendorOpt);
     } else if (vendors.hasOwnProperty(i)) {
       bitField.push(vendors[i]);
@@ -143,9 +139,10 @@ function createTCModel (data, options) {
 }
 
 /**
+ * Create bit field from TC Model.
+ *
+ * Bit field is created according to the specification of the consent string:
  * https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#the-core-string
- * @param TCModel
- * @returns {string}
  */
 function createBitField (TCModel) {
   const BIT_LEN_1 = 1;
@@ -188,22 +185,36 @@ function createBitField (TCModel) {
 }
 
 /**
+ * Encode bit field to consent string.
+ *
+ * This function is a modified version of the similar function from
+ * @iabtcf <https://github.com/InteractiveAdvertisingBureau/iabtcf-es>
  * https://github.com/InteractiveAdvertisingBureau/iabtcf-es/blob/master/modules/core/src/encoder/Base64Url.ts
- * @param bitString
- * @returns {string}
+ * Copyright (C) 2019 IAB Tech Lab
+ *
+ * @param bitField
+ * @returns {string} TC String
  */
-function encode (bitString) {
+function encode (bitField) {
+  /**
+   * Base 64 URL character set.  Different from standard Base64 char set
+   * in that '+' and '/' are replaced with '-' and '_'.
+   */
   const DICT = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
   const PADDING = 24;
   const BASIS = 6;
 
-  const padding = bitString.length % PADDING;
-  bitString += padding ? '0'.repeat(24 - padding) : '';
+  /**
+   * Pad the end of the string to the least common mutliple of 6 (basis for
+   * base64) and 8 (one byte)
+   */
+  const padding = bitField.length % PADDING;
+  bitField += padding ? '0'.repeat(24 - padding) : '';
 
   let TCString = '';
 
-  for (let i = 0; i < bitString.length; i += BASIS) {
-    const index = parseInt(bitString.substr(i, BASIS), 2);
+  for (let i = 0; i < bitField.length; i += BASIS) {
+    const index = parseInt(bitField.substr(i, BASIS), 2);
     TCString += DICT[index];
   }
 
@@ -211,20 +222,24 @@ function encode (bitString) {
 }
 
 /**
- *
- * @param url
- * @param TCString
+ * Store created TC String to current web page.
+ * @param url URL of current web page.
+ * @param localStorageItems Local storage items of current web page.
+ * @param TCString Created TC String.
  */
-function storeConsent (url, TCString) {
+function storeConsent (url, localStorageItems, TCString) {
   storeCookies(TCString, url);
+
+  return updateLocalStorageTCStrings(localStorageItems, TCString);
 }
 
 /**
- *
+ * Store TC String into cookies.
  * @param TCString
- * @param url
+ * @param url URL for which are cookies created.
  */
 function storeCookies (TCString, url) {
+  // The most used cookies to store TC String.
   const standardCookies = ['euconsent-v2', 'eupubconsent-v2', 'cconsent-v2'];
 
   const expiration = new Date();
@@ -242,6 +257,9 @@ function storeCookies (TCString, url) {
 
   });
 
+  /**
+   * Check if web page has non-standard cookie containing TC String.
+   */
   function checkNonStandardCookieExists () {
     return browser.cookies.getAll({ url: url.toString() }).then(
       cookies => {
@@ -249,26 +267,29 @@ function storeCookies (TCString, url) {
           if (!standardCookies.includes(cookie.name)) {
             const matches = cookie.value.match(/(%27)?[A-Za-z0-9_-]{39,}(%27)?/g);
 
-            // No TC string candidate in cookie
+            // No TC String candidates found.
             if (!matches) {
               continue;
             }
 
-            for (let match of matches) {
+            for (const match of matches) {
               try {
                 const cleared = match.replace('%27', '');
 
-                TCStringParse(cleared);
+                TCStringParse(cleared); // Throws exception if it is not valid TC String.
+
                 return { cookie: cookie, TCString: cleared };
               } catch (e) {}
             } // for (match of matches)
           } // if (!standardCookies.includes(cookie.name))
         } // for (cookie of cookies)
         return null;
-      },
-    );
+      }, onError);
   }
 
+  /**
+   * Store TC string into standard cookies.
+   */
   function storeStandardCookies () {
     const hostname = url.hostname;
     let domains = [
@@ -292,7 +313,7 @@ function storeCookies (TCString, url) {
       cookie.name = name;
       for (const [, domain] of domains.entries()) {
         cookie.domain = domain;
-        browser.cookies.set(cookie);
+        browser.cookies.set(cookie).catch(onError);
       }
     }
 
@@ -300,9 +321,7 @@ function storeCookies (TCString, url) {
   }
 
   /**
-   *
-   * @param values {{cookie: *, TCString: string}}
-   * @returns {{path: string, domain: *, name, secure: boolean, value: *, url: string, expirationDate: number}}
+   * Replace TC String in non-standard cookie and store it.
    */
   function storeNonStandardCookie (values) {
     const cookie =
@@ -316,41 +335,74 @@ function storeCookies (TCString, url) {
         value: values.cookie.value.replace(values.TCString, TCString),
       };
 
-    browser.cookies.set(cookie);
+    browser.cookies.set(cookie).catch(onError);
 
     return cookie;
   }
 
+  /**
+   * Create cookie to block cookie banners on some web pages with CMP OneTrust LLC
+   */
   function storeCookiesClosingBanner (cookie) {
     const cookies = [
       { name: 'OptanonAlertBoxClosed', value: (new Date()).toISOString() },
-      { name: '__cmpcvcx11319', value: 'U' },
-      { name: '__cmpcvcu6648', value: 'U' },
     ];
 
     for (const c of cookies) {
       cookie.name = c.name;
       cookie.value = c.value;
-      browser.cookies.set(cookie);
+      browser.cookies.set(cookie).catch(onError);
     }
   }
 }
 
 /**
- *
- * @param domain
- * @returns {{}}
+ * Detect and replace TC String in local storage items.
+ */
+function updateLocalStorageTCStrings (localStorageItems, TCString) {
+  const regex = /(%27)?[A-Za-z0-9_-]{39,}(%27)?/g;
+
+  const updatedItems = {};
+
+  for (const [key, value] of Object.entries(localStorageItems)) {
+    const matches = value.match(regex);
+
+    // No TC String candidates found.
+    if (!matches) {
+      continue;
+    }
+
+    let updatedValue = value;
+    for (const match of matches) {
+      try {
+        let cleared = match.replace('%27', '');
+
+        TCStringParse(cleared); // Throws exception if it is not valid TC String.
+        updatedValue = updatedValue.replace(cleared, TCString);
+      } catch (e) {}
+    }
+
+    if (value !== updatedValue) {
+      updatedItems[key] = updatedValue;
+    }
+  }
+
+  return updatedItems;
+}
+
+/**
+ * Create default options for provided domain.
  */
 function createDomainOptions (domain) {
   let purposes = [];
   let specialFeatures = [];
 
   for (let i = 0; i < PURPOSES_COUNT; i++) {
-    purposes.push(GLOBAL_VALUE);
+    purposes.push(INHERITED);
   }
 
   for (let i = 0; i < SPECIAL_FEATURES_COUNT; i++) {
-    specialFeatures.push(GLOBAL_VALUE);
+    specialFeatures.push(INHERITED);
   }
 
   let options = {};
@@ -358,7 +410,7 @@ function createDomainOptions (domain) {
   options[domain][PURPOSES_OPTIONS] = purposes;
   options[domain][SPECIAL_FEATURES_OPTIONS] = specialFeatures;
 
-  browser.storage.sync.set(options);
+  browser.storage.sync.set(options).catch(onError);
 
   return options;
 }

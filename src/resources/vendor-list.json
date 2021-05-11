@@ -1,8 +1,8 @@
 {
   "gvlSpecificationVersion": 2,
-  "vendorListVersion": 86,
+  "vendorListVersion": 89,
   "tcfPolicyVersion": 2,
-  "lastUpdated": "2021-04-15T16:05:36Z",
+  "lastUpdated": "2021-05-06T16:05:34Z",
   "purposes": {
     "1": {
       "id": 1,
@@ -1131,7 +1131,7 @@
       "specialFeatures": [
         2
       ],
-      "policyUrl": "https://www.captify.co.uk/privacy-policy-opt/",
+      "policyUrl": "https://www.captifytechnologies.com/privacy-notice/",
       "cookieMaxAgeSeconds": 2678400,
       "usesCookies": true,
       "usesNonCookieAccess": true
@@ -2490,13 +2490,14 @@
       "name": "Adform",
       "purposes": [
         1,
-        2,
         3,
-        4,
+        4
+      ],
+      "legIntPurposes": [
+        2,
         7,
         10
       ],
-      "legIntPurposes": [],
       "flexiblePurposes": [
         2,
         7,
@@ -2956,7 +2957,7 @@
     },
     "122": {
       "id": 122,
-      "name": "Avid Media Ltd",
+      "name": "Dentsu London Limited",
       "purposes": [
         1,
         3,
@@ -2980,7 +2981,7 @@
       ],
       "features": [],
       "specialFeatures": [],
-      "policyUrl": "https://www.avidglobalmedia.com/privacy-policy.html",
+      "policyUrl": "https://privacy.metadsp.co.uk/privacy-policy.html",
       "cookieMaxAgeSeconds": 63072000,
       "usesCookies": true,
       "usesNonCookieAccess": true
@@ -3830,9 +3831,7 @@
         2,
         3
       ],
-      "specialFeatures": [
-        2
-      ],
+      "specialFeatures": [],
       "policyUrl": "https://www.flashtalking.com/privacypolicy/",
       "cookieMaxAgeSeconds": 63072000,
       "usesCookies": true,
@@ -4191,15 +4190,17 @@
         2,
         3,
         4,
-        9
+        7,
+        8,
+        9,
+        10
       ],
-      "legIntPurposes": [
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        2,
         7,
         8,
         10
-      ],
-      "flexiblePurposes": [
-        2
       ],
       "specialPurposes": [
         1,
@@ -4917,6 +4918,7 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://zbo.media/mentions-legales/politique-de-confidentialite-service-publicitaire/",
+      "deletedDate": "2021-05-04T00:00:00Z",
       "cookieMaxAgeSeconds": 2628000,
       "usesCookies": true,
       "usesNonCookieAccess": false
@@ -5328,6 +5330,7 @@
         1
       ],
       "policyUrl": "https://goodwaygroup.com/privacy-policy/",
+      "deletedDate": "2021-05-05T00:00:00Z",
       "cookieMaxAgeSeconds": null,
       "usesCookies": false,
       "usesNonCookieAccess": false
@@ -5856,6 +5859,7 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.adclear.de/datenschutzerklaerung/",
+      "deletedDate": "2021-05-03T00:00:00Z",
       "cookieMaxAgeSeconds": 7948800,
       "usesCookies": true,
       "usesNonCookieAccess": false
@@ -6227,8 +6231,7 @@
       },
       "cookieMaxAgeSeconds": null,
       "usesCookies": false,
-      "usesNonCookieAccess": true,
-      "deviceStorageDisclosureUrl": "https://celtra.com/privacy-policy/"
+      "usesNonCookieAccess": true
     },
     "165": {
       "id": 165,
@@ -9200,18 +9203,15 @@
       "name": "Innovid Inc.",
       "purposes": [
         1,
-        3,
         4
       ],
       "legIntPurposes": [
         2,
-        7,
-        9
+        7
       ],
       "flexiblePurposes": [
         2,
-        7,
-        9
+        7
       ],
       "specialPurposes": [
         1,
@@ -12107,7 +12107,10 @@
       "legIntPurposes": [
         7
       ],
-      "flexiblePurposes": [],
+      "flexiblePurposes": [
+        2,
+        7
+      ],
       "specialPurposes": [
         1,
         2
@@ -13203,18 +13206,15 @@
       "name": "BeOp",
       "purposes": [
         1,
-        2
-      ],
-      "legIntPurposes": [
+        2,
         7,
-        8,
-        10
+        8
       ],
+      "legIntPurposes": [],
       "flexiblePurposes": [
         2,
         7,
-        8,
-        10
+        8
       ],
       "specialPurposes": [
         1,
@@ -13471,7 +13471,7 @@
       "specialFeatures": [
         1
       ],
-      "policyUrl": "https://www.businessclick.com/documents/RegulaminProgramuBusinessClick-2019.pdf",
+      "policyUrl": "https://www.businessclick.com/documents/regulamin_bc_2020.pdf",
       "cookieMaxAgeSeconds": 94670777,
       "usesCookies": true,
       "usesNonCookieAccess": true
@@ -13552,7 +13552,7 @@
       "policyUrl": "https://casino.mindthebet.co.uk/themes/mindthebetv2-casino/privacy.php",
       "cookieMaxAgeSeconds": 63072000,
       "usesCookies": true,
-      "usesNonCookieAccess": false
+      "usesNonCookieAccess": true
     },
     "561": {
       "id": 561,
@@ -14043,7 +14043,7 @@
     },
     "714": {
       "id": 714,
-      "name": "Survata Inc.",
+      "name": "Upwave Inc.",
       "purposes": [
         1
       ],
@@ -14053,9 +14053,11 @@
       ],
       "flexiblePurposes": [],
       "specialPurposes": [],
-      "features": [],
+      "features": [
+        3
+      ],
       "specialFeatures": [],
-      "policyUrl": "https://www.survata.com/respondent-privacy-policy/",
+      "policyUrl": "https://www.upwave.com/privacy-policy/",
       "overflow": {
         "httpGetLimit": 128
       },
@@ -14125,49 +14127,6 @@
       "policyUrl": "https://www.onaudience.com/internet-advertising-privacy-policy",
       "cookieMaxAgeSeconds": 31536000,
       "usesCookies": true,
-      "usesNonCookieAccess": false
-    },
-    "708": {
-      "id": 708,
-      "name": "Dugout Limited ",
-      "purposes": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "legIntPurposes": [],
-      "flexiblePurposes": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "specialPurposes": [],
-      "features": [
-        1,
-        2,
-        3
-      ],
-      "specialFeatures": [
-        1,
-        2
-      ],
-      "policyUrl": "https://dugout.com/privacy-policy",
-      "deletedDate": "2019-11-02T00:00:00Z",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "694": {
@@ -14302,7 +14261,8 @@
       ],
       "flexiblePurposes": [
         2,
-        7
+        7,
+        10
       ],
       "specialPurposes": [
         1,
@@ -14757,7 +14717,12 @@
         9,
         10
       ],
-      "flexiblePurposes": [],
+      "flexiblePurposes": [
+        3,
+        4,
+        5,
+        6
+      ],
       "specialPurposes": [
         1,
         2
@@ -18967,7 +18932,10 @@
       "features": [
         3
       ],
-      "specialFeatures": [],
+      "specialFeatures": [
+        1,
+        2
+      ],
       "policyUrl": "https://www.dianomi.com/legal/privacy.epl",
       "cookieMaxAgeSeconds": 94608000,
       "usesCookies": true,
@@ -19740,8 +19708,6 @@
         2
       ],
       "features": [
-        1,
-        2,
         3
       ],
       "specialFeatures": [],
@@ -21351,7 +21317,7 @@
     },
     "976": {
       "id": 976,
-      "name": "Pelmorex Media Corp.",
+      "name": "Pelmorex Corp.",
       "purposes": [
         1,
         2,
@@ -21369,14 +21335,13 @@
       "specialPurposes": [],
       "features": [
         1,
-        2,
         3
       ],
       "specialFeatures": [
         1
       ],
       "policyUrl": "https://www.eltiempo.com/politica-privacidad",
-      "cookieMaxAgeSeconds": 34190000,
+      "cookieMaxAgeSeconds": 0,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -21673,6 +21638,336 @@
       "cookieMaxAgeSeconds": null,
       "usesCookies": false,
       "usesNonCookieAccess": false
+    },
+    "988": {
+      "id": 988,
+      "name": "Habu",
+      "purposes": [
+        1,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://habu.com/privacy-policy",
+      "overflow": {
+        "httpGetLimit": 128
+      },
+      "cookieMaxAgeSeconds": 25920000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "989": {
+      "id": 989,
+      "name": "SPEAKOL DMCC",
+      "purposes": [
+        1
+      ],
+      "legIntPurposes": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        10
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://speakol.com/terms-of-use",
+      "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "990": {
+      "id": 990,
+      "name": "QuantumCast digital GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        1,
+        2
+      ],
+      "policyUrl": "https://www.quantumcast-digital.com/privacy-policy",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": true
+    },
+    "991": {
+      "id": 991,
+      "name": "iProspect GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        2
+      ],
+      "features": [
+        2,
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://inetpro.io/privacy-policyeng.do",
+      "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "992": {
+      "id": 992,
+      "name": "Rapid Performance GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1
+      ],
+      "specialFeatures": [
+        1
+      ],
+      "policyUrl": "https://www.gratisbasar.de/privacy-policy",
+      "cookieMaxAgeSeconds": 90,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "993": {
+      "id": 993,
+      "name": "QUARTER MEDIA GmbH",
+      "purposes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://quartermedia.de/daten/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": false
+    },
+    "994": {
+      "id": 994,
+      "name": "Leadoo Marketing Technologies Ltd",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "legIntPurposes": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "flexiblePurposes": [
+        6,
+        9
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        1,
+        2,
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://leadoo.com/privacy-policy/",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": true
+    },
+    "995": {
+      "id": 995,
+      "name": "Hashtag Labs Inc.",
+      "purposes": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://hashtag-labs.com/privacy-policy.html",
+      "cookieMaxAgeSeconds": 2592000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "996": {
+      "id": 996,
+      "name": "CMI Marketing, Inc. d/b/a CafeMedia",
+      "purposes": [
+        1,
+        3,
+        4,
+        7,
+        10
+      ],
+      "legIntPurposes": [
+        2
+      ],
+      "flexiblePurposes": [],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://cafemedia.com/publisher-advertising-privacy-policy/",
+      "cookieMaxAgeSeconds": 31000000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
+    },
+    "708": {
+      "id": 708,
+      "name": "Dugout Ltd",
+      "purposes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        2,
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://dugout.com/privacy-policy",
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
+      "usesNonCookieAccess": true
+    },
+    "997": {
+      "id": 997,
+      "name": "EXOCLICK, S.L.",
+      "purposes": [
+        1,
+        3,
+        4
+      ],
+      "legIntPurposes": [
+        2,
+        7,
+        10
+      ],
+      "flexiblePurposes": [
+        2,
+        7,
+        10
+      ],
+      "specialPurposes": [
+        1,
+        2
+      ],
+      "features": [
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://www.exoclick.com/privacy-and-cookies-policy/",
+      "cookieMaxAgeSeconds": 62000000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true
     }
   }
 }

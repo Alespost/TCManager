@@ -1,6 +1,16 @@
+/*********************************************************/
+/* TC Manager                                            */
+/* Author: Aleš Postulka (xpostu03@stud.fit.vutbr.cz)    */
+/* FIT VUT, 2020/2021                                    */
+/*********************************************************/
+
+/**
+ * Display retrieved information about consent stored on current web.
+ */
 function displayTCContent (TCData) {
   displayHeaders();
 
+  // If data does not contain required attributes, try to obtain them by parsing TC String.
   if (TCData.tcString && (TCData.purpose || !TCData.specialFeatureOptins || !TCData.vendor)) {
     try {
       const TCModel = TCStringParse(TCData.tcString).core;
@@ -13,30 +23,39 @@ function displayTCContent (TCData) {
     }
   }
 
-  displayCMPData(TCData.cmpId);
-  displayListItems(TCData.purpose.consents, 'purpose');
-  displayListItems(TCData.specialFeatureOptins, 'special_feature');
-  displayVendors(TCData.vendor.consents);
+  try {
+    displayCMPData(TCData.cmpId);
+    displayListItems(TCData.purpose.consents, 'purpose');
+    displayListItems(TCData.specialFeatureOptins, 'special_feature');
+    displayVendors(TCData.vendor.consents);
+  } catch (e) {}
 }
 
+/**
+ * Display localized headers in popup.
+ */
 function displayHeaders () {
-  document.getElementById('cmp_header').innerText = localizedMessage('cmp_header');
-  document.getElementById('consent_header').innerText = localizedMessage('consent_header');
-  document.getElementById('purposes_header').innerText = localizedMessage('purposes_header');
-  document.getElementById('special_features_header').innerText = localizedMessage('special_features_header');
-  document.getElementById('vendors_header').innerText = localizedMessage('vendors_header');
-  document.getElementById('vendor_list_header').innerText = localizedMessage('vendor_list_header');
-  document.getElementById('vendor_list_version').innerText = localizedMessage('vendor_list_version') + ': ';
-  document.getElementById('vendor_count').innerText = localizedMessage('vendor_count') + ': ';
+  document.getElementById('cmp_header').innerText = getMessage('cmp_header');
+  document.getElementById('consent_header').innerText = getMessage('consent_header');
+  document.getElementById('purposes_header').innerText = getMessage('purposes_header');
+  document.getElementById('special_features_header').innerText = getMessage('special_features_header');
+  document.getElementById('vendors_header').innerText = getMessage('vendors_header');
+  document.getElementById('vendor_list_header').innerText = getMessage('vendor_list_header');
+  document.getElementById('vendor_list_version').innerText = getMessage('vendor_list_version') + ': ';
+  document.getElementById('vendor_count').innerText = getMessage('vendor_count') + ': ';
 }
 
+/**
+ * Display ID and name of CMP used on current web.
+ * CMP name is obtained from cmp-list.json by CMP ID.
+ */
 function displayCMPData (cmpId) {
   openCMPList().then(jsonResponse => {
     let cmpName;
     if (jsonResponse.cmps[cmpId]) {
       cmpName = jsonResponse.cmps[cmpId].name;
     } else {
-      cmpName = localizedMessage('unknown_cmp');
+      cmpName = getMessage('unknown_cmp');
     }
 
     document.getElementById('cmp_name').innerText = cmpName;
@@ -45,20 +64,27 @@ function displayCMPData (cmpId) {
   document.getElementById('cmp_id').innerText = '(ID:' + cmpId + ')';
 }
 
+/**
+ * Display message that the page does not use TCF.
+ */
 function displayNoTCFMessage () {
-  document.getElementById('no_tcf_message').innerText = localizedMessage('no_tcf');
+  document.getElementById('no_tcf_message').innerText = getMessage('no_tcf');
 }
 
+/**
+ * Display purposes/special features for which consent has been given.
+ */
 function displayListItems (items, listIdPrefix) {
   for (const [key, value] of Object.entries(items)) {
     if (value === true) {
       const item = document.createElement('li');
       item.setAttribute('value', key);
-      item.innerText = localizedMessage(listIdPrefix + key);
+      item.innerText = getMessage(listIdPrefix + key);
 
+      // icon with purpose/special feature description tooltip
       const description = document.createElement('span');
       description.classList.add('question_icon');
-      description.title = localizedMessage(listIdPrefix + key + '_description');
+      description.title = getMessage(listIdPrefix + key + '_description');
       description.innerHTML = ' ';
       item.appendChild(description);
 
@@ -67,6 +93,11 @@ function displayListItems (items, listIdPrefix) {
   }
 }
 
+/**
+ * Display vendors for which consent has been given.
+ * Display vendor list.
+ * Display count of vendors for which consent has been given.
+ */
 function displayVendors (vendors) {
   const count = document.createElement('span');
   const version = document.createElement('span');

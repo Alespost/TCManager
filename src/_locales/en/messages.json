@@ -125,6 +125,27 @@
   "vendor_choice": {
     "message": "Choice"
   },
+  "consent": {
+    "message": "consent"
+  },
+  "objection": {
+    "message": "objection"
+  },
+  "inherited": {
+    "message": "inherited"
+  },
+  "consent_extended": {
+    "message": "consent provided"
+  },
+  "objection_extended": {
+    "message": "objected"
+  },
+  "inherited_consent": {
+    "message": "consent provided (inherited)"
+  },
+  "inherited_objection": {
+    "message": "objected (inherited)"
+  },
   "purpose1": {
     "message": "Store and/or access information on a device"
   },
