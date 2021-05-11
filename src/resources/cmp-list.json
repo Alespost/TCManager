@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2021-04-15T17:03:13Z",
+  "lastUpdated": "2021-05-06T17:03:14Z",
   "cmps": {
     "2": {
       "id": 2,
@@ -620,6 +620,11 @@
       "id": 369,
       "name": "Rakuten TV Europe S.L.U.",
       "isCommercial": false
+    },
+    "367": {
+      "id": 367,
+      "name": "devowl.io GmbH",
+      "isCommercial": true
     }
   }
 }
