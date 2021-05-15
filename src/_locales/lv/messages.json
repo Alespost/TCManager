@@ -1,4 +1,151 @@
 {
+  "extension_name": {
+    "message": "TC Manager"
+  },
+  "extension_description": {
+    "message": "Manage consents to the processing of personal data at websites that use IAB Europe's TCF v2.0."
+  },
+  "options_title": {
+    "message": "TC Manager Options"
+  },
+  "options_header": {
+    "message": "Settings"
+  },
+  "nav_options": {
+    "message": "Consent settings for processing purposes"
+  },
+  "nav_description": {
+    "message": "Description of purposes"
+  },
+  "nav_options_vendor": {
+    "message": "Vendor consent settings"
+  },
+  "nav_about": {
+    "message": "About"
+  },
+  "reset_to_defaults": {
+    "message": "Restore default settings"
+  },
+  "reset_to_defaults_tooltip": {
+    "message": "Sets all global setting items to objection. Domains will use global settings."
+  },
+  "remove_domains": {
+    "message": "Delete domain settings"
+  },
+  "remove_domains_tooltip": {
+    "message": "Deletes records for all domains."
+  },
+  "use_global_all": {
+    "message": "Use global settings"
+  },
+  "use_global_all_tooltip": {
+    "message": "Changes domain settings to use global settings."
+  },
+  "use_global_domain_tooltip": {
+    "message": "Resets settings to use global settings."
+  },
+  "remove_domain_tooltip": {
+    "message": "Deletes the record."
+  },
+  "options_global": {
+    "message": "Global settings"
+  },
+  "no_tcf": {
+    "message": "This website does not use IAB Europe's Transparency & Consent Framework."
+  },
+  "unknown_cmp": {
+    "message": "Unknown CMP"
+  },
+  "cmp_header": {
+    "message": "CMP"
+  },
+  "consent_header": {
+    "message": "Consent to the processing of personal data"
+  },
+  "purposes_header": {
+    "message": "Purposes"
+  },
+  "special_features_header": {
+    "message": "Special Features"
+  },
+  "vendors_header": {
+    "message": "Vendors with consent"
+  },
+  "vendor_list_header": {
+    "message": "Vendor list"
+  },
+  "actions_header": {
+    "message": "Action"
+  },
+  "about_header": {
+    "message": "About"
+  },
+  "version": {
+    "message": "Version"
+  },
+  "author_header": {
+    "message": "Author"
+  },
+  "name": {
+    "message": "Name"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "organization": {
+    "message": "Organization"
+  },
+  "org_name": {
+    "message": "Faculty of Information Technology, BUT"
+  },
+  "used_icons_header": {
+    "message": "Used icons"
+  },
+  "icons_taken_from": {
+    "message": "The following icons were taken from"
+  },
+  "license": {
+    "message": "License"
+  },
+  "vendor_list_version": {
+    "message": "Vendor list version"
+  },
+  "vendor_count": {
+    "message": "Number of vendors"
+  },
+  "vendor_name_header": {
+    "message": "Name"
+  },
+  "policy_link": {
+    "message": "Policy link"
+  },
+  "link": {
+    "message": "Link"
+  },
+  "vendor_choice": {
+    "message": "Choice"
+  },
+  "consent": {
+    "message": "consent"
+  },
+  "objection": {
+    "message": "objection"
+  },
+  "inherited": {
+    "message": "inherited"
+  },
+  "consent_extended": {
+    "message": "consent provided"
+  },
+  "objection_extended": {
+    "message": "objected"
+  },
+  "inherited_consent": {
+    "message": "consent provided (inherited)"
+  },
+  "inherited_objection": {
+    "message": "objected (inherited)"
+  },
   "purpose1": {
     "message": "Inform\u0101cijas ievieto\u0161ana ier\u012bc\u0113 un/vai piek\u013cuve tai"
   },
