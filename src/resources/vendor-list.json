@@ -1,8 +1,8 @@
 {
   "gvlSpecificationVersion": 2,
-  "vendorListVersion": 89,
+  "vendorListVersion": 90,
   "tcfPolicyVersion": 2,
-  "lastUpdated": "2021-05-06T16:05:34Z",
+  "lastUpdated": "2021-05-13T16:05:35Z",
   "purposes": {
     "1": {
       "id": 1,
@@ -2090,9 +2090,10 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://netzwerk.uppr.de/privacy-policy.do",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
-      "usesNonCookieAccess": false
+      "cookieMaxAgeSeconds": 7776000,
+      "usesCookies": true,
+      "usesNonCookieAccess": true,
+      "deviceStorageDisclosureUrl": "https://netzwerk.uppr.de/privacy-mydata.do"
     },
     "68": {
       "id": 68,
@@ -2637,8 +2638,8 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.opinionoutpost.co.uk/en-gb/policies/privacy",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
+      "cookieMaxAgeSeconds": 31536000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "42": {
@@ -4051,8 +4052,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.e-planning.net/en/privacy.html",
-      "cookieMaxAgeSeconds": null,
-      "usesCookies": false,
+      "cookieMaxAgeSeconds": 220752000,
+      "usesCookies": true,
       "usesNonCookieAccess": false
     },
     "141": {
@@ -4151,7 +4152,7 @@
         1
       ],
       "policyUrl": "https://deltaprojects.com/data-collection-policy",
-      "cookieMaxAgeSeconds": 31560000,
+      "cookieMaxAgeSeconds": 31536000,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -4412,7 +4413,7 @@
       ],
       "specialFeatures": [],
       "policyUrl": "https://www.publicismedia.de/datenschutz/",
-      "cookieMaxAgeSeconds": 7776000,
+      "cookieMaxAgeSeconds": 157784760,
       "usesCookies": true,
       "usesNonCookieAccess": true
     },
@@ -5075,6 +5076,7 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://zergnet.com/privacy",
+      "deletedDate": "2021-05-11T00:00:00Z",
       "cookieMaxAgeSeconds": 2592000,
       "usesCookies": true,
       "usesNonCookieAccess": false
@@ -6855,7 +6857,7 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.welect.de/datenschutz",
-      "cookieMaxAgeSeconds": 604800,
+      "cookieMaxAgeSeconds": 1209600,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -8465,7 +8467,7 @@
       "overflow": {
         "httpGetLimit": 128
       },
-      "cookieMaxAgeSeconds": 7776000,
+      "cookieMaxAgeSeconds": 31536000,
       "usesCookies": true,
       "usesNonCookieAccess": false
     },
@@ -13206,11 +13208,13 @@
       "name": "BeOp",
       "purposes": [
         1,
+        4
+      ],
+      "legIntPurposes": [
         2,
         7,
         8
       ],
-      "legIntPurposes": [],
       "flexiblePurposes": [
         2,
         7,
@@ -13527,7 +13531,6 @@
       "name": "Mediaforce LTD",
       "purposes": [
         1,
-        2,
         3,
         4,
         5,
@@ -13537,6 +13540,7 @@
         9
       ],
       "legIntPurposes": [
+        2,
         10
       ],
       "flexiblePurposes": [],
@@ -15873,9 +15877,7 @@
     "774": {
       "id": 774,
       "name": "Wagawin GmbH",
-      "purposes": [
-        1
-      ],
+      "purposes": [],
       "legIntPurposes": [
         2,
         7
@@ -15891,8 +15893,8 @@
       "features": [],
       "specialFeatures": [],
       "policyUrl": "https://www.wagawin.com/privacy-en/#productprivacy",
-      "cookieMaxAgeSeconds": 604800,
-      "usesCookies": true,
+      "cookieMaxAgeSeconds": null,
+      "usesCookies": false,
       "usesNonCookieAccess": false
     },
     "775": {
@@ -18924,7 +18926,11 @@
         7,
         10
       ],
-      "flexiblePurposes": [],
+      "flexiblePurposes": [
+        2,
+        7,
+        10
+      ],
       "specialPurposes": [
         1,
         2
@@ -21968,6 +21974,78 @@
       "cookieMaxAgeSeconds": 62000000,
       "usesCookies": true,
       "usesNonCookieAccess": true
+    },
+    "998": {
+      "id": 998,
+      "name": "Luna Media Group LLC",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        3
+      ],
+      "specialFeatures": [],
+      "policyUrl": "https://lunamedia.io/privacy-policy/",
+      "cookieMaxAgeSeconds": 1209600,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "999": {
+      "id": 999,
+      "name": "ADSTOURS SAS",
+      "purposes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [],
+      "specialFeatures": [],
+      "policyUrl": "https://www.clickintext.com/about/charte-rgpd.php",
+      "cookieMaxAgeSeconds": 63000000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
+    },
+    "1000": {
+      "id": 1000,
+      "name": "NETILUM (AFFILAE)",
+      "purposes": [
+        1,
+        7,
+        8
+      ],
+      "legIntPurposes": [],
+      "flexiblePurposes": [],
+      "specialPurposes": [],
+      "features": [
+        3
+      ],
+      "specialFeatures": [
+        2
+      ],
+      "policyUrl": "https://affilae.com/en/privacy-cookie-policy",
+      "overflow": {
+        "httpGetLimit": 128
+      },
+      "cookieMaxAgeSeconds": 34164000,
+      "usesCookies": true,
+      "usesNonCookieAccess": false
     }
   }
 }
